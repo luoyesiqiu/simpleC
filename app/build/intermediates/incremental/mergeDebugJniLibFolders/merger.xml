@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\Documents\MulCode\app\libs"><file name="armeabi/libjackpal-androidterm5.so" path="D:\Documents\MulCode\app\libs\armeabi\libjackpal-androidterm5.so"/><file name="armeabi/libjackpal-termexec2.so" path="D:\Documents\MulCode\app\libs\armeabi\libjackpal-termexec2.so"/></source></dataSet><dataSet config="debug"><source path="D:\Documents\MulCode\app\src\debug\jniLibs"/></dataSet></merger>

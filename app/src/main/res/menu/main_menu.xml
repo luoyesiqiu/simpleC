@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/menu_run" android:title="运行" android:icon="@mipmap/icon_run" android:showAsAction="always"></item>
+    <item android:id="@+id/menu_undo" android:title="后退" android:icon="@mipmap/undo" android:showAsAction="always"></item>
+    <item android:id="@+id/menu_redo" android:title="前进" android:icon="@mipmap/redo" android:showAsAction="always"></item>
+    <group>
+        <item android:id="@+id/menu_open" android:title="打开"></item>
+
+        <item android:id="@+id/menu_save" android:title="保存"></item>
+        <item android:id="@+id/menu_save_as" android:title="另存为"></item>
+        <item android:id="@+id/menu_close_file" android:title="关闭文件"></item>
+    </group>
+</menu>

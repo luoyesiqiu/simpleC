@@ -1,0 +1,2311 @@
+[
+    {
+        "outputFile": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 11,
+                    "endColumn": 19,
+                    "endOffset": 342
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 347,
+                    "endLine": 16,
+                    "endColumn": 19,
+                    "endOffset": 590
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 595,
+                    "endLine": 23,
+                    "endColumn": 19,
+                    "endOffset": 918
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 923,
+                    "endLine": 35,
+                    "endColumn": 19,
+                    "endOffset": 1385
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1390,
+                    "endLine": 45,
+                    "endColumn": 19,
+                    "endOffset": 1712
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 1717,
+                    "endLine": 49,
+                    "endColumn": 19,
+                    "endOffset": 1867
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 1872,
+                    "endLine": 54,
+                    "endColumn": 19,
+                    "endOffset": 2040
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 2045,
+                    "endLine": 64,
+                    "endColumn": 19,
+                    "endOffset": 2362
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 2367,
+                    "endLine": 87,
+                    "endColumn": 19,
+                    "endOffset": 3008
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 3013,
+                    "endLine": 91,
+                    "endColumn": 19,
+                    "endOffset": 3146
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 3151,
+                    "endLine": 96,
+                    "endColumn": 19,
+                    "endOffset": 3315
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 3320,
+                    "endLine": 100,
+                    "endColumn": 19,
+                    "endOffset": 3464
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 3469,
+                    "endLine": 107,
+                    "endColumn": 19,
+                    "endOffset": 3684
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 3689,
+                    "endLine": 112,
+                    "endColumn": 19,
+                    "endOffset": 3841
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 3846,
+                    "endLine": 119,
+                    "endColumn": 19,
+                    "endOffset": 4036
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 4041,
+                    "endLine": 131,
+                    "endColumn": 19,
+                    "endOffset": 4341
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 4346,
+                    "endLine": 141,
+                    "endColumn": 19,
+                    "endOffset": 4605
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 4610,
+                    "endLine": 145,
+                    "endColumn": 19,
+                    "endOffset": 4732
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 146,
+                    "startColumn": 4,
+                    "startOffset": 4737,
+                    "endLine": 150,
+                    "endColumn": 19,
+                    "endOffset": 4882
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 151,
+                    "startColumn": 4,
+                    "startOffset": 4887,
+                    "endLine": 160,
+                    "endColumn": 19,
+                    "endOffset": 5141
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 161,
+                    "startColumn": 4,
+                    "startOffset": 5146,
+                    "endLine": 183,
+                    "endColumn": 19,
+                    "endOffset": 5720
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 184,
+                    "startColumn": 4,
+                    "startOffset": 5725,
+                    "endLine": 187,
+                    "endColumn": 19,
+                    "endOffset": 5839
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 188,
+                    "startColumn": 4,
+                    "startOffset": 5844,
+                    "endLine": 192,
+                    "endColumn": 19,
+                    "endOffset": 5989
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 193,
+                    "startColumn": 4,
+                    "startOffset": 5994,
+                    "endLine": 196,
+                    "endColumn": 19,
+                    "endOffset": 6114
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 197,
+                    "startColumn": 4,
+                    "startOffset": 6119,
+                    "endLine": 206,
+                    "endColumn": 19,
+                    "endOffset": 6401
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 207,
+                    "startColumn": 4,
+                    "startOffset": 6406,
+                    "endLine": 214,
+                    "endColumn": 16,
+                    "endOffset": 6566
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 215,
+                    "startColumn": 4,
+                    "startOffset": 6571,
+                    "endColumn": 60,
+                    "endOffset": 6627
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 216,
+                    "startColumn": 4,
+                    "startOffset": 6632,
+                    "endColumn": 56,
+                    "endOffset": 6684
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 217,
+                    "startColumn": 4,
+                    "startOffset": 6689,
+                    "endColumn": 70,
+                    "endOffset": 6755
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 218,
+                    "startColumn": 4,
+                    "startOffset": 6760,
+                    "endColumn": 60,
+                    "endOffset": 6816
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 219,
+                    "startColumn": 4,
+                    "startOffset": 6821,
+                    "endColumn": 57,
+                    "endOffset": 6874
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 220,
+                    "startColumn": 4,
+                    "startOffset": 6879,
+                    "endColumn": 64,
+                    "endOffset": 6939
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 221,
+                    "startColumn": 4,
+                    "startOffset": 6944,
+                    "endColumn": 57,
+                    "endOffset": 6997
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 222,
+                    "startColumn": 4,
+                    "startOffset": 7002,
+                    "endColumn": 53,
+                    "endOffset": 7051
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 224,
+                    "startColumn": 4,
+                    "startOffset": 7101,
+                    "endColumn": 38,
+                    "endOffset": 7135
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 225,
+                    "startColumn": 4,
+                    "startOffset": 7140,
+                    "endColumn": 37,
+                    "endOffset": 7173
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 226,
+                    "startColumn": 4,
+                    "startOffset": 7178,
+                    "endColumn": 39,
+                    "endOffset": 7213
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 227,
+                    "startColumn": 4,
+                    "startOffset": 7218,
+                    "endColumn": 37,
+                    "endOffset": 7251
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 228,
+                    "startColumn": 4,
+                    "startOffset": 7256,
+                    "endColumn": 54,
+                    "endOffset": 7306
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 229,
+                    "startColumn": 4,
+                    "startOffset": 7311,
+                    "endColumn": 56,
+                    "endOffset": 7363
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 230,
+                    "startColumn": 4,
+                    "startOffset": 7368,
+                    "endColumn": 52,
+                    "endOffset": 7416
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 231,
+                    "startColumn": 4,
+                    "startOffset": 7421,
+                    "endColumn": 68,
+                    "endOffset": 7485
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 232,
+                    "startColumn": 4,
+                    "startOffset": 7490,
+                    "endColumn": 62,
+                    "endOffset": 7548
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 233,
+                    "startColumn": 4,
+                    "startOffset": 7553,
+                    "endColumn": 67,
+                    "endOffset": 7616
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 234,
+                    "startColumn": 4,
+                    "startOffset": 7621,
+                    "endColumn": 72,
+                    "endOffset": 7689
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 235,
+                    "startColumn": 4,
+                    "startOffset": 7694,
+                    "endColumn": 66,
+                    "endOffset": 7756
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 236,
+                    "startColumn": 4,
+                    "startOffset": 7761,
+                    "endColumn": 60,
+                    "endOffset": 7817
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 237,
+                    "startColumn": 4,
+                    "startOffset": 7822,
+                    "endColumn": 174,
+                    "endOffset": 7992
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 238,
+                    "startColumn": 4,
+                    "startOffset": 7997,
+                    "endColumn": 69,
+                    "endOffset": 8062
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 239,
+                    "startColumn": 4,
+                    "startOffset": 8067,
+                    "endColumn": 69,
+                    "endOffset": 8132
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 240,
+                    "startColumn": 4,
+                    "startOffset": 8137,
+                    "endColumn": 78,
+                    "endOffset": 8211
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 241,
+                    "startColumn": 4,
+                    "startOffset": 8216,
+                    "endColumn": 71,
+                    "endOffset": 8283
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 242,
+                    "startColumn": 4,
+                    "startOffset": 8288,
+                    "endColumn": 55,
+                    "endOffset": 8339
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 243,
+                    "startColumn": 4,
+                    "startOffset": 8344,
+                    "endColumn": 59,
+                    "endOffset": 8399
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 244,
+                    "startColumn": 4,
+                    "startOffset": 8404,
+                    "endColumn": 59,
+                    "endOffset": 8459
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 245,
+                    "startColumn": 4,
+                    "startOffset": 8464,
+                    "endColumn": 80,
+                    "endOffset": 8540
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 246,
+                    "startColumn": 4,
+                    "startOffset": 8545,
+                    "endColumn": 71,
+                    "endOffset": 8612
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 247,
+                    "startColumn": 4,
+                    "startOffset": 8617,
+                    "endColumn": 45,
+                    "endOffset": 8658
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 248,
+                    "startColumn": 4,
+                    "startOffset": 8663,
+                    "endColumn": 66,
+                    "endOffset": 8725
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 249,
+                    "startColumn": 4,
+                    "startOffset": 8730,
+                    "endColumn": 53,
+                    "endOffset": 8779
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 250,
+                    "startColumn": 4,
+                    "startOffset": 8784,
+                    "endColumn": 75,
+                    "endOffset": 8855
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 251,
+                    "startColumn": 4,
+                    "startOffset": 8860,
+                    "endColumn": 68,
+                    "endOffset": 8924
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 252,
+                    "startColumn": 4,
+                    "startOffset": 8929,
+                    "endColumn": 53,
+                    "endOffset": 8978
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 253,
+                    "startColumn": 4,
+                    "startOffset": 8983,
+                    "endColumn": 52,
+                    "endOffset": 9031
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 254,
+                    "startColumn": 4,
+                    "startOffset": 9036,
+                    "endColumn": 53,
+                    "endOffset": 9085
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 255,
+                    "startColumn": 4,
+                    "startOffset": 9090,
+                    "endColumn": 51,
+                    "endOffset": 9137
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 256,
+                    "startColumn": 4,
+                    "startOffset": 9142,
+                    "endColumn": 75,
+                    "endOffset": 9213
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 257,
+                    "startColumn": 4,
+                    "startOffset": 9218,
+                    "endColumn": 88,
+                    "endOffset": 9302
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 258,
+                    "startColumn": 4,
+                    "startOffset": 9307,
+                    "endColumn": 223,
+                    "endOffset": 9526
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 259,
+                    "startColumn": 4,
+                    "startOffset": 9531,
+                    "endColumn": 84,
+                    "endOffset": 9611
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 260,
+                    "startColumn": 4,
+                    "startOffset": 9616,
+                    "endColumn": 368,
+                    "endOffset": 9980
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 261,
+                    "startColumn": 4,
+                    "startOffset": 9985,
+                    "endColumn": 78,
+                    "endOffset": 10059
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 262,
+                    "startColumn": 4,
+                    "startOffset": 10064,
+                    "endColumn": 45,
+                    "endOffset": 10105
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 263,
+                    "startColumn": 4,
+                    "startOffset": 10110,
+                    "endColumn": 81,
+                    "endOffset": 10187
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 264,
+                    "startColumn": 4,
+                    "startOffset": 10192,
+                    "endColumn": 83,
+                    "endOffset": 10271
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 265,
+                    "startColumn": 4,
+                    "startOffset": 10276,
+                    "endColumn": 68,
+                    "endOffset": 10340
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 266,
+                    "startColumn": 4,
+                    "startOffset": 10345,
+                    "endColumn": 74,
+                    "endOffset": 10415
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 267,
+                    "startColumn": 4,
+                    "startOffset": 10420,
+                    "endColumn": 76,
+                    "endOffset": 10492
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 268,
+                    "startColumn": 4,
+                    "startOffset": 10497,
+                    "endColumn": 76,
+                    "endOffset": 10569
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 269,
+                    "startColumn": 4,
+                    "startOffset": 10574,
+                    "endColumn": 64,
+                    "endOffset": 10634
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 270,
+                    "startColumn": 4,
+                    "startOffset": 10639,
+                    "endColumn": 70,
+                    "endOffset": 10705
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 271,
+                    "startColumn": 4,
+                    "startOffset": 10710,
+                    "endColumn": 68,
+                    "endOffset": 10774
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 272,
+                    "startColumn": 4,
+                    "startOffset": 10779,
+                    "endColumn": 82,
+                    "endOffset": 10857
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 273,
+                    "startColumn": 4,
+                    "startOffset": 10862,
+                    "endColumn": 91,
+                    "endOffset": 10949
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 274,
+                    "startColumn": 4,
+                    "startOffset": 10954,
+                    "endColumn": 63,
+                    "endOffset": 11013
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 275,
+                    "startColumn": 4,
+                    "startOffset": 11018,
+                    "endColumn": 72,
+                    "endOffset": 11086
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 276,
+                    "startColumn": 4,
+                    "startOffset": 11091,
+                    "endColumn": 74,
+                    "endOffset": 11161
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 277,
+                    "startColumn": 4,
+                    "startOffset": 11166,
+                    "endColumn": 58,
+                    "endOffset": 11220
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 278,
+                    "startColumn": 4,
+                    "startOffset": 11225,
+                    "endColumn": 58,
+                    "endOffset": 11279
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 279,
+                    "startColumn": 4,
+                    "startOffset": 11284,
+                    "endColumn": 47,
+                    "endOffset": 11327
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 280,
+                    "startColumn": 4,
+                    "startOffset": 11332,
+                    "endColumn": 81,
+                    "endOffset": 11409
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 281,
+                    "startColumn": 4,
+                    "startOffset": 11414,
+                    "endColumn": 123,
+                    "endOffset": 11533
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 282,
+                    "startColumn": 4,
+                    "startOffset": 11538,
+                    "endColumn": 98,
+                    "endOffset": 11632
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 283,
+                    "startColumn": 4,
+                    "startOffset": 11637,
+                    "endColumn": 57,
+                    "endOffset": 11690
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 284,
+                    "startColumn": 4,
+                    "startOffset": 11695,
+                    "endColumn": 57,
+                    "endOffset": 11748
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 285,
+                    "startColumn": 4,
+                    "startOffset": 11753,
+                    "endColumn": 65,
+                    "endOffset": 11814
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 286,
+                    "startColumn": 4,
+                    "startOffset": 11819,
+                    "endColumn": 90,
+                    "endOffset": 11905
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 287,
+                    "startColumn": 4,
+                    "startOffset": 11910,
+                    "endColumn": 79,
+                    "endOffset": 11985
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 288,
+                    "startColumn": 4,
+                    "startOffset": 11990,
+                    "endColumn": 59,
+                    "endOffset": 12045
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 289,
+                    "startColumn": 4,
+                    "startOffset": 12050,
+                    "endColumn": 52,
+                    "endOffset": 12098
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 290,
+                    "startColumn": 4,
+                    "startOffset": 12103,
+                    "endColumn": 37,
+                    "endOffset": 12136
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 291,
+                    "startColumn": 4,
+                    "startOffset": 12141,
+                    "endColumn": 125,
+                    "endOffset": 12262
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 292,
+                    "startColumn": 4,
+                    "startOffset": 12267,
+                    "endColumn": 57,
+                    "endOffset": 12320
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 293,
+                    "startColumn": 4,
+                    "startOffset": 12325,
+                    "endColumn": 49,
+                    "endOffset": 12370
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 294,
+                    "startColumn": 4,
+                    "startOffset": 12375,
+                    "endColumn": 51,
+                    "endOffset": 12422
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 295,
+                    "startColumn": 4,
+                    "startOffset": 12427,
+                    "endColumn": 39,
+                    "endOffset": 12462
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 296,
+                    "startColumn": 4,
+                    "startOffset": 12467,
+                    "endColumn": 81,
+                    "endOffset": 12544
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 297,
+                    "startColumn": 4,
+                    "startOffset": 12549,
+                    "endColumn": 87,
+                    "endOffset": 12632
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 298,
+                    "startColumn": 4,
+                    "startOffset": 12637,
+                    "endColumn": 87,
+                    "endOffset": 12720
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 299,
+                    "startColumn": 4,
+                    "startOffset": 12725,
+                    "endColumn": 166,
+                    "endOffset": 12887
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 300,
+                    "startColumn": 4,
+                    "startOffset": 12892,
+                    "endColumn": 191,
+                    "endOffset": 13079
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 301,
+                    "startColumn": 4,
+                    "startOffset": 13084,
+                    "endColumn": 262,
+                    "endOffset": 13342
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 302,
+                    "startColumn": 4,
+                    "startOffset": 13347,
+                    "endColumn": 74,
+                    "endOffset": 13417
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 291,
+                        "startColumn": 4,
+                        "startOffset": 13030,
+                        "endColumn": 74,
+                        "endOffset": 13100
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 303,
+                    "startColumn": 4,
+                    "startOffset": 13422,
+                    "endColumn": 69,
+                    "endOffset": 13487
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 304,
+                    "startColumn": 4,
+                    "startOffset": 13492,
+                    "endColumn": 74,
+                    "endOffset": 13562
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 305,
+                    "startColumn": 4,
+                    "startOffset": 13567,
+                    "endColumn": 75,
+                    "endOffset": 13638
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 306,
+                    "startColumn": 4,
+                    "startOffset": 13643,
+                    "endColumn": 75,
+                    "endOffset": 13714
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 307,
+                    "startColumn": 4,
+                    "startOffset": 13719,
+                    "endColumn": 69,
+                    "endOffset": 13784
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 308,
+                    "startColumn": 4,
+                    "startOffset": 13789,
+                    "endColumn": 73,
+                    "endOffset": 13858
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 309,
+                    "startColumn": 4,
+                    "startOffset": 13863,
+                    "endColumn": 67,
+                    "endOffset": 13926
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 310,
+                    "startColumn": 4,
+                    "startOffset": 13931,
+                    "endColumn": 69,
+                    "endOffset": 13996
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 311,
+                    "startColumn": 4,
+                    "startOffset": 14001,
+                    "endColumn": 84,
+                    "endOffset": 14081
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 312,
+                    "startColumn": 4,
+                    "startOffset": 14086,
+                    "endColumn": 73,
+                    "endOffset": 14155
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 313,
+                    "startColumn": 4,
+                    "startOffset": 14160,
+                    "endColumn": 77,
+                    "endOffset": 14233
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 314,
+                    "startColumn": 4,
+                    "startOffset": 14238,
+                    "endColumn": 51,
+                    "endOffset": 14285
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 315,
+                    "startColumn": 4,
+                    "startOffset": 14290,
+                    "endColumn": 51,
+                    "endOffset": 14337
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 316,
+                    "startColumn": 4,
+                    "startOffset": 14342,
+                    "endColumn": 74,
+                    "endOffset": 14412
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 317,
+                    "startColumn": 4,
+                    "startOffset": 14417,
+                    "endColumn": 44,
+                    "endOffset": 14457
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 318,
+                    "startColumn": 4,
+                    "startOffset": 14462,
+                    "endColumn": 98,
+                    "endOffset": 14556
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 319,
+                    "startColumn": 4,
+                    "startOffset": 14561,
+                    "endColumn": 53,
+                    "endOffset": 14610
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 320,
+                    "startColumn": 4,
+                    "startOffset": 14615,
+                    "endColumn": 51,
+                    "endOffset": 14662
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 321,
+                    "startColumn": 4,
+                    "startOffset": 14667,
+                    "endColumn": 61,
+                    "endOffset": 14724
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 322,
+                    "startColumn": 4,
+                    "startOffset": 14729,
+                    "endColumn": 47,
+                    "endOffset": 14772
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 323,
+                    "startColumn": 4,
+                    "startOffset": 14777,
+                    "endColumn": 51,
+                    "endOffset": 14824
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 324,
+                    "startColumn": 4,
+                    "startOffset": 14829,
+                    "endColumn": 75,
+                    "endOffset": 14900
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 325,
+                    "startColumn": 4,
+                    "startOffset": 14905,
+                    "endColumn": 51,
+                    "endOffset": 14952
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 326,
+                    "startColumn": 4,
+                    "startOffset": 14957,
+                    "endColumn": 53,
+                    "endOffset": 15006
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 327,
+                    "startColumn": 4,
+                    "startOffset": 15011,
+                    "endColumn": 112,
+                    "endOffset": 15119
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 328,
+                    "startColumn": 4,
+                    "startOffset": 15124,
+                    "endColumn": 164,
+                    "endOffset": 15284
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 329,
+                    "startColumn": 4,
+                    "startOffset": 15289,
+                    "endColumn": 100,
+                    "endOffset": 15385
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 330,
+                    "startColumn": 4,
+                    "startOffset": 15390,
+                    "endColumn": 127,
+                    "endOffset": 15513
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 331,
+                    "startColumn": 4,
+                    "startOffset": 15518,
+                    "endColumn": 71,
+                    "endOffset": 15585
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 332,
+                    "startColumn": 4,
+                    "startOffset": 15590,
+                    "endColumn": 77,
+                    "endOffset": 15663
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 333,
+                    "startColumn": 4,
+                    "startOffset": 15668,
+                    "endColumn": 79,
+                    "endOffset": 15743
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 334,
+                    "startColumn": 4,
+                    "startOffset": 15748,
+                    "endColumn": 79,
+                    "endOffset": 15823
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 335,
+                    "startColumn": 4,
+                    "startOffset": 15828,
+                    "endColumn": 148,
+                    "endOffset": 15972
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 336,
+                    "startColumn": 4,
+                    "startOffset": 15977,
+                    "endColumn": 67,
+                    "endOffset": 16040
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 337,
+                    "startColumn": 4,
+                    "startOffset": 16045,
+                    "endColumn": 90,
+                    "endOffset": 16131
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 338,
+                    "startColumn": 4,
+                    "startOffset": 16136,
+                    "endColumn": 102,
+                    "endOffset": 16234
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 339,
+                    "startColumn": 4,
+                    "startOffset": 16239,
+                    "endColumn": 89,
+                    "endOffset": 16324
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 340,
+                    "startColumn": 4,
+                    "startOffset": 16329,
+                    "endColumn": 95,
+                    "endOffset": 16420
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 341,
+                    "startColumn": 4,
+                    "startOffset": 16425,
+                    "endColumn": 143,
+                    "endOffset": 16564
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 342,
+                    "startColumn": 4,
+                    "startOffset": 16569,
+                    "endColumn": 98,
+                    "endOffset": 16663
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 343,
+                    "startColumn": 4,
+                    "startOffset": 16668,
+                    "endColumn": 84,
+                    "endOffset": 16748
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 344,
+                    "startColumn": 4,
+                    "startOffset": 16753,
+                    "endColumn": 78,
+                    "endOffset": 16827
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 345,
+                    "startColumn": 4,
+                    "startOffset": 16832,
+                    "endColumn": 98,
+                    "endOffset": 16926
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 346,
+                    "startColumn": 4,
+                    "startOffset": 16931,
+                    "endColumn": 104,
+                    "endOffset": 17031
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 347,
+                    "startColumn": 4,
+                    "startOffset": 17036,
+                    "endColumn": 124,
+                    "endOffset": 17156
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 348,
+                    "startColumn": 4,
+                    "startOffset": 17161,
+                    "endColumn": 49,
+                    "endOffset": 17206
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 349,
+                    "startColumn": 4,
+                    "startOffset": 17211,
+                    "endColumn": 65,
+                    "endOffset": 17272
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 350,
+                    "startColumn": 4,
+                    "startOffset": 17277,
+                    "endColumn": 82,
+                    "endOffset": 17355
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 351,
+                    "startColumn": 4,
+                    "startOffset": 17360,
+                    "endColumn": 76,
+                    "endOffset": 17432
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 352,
+                    "startColumn": 4,
+                    "startOffset": 17437,
+                    "endColumn": 94,
+                    "endOffset": 17527
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 353,
+                    "startColumn": 4,
+                    "startOffset": 17532,
+                    "endColumn": 57,
+                    "endOffset": 17585
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 354,
+                    "startColumn": 4,
+                    "startOffset": 17590,
+                    "endColumn": 67,
+                    "endOffset": 17653
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 355,
+                    "startColumn": 4,
+                    "startOffset": 17658,
+                    "endColumn": 69,
+                    "endOffset": 17723
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 356,
+                    "startColumn": 4,
+                    "startOffset": 17728,
+                    "endColumn": 69,
+                    "endOffset": 17793
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 357,
+                    "startColumn": 4,
+                    "startOffset": 17798,
+                    "endColumn": 85,
+                    "endOffset": 17879
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 358,
+                    "startColumn": 4,
+                    "startOffset": 17884,
+                    "endColumn": 57,
+                    "endOffset": 17937
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 359,
+                    "startColumn": 4,
+                    "startOffset": 17942,
+                    "endColumn": 63,
+                    "endOffset": 18001
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 360,
+                    "startColumn": 4,
+                    "startOffset": 18006,
+                    "endColumn": 66,
+                    "endOffset": 18068
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 361,
+                    "startColumn": 4,
+                    "startOffset": 18073,
+                    "endColumn": 61,
+                    "endOffset": 18130
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 362,
+                    "startColumn": 4,
+                    "startOffset": 18135,
+                    "endColumn": 75,
+                    "endOffset": 18206
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 363,
+                    "startColumn": 4,
+                    "startOffset": 18211,
+                    "endColumn": 77,
+                    "endOffset": 18284
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 364,
+                    "startColumn": 4,
+                    "startOffset": 18289,
+                    "endColumn": 75,
+                    "endOffset": 18360
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 365,
+                    "startColumn": 4,
+                    "startOffset": 18365,
+                    "endColumn": 63,
+                    "endOffset": 18424
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 366,
+                    "startColumn": 4,
+                    "startOffset": 18429,
+                    "endColumn": 65,
+                    "endOffset": 18490
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 367,
+                    "startColumn": 4,
+                    "startOffset": 18495,
+                    "endColumn": 67,
+                    "endOffset": 18558
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 368,
+                    "startColumn": 4,
+                    "startOffset": 18563,
+                    "endColumn": 79,
+                    "endOffset": 18638
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 369,
+                    "startColumn": 4,
+                    "startOffset": 18643,
+                    "endColumn": 77,
+                    "endOffset": 18716
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 370,
+                    "startColumn": 4,
+                    "startOffset": 18721,
+                    "endColumn": 76,
+                    "endOffset": 18793
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 371,
+                    "startColumn": 4,
+                    "startOffset": 18798,
+                    "endColumn": 69,
+                    "endOffset": 18863
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 372,
+                    "startColumn": 4,
+                    "startOffset": 18868,
+                    "endColumn": 91,
+                    "endOffset": 18955
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 373,
+                    "startColumn": 4,
+                    "startOffset": 18960,
+                    "endColumn": 132,
+                    "endOffset": 19088
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 374,
+                    "startColumn": 4,
+                    "startOffset": 19093,
+                    "endColumn": 47,
+                    "endOffset": 19136
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 375,
+                    "startColumn": 4,
+                    "startOffset": 19141,
+                    "endColumn": 52,
+                    "endOffset": 19189
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 376,
+                    "startColumn": 4,
+                    "startOffset": 19194,
+                    "endLine": 382,
+                    "endColumn": 12,
+                    "endOffset": 19501
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 383,
+                    "startColumn": 4,
+                    "startOffset": 19506,
+                    "endLine": 385,
+                    "endColumn": 12,
+                    "endOffset": 19661
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 386,
+                    "startColumn": 4,
+                    "startOffset": 19666,
+                    "endLine": 390,
+                    "endColumn": 12,
+                    "endOffset": 19907
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values\\values.xml"
+                }
+            }
+        ]
+    }
+]

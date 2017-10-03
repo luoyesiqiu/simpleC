@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">simple C</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string-array name="lang">
+		<item>C</item>
+		<item>C++</item>
+		<item>php</item>
+		<item>Java</item>
+		<item>Python</item>
+		<item>Bash</item>
+	</string-array>
+</resources>

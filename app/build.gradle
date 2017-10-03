@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.luoye.simpleC"
+        minSdkVersion 15
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']//将so文件目录指向libs目录
+        }
+    }
+}
+
+dependencies {
+    compile project(':term')
+}

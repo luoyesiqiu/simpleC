@@ -1,0 +1,1895 @@
+[
+    {
+        "outputFile": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\values-ro\\values-ro.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 11,
+                    "endColumn": 19,
+                    "endOffset": 371
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 11,
+                        "endColumn": 19,
+                        "endOffset": 371
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 376,
+                    "endLine": 16,
+                    "endColumn": 19,
+                    "endOffset": 673
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 376,
+                        "endLine": 16,
+                        "endColumn": 19,
+                        "endOffset": 673
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 678,
+                    "endLine": 23,
+                    "endColumn": 19,
+                    "endOffset": 1021
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 678,
+                        "endLine": 23,
+                        "endColumn": 19,
+                        "endOffset": 1021
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1026,
+                    "endLine": 35,
+                    "endColumn": 19,
+                    "endOffset": 1492
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1026,
+                        "endLine": 35,
+                        "endColumn": 19,
+                        "endOffset": 1492
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1497,
+                    "endLine": 45,
+                    "endColumn": 19,
+                    "endOffset": 1857
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1497,
+                        "endLine": 45,
+                        "endColumn": 19,
+                        "endOffset": 1857
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 1862,
+                    "endLine": 49,
+                    "endColumn": 19,
+                    "endOffset": 2015
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 1862,
+                        "endLine": 49,
+                        "endColumn": 19,
+                        "endOffset": 2015
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 2020,
+                    "endLine": 54,
+                    "endColumn": 19,
+                    "endOffset": 2191
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 2020,
+                        "endLine": 54,
+                        "endColumn": 19,
+                        "endOffset": 2191
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 2196,
+                    "endLine": 64,
+                    "endColumn": 19,
+                    "endOffset": 2551
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 2196,
+                        "endLine": 64,
+                        "endColumn": 19,
+                        "endOffset": 2551
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 2556,
+                    "endLine": 87,
+                    "endColumn": 19,
+                    "endOffset": 3277
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 2556,
+                        "endLine": 87,
+                        "endColumn": 19,
+                        "endOffset": 3277
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 3282,
+                    "endLine": 91,
+                    "endColumn": 19,
+                    "endOffset": 3422
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 4,
+                        "startOffset": 3282,
+                        "endLine": 91,
+                        "endColumn": 19,
+                        "endOffset": 3422
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 3427,
+                    "endLine": 95,
+                    "endColumn": 19,
+                    "endOffset": 3585
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 4,
+                        "startOffset": 3427,
+                        "endLine": 95,
+                        "endColumn": 19,
+                        "endOffset": 3585
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 3590,
+                    "endLine": 105,
+                    "endColumn": 19,
+                    "endOffset": 3901
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 4,
+                        "startOffset": 3590,
+                        "endLine": 105,
+                        "endColumn": 19,
+                        "endOffset": 3901
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 3906,
+                    "endColumn": 45,
+                    "endOffset": 3947
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 106,
+                        "startColumn": 4,
+                        "startOffset": 3906,
+                        "endColumn": 45,
+                        "endOffset": 3947
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 3952,
+                    "endColumn": 46,
+                    "endOffset": 3994
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 107,
+                        "startColumn": 4,
+                        "startOffset": 3952,
+                        "endColumn": 46,
+                        "endOffset": 3994
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 3999,
+                    "endColumn": 50,
+                    "endOffset": 4045
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 108,
+                        "startColumn": 4,
+                        "startOffset": 3999,
+                        "endColumn": 50,
+                        "endOffset": 4045
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 4050,
+                    "endColumn": 52,
+                    "endOffset": 4098
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 109,
+                        "startColumn": 4,
+                        "startOffset": 4050,
+                        "endColumn": 52,
+                        "endOffset": 4098
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 4103,
+                    "endColumn": 53,
+                    "endOffset": 4152
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 4,
+                        "startOffset": 4103,
+                        "endColumn": 53,
+                        "endOffset": 4152
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 4157,
+                    "endColumn": 65,
+                    "endOffset": 4218
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 111,
+                        "startColumn": 4,
+                        "startOffset": 4157,
+                        "endColumn": 65,
+                        "endOffset": 4218
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 4223,
+                    "endColumn": 81,
+                    "endOffset": 4300
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 112,
+                        "startColumn": 4,
+                        "startOffset": 4223,
+                        "endColumn": 81,
+                        "endOffset": 4300
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 4305,
+                    "endColumn": 77,
+                    "endOffset": 4378
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 113,
+                        "startColumn": 4,
+                        "startOffset": 4305,
+                        "endColumn": 77,
+                        "endOffset": 4378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 4383,
+                    "endColumn": 68,
+                    "endOffset": 4447
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 114,
+                        "startColumn": 4,
+                        "startOffset": 4383,
+                        "endColumn": 68,
+                        "endOffset": 4447
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 4452,
+                    "endColumn": 62,
+                    "endOffset": 4510
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 115,
+                        "startColumn": 4,
+                        "startOffset": 4452,
+                        "endColumn": 62,
+                        "endOffset": 4510
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 4515,
+                    "endColumn": 87,
+                    "endOffset": 4598
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 116,
+                        "startColumn": 4,
+                        "startOffset": 4515,
+                        "endColumn": 87,
+                        "endOffset": 4598
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 4603,
+                    "endColumn": 99,
+                    "endOffset": 4698
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 117,
+                        "startColumn": 4,
+                        "startOffset": 4603,
+                        "endColumn": 99,
+                        "endOffset": 4698
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 4703,
+                    "endColumn": 94,
+                    "endOffset": 4793
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 118,
+                        "startColumn": 4,
+                        "startOffset": 4703,
+                        "endColumn": 94,
+                        "endOffset": 4793
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 4798,
+                    "endColumn": 85,
+                    "endOffset": 4879
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 119,
+                        "startColumn": 4,
+                        "startOffset": 4798,
+                        "endColumn": 85,
+                        "endOffset": 4879
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 4884,
+                    "endColumn": 50,
+                    "endOffset": 4930
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 120,
+                        "startColumn": 4,
+                        "startOffset": 4884,
+                        "endColumn": 50,
+                        "endOffset": 4930
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 4935,
+                    "endColumn": 92,
+                    "endOffset": 5023
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 121,
+                        "startColumn": 4,
+                        "startOffset": 4935,
+                        "endColumn": 92,
+                        "endOffset": 5023
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 5028,
+                    "endColumn": 96,
+                    "endOffset": 5120
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 122,
+                        "startColumn": 4,
+                        "startOffset": 5028,
+                        "endColumn": 96,
+                        "endOffset": 5120
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 5125,
+                    "endColumn": 72,
+                    "endOffset": 5193
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 123,
+                        "startColumn": 4,
+                        "startOffset": 5125,
+                        "endColumn": 72,
+                        "endOffset": 5193
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 5198,
+                    "endColumn": 78,
+                    "endOffset": 5272
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 124,
+                        "startColumn": 4,
+                        "startOffset": 5198,
+                        "endColumn": 78,
+                        "endOffset": 5272
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 5277,
+                    "endColumn": 80,
+                    "endOffset": 5353
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 125,
+                        "startColumn": 4,
+                        "startOffset": 5277,
+                        "endColumn": 80,
+                        "endOffset": 5353
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 5358,
+                    "endColumn": 77,
+                    "endOffset": 5431
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 126,
+                        "startColumn": 4,
+                        "startOffset": 5358,
+                        "endColumn": 77,
+                        "endOffset": 5431
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 5436,
+                    "endColumn": 68,
+                    "endOffset": 5500
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 127,
+                        "startColumn": 4,
+                        "startOffset": 5436,
+                        "endColumn": 68,
+                        "endOffset": 5500
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 5505,
+                    "endColumn": 83,
+                    "endOffset": 5584
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 128,
+                        "startColumn": 4,
+                        "startOffset": 5505,
+                        "endColumn": 83,
+                        "endOffset": 5584
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 5589,
+                    "endColumn": 75,
+                    "endOffset": 5660
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 129,
+                        "startColumn": 4,
+                        "startOffset": 5589,
+                        "endColumn": 75,
+                        "endOffset": 5660
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 5665,
+                    "endColumn": 85,
+                    "endOffset": 5746
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 130,
+                        "startColumn": 4,
+                        "startOffset": 5665,
+                        "endColumn": 85,
+                        "endOffset": 5746
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 131,
+                    "startColumn": 4,
+                    "startOffset": 5751,
+                    "endColumn": 77,
+                    "endOffset": 5824
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 131,
+                        "startColumn": 4,
+                        "startOffset": 5751,
+                        "endColumn": 77,
+                        "endOffset": 5824
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 5829,
+                    "endColumn": 75,
+                    "endOffset": 5900
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 132,
+                        "startColumn": 4,
+                        "startOffset": 5829,
+                        "endColumn": 75,
+                        "endOffset": 5900
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 133,
+                    "startColumn": 4,
+                    "startOffset": 5905,
+                    "endColumn": 52,
+                    "endOffset": 5953
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 133,
+                        "startColumn": 4,
+                        "startOffset": 5905,
+                        "endColumn": 52,
+                        "endOffset": 5953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 134,
+                    "startColumn": 4,
+                    "startOffset": 5958,
+                    "endColumn": 60,
+                    "endOffset": 6014
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 134,
+                        "startColumn": 4,
+                        "startOffset": 5958,
+                        "endColumn": 60,
+                        "endOffset": 6014
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 135,
+                    "startColumn": 4,
+                    "startOffset": 6019,
+                    "endColumn": 55,
+                    "endOffset": 6070
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 135,
+                        "startColumn": 4,
+                        "startOffset": 6019,
+                        "endColumn": 55,
+                        "endOffset": 6070
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 136,
+                    "startColumn": 4,
+                    "startOffset": 6075,
+                    "endColumn": 61,
+                    "endOffset": 6132
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 136,
+                        "startColumn": 4,
+                        "startOffset": 6075,
+                        "endColumn": 61,
+                        "endOffset": 6132
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 6137,
+                    "endColumn": 43,
+                    "endOffset": 6176
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 137,
+                        "startColumn": 4,
+                        "startOffset": 6137,
+                        "endColumn": 43,
+                        "endOffset": 6176
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 138,
+                    "startColumn": 4,
+                    "startOffset": 6181,
+                    "endColumn": 89,
+                    "endOffset": 6266
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 138,
+                        "startColumn": 4,
+                        "startOffset": 6181,
+                        "endColumn": 89,
+                        "endOffset": 6266
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 6271,
+                    "endColumn": 94,
+                    "endOffset": 6361
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 139,
+                        "startColumn": 4,
+                        "startOffset": 6271,
+                        "endColumn": 94,
+                        "endOffset": 6361
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 6366,
+                    "endColumn": 94,
+                    "endOffset": 6456
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 140,
+                        "startColumn": 4,
+                        "startOffset": 6366,
+                        "endColumn": 94,
+                        "endOffset": 6456
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 141,
+                    "startColumn": 4,
+                    "startOffset": 6461,
+                    "endColumn": 144,
+                    "endOffset": 6601
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 141,
+                        "startColumn": 4,
+                        "startOffset": 6461,
+                        "endColumn": 144,
+                        "endOffset": 6601
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 6606,
+                    "endColumn": 169,
+                    "endOffset": 6771
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 142,
+                        "startColumn": 4,
+                        "startOffset": 6606,
+                        "endColumn": 169,
+                        "endOffset": 6771
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 6776,
+                    "endColumn": 52,
+                    "endOffset": 6824
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 143,
+                        "startColumn": 4,
+                        "startOffset": 6776,
+                        "endColumn": 52,
+                        "endOffset": 6824
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 6829,
+                    "endColumn": 61,
+                    "endOffset": 6886
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 144,
+                        "startColumn": 4,
+                        "startOffset": 6829,
+                        "endColumn": 61,
+                        "endOffset": 6886
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 145,
+                    "startColumn": 4,
+                    "startOffset": 6891,
+                    "endColumn": 79,
+                    "endOffset": 6966
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 145,
+                        "startColumn": 4,
+                        "startOffset": 6891,
+                        "endColumn": 79,
+                        "endOffset": 6966
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 146,
+                    "startColumn": 4,
+                    "startOffset": 6971,
+                    "endColumn": 45,
+                    "endOffset": 7012
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 146,
+                        "startColumn": 4,
+                        "startOffset": 6971,
+                        "endColumn": 45,
+                        "endOffset": 7012
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 147,
+                    "startColumn": 4,
+                    "startOffset": 7017,
+                    "endColumn": 89,
+                    "endOffset": 7102
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 147,
+                        "startColumn": 4,
+                        "startOffset": 7017,
+                        "endColumn": 89,
+                        "endOffset": 7102
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 148,
+                    "startColumn": 4,
+                    "startOffset": 7107,
+                    "endColumn": 54,
+                    "endOffset": 7157
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 148,
+                        "startColumn": 4,
+                        "startOffset": 7107,
+                        "endColumn": 54,
+                        "endOffset": 7157
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 149,
+                    "startColumn": 4,
+                    "startOffset": 7162,
+                    "endColumn": 58,
+                    "endOffset": 7216
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 149,
+                        "startColumn": 4,
+                        "startOffset": 7162,
+                        "endColumn": 58,
+                        "endOffset": 7216
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 150,
+                    "startColumn": 4,
+                    "startOffset": 7221,
+                    "endColumn": 70,
+                    "endOffset": 7287
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 150,
+                        "startColumn": 4,
+                        "startOffset": 7221,
+                        "endColumn": 70,
+                        "endOffset": 7287
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 151,
+                    "startColumn": 4,
+                    "startOffset": 7292,
+                    "endColumn": 47,
+                    "endOffset": 7335
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 151,
+                        "startColumn": 4,
+                        "startOffset": 7292,
+                        "endColumn": 47,
+                        "endOffset": 7335
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 152,
+                    "startColumn": 4,
+                    "startOffset": 7340,
+                    "endColumn": 60,
+                    "endOffset": 7396
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 152,
+                        "startColumn": 4,
+                        "startOffset": 7340,
+                        "endColumn": 60,
+                        "endOffset": 7396
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 153,
+                    "startColumn": 4,
+                    "startOffset": 7401,
+                    "endColumn": 80,
+                    "endOffset": 7477
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 153,
+                        "startColumn": 4,
+                        "startOffset": 7401,
+                        "endColumn": 80,
+                        "endOffset": 7477
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 154,
+                    "startColumn": 4,
+                    "startOffset": 7482,
+                    "endColumn": 57,
+                    "endOffset": 7535
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 154,
+                        "startColumn": 4,
+                        "startOffset": 7482,
+                        "endColumn": 57,
+                        "endOffset": 7535
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 155,
+                    "startColumn": 4,
+                    "startOffset": 7540,
+                    "endColumn": 124,
+                    "endOffset": 7660
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 155,
+                        "startColumn": 4,
+                        "startOffset": 7540,
+                        "endColumn": 124,
+                        "endOffset": 7660
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 7665,
+                    "endColumn": 150,
+                    "endOffset": 7811
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 156,
+                        "startColumn": 4,
+                        "startOffset": 7665,
+                        "endColumn": 150,
+                        "endOffset": 7811
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 157,
+                    "startColumn": 4,
+                    "startOffset": 7816,
+                    "endColumn": 105,
+                    "endOffset": 7917
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 4,
+                        "startOffset": 7816,
+                        "endColumn": 105,
+                        "endOffset": 7917
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 158,
+                    "startColumn": 4,
+                    "startOffset": 7922,
+                    "endColumn": 81,
+                    "endOffset": 7999
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 158,
+                        "startColumn": 4,
+                        "startOffset": 7922,
+                        "endColumn": 81,
+                        "endOffset": 7999
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 159,
+                    "startColumn": 4,
+                    "startOffset": 8004,
+                    "endColumn": 82,
+                    "endOffset": 8082
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 159,
+                        "startColumn": 4,
+                        "startOffset": 8004,
+                        "endColumn": 82,
+                        "endOffset": 8082
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 160,
+                    "startColumn": 4,
+                    "startOffset": 8087,
+                    "endColumn": 89,
+                    "endOffset": 8172
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 160,
+                        "startColumn": 4,
+                        "startOffset": 8087,
+                        "endColumn": 89,
+                        "endOffset": 8172
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 161,
+                    "startColumn": 4,
+                    "startOffset": 8177,
+                    "endColumn": 87,
+                    "endOffset": 8260
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 161,
+                        "startColumn": 4,
+                        "startOffset": 8177,
+                        "endColumn": 87,
+                        "endOffset": 8260
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 162,
+                    "startColumn": 4,
+                    "startOffset": 8265,
+                    "endColumn": 150,
+                    "endOffset": 8411
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 162,
+                        "startColumn": 4,
+                        "startOffset": 8265,
+                        "endColumn": 150,
+                        "endOffset": 8411
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 163,
+                    "startColumn": 4,
+                    "startOffset": 8416,
+                    "endColumn": 72,
+                    "endOffset": 8484
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 163,
+                        "startColumn": 4,
+                        "startOffset": 8416,
+                        "endColumn": 72,
+                        "endOffset": 8484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 164,
+                    "startColumn": 4,
+                    "startOffset": 8489,
+                    "endColumn": 99,
+                    "endOffset": 8584
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 164,
+                        "startColumn": 4,
+                        "startOffset": 8489,
+                        "endColumn": 99,
+                        "endOffset": 8584
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 165,
+                    "startColumn": 4,
+                    "startOffset": 8589,
+                    "endColumn": 96,
+                    "endOffset": 8681
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 165,
+                        "startColumn": 4,
+                        "startOffset": 8589,
+                        "endColumn": 96,
+                        "endOffset": 8681
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 166,
+                    "startColumn": 4,
+                    "startOffset": 8686,
+                    "endColumn": 91,
+                    "endOffset": 8773
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 166,
+                        "startColumn": 4,
+                        "startOffset": 8686,
+                        "endColumn": 91,
+                        "endOffset": 8773
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 167,
+                    "startColumn": 4,
+                    "startOffset": 8778,
+                    "endColumn": 111,
+                    "endOffset": 8885
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 167,
+                        "startColumn": 4,
+                        "startOffset": 8778,
+                        "endColumn": 111,
+                        "endOffset": 8885
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 168,
+                    "startColumn": 4,
+                    "startOffset": 8890,
+                    "endColumn": 126,
+                    "endOffset": 9012
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 168,
+                        "startColumn": 4,
+                        "startOffset": 8890,
+                        "endColumn": 126,
+                        "endOffset": 9012
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 169,
+                    "startColumn": 4,
+                    "startOffset": 9017,
+                    "endColumn": 51,
+                    "endOffset": 9064
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 169,
+                        "startColumn": 4,
+                        "startOffset": 9017,
+                        "endColumn": 51,
+                        "endOffset": 9064
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 170,
+                    "startColumn": 4,
+                    "startOffset": 9069,
+                    "endColumn": 72,
+                    "endOffset": 9137
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 170,
+                        "startColumn": 4,
+                        "startOffset": 9069,
+                        "endColumn": 72,
+                        "endOffset": 9137
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 171,
+                    "startColumn": 4,
+                    "startOffset": 9142,
+                    "endColumn": 87,
+                    "endOffset": 9225
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 171,
+                        "startColumn": 4,
+                        "startOffset": 9142,
+                        "endColumn": 87,
+                        "endOffset": 9225
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 172,
+                    "startColumn": 4,
+                    "startOffset": 9230,
+                    "endColumn": 89,
+                    "endOffset": 9315
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 172,
+                        "startColumn": 4,
+                        "startOffset": 9230,
+                        "endColumn": 89,
+                        "endOffset": 9315
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 173,
+                    "startColumn": 4,
+                    "startOffset": 9320,
+                    "endColumn": 105,
+                    "endOffset": 9421
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 173,
+                        "startColumn": 4,
+                        "startOffset": 9320,
+                        "endColumn": 105,
+                        "endOffset": 9421
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 174,
+                    "startColumn": 4,
+                    "startOffset": 9426,
+                    "endColumn": 59,
+                    "endOffset": 9481
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 174,
+                        "startColumn": 4,
+                        "startOffset": 9426,
+                        "endColumn": 59,
+                        "endOffset": 9481
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 175,
+                    "startColumn": 4,
+                    "startOffset": 9486,
+                    "endColumn": 71,
+                    "endOffset": 9553
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 175,
+                        "startColumn": 4,
+                        "startOffset": 9486,
+                        "endColumn": 71,
+                        "endOffset": 9553
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 176,
+                    "startColumn": 4,
+                    "startOffset": 9558,
+                    "endColumn": 78,
+                    "endOffset": 9632
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 176,
+                        "startColumn": 4,
+                        "startOffset": 9558,
+                        "endColumn": 78,
+                        "endOffset": 9632
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 177,
+                    "startColumn": 4,
+                    "startOffset": 9637,
+                    "endColumn": 70,
+                    "endOffset": 9703
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 177,
+                        "startColumn": 4,
+                        "startOffset": 9637,
+                        "endColumn": 70,
+                        "endOffset": 9703
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 178,
+                    "startColumn": 4,
+                    "startOffset": 9708,
+                    "endColumn": 89,
+                    "endOffset": 9793
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 178,
+                        "startColumn": 4,
+                        "startOffset": 9708,
+                        "endColumn": 89,
+                        "endOffset": 9793
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 179,
+                    "startColumn": 4,
+                    "startOffset": 9798,
+                    "endColumn": 61,
+                    "endOffset": 9855
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 179,
+                        "startColumn": 4,
+                        "startOffset": 9798,
+                        "endColumn": 61,
+                        "endOffset": 9855
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 180,
+                    "startColumn": 4,
+                    "startOffset": 9860,
+                    "endColumn": 76,
+                    "endOffset": 9932
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 180,
+                        "startColumn": 4,
+                        "startOffset": 9860,
+                        "endColumn": 76,
+                        "endOffset": 9932
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 181,
+                    "startColumn": 4,
+                    "startOffset": 9937,
+                    "endColumn": 68,
+                    "endOffset": 10001
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 181,
+                        "startColumn": 4,
+                        "startOffset": 9937,
+                        "endColumn": 68,
+                        "endOffset": 10001
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 182,
+                    "startColumn": 4,
+                    "startOffset": 10006,
+                    "endColumn": 78,
+                    "endOffset": 10080
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 182,
+                        "startColumn": 4,
+                        "startOffset": 10006,
+                        "endColumn": 78,
+                        "endOffset": 10080
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 183,
+                    "startColumn": 4,
+                    "startOffset": 10085,
+                    "endColumn": 69,
+                    "endOffset": 10150
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 183,
+                        "startColumn": 4,
+                        "startOffset": 10085,
+                        "endColumn": 69,
+                        "endOffset": 10150
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 184,
+                    "startColumn": 4,
+                    "startOffset": 10155,
+                    "endColumn": 70,
+                    "endOffset": 10221
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 184,
+                        "startColumn": 4,
+                        "startOffset": 10155,
+                        "endColumn": 70,
+                        "endOffset": 10221
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 185,
+                    "startColumn": 4,
+                    "startOffset": 10226,
+                    "endColumn": 68,
+                    "endOffset": 10290
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 185,
+                        "startColumn": 4,
+                        "startOffset": 10226,
+                        "endColumn": 68,
+                        "endOffset": 10290
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 186,
+                    "startColumn": 4,
+                    "startOffset": 10295,
+                    "endColumn": 77,
+                    "endOffset": 10368
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 186,
+                        "startColumn": 4,
+                        "startOffset": 10295,
+                        "endColumn": 77,
+                        "endOffset": 10368
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 187,
+                    "startColumn": 4,
+                    "startOffset": 10373,
+                    "endColumn": 84,
+                    "endOffset": 10453
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 187,
+                        "startColumn": 4,
+                        "startOffset": 10373,
+                        "endColumn": 84,
+                        "endOffset": 10453
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 188,
+                    "startColumn": 4,
+                    "startOffset": 10458,
+                    "endColumn": 69,
+                    "endOffset": 10523
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 188,
+                        "startColumn": 4,
+                        "startOffset": 10458,
+                        "endColumn": 69,
+                        "endOffset": 10523
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 189,
+                    "startColumn": 4,
+                    "startOffset": 10528,
+                    "endColumn": 50,
+                    "endOffset": 10574
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 189,
+                        "startColumn": 4,
+                        "startOffset": 10528,
+                        "endColumn": 50,
+                        "endOffset": 10574
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 190,
+                    "startColumn": 4,
+                    "startOffset": 10579,
+                    "endColumn": 52,
+                    "endOffset": 10627
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 190,
+                        "startColumn": 4,
+                        "startOffset": 10579,
+                        "endColumn": 52,
+                        "endOffset": 10627
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 191,
+                    "startColumn": 4,
+                    "startOffset": 10632,
+                    "endLine": 193,
+                    "endColumn": 12,
+                    "endOffset": 10762
+                },
+                "from": {
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-ro\\values-ro.xml",
+                    "position": {
+                        "startLine": 191,
+                        "startColumn": 4,
+                        "startOffset": 10632,
+                        "endLine": 193,
+                        "endColumn": 12,
+                        "endOffset": 10762
+                    }
+                }
+            }
+        ]
+    }
+]
