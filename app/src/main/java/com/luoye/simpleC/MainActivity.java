@@ -73,6 +73,7 @@ public class MainActivity extends Activity
 		header=Utils.getHeader(MainActivity.this);
 		String[] arr=new String[header.size()];
 		editor.addNames(header.toArray(arr));
+		showToast("落叶似秋制作");
 	}
 
 
