@@ -23,7 +23,8 @@ public class LanguageC extends Language{
 		"signed", "unsigned", "sizeof", "typedef",
 		"enum", "struct", "union",
 		"break", "case", "continue", "default", "do", "else", "for",
-		"goto", "if", "return", "switch", "while","include"
+		"goto", "if", "return", "switch", "while",
+		"include","ifdef","endif","ifndef","error","elif","line","pragma","undef"
 		};
 	private  final  static  String[] funtions={
 
@@ -36,6 +37,8 @@ public class LanguageC extends Language{
 			,"putc","putchar","puts","qsort","raise","rand","realloc","remove","rename","rewind"
 			,"scanf","setbuf","setjmp","setvbuf","signal","sin","sinh","sprintf","sqrt","srand","sscanf","strcat","strchr","strcmp","strcoll","strcpy","strcspn","strerror","strftime","strlen","strncat","strncmp","strncpy","strpbrk","strrchr","strspn","strstr","strtod","strtok","strtol","strtoul","strxfrm","system"
 			,"tan","tanh","time","tmpfile","tmpnam","tolower","toupper","ungetc","va_arg","vprintf","vfprintf"
+			,"__LINE__","__FILE__","__DATE__","__TIME__","_cplusplus","__STDC__"
+
 	};
 	private  final  static  String[] header={
 			"math.h","stdio.h","stdlib.h","string.h","time.h","errno.h","ctype.h","local.h"

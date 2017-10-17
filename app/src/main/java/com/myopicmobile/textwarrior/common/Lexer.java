@@ -187,7 +187,6 @@ public class Lexer
 		{
 			_abort.set();
 		}
-
 		/**
 		 * Scans the document referenced by _lexManager for tokens.
 		 * The result is stored internally.
@@ -223,183 +222,44 @@ public class Lexer
 				_tokens = tokens;
 				return;
 			}
-			char[] candidateWord = new char[MAX_KEYWORD_LENGTH];
-			//当前字符在词中的位置
-			int currentCharInWord = 0;
-			//
-			int spanStartPosition = 0;
-			int workingPosition = 0;
-			int state = UNKNOWN;
-			char prevChar = 0;
+			StringReader stringReader=new StringReader(hDoc.toString());
+			CLexer cLexer=new CLexer(stringReader);
 
-			hDoc.seekChar(0);
-			while (hDoc.hasNext() && !_abort.isSet()){
-				char currentChar = hDoc.next();
+			try {
+				CType cType=null;
+				int idx=0;
+				while ((cType=cLexer.yylex())!=CType.EOF){
+					switch (cType)
+					{
+						case KEYWORD:
+							tokens.add(new Pair(idx, KEYWORD));
+							break;
+						case COMMENT:
+							tokens.add(new Pair(idx, DOUBLE_SYMBOL_DELIMITED_MULTILINE));
+							break;
+						case PRETREATMENT_LINE:
+							tokens.add(new Pair(idx, SINGLE_SYMBOL_LINE_A));
+							break;
 
-				switch(state){
-					case UNKNOWN: //fall-through
-					case NORMAL: //fall-through
-					case KEYWORD: //fall-through
-					case SINGLE_SYMBOL_WORD:
-						int pendingState = state;
-						boolean stateChanged = false;
-						//单行注释开始
-						if (language.isLineStart(prevChar, currentChar)){
-							pendingState = DOUBLE_SYMBOL_LINE;
-							stateChanged = true;
-						}
-						//多行注释开始
-						else if (language.isMultilineStartDelimiter(prevChar, currentChar)){
-							pendingState = DOUBLE_SYMBOL_DELIMITED_MULTILINE;
-							stateChanged = true;
-						}
-						//字符串的开始
-						else if (language.isDelimiterA(currentChar)){
-							pendingState = SINGLE_SYMBOL_DELIMITED_A;
-							stateChanged = true;
-						}
-						//字符的开始
-						else if (language.isDelimiterB(currentChar)){
-							pendingState = SINGLE_SYMBOL_DELIMITED_B;
-							stateChanged = true;
-						}
-						//宏定义开始
-						else if (language.isLineAStart(currentChar)){
-							pendingState = SINGLE_SYMBOL_LINE_A;
-							stateChanged = true;
-						}
-						//不会发生，除非被覆盖
-						else if (language.isLineBStart(currentChar)){
-							pendingState = SINGLE_SYMBOL_LINE_B;
-							stateChanged = true;
-						}
-
-						//状态是否改变
-						if(stateChanged){
-							if (pendingState == DOUBLE_SYMBOL_LINE ||
-									pendingState == DOUBLE_SYMBOL_DELIMITED_MULTILINE){
-								// account for previous char
-								spanStartPosition = workingPosition - 1;
-								//TODO consider less greedy approach and avoid adding token for previous char
-								if(tokens.getLast().getFirst() == spanStartPosition){
-									tokens.removeLast();
-								}
-							}
-							else{
-								spanStartPosition = workingPosition;
-							}
-
-							// If a span appears mid-word, mark the chars preceding
-							// it as NORMAL, if the previous span isn't already NORMAL
-							if(currentCharInWord > 0 && state != NORMAL){
-								tokens.add(new Pair(workingPosition-(workingPosition - currentCharInWord), NORMAL));
-							}
-
-							state = pendingState;
-							tokens.add(new Pair(spanStartPosition, state));
-							currentCharInWord = 0;
-						}
-						//判断是否空白行或者运算符
-						else if (language.isWhitespace(currentChar) || language.isOperator(currentChar)){
-							if (currentCharInWord > 0){
-								// full word obtained; mark the beginning of the word accordingly
-								//不会发生
-								if( language.isWordStart(candidateWord[0]) ){
-									spanStartPosition = workingPosition - currentCharInWord;
-									state = SINGLE_SYMBOL_WORD;
-									tokens.add(new Pair(spanStartPosition, state));
-								}
-								//关键字
-								else if(language.isKeyword( new String(candidateWord, 0, currentCharInWord)) ){
-									spanStartPosition = workingPosition - currentCharInWord;
-									state = KEYWORD;
-
-									tokens.add(new Pair(spanStartPosition, state));
-
-								}
-								else if (state != NORMAL){
-									spanStartPosition = workingPosition - currentCharInWord;
-									state = NORMAL;
-									tokens.add(new Pair(spanStartPosition, state));
-								}
-								currentCharInWord = 0;
-							}
-
-							// mark operators as normal
-							if (state != NORMAL && language.isOperator(currentChar) ){
-								state = NORMAL;
-								tokens.add(new Pair(workingPosition, state));
-							}
-						}
-						//累计关键字
-						else if (currentCharInWord < MAX_KEYWORD_LENGTH){
-							// collect non-whitespace chars up to MAX_KEYWORD_LENGTH
-							candidateWord[currentCharInWord] = currentChar;
-							currentCharInWord++;
-						}
-						break;
-
-
-					case DOUBLE_SYMBOL_LINE: // fall-through
-					case SINGLE_SYMBOL_LINE_A: // fall-through
-					case SINGLE_SYMBOL_LINE_B:
-						if (currentChar == '\n'){
-							state = UNKNOWN;
-						}
-						break;
-
-
-					case SINGLE_SYMBOL_DELIMITED_A:
-						if ((language.isDelimiterA(currentChar) && !language.isEscapeChar(prevChar)) ||
-								currentChar == '\n'){
-							state = UNKNOWN;
-						}
-						// consume escape of the escape character by assigning
-						// currentChar as something else so that it would not be
-						// treated as an escape char in the next iteration
-						else if (language.isEscapeChar(currentChar) && language.isEscapeChar(prevChar)){
-							currentChar = ' ';
-						}
-						break;
-
-
-					case SINGLE_SYMBOL_DELIMITED_B:
-						if ((language.isDelimiterB(currentChar) && !language.isEscapeChar(prevChar)) ||
-								currentChar == '\n'){
-							state = UNKNOWN;
-						}
-						// consume escape of the escape character by assigning
-						// currentChar as something else so that it would not be
-						// treated as an escape char in the next iteration
-						else if (language.isEscapeChar(currentChar)
-								&& language.isEscapeChar(prevChar)){
-							currentChar = ' ';
-						}
-						break;
-
-					case DOUBLE_SYMBOL_DELIMITED_MULTILINE:
-						if (language.isMultilineEndDelimiter(prevChar, currentChar)){
-							state = UNKNOWN;
-						}
-						break;
-
-					default:
-						TextWarriorException.assertVerbose(false, "Invalid state in TokenScanner");
-						break;
-				}//switch
-				++workingPosition;
-				prevChar = currentChar;
-			}//while
-			// end state machine   结束状态机
-
-
+						case STRING:
+						case CHARACTER_LITERAL:
+							tokens.add(new Pair(idx, SINGLE_SYMBOL_DELIMITED_A));
+							break;
+						default:
+							tokens.add(new Pair(idx, NORMAL));
+					}
+					idx+=cLexer.yytext().length();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			if (tokens.isEmpty()){
 				// return value cannot be empty
 				tokens.add(new Pair(0, NORMAL));
 			}
+			//printList(tokens);
+				_tokens=tokens;
 
-			_tokens = tokens;
-			//printList(_tokens);
 		}
 
 	}//end inner class

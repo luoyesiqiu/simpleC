@@ -56,7 +56,7 @@ public abstract class ColorScheme
 				break;
 			case Lexer.DOUBLE_SYMBOL_LINE: //fall-through
 			case Lexer.DOUBLE_SYMBOL_DELIMITED_MULTILINE:
-			case Lexer.SINGLE_SYMBOL_LINE_B:
+			//case Lexer.SINGLE_SYMBOL_LINE_B:
 				element = Colorable.COMMENT;
 				break;
 			case Lexer.SINGLE_SYMBOL_DELIMITED_A: //fall-through
@@ -70,6 +70,9 @@ public abstract class ColorScheme
 			case Lexer.SINGLE_SYMBOL_WORD:
 			case Lexer.OPERATOR:
 				element = Colorable.SECONDARY;
+				break;
+			case Lexer.SINGLE_SYMBOL_LINE_B: //类型
+				element=Colorable.NAME;
 				break;
 			default:
 				TextWarriorException.fail("Invalid token type");
@@ -100,7 +103,7 @@ public abstract class ColorScheme
 		colors.put(Colorable.NON_PRINTING_GLYPH, 0xff2b91af);//行号
 		colors.put(Colorable.COMMENT, OLIVE_GREEN); //注释
 		colors.put(Colorable.KEYWORD, BLUE); //关键字
-		colors.put(Colorable.NAME, INDIGO); // Eclipse default color
+		colors.put(Colorable.NAME, GREY); // Eclipse default color
 		colors.put(Colorable.LITERAL, BLUE); // Eclipse default color
 		colors.put(Colorable.STRING, DARK_RED); //字符串
 		colors.put(Colorable.SECONDARY, 0xff6f008a);//宏定义

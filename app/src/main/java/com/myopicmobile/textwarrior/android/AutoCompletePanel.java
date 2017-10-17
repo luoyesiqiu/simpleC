@@ -217,15 +217,7 @@ public class AutoCompletePanel {
 				 */
 				@Override
 				protected FilterResults performFiltering(CharSequence constraint) {
-					/*int l=constraint.length();
-					 int i=l;
-					 for(;i>0;i--){
-					 if(constraint.charAt(l-1)=='.')
-					 break;
-					 }
-					 if(i>0){
-					 constraint=constraint.subSequence(i,l);
-					 }*/
+
 
 					// 此处实现过滤
 					// 过滤后利用FilterResults将过滤结果返回
