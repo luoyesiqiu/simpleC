@@ -21,64 +21,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8dd04b8-8beb-4241-99aa-8fe1908e4c93" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CLexer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CType.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/PollingProgressDialog$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/PollingProgressDialog$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/PollingProgressDialog$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/PollingProgressDialog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/PollingProgressDialog.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/ColorScheme.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/ColorScheme.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/LanguageC.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/LanguageC.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/CLexer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/CLexer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/Lexer$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/Lexer$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/Lexer$LexThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/Lexer$LexThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/Lexer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/common/Lexer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/term/unspecified/jni/armeabi-v7a/libjackpal-androidterm5.so" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/term/unspecified/jni/armeabi-v7a/libjackpal-androidterm5.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/term/unspecified/jni/armeabi/libjackpal-androidterm5.so" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/term/unspecified/jni/armeabi/libjackpal-androidterm5.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/term/unspecified/jni/mips/libjackpal-androidterm5.so" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/term/unspecified/jni/mips/libjackpal-androidterm5.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/term/unspecified/jni/x86/libjackpal-androidterm5.so" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/term/unspecified/jni/x86/libjackpal-androidterm5.so" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_a4d36fbbec21eef8af5f6ea38730e983b8ba93a6.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_a4d36fbbec21eef8af5f6ea38730e983b8ba93a6.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libjackpal-androidterm5.so" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libjackpal-androidterm5.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/mips/libjackpal-androidterm5.so" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/mips/libjackpal-androidterm5.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/x86/libjackpal-androidterm5.so" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/x86/libjackpal-androidterm5.so" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/ColorScheme.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/ColorScheme.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/LanguageC.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/LanguageC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/Lexer.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/Lexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emulatorview/emulatorview.iml" afterPath="$PROJECT_DIR$/emulatorview/emulatorview.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libtermexec/libtermexec.iml" afterPath="$PROJECT_DIR$/libtermexec/libtermexec.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/term/term.iml" afterPath="$PROJECT_DIR$/term/term.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CLexer.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CLexer.java" />
     </list>
     <ignored path="MulCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,29 +77,29 @@
       <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/Lexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-175.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="262" column="9" selection-start-line="262" selection-start-column="9" selection-end-line="262" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CLexer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CLexer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CLexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2757353">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
-                <element signature="e#37211#37212#0" expanded="true" />
-                <element signature="e#37239#37240#0" expanded="true" />
-                <element signature="e#40926#40927#0" expanded="true" />
-                <element signature="e#40957#40958#0" expanded="true" />
-                <element signature="e#41095#41096#0" expanded="true" />
-                <element signature="e#41130#41131#0" expanded="true" />
-                <element signature="e#41673#41674#0" expanded="true" />
-                <element signature="e#41715#41716#0" expanded="true" />
-                <element signature="e#41813#41814#0" expanded="true" />
-                <element signature="e#41853#41854#0" expanded="true" />
+                <element signature="e#35983#35984#0" expanded="true" />
+                <element signature="e#36011#36012#0" expanded="true" />
+                <element signature="e#39698#39699#0" expanded="true" />
+                <element signature="e#39729#39730#0" expanded="true" />
+                <element signature="e#39867#39868#0" expanded="true" />
+                <element signature="e#39902#39903#0" expanded="true" />
+                <element signature="e#40445#40446#0" expanded="true" />
+                <element signature="e#40487#40488#0" expanded="true" />
+                <element signature="e#40585#40586#0" expanded="true" />
+                <element signature="e#40625#40626#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="43" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="43" />
+              <caret line="0" column="36" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -188,10 +145,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Language.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Language.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/Language.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.252721">
+            <state vertical-scroll-proportion="0.0">
               <caret line="269" column="5" selection-start-line="269" selection-start-column="5" selection-end-line="269" selection-end-column="5" />
               <folding>
                 <element signature="e#5784#5785#0" expanded="true" />
@@ -3914,8 +3871,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/Language.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/LanguageC.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CType.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CLexer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/Lexer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CLexer.java" />
       </list>
     </option>
   </component>
@@ -3950,6 +3907,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MulCode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MulCode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -4092,29 +4069,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MulCode" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MulCode" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4422,7 +4379,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4430,7 +4387,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4438,7 +4395,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24464668" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24464668" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24518201" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -4744,7 +4701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="179" column="55" selection-start-line="179" selection-start-column="55" selection-end-line="179" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4784,41 +4740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-175.0">
-          <caret line="262" column="9" selection-start-line="262" selection-start-column="9" selection-end-line="262" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#37211#37212#0" expanded="true" />
-            <element signature="e#37239#37240#0" expanded="true" />
-            <element signature="e#40926#40927#0" expanded="true" />
-            <element signature="e#40957#40958#0" expanded="true" />
-            <element signature="e#41095#41096#0" expanded="true" />
-            <element signature="e#41130#41131#0" expanded="true" />
-            <element signature="e#41673#41674#0" expanded="true" />
-            <element signature="e#41715#41716#0" expanded="true" />
-            <element signature="e#41813#41814#0" expanded="true" />
-            <element signature="e#41853#41854#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="43" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -4845,10 +4766,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/Language.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.252721">
+        <state vertical-scroll-proportion="0.0">
           <caret line="269" column="5" selection-start-line="269" selection-start-column="5" selection-end-line="269" selection-end-column="5" />
           <folding>
             <element signature="e#5784#5785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="262" column="9" selection-start-line="262" selection-start-column="9" selection-end-line="262" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2757353">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="e#35983#35984#0" expanded="true" />
+            <element signature="e#36011#36012#0" expanded="true" />
+            <element signature="e#39698#39699#0" expanded="true" />
+            <element signature="e#39729#39730#0" expanded="true" />
+            <element signature="e#39867#39868#0" expanded="true" />
+            <element signature="e#39902#39903#0" expanded="true" />
+            <element signature="e#40445#40446#0" expanded="true" />
+            <element signature="e#40487#40488#0" expanded="true" />
+            <element signature="e#40585#40586#0" expanded="true" />
+            <element signature="e#40625#40626#0" expanded="true" />
           </folding>
         </state>
       </provider>
