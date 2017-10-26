@@ -6,4 +6,4 @@ simpleC是手机上的C语言编辑环境，可以编辑并编译C代码，并�
 
 ## 截图
 
-![编辑器](/screenshot/editor.png)
+![编辑器](/screenshot/simpleC.gif)
