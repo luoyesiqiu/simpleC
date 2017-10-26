@@ -24,7 +24,7 @@ public class LanguageC extends Language{
 		"enum", "struct", "union",
 		"break", "case", "continue", "default", "do", "else", "for",
 		"goto", "if", "return", "switch", "while",
-		"include","ifdef","endif","ifndef","error","elif","line","pragma","undef"
+		"define","include","ifdef","endif","ifndef","error","elif","line","pragma","undef"
 		};
 	private  final  static  String[] funtions={
 

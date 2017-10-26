@@ -152,7 +152,7 @@ public class Lexer
 		/**
 		 * pair的集合，first表示token的开始，second表示token的类型
 		 */
-		private LinkedList<Pair> _tokens;
+		private List<Pair> _tokens;
 
 		public LexThread(Lexer p)
 		{
@@ -213,8 +213,8 @@ public class Lexer
 		public void tokenize(){
 			DocumentProvider hDoc = getDocument();
 			Language language = Lexer.getLanguage();
-			//
-			LinkedList<Pair> tokens = new LinkedList<>();
+			//这里用ArrayList速度会发生质的飞跃
+			List<Pair> tokens = new ArrayList<>();
 
 			//language.isProgLang()返回真
 			if(!language.isProgLang()){
@@ -238,6 +238,7 @@ public class Lexer
 							tokens.add(new Pair(idx, DOUBLE_SYMBOL_DELIMITED_MULTILINE));
 							break;
 						case PRETREATMENT_LINE:
+						case DEFINE_LINE:
 							tokens.add(new Pair(idx, SINGLE_SYMBOL_LINE_A));
 							break;
 
@@ -259,7 +260,6 @@ public class Lexer
 			}
 			//printList(tokens);
 				_tokens=tokens;
-
 		}
 
 	}//end inner class
