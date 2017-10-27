@@ -493,6 +493,7 @@ public class TermSession {
             return;
         }
 
+
         // Give subclasses a chance to process the read data
         processInput(mReceiveBuffer, 0, bytesRead);
         notifyUpdate();

@@ -155,10 +155,12 @@ public class RemoteInterface extends Activity {
     protected String openNewWindow(String iInitialCommand) {
         TermService service = getTermService();
 
-        String initialCommand ="export PATH=$PATH:"+ this.getFilesDir().getAbsolutePath();//mSettings.getInitialCommand();
+        String initialCommand =//"export PATH=$PATH:"+ this.getFilesDir().getAbsolutePath();//
+                                mSettings.getInitialCommand();
         if (iInitialCommand != null) {
-            if (initialCommand != null) {
-                initialCommand += "\r" + iInitialCommand;
+            if (initialCommand != null&&!initialCommand.equals("")) {
+                initialCommand += "\r" +
+                        iInitialCommand;
             } else {
                 initialCommand = iInitialCommand;
             }
