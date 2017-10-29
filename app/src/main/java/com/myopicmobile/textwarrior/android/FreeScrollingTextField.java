@@ -1840,8 +1840,6 @@ implements Document.TextFieldMetrics{
 		scrollTo((int)x, (int)y);
 		_alphaWidth=(int)_brush.measureText("a");
 		_spaceWidth=(int)_brush.measureText(" ");
-		//int idx=coordToCharIndex(getScrollX(), getScrollY());
-		//if (!makeCharVisible(idx))
 		{
 			invalidate();
 		}

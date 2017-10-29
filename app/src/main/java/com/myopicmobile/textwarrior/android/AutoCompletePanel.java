@@ -218,7 +218,6 @@ public class AutoCompletePanel {
 				@Override
 				protected FilterResults performFiltering(CharSequence constraint) {
 
-
 					// 此处实现过滤
 					// 过滤后利用FilterResults将过滤结果返回
 					ArrayList <String>buf = new ArrayList<String>();
@@ -279,11 +278,8 @@ public class AutoCompletePanel {
 						// 有过滤结果，显示自动完成列表
 						MyAdapter.this.clear();   // 清空旧列表
 						MyAdapter.this.addAll((ArrayList<String>)results.values);
-						//int y = _textField.getPaintBaseline(_textField.getCaretRow()) - _textField.getScrollY();
 						int y = _textField.getCaretY() + _textField.rowHeight() / 2 - _textField.getScrollY();
 						setHeight(getItemHeight() * Math.min(2, results.count));
-						//setHeight((int)(Math.min(_textField.getContentHeight()*0.4,getItemHeight() * Math.min(6, results.count))));
-						
 						setHorizontalOffset(_textField.getCaretX() - _textField.getScrollX());
 						setVerticalOffset(y - _textField.getHeight());//_textField.getCaretY()-_textField.getScrollY()-_textField.getHeight());
 						notifyDataSetChanged();

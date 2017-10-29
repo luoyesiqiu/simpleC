@@ -21,11 +21,22 @@ public class TextEditor extends FreeScrollingTextField {
 	public TextEditor(Context context) {
 		super(context);
 		mContext = context;
+		init();
+	}
+
+	public TextEditor(Context context,AttributeSet attributeSet){
+		super(context,attributeSet);
+		mContext = context;
+		init();
+	}
+
+	private  void init()
+	{
 		setTypeface(Typeface.MONOSPACE);
 
-		DisplayMetrics dm=context.getResources().getDisplayMetrics();
-		
-		float size=TypedValue.applyDimension(2, BASE_TEXT_SIZE_PIXELS, dm);
+		DisplayMetrics dm=mContext.getResources().getDisplayMetrics();
+
+		float size= TypedValue.applyDimension(2, BASE_TEXT_SIZE_PIXELS, dm);
 		setTextSize((int)size);
 		setShowLineNumbers(true);
 		setHighlightCurrentRow(true);
@@ -33,7 +44,7 @@ public class TextEditor extends FreeScrollingTextField {
 		setAutoIndentWidth(2);
 		Lexer.setLanguage(LanguageC.getInstance());
 		setNavigationMethod(new YoyoNavigationMethod(this));
-		int textColor = Color.BLACK;// 默认颜色
+		int textColor = Color.BLACK;// 默认文字颜色
 		int selectionText =Color.argb(255,0,120,215);//选择文字颜色
 		setTextColor(textColor);
 		setTextHighlightColor(selectionText);
