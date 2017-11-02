@@ -33,7 +33,6 @@ public class TextEditor extends FreeScrollingTextField {
 	private  void init()
 	{
 		setTypeface(Typeface.MONOSPACE);
-
 		DisplayMetrics dm=mContext.getResources().getDisplayMetrics();
 
 		float size= TypedValue.applyDimension(2, BASE_TEXT_SIZE_PIXELS, dm);
@@ -92,10 +91,6 @@ public class TextEditor extends FreeScrollingTextField {
 	
 	public void setKeywordColor(int color) {
 		getColorScheme().setColor(ColorScheme.Colorable.KEYWORD, color);
-	}
-
-	public void setUserWordColor(int color) {
-		getColorScheme().setColor(ColorScheme.Colorable.LITERAL, color);
 	}
 
 	public void setBaseWordColor(int color) {

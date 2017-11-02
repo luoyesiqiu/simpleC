@@ -15,17 +15,8 @@ public class ColorSchemeDark extends ColorScheme {
 	public ColorSchemeDark(){
 		setColor(Colorable.FOREGROUND, OFF_WHITE);
 		setColor(Colorable.BACKGROUND, OFF_BLACK);
-		//setColor(Colorable.SELECTION_FOREGROUND, OFF_WHITE);
-		//setColor(Colorable.SELECTION_BACKGROUND, OCEAN_BLUE);
-		//setColor(Colorable.CARET_FOREGROUND, OFF_BLACK);
-		//setColor(Colorable.CARET_BACKGROUND, FLUORESCENT_YELLOW);
-		//setColor(Colorable.CARET_DISABLED, LIGHT_GREY);
-		//setColor(Colorable.LINE_HIGHLIGHT, 0xFf00FF00);
 		setColor(Colorable.NON_PRINTING_GLYPH, DARK_GREY);
-		//setColor(Colorable.COMMENT, JUNGLE_GREEN);
-		//setColor(Colorable.KEYWORD, MARINE);
-		//setColor(Colorable.LITERAL, PEACH);
-		//setColor(Colorable.SECONDARY, BEIGE);
+		setColor(Colorable.KEYWORD, 0xff6080ff);
 	}
 
 	private static final int BEIGE = 0xFFD7BA7D;

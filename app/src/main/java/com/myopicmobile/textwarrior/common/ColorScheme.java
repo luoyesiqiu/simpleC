@@ -17,7 +17,7 @@ public abstract class ColorScheme
 	{
 		FOREGROUND, BACKGROUND, SELECTION_FOREGROUND, SELECTION_BACKGROUND,
 		CARET_FOREGROUND, CARET_BACKGROUND, CARET_DISABLED, LINE_HIGHLIGHT,
-		NON_PRINTING_GLYPH, COMMENT, KEYWORD, NAME, LITERAL,STRING,
+		NON_PRINTING_GLYPH, COMMENT, KEYWORD, NAME, NUMBER,STRING,
 		SECONDARY
 		}
 
@@ -63,8 +63,8 @@ public abstract class ColorScheme
 			case Lexer.SINGLE_SYMBOL_DELIMITED_B:
 				element = Colorable.STRING;
 				break;
-			case Lexer.LITERAL:
-				element = Colorable.LITERAL;
+			case Lexer.NUMBER:
+				element = Colorable.NUMBER;
 				break;
 			case Lexer.SINGLE_SYMBOL_LINE_A: //fall-through
 			case Lexer.SINGLE_SYMBOL_WORD:
@@ -104,7 +104,7 @@ public abstract class ColorScheme
 		colors.put(Colorable.COMMENT, OLIVE_GREEN); //注释
 		colors.put(Colorable.KEYWORD, BLUE); //关键字
 		colors.put(Colorable.NAME, GREY); // Eclipse default color
-		colors.put(Colorable.LITERAL, BLUE); // Eclipse default color
+		colors.put(Colorable.NUMBER, PINK); // 数字
 		colors.put(Colorable.STRING, DARK_RED); //字符串
 		colors.put(Colorable.SECONDARY, 0xff6f008a);//宏定义
 		return colors;
@@ -114,7 +114,7 @@ public abstract class ColorScheme
 	private static final int BLACK = 0xFF000000;
 	private static final int BLUE = 0xFF0000FF;
 	private static final int DARK_RED = 0xFFA31515;
-	private static final int DARK_BLUE = 0xFFD040DD;
+	private static final int PINK = 0xFFD040DD;
 	private static final int GREY = 0xFF808080;
 	private static final int LIGHT_GREY = 0xFFAAAAAA;
 	private static final int MAROON = 0xFF800000;
@@ -123,7 +123,6 @@ public abstract class ColorScheme
 	private static final int PURPLE = 0xFFDD4488;
 	private static final int RED = 0xFFFF0000;
 	private static final int WHITE = 0xFFFFFFE0;
-	private static final int PURPLE2 = 0xFFFF00FF;
 	private static final int LIGHT_BLUE = 0xFF6080FF;
 	private static final int LIGHT_BLUE2 = 0xFF40B0FF;
 	private static final int GREEN = 0xFF88AA88;

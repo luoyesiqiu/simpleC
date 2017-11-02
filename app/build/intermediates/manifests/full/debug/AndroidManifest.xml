@@ -52,6 +52,9 @@
         </activity>
         <activity android:name="com.luoye.simpleC.activity.FileListActivity" />
         <activity
+            android:name="com.luoye.simpleC.activity.SettingActivity"
+            android:label="设置" />
+        <activity
             android:name="jackpal.term.Term"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:icon="@drawable/ic_launcher"

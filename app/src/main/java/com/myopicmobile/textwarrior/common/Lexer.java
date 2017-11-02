@@ -9,12 +9,8 @@
 package com.myopicmobile.textwarrior.common;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.io.*;
-import java.util.Vector;
-
-import android.util.*;
 
 /**
  * Does lexical analysis of a text for C-like languages.
@@ -29,7 +25,7 @@ public class Lexer
 	public final static int KEYWORD = 1;
 	public final static int OPERATOR = 2;
 	public final static int NAME = 3;
-	public final static int LITERAL = 4;
+	public final static int NUMBER = 4;
 	/** A word that starts with a special symbol, inclusive.
 	 * Examples:
 	 * :ruby_symbol
@@ -231,20 +227,28 @@ public class Lexer
 				while ((cType=cLexer.yylex())!=CType.EOF){
 					switch (cType)
 					{
+						//关键字
 						case KEYWORD:
 							tokens.add(new Pair(idx, KEYWORD));
 							break;
+						//注释
 						case COMMENT:
 							tokens.add(new Pair(idx, DOUBLE_SYMBOL_DELIMITED_MULTILINE));
 							break;
+						//预处理，宏
 						case PRETREATMENT_LINE:
 						case DEFINE_LINE:
 							tokens.add(new Pair(idx, SINGLE_SYMBOL_LINE_A));
 							break;
-
+						//字符串，字符
 						case STRING:
 						case CHARACTER_LITERAL:
 							tokens.add(new Pair(idx, SINGLE_SYMBOL_DELIMITED_A));
+							break;
+						//数字
+						case INTEGER_LITERAL:
+						case FLOATING_POINT_LITERAL:
+							tokens.add(new Pair(idx, NUMBER));
 							break;
 						default:
 							tokens.add(new Pair(idx, NORMAL));

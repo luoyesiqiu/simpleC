@@ -34,7 +34,6 @@ public final class R {
         public static final int entryvalues_orientation_preference=0x7f060017;
         public static final int entryvalues_statusbar_preference=0x7f060018;
         public static final int fn_keys_short_names=0x7f06000b;
-        public static final int lang=0x7f060019;
     }
     public static final class attr {
     }
@@ -49,6 +48,25 @@ public final class R {
         public static final int pref_verify_path_default=0x7f0a0007;
     }
     public static final class color {
+        public static final int BLACK=0x7f080008;
+        public static final int BLUE=0x7f080009;
+        public static final int DARK_GREY=0x7f08000a;
+        public static final int DARK_RED=0x7f08000b;
+        public static final int GREEN=0x7f08000c;
+        public static final int GREY=0x7f08000d;
+        public static final int INDIGO=0x7f08000e;
+        public static final int LIGHT_BLUE=0x7f08000f;
+        public static final int LIGHT_BLUE2=0x7f080010;
+        public static final int LIGHT_GREY=0x7f080011;
+        public static final int MAROON=0x7f080012;
+        public static final int OFF_BLACK=0x7f080013;
+        public static final int OFF_WHITE=0x7f080014;
+        public static final int OLIVE_GREEN=0x7f080015;
+        public static final int ONDINE=0x7f080016;
+        public static final int PINK=0x7f080017;
+        public static final int PURPLE=0x7f080018;
+        public static final int RED=0x7f080019;
+        public static final int WHITE=0x7f08001a;
         public static final int accent=0x7f080005;
         public static final int colorAccent=0x7f080000;
         public static final int colorPrimary=0x7f080001;
@@ -75,7 +93,7 @@ public final class R {
         public static final int ic_stat_service_notification_icon=0x7f02000d;
     }
     public static final class id {
-        public static final int consoleTextView1=0x7f0b0004;
+        public static final int console_msg=0x7f0b0004;
         public static final int editor=0x7f0b0009;
         public static final int file_icon=0x7f0b0005;
         public static final int file_list_view=0x7f0b0008;
@@ -91,6 +109,7 @@ public final class R {
         public static final int menu_run=0x7f0b0013;
         public static final int menu_save=0x7f0b0017;
         public static final int menu_save_as=0x7f0b0018;
+        public static final int menu_setting=0x7f0b001a;
         public static final int menu_special_keys=0x7f0b0010;
         public static final int menu_toggle_soft_keyboard=0x7f0b000f;
         public static final int menu_undo=0x7f0b0014;
@@ -148,6 +167,7 @@ public final class R {
         public static final int alt_sends_esc_summary_on=0x7f070053;
         public static final int app_name=0x7f070083;
         public static final int application_terminal=0x7f070000;
+        public static final int author=0x7f070084;
         public static final int close_window=0x7f070001;
         public static final int colorvalue_icon_text_entry_hint=0x7f07007c;
         public static final int colorvalue_label_lock_button_column=0x7f07007d;
@@ -188,9 +208,10 @@ public final class R {
         public static final int fsnavigator_no_external_storage=0x7f07005c;
         public static final int fsnavigator_optional_enter_path=0x7f07005d;
         public static final int fsnavigator_title=0x7f07005e;
-        public static final int hello_world=0x7f070084;
+        public static final int github=0x7f070085;
+        public static final int hello_world=0x7f070086;
         public static final int help=0x7f07005f;
-        public static final int help_url=0x7f070085;
+        public static final int help_url=0x7f070087;
         public static final int keyboard_preferences=0x7f07001b;
         public static final int new_window=0x7f07001c;
         public static final int next_window=0x7f07001d;
@@ -201,21 +222,22 @@ public final class R {
         public static final int permdesc_append_to_path=0x7f070063;
         public static final int permdesc_prepend_to_path=0x7f070064;
         public static final int permdesc_run_script=0x7f070065;
-        public static final int pref_backaction_default=0x7f070086;
-        public static final int pref_color_default=0x7f070087;
-        public static final int pref_controlkey_default=0x7f070088;
-        public static final int pref_cursorblink_default=0x7f070089;
-        public static final int pref_cursorstyle_default=0x7f07008a;
-        public static final int pref_fnkey_default=0x7f07008b;
-        public static final int pref_fontsize_default=0x7f07008c;
-        public static final int pref_ime_default=0x7f07008d;
-        public static final int pref_initialcommand_default=0x7f07008e;
-        public static final int pref_shell_default=0x7f07008f;
-        public static final int pref_statusbar_default=0x7f070090;
-        public static final int pref_termtype_default=0x7f070091;
+        public static final int pref_backaction_default=0x7f070088;
+        public static final int pref_color_default=0x7f070089;
+        public static final int pref_controlkey_default=0x7f07008a;
+        public static final int pref_cursorblink_default=0x7f07008b;
+        public static final int pref_cursorstyle_default=0x7f07008c;
+        public static final int pref_fnkey_default=0x7f07008d;
+        public static final int pref_fontsize_default=0x7f07008e;
+        public static final int pref_ime_default=0x7f07008f;
+        public static final int pref_initialcommand_default=0x7f070090;
+        public static final int pref_shell_default=0x7f070091;
+        public static final int pref_statusbar_default=0x7f070092;
+        public static final int pref_termtype_default=0x7f070093;
         public static final int preferences=0x7f07001f;
         public static final int prev_window=0x7f070020;
         public static final int process_exit_message=0x7f070021;
+        public static final int qq_group=0x7f070094;
         public static final int reset=0x7f070022;
         public static final int reset_toast_notification=0x7f070023;
         public static final int screen_preferences=0x7f070024;

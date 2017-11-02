@@ -205,14 +205,6 @@
         <item>Camera</item>
         <item>None</item>
     </string-array>
-    <string-array name="lang">
-		<item>C</item>
-		<item>C++</item>
-		<item>php</item>
-		<item>Java</item>
-		<item>Python</item>
-		<item>Bash</item>
-	</string-array>
     <bool name="pref_allow_prepend_path_default">true</bool>
     <bool name="pref_alt_sends_esc_default">false</bool>
     <bool name="pref_close_window_on_process_exit_default">true</bool>
@@ -221,6 +213,25 @@
     <bool name="pref_use_keyboard_shortcuts_default">true</bool>
     <bool name="pref_utf8_by_default_default">true</bool>
     <bool name="pref_verify_path_default">true</bool>
+    <color name="BLACK">#FF000000</color>
+    <color name="BLUE">#FF0000FF</color>
+    <color name="DARK_GREY">#FF606060</color>
+    <color name="DARK_RED">#FFA31515</color>
+    <color name="GREEN">#FF88AA88</color>
+    <color name="GREY">#FF808080</color>
+    <color name="INDIGO">#FF2A40FF</color>
+    <color name="LIGHT_BLUE">#FF6080FF</color>
+    <color name="LIGHT_BLUE2">#FF40B0FF</color>
+    <color name="LIGHT_GREY">#FFAAAAAA</color>
+    <color name="MAROON">#FF800000</color>
+    <color name="OFF_BLACK">#FF040404</color>
+    <color name="OFF_WHITE">#FFD0D2D3</color>
+    <color name="OLIVE_GREEN">#FF3F7F5F</color>
+    <color name="ONDINE">#FF97C024</color>
+    <color name="PINK">#FFD040DD</color>
+    <color name="PURPLE">#FFDD4488</color>
+    <color name="RED">#FFFF0000</color>
+    <color name="WHITE">#FFFFFFE0</color>
     <declare-styleable name="EmulatorView"/>
     <item name="imageview" type="id"/>
     <item name="mainview" type="id"/>
@@ -247,6 +258,7 @@
     <string name="alt_sends_esc_summary_on">Alt key sends ESC.</string>
     <string name="app_name">simple C</string>
     <string name="application_terminal">Terminal Emulator</string>
+    <string name="author">落叶似秋</string>
     <string name="close_window">Close window</string>
     <string name="colorvalue_icon_text_entry_hint">Enter icon text</string>
     <string name="colorvalue_label_lock_button_column">LOCK</string>
@@ -287,6 +299,7 @@
     <string name="fsnavigator_no_external_storage">External storage not available</string>
     <string name="fsnavigator_optional_enter_path">Or enter path here.</string>
     <string name="fsnavigator_title">FILE SELECTOR</string>
+    <string name="github">https://github.com/luoyesiqiu/simpleC</string>
     <string name="hello_world">Hello world!</string>
     <string name="help">Help</string>
     <string name="help_url" translatable="false">http://jackpal.github.com/Android-Terminal-Emulator/help/index.html</string>
@@ -315,6 +328,7 @@
     <string name="preferences">Preferences</string>
     <string name="prev_window">Prev window</string>
     <string name="process_exit_message">Terminal session finished</string>
+    <string name="qq_group">236121720</string>
     <string name="reset">Reset term</string>
     <string name="reset_toast_notification">This window\'s terminal state has been reset.</string>
     <string name="screen_preferences">Screen</string>

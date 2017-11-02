@@ -634,6 +634,7 @@ implements Document.TextFieldMetrics{
 		//----------------------------------------------
 		// start painting!
 		//----------------------------------------------
+		canvas.drawColor(_colorScheme.getColor(Colorable.BACKGROUND));
 		int rowCount=_hDoc.getRowCount();
 		if(_showLineNumbers){
 			_brushLine.setColor(_colorScheme.getColor(Colorable.NON_PRINTING_GLYPH));
@@ -644,8 +645,6 @@ implements Document.TextFieldMetrics{
 		paintX = _leftOffset;
 		while (paintY <= endY && _hDoc.hasNext()){
 
-			String row = _hDoc.getRow(currRowNum);
-			int rowLen=_hDoc.getRowSize(currRowNum);
 			if (currRowNum > rowCount) {
 				break;
 			}

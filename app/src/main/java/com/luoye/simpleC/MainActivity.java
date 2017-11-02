@@ -7,11 +7,18 @@ import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.net.wifi.WifiManager;
 import android.os.*;
+import android.preference.Preference;
+import android.preference.PreferenceManager;
+import android.text.InputType;
 import android.text.TextUtils;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.util.TypedValue;
 import android.view.*;
 import android.widget.*;
 
 import com.luoye.simpleC.activity.FileListActivity;
+import com.luoye.simpleC.activity.SettingActivity;
 import com.luoye.simpleC.util.ConstantPool;
 import com.luoye.simpleC.util.ShellUtils;
 import com.luoye.simpleC.util.Utils;
@@ -36,14 +43,40 @@ public class MainActivity extends Activity
 	private ProgressDialog progressDialog;
 	private  static  final String KEY_FIRST_RUN="isFirstRun";
 	private ArrayList<String> header;
+	private SharedPreferences settingPreference;
+	private boolean darkMode=false;
+	private boolean autoSave=true;
+
 	@Override
     public void onCreate(Bundle savedInstanceState)
 	{
         super.onCreate(savedInstanceState);
 		editor =new TextEditor(this);
 		setContentView(editor);
+		settingPreference= PreferenceManager.getDefaultSharedPreferences(this);
 		sharedPreferences=getSharedPreferences("setting",MODE_PRIVATE);
 		init();
+
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		readPreferences();
+		editor.setDark(darkMode);
+	}
+
+
+	private void autoSave()
+	{
+		if(autoSave&&editor.getOpenedFile()!=null) {
+			editor.save(editor.getOpenedFile().getAbsolutePath());
+		}
+	}
+	@Override
+	protected void onPause() {
+		super.onPause();
+		autoSave();
 	}
 
 	private  void init()
@@ -73,7 +106,6 @@ public class MainActivity extends Activity
 		header=Utils.getHeader(MainActivity.this);
 		String[] arr=new String[header.size()];
 		editor.addNames(header.toArray(arr));
-		showToast("落叶似秋制作");
 	}
 
 
@@ -109,6 +141,7 @@ public class MainActivity extends Activity
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if(resultCode== ConstantPool.OK_SELECT_RESULT_CODE) {
 			if(data!=null) {
+				autoSave();
 				String path = data.getStringExtra("path");
 				editor.open(path);
 				ActionBar actionBar = getActionBar();
@@ -125,11 +158,13 @@ public class MainActivity extends Activity
 		// TODO: Implement this method
 		switch (item.getItemId())
 		{
+			//打开文件
 			case R.id.menu_open:
 
 				startActivityForResult(new Intent(MainActivity.this, FileListActivity.class),0);
 
 				break;
+			//保存
 			case  R.id.menu_save:
 				if(editor.getOpenedFile()!=null) {
 					editor.save(editor.getOpenedFile().getAbsolutePath());
@@ -139,48 +174,31 @@ public class MainActivity extends Activity
 					showToast("没有打开文件");
 				}
 				break;
+			//运行
 			case R.id.menu_run:
-					File file=editor.getOpenedFile();
-					if(file!=null) {
-						editor.save(editor.getOpenedFile().getAbsolutePath());//保存
-						ShellUtils.CommandResult result = Utils.compile(getApplicationContext(), editor.getOpenedFile());
-						String info = null;
-						if (result.result == 0) {
-							showToast("编译成功");
-							Utils.execBin(MainActivity.this);
+				autoSave();//本地保存一次
+				editor.save(getFilesDir()+File.separator+"temp.c");//保存在缓存一次
+				ShellUtils.CommandResult result = Utils.compile(getApplicationContext(),new File(getFilesDir()+File.separator+"temp.c"));
+				String info = null;
+				if (result.result == 0) {
+					showToast("编译成功");
+					Utils.execBin(MainActivity.this);
 
-						} else {
-							info = result.successMsg;
+				} else {
+					info = result.successMsg;
+					View view=LayoutInflater.from(MainActivity.this).inflate(R.layout.console,null);
+					TextView infoTextView=(TextView)view.findViewById(R.id.console_msg);
+					infoTextView.setText(info);
+					AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
+							.setTitle("编译失败")
+							.setView(view)
 
-							AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
-									.setTitle("编译失败")
-									.setMessage(info)
-									.setPositiveButton("确定", null)
-									.create();
-							alertDialog.show();
-						}
-					}
-					else
-					{
-						editor.save(getFilesDir()+File.separator+"temp.c");//保存
-						ShellUtils.CommandResult result = Utils.compile(getApplicationContext(),new File(getFilesDir()+File.separator+"temp.c"));
-						String info = null;
-						if (result.result == 0) {
-							showToast("编译成功");
-							Utils.execBin(MainActivity.this);
-
-						} else {
-							info = result.successMsg;
-
-							AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
-									.setTitle("编译失败")
-									.setMessage(info)
-									.setPositiveButton("确定", null)
-									.create();
-							alertDialog.show();
-						}
-					}
+							.setPositiveButton("确定", null)
+							.create();
+					alertDialog.show();
+				}
 				break;
+			//另存为
 			case R.id.menu_save_as:
 				final EditText editText=new EditText(MainActivity.this);
 				AlertDialog alertDialog=new AlertDialog.Builder(MainActivity.this)
@@ -189,8 +207,7 @@ public class MainActivity extends Activity
 							public void onClick(DialogInterface dialogInterface, int i) {
 								if (!TextUtils.isEmpty(editText.getText())) {
 									File f = new File(ConstantPool.FILE_PATH);
-									WriteThread writeThread=new WriteThread(editor.getText().toString(),f.getAbsolutePath() + File.separator + editText.getText(),handler);
-									writeThread.start();
+									editor.save(f.getAbsolutePath() + File.separator + editText.getText());
 								} else {
 									showToast("请输入文件名");
 								}
@@ -201,22 +218,36 @@ public class MainActivity extends Activity
 						.create();
 				alertDialog.show();
 				break;
+			//关闭文件
 			case R.id.menu_close_file:
+				autoSave();
 				editor.setOpenedFile(null);
 				ActionBar actionBar=getActionBar();
 				if (actionBar != null)
 					actionBar.setSubtitle(null);
 				editor.setText("");
+
 				break;
+			//重做
 			case R.id.menu_redo:
 				editor.redo();
 				break;
-
+			//撤销
 			case R.id.menu_undo:
 				editor.undo();
 				break;
+			//设置
+			case R.id.menu_setting:
+				startActivity(new Intent(MainActivity.this, SettingActivity.class));
+				break;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	private  void readPreferences()
+	{
+		darkMode=settingPreference.getBoolean("editor_dark_mode",false);
+		autoSave=settingPreference.getBoolean("editor_auto_save",true);
 	}
 
 	@Override
