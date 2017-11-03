@@ -31,6 +31,7 @@ public class ClipboardPanel {
 		stopClipboardAction();
 	}
 
+	@SuppressWarnings("ResourceType")
 	public void startClipboardAction() {
 		// TODO: Implement this method
 		if (_clipboardActionMode == null)

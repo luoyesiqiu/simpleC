@@ -55,7 +55,8 @@ public class AutoCompletePanel {
 	public void setBackground(Drawable color){
 		_autoCompletePanel.setBackgroundDrawable(color);
 	}
-	
+
+	@SuppressWarnings("ResourceType")
 	private void initAutoCompletePanel() {
 		_autoCompletePanel = new ListPopupWindow(_context);
 		_autoCompletePanel.setAnchorView(_textField);

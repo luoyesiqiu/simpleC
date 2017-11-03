@@ -673,13 +673,13 @@ class TerminalEmulator {
                 header=header.replace("$","\\$");
             }
             //System.out.println("----------------->str:" + header);
-            str=str.replaceAll("(\\d+\\|)*"+header,"");
+            str=str.replaceAll("(\\d+\\|)?"+header,"");
             try {
-                buf=str.getBytes("UTF-8");
+                buf=str.getBytes();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            length=str.length();
+            length=str.getBytes().length;
             //System.out.println("----------------->buffer2:" + EmulatorDebug.bytesToString(buf, 0, length));
         }else
         {

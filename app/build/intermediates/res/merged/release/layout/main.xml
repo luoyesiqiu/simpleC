@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<com.luoye.simpleC.view.TextEditor
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:scrollbarStyle="outsideInset"
+		android:layout_margin="5dp"
+		android:scrollbars="vertical"
+		android:id="@+id/editor"/>
+
+</LinearLayout>
+
