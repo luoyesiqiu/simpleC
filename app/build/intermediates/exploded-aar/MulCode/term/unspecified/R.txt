@@ -56,7 +56,6 @@ int drawable ic_stat_service_notification_icon 0x7f02000d
 int id imageview 0x7f0a0000
 int id mainview 0x7f0a0001
 int id menu_preferences 0x7f0a000a
-int id menu_reset 0x7f0a000b
 int id menu_special_keys 0x7f0a0009
 int id menu_toggle_soft_keyboard 0x7f0a0008
 int id scrollview 0x7f0a0002

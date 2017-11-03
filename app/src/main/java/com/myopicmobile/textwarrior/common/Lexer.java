@@ -220,44 +220,46 @@ public class Lexer
 			}
 			StringReader stringReader=new StringReader(hDoc.toString());
 			CLexer cLexer=new CLexer(stringReader);
-
-			try {
 				CType cType=null;
 				int idx=0;
-				while ((cType=cLexer.yylex())!=CType.EOF){
-					switch (cType)
-					{
-						//关键字
-						case KEYWORD:
-							tokens.add(new Pair(idx, KEYWORD));
-							break;
-						//注释
-						case COMMENT:
-							tokens.add(new Pair(idx, DOUBLE_SYMBOL_DELIMITED_MULTILINE));
-							break;
-						//预处理，宏
-						case PRETREATMENT_LINE:
-						case DEFINE_LINE:
-							tokens.add(new Pair(idx, SINGLE_SYMBOL_LINE_A));
-							break;
-						//字符串，字符
-						case STRING:
-						case CHARACTER_LITERAL:
-							tokens.add(new Pair(idx, SINGLE_SYMBOL_DELIMITED_A));
-							break;
-						//数字
-						case INTEGER_LITERAL:
-						case FLOATING_POINT_LITERAL:
-							tokens.add(new Pair(idx, NUMBER));
-							break;
-						default:
-							tokens.add(new Pair(idx, NORMAL));
+				while (cType!=CType.EOF){
+					try {
+						cType=cLexer.yylex();
+						switch (cType)
+						{
+							//关键字
+							case KEYWORD:
+								tokens.add(new Pair(idx, KEYWORD));
+								break;
+							//注释
+							case COMMENT:
+								tokens.add(new Pair(idx, DOUBLE_SYMBOL_DELIMITED_MULTILINE));
+								break;
+							//预处理，宏
+							case PRETREATMENT_LINE:
+							case DEFINE_LINE:
+								tokens.add(new Pair(idx, SINGLE_SYMBOL_LINE_A));
+								break;
+							//字符串，字符
+							case STRING:
+							case CHARACTER_LITERAL:
+								tokens.add(new Pair(idx, SINGLE_SYMBOL_DELIMITED_A));
+								break;
+							//数字
+							case INTEGER_LITERAL:
+							case FLOATING_POINT_LITERAL:
+								tokens.add(new Pair(idx, NUMBER));
+								break;
+							default:
+								tokens.add(new Pair(idx, NORMAL));
+						}
+						idx+=cLexer.yytext().length();
+					} catch (Exception e) {
+						e.printStackTrace();
+						idx++;//错误了，索引也要往后挪
 					}
-					idx+=cLexer.yytext().length();
 				}
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+
 			if (tokens.isEmpty()){
 				// return value cannot be empty
 				tokens.add(new Pair(0, NORMAL));

@@ -74,7 +74,6 @@ public final class R {
 		public static final int imageview = 0x7f0b0000;
 		public static final int mainview = 0x7f0b0001;
 		public static final int menu_preferences = 0x7f0b0011;
-		public static final int menu_reset = 0x7f0b0012;
 		public static final int menu_special_keys = 0x7f0b0010;
 		public static final int menu_toggle_soft_keyboard = 0x7f0b000f;
 		public static final int scrollview = 0x7f0b0002;
