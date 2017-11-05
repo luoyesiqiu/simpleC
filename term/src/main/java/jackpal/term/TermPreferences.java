@@ -19,6 +19,8 @@ package jackpal.term;
 import jackpal.term.compat.ActionBarCompat;
 import jackpal.term.compat.ActivityCompat;
 import jackpal.term.compat.AndroidCompat;
+
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -46,6 +48,11 @@ public class TermPreferences extends PreferenceActivity {
              }
         }
 
+        ActionBar actionBar=getActionBar();
+        if(actionBar!=null)
+        {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
         // Display up indicator on action bar home button
         if (AndroidCompat.V11ToV20) {
             ActionBarCompat bar = ActivityCompat.getActionBar(this);

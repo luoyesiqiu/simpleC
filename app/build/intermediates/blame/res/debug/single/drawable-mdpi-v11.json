@@ -1,15 +1,39 @@
 [
     {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_menu_add.png",
+        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\drawable-mdpi-v11\\ic_menu_add.png"
+    },
+    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_menu_preferences.png",
         "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\drawable-mdpi-v11\\ic_menu_preferences.png"
+    },
+    {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_menu_forward.png",
+        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\drawable-mdpi-v11\\ic_menu_forward.png"
+    },
+    {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_menu_close_clear_cancel.png",
+        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\drawable-mdpi-v11\\ic_menu_close_clear_cancel.png"
+    },
+    {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_menu_back.png",
+        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\drawable-mdpi-v11\\ic_menu_back.png"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_menu_back.png",
         "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\drawable-mdpi-v11\\ic_menu_back.png"
     },
     {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_stat_service_notification_icon.png",
+        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\drawable-mdpi-v11\\ic_stat_service_notification_icon.png"
+    },
+    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_menu_close_clear_cancel.png",
         "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\drawable-mdpi-v11\\ic_menu_close_clear_cancel.png"
+    },
+    {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_menu_preferences.png",
+        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\drawable-mdpi-v11\\ic_menu_preferences.png"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_menu_forward.png",

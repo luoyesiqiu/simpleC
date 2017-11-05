@@ -22,6 +22,7 @@ import com.luoye.simpleC.activity.SettingActivity;
 import com.luoye.simpleC.util.ConstantPool;
 import com.luoye.simpleC.util.ShellUtils;
 import com.luoye.simpleC.util.Utils;
+import com.luoye.simpleC.view.SymbolView;
 import com.luoye.simpleC.view.TextEditor;
 import com.myopicmobile.textwarrior.common.ReadThread;
 import com.myopicmobile.textwarrior.common.WriteThread;
@@ -106,6 +107,14 @@ public class MainActivity extends Activity
 		header=Utils.getHeader(MainActivity.this);
 		String[] arr=new String[header.size()];
 		editor.addNames(header.toArray(arr));
+		View rootView=getWindow().getDecorView();
+		SymbolView symbolView=new SymbolView(MainActivity.this,rootView);
+		symbolView.setOnSymbolViewClick(new SymbolView.OnSymbolViewClick() {
+			@Override
+			public void onClick(View view, String text) {
+				editor.paste(text);
+			}
+		});
 	}
 
 

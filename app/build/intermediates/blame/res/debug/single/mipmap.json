@@ -1,7 +1,23 @@
 [
     {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\icon_run.png",
+        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\mipmap\\icon_run.png"
+    },
+    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\file.png",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\file.png"
+    },
+    {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\folder.png",
+        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\mipmap\\folder.png"
+    },
+    {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\icon.png",
+        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\mipmap\\icon.png"
+    },
+    {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\undo.png",
+        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\mipmap\\undo.png"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\folder.png",
@@ -12,12 +28,20 @@
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\icon_run.png"
     },
     {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\file.png",
+        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\mipmap\\file.png"
+    },
+    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\redo.png",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\redo.png"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\undo.png",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\undo.png"
+    },
+    {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\redo.png",
+        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\mipmap\\redo.png"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\icon.png",

@@ -1,6 +1,10 @@
 [
     {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\xml\\setting.xml",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\xml\\setting.xml"
+    },
+    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\xml\\preferences.xml",
-        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\xml\\preferences.xml"
+        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\xml\\preferences.xml"
     }
 ]

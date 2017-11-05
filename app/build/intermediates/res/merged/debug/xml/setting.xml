@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory
+    android:title="编辑器">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="editor_dark_mode"
+        android:title="夜间模式" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="editor_auto_save"
+        android:title="自动保存"
+
+        >
+    </CheckBoxPreference>
+</PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="关于">
+        <Preference
+            android:summary="@string/author"
+            android:title="作者" >
+        </Preference>
+        <Preference
+            android:key="preference_qq_group"
+            android:summary="@string/qq_group"
+            android:title="编程讨论群" >
+        </Preference>
+        <Preference
+            android:key="preference_github"
+            android:summary="@string/github"
+            android:title="开源地址" >
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
