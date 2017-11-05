@@ -11,5 +11,6 @@
         <item android:id="@+id/menu_save_as" android:title="另存为"/>
         <item android:id="@+id/menu_close_file" android:title="关闭文件"/>
         <item android:id="@+id/menu_setting" android:title="设置"/>
+        <item android:id="@+id/menu_learn" android:title="练习"/>
     </group>
 </menu>

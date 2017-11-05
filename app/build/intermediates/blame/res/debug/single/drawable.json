@@ -12,12 +12,12 @@
         "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\drawable\\ic_menu_forward.png"
     },
     {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_add.png",
-        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\drawable\\ic_menu_add.png"
-    },
-    {
         "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_preferences.png",
         "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\drawable\\ic_menu_preferences.png"
+    },
+    {
+        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_add.png",
+        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\drawable\\ic_menu_add.png"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_back.png",

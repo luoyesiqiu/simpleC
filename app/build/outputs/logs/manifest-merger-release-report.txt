@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml
@@ -29,7 +29,7 @@ MERGED from [MulCode:libtermexec:unspecified] D:\Documents\MulCode\app\build\int
 		INJECTED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:11:5-25:19
+ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:11:5-26:19
 MERGED from [MulCode:term:unspecified] D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\term\unspecified\AndroidManifest.xml:39:5-169:19
 MERGED from [MulCode:libtermexec:unspecified] D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\libtermexec\unspecified\AndroidManifest.xml:11:5-20
 	android:label
@@ -64,16 +64,22 @@ ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:24:9-90
 		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:24:60-78
 	android:name
 		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:24:19-59
+activity#com.luoye.simpleC.activity.HelpActivity
+ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:25:9-87
+	android:label
+		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:25:57-75
+	android:name
+		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:25:19-56
 uses-permission#android.permission.INTERNET
-ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:26:2-63
+ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:27:2-63
 MERGED from [MulCode:term:unspecified] D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\term\unspecified\AndroidManifest.xml:14:5-67
 	android:name
-		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:26:19-61
+		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:27:19-61
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:27:5-80
+ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:28:5-80
 MERGED from [MulCode:term:unspecified] D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\term\unspecified\AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:27:22-78
+		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:28:22-78
 uses-feature#android.hardware.touchscreen
 ADDED from [MulCode:term:unspecified] D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\term\unspecified\AndroidManifest.xml:10:5-12:36
 	android:required

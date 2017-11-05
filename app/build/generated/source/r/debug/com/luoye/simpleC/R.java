@@ -100,26 +100,29 @@ public final class R {
         public static final int file_name_tv=0x7f0b0006;
         public static final int file_size_tv=0x7f0b0007;
         public static final int imageview=0x7f0b0000;
-        public static final int linear_container=0x7f0b000a;
+        public static final int linear_container=0x7f0b000c;
         public static final int mainview=0x7f0b0001;
-        public static final int menu_close_file=0x7f0b0019;
-        public static final int menu_open=0x7f0b0016;
-        public static final int menu_preferences=0x7f0b0012;
-        public static final int menu_redo=0x7f0b0015;
-        public static final int menu_run=0x7f0b0013;
-        public static final int menu_save=0x7f0b0017;
-        public static final int menu_save_as=0x7f0b0018;
-        public static final int menu_setting=0x7f0b001a;
-        public static final int menu_special_keys=0x7f0b0011;
-        public static final int menu_toggle_soft_keyboard=0x7f0b0010;
-        public static final int menu_undo=0x7f0b0014;
+        public static final int menu_close_file=0x7f0b001b;
+        public static final int menu_learn=0x7f0b001d;
+        public static final int menu_open=0x7f0b0018;
+        public static final int menu_preferences=0x7f0b0014;
+        public static final int menu_redo=0x7f0b0017;
+        public static final int menu_run=0x7f0b0015;
+        public static final int menu_save=0x7f0b0019;
+        public static final int menu_save_as=0x7f0b001a;
+        public static final int menu_setting=0x7f0b001c;
+        public static final int menu_special_keys=0x7f0b0013;
+        public static final int menu_toggle_soft_keyboard=0x7f0b0012;
+        public static final int menu_undo=0x7f0b0016;
+        public static final int previewmdWebView1=0x7f0b000b;
         public static final int scrollview=0x7f0b0002;
         public static final int textview=0x7f0b0003;
-        public static final int titlebarTextView1=0x7f0b000c;
-        public static final int view_flipper=0x7f0b000b;
-        public static final int window_list_close=0x7f0b000f;
-        public static final int window_list_label=0x7f0b000d;
-        public static final int window_list_separator=0x7f0b000e;
+        public static final int titlebarTextView1=0x7f0b000e;
+        public static final int view_flipper=0x7f0b000d;
+        public static final int webview_progressBar=0x7f0b000a;
+        public static final int window_list_close=0x7f0b0011;
+        public static final int window_list_label=0x7f0b000f;
+        public static final int window_list_separator=0x7f0b0010;
     }
     public static final class integer {
         public static final int pref_actionbar_default=0x7f0c0000;
@@ -130,11 +133,12 @@ public final class R {
         public static final int file_list_item=0x7f040001;
         public static final int file_list_layout=0x7f040002;
         public static final int main=0x7f040003;
-        public static final int symbol_view=0x7f040004;
-        public static final int term_activity=0x7f040005;
-        public static final int titlebar=0x7f040006;
-        public static final int window_list_item=0x7f040007;
-        public static final int window_list_new_window=0x7f040008;
+        public static final int preview_compose=0x7f040004;
+        public static final int symbol_view=0x7f040005;
+        public static final int term_activity=0x7f040006;
+        public static final int titlebar=0x7f040007;
+        public static final int window_list_item=0x7f040008;
+        public static final int window_list_new_window=0x7f040009;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;

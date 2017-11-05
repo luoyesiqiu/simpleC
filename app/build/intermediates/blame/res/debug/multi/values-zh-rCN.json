@@ -2247,7 +2247,15 @@
                     "endOffset": 342
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 11,
+                        "endColumn": 19,
+                        "endOffset": 342
+                    }
                 }
             },
             {
@@ -2260,7 +2268,15 @@
                     "endOffset": 537
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 347,
+                        "endLine": 16,
+                        "endColumn": 19,
+                        "endOffset": 537
+                    }
                 }
             },
             {
@@ -2273,7 +2289,15 @@
                     "endOffset": 769
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 542,
+                        "endLine": 23,
+                        "endColumn": 19,
+                        "endOffset": 769
+                    }
                 }
             },
             {
@@ -2286,7 +2310,15 @@
                     "endOffset": 1107
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 774,
+                        "endLine": 35,
+                        "endColumn": 19,
+                        "endOffset": 1107
+                    }
                 }
             },
             {
@@ -2299,7 +2331,15 @@
                     "endOffset": 1396
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1112,
+                        "endLine": 45,
+                        "endColumn": 19,
+                        "endOffset": 1396
+                    }
                 }
             },
             {
@@ -2312,7 +2352,15 @@
                     "endOffset": 1526
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 1401,
+                        "endLine": 49,
+                        "endColumn": 19,
+                        "endOffset": 1526
+                    }
                 }
             },
             {
@@ -2325,7 +2373,15 @@
                     "endOffset": 1676
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 1531,
+                        "endLine": 54,
+                        "endColumn": 19,
+                        "endOffset": 1676
+                    }
                 }
             },
             {
@@ -2338,7 +2394,15 @@
                     "endOffset": 1960
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 1681,
+                        "endLine": 64,
+                        "endColumn": 19,
+                        "endOffset": 1960
+                    }
                 }
             },
             {
@@ -2351,7 +2415,15 @@
                     "endOffset": 2582
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 1965,
+                        "endLine": 87,
+                        "endColumn": 19,
+                        "endOffset": 2582
+                    }
                 }
             },
             {
@@ -2364,7 +2436,15 @@
                     "endOffset": 2699
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 4,
+                        "startOffset": 2587,
+                        "endLine": 91,
+                        "endColumn": 19,
+                        "endOffset": 2699
+                    }
                 }
             },
             {
@@ -2377,7 +2457,15 @@
                     "endOffset": 2848
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 4,
+                        "startOffset": 2704,
+                        "endLine": 96,
+                        "endColumn": 19,
+                        "endOffset": 2848
+                    }
                 }
             },
             {
@@ -2390,7 +2478,15 @@
                     "endOffset": 2977
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 97,
+                        "startColumn": 4,
+                        "startOffset": 2853,
+                        "endLine": 100,
+                        "endColumn": 19,
+                        "endOffset": 2977
+                    }
                 }
             },
             {
@@ -2403,7 +2499,15 @@
                     "endOffset": 3264
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 4,
+                        "startOffset": 2982,
+                        "endLine": 110,
+                        "endColumn": 19,
+                        "endOffset": 3264
+                    }
                 }
             },
             {
@@ -2415,7 +2519,14 @@
                     "endOffset": 3318
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 111,
+                        "startColumn": 4,
+                        "startOffset": 3269,
+                        "endColumn": 53,
+                        "endOffset": 3318
+                    }
                 }
             },
             {
@@ -2427,7 +2538,14 @@
                     "endOffset": 3387
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 112,
+                        "startColumn": 4,
+                        "startOffset": 3323,
+                        "endColumn": 68,
+                        "endOffset": 3387
+                    }
                 }
             },
             {
@@ -2439,7 +2557,14 @@
                     "endOffset": 3455
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 113,
+                        "startColumn": 4,
+                        "startOffset": 3392,
+                        "endColumn": 67,
+                        "endOffset": 3455
+                    }
                 }
             },
             {
@@ -2470,7 +2595,14 @@
                     "endOffset": 3554
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 115,
+                        "startColumn": 4,
+                        "startOffset": 3513,
+                        "endColumn": 45,
+                        "endOffset": 3554
+                    }
                 }
             },
             {
@@ -2482,7 +2614,14 @@
                     "endOffset": 3618
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 116,
+                        "startColumn": 4,
+                        "startOffset": 3559,
+                        "endColumn": 63,
+                        "endOffset": 3618
+                    }
                 }
             },
             {
@@ -2494,7 +2633,14 @@
                     "endOffset": 3698
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 117,
+                        "startColumn": 4,
+                        "startOffset": 3623,
+                        "endColumn": 79,
+                        "endOffset": 3698
+                    }
                 }
             },
             {
@@ -2506,7 +2652,14 @@
                     "endOffset": 3922
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 118,
+                        "startColumn": 4,
+                        "startOffset": 3703,
+                        "endColumn": 223,
+                        "endOffset": 3922
+                    }
                 }
             },
             {
@@ -2518,7 +2671,14 @@
                     "endOffset": 3995
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 119,
+                        "startColumn": 4,
+                        "startOffset": 3927,
+                        "endColumn": 72,
+                        "endOffset": 3995
+                    }
                 }
             },
             {
@@ -2530,7 +2690,14 @@
                     "endOffset": 4364
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 120,
+                        "startColumn": 4,
+                        "startOffset": 4000,
+                        "endColumn": 368,
+                        "endOffset": 4364
+                    }
                 }
             },
             {
@@ -2542,7 +2709,14 @@
                     "endOffset": 4429
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 121,
+                        "startColumn": 4,
+                        "startOffset": 4369,
+                        "endColumn": 64,
+                        "endOffset": 4429
+                    }
                 }
             },
             {
@@ -2554,7 +2728,14 @@
                     "endOffset": 4471
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 122,
+                        "startColumn": 4,
+                        "startOffset": 4434,
+                        "endColumn": 41,
+                        "endOffset": 4471
+                    }
                 }
             },
             {
@@ -2566,7 +2747,14 @@
                     "endOffset": 4539
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 123,
+                        "startColumn": 4,
+                        "startOffset": 4476,
+                        "endColumn": 67,
+                        "endOffset": 4539
+                    }
                 }
             },
             {
@@ -2578,7 +2766,14 @@
                     "endOffset": 4608
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 124,
+                        "startColumn": 4,
+                        "startOffset": 4544,
+                        "endColumn": 68,
+                        "endOffset": 4608
+                    }
                 }
             },
             {
@@ -2590,7 +2785,14 @@
                     "endOffset": 4671
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 125,
+                        "startColumn": 4,
+                        "startOffset": 4613,
+                        "endColumn": 62,
+                        "endOffset": 4671
+                    }
                 }
             },
             {
@@ -2602,7 +2804,14 @@
                     "endOffset": 4741
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 126,
+                        "startColumn": 4,
+                        "startOffset": 4676,
+                        "endColumn": 69,
+                        "endOffset": 4741
+                    }
                 }
             },
             {
@@ -2614,7 +2823,14 @@
                     "endOffset": 4810
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 127,
+                        "startColumn": 4,
+                        "startOffset": 4746,
+                        "endColumn": 68,
+                        "endOffset": 4810
+                    }
                 }
             },
             {
@@ -2626,7 +2842,14 @@
                     "endOffset": 4879
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 128,
+                        "startColumn": 4,
+                        "startOffset": 4815,
+                        "endColumn": 68,
+                        "endOffset": 4879
+                    }
                 }
             },
             {
@@ -2638,7 +2861,14 @@
                     "endOffset": 4942
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 129,
+                        "startColumn": 4,
+                        "startOffset": 4884,
+                        "endColumn": 62,
+                        "endOffset": 4942
+                    }
                 }
             },
             {
@@ -2650,7 +2880,14 @@
                     "endOffset": 5008
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 130,
+                        "startColumn": 4,
+                        "startOffset": 4947,
+                        "endColumn": 65,
+                        "endOffset": 5008
+                    }
                 }
             },
             {
@@ -2662,7 +2899,14 @@
                     "endOffset": 5069
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 131,
+                        "startColumn": 4,
+                        "startOffset": 5013,
+                        "endColumn": 60,
+                        "endOffset": 5069
+                    }
                 }
             },
             {
@@ -2674,7 +2918,14 @@
                     "endOffset": 5141
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 132,
+                        "startColumn": 4,
+                        "startOffset": 5074,
+                        "endColumn": 71,
+                        "endOffset": 5141
+                    }
                 }
             },
             {
@@ -2686,7 +2937,14 @@
                     "endOffset": 5212
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 133,
+                        "startColumn": 4,
+                        "startOffset": 5146,
+                        "endColumn": 70,
+                        "endOffset": 5212
+                    }
                 }
             },
             {
@@ -2698,7 +2956,14 @@
                     "endOffset": 5276
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 134,
+                        "startColumn": 4,
+                        "startOffset": 5217,
+                        "endColumn": 63,
+                        "endOffset": 5276
+                    }
                 }
             },
             {
@@ -2710,7 +2975,14 @@
                     "endOffset": 5342
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 135,
+                        "startColumn": 4,
+                        "startOffset": 5281,
+                        "endColumn": 65,
+                        "endOffset": 5342
+                    }
                 }
             },
             {
@@ -2722,7 +2994,14 @@
                     "endOffset": 5408
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 136,
+                        "startColumn": 4,
+                        "startOffset": 5347,
+                        "endColumn": 65,
+                        "endOffset": 5408
+                    }
                 }
             },
             {
@@ -2734,7 +3013,14 @@
                     "endOffset": 5459
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 137,
+                        "startColumn": 4,
+                        "startOffset": 5413,
+                        "endColumn": 50,
+                        "endOffset": 5459
+                    }
                 }
             },
             {
@@ -2746,7 +3032,14 @@
                     "endOffset": 5514
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 138,
+                        "startColumn": 4,
+                        "startOffset": 5464,
+                        "endColumn": 54,
+                        "endOffset": 5514
+                    }
                 }
             },
             {
@@ -2758,7 +3051,14 @@
                     "endOffset": 5557
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 139,
+                        "startColumn": 4,
+                        "startOffset": 5519,
+                        "endColumn": 42,
+                        "endOffset": 5557
+                    }
                 }
             },
             {
@@ -2770,7 +3070,14 @@
                     "endOffset": 5627
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 140,
+                        "startColumn": 4,
+                        "startOffset": 5562,
+                        "endColumn": 69,
+                        "endOffset": 5627
+                    }
                 }
             },
             {
@@ -2782,7 +3089,14 @@
                     "endOffset": 5708
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 141,
+                        "startColumn": 4,
+                        "startOffset": 5632,
+                        "endColumn": 80,
+                        "endOffset": 5708
+                    }
                 }
             },
             {
@@ -2794,7 +3108,14 @@
                     "endOffset": 5769
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 142,
+                        "startColumn": 4,
+                        "startOffset": 5713,
+                        "endColumn": 60,
+                        "endOffset": 5769
+                    }
                 }
             },
             {
@@ -2806,7 +3127,14 @@
                     "endOffset": 5819
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 143,
+                        "startColumn": 4,
+                        "startOffset": 5774,
+                        "endColumn": 49,
+                        "endOffset": 5819
+                    }
                 }
             },
             {
@@ -2818,7 +3146,14 @@
                     "endOffset": 5873
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 144,
+                        "startColumn": 4,
+                        "startOffset": 5824,
+                        "endColumn": 53,
+                        "endOffset": 5873
+                    }
                 }
             },
             {
@@ -2830,7 +3165,14 @@
                     "endOffset": 5925
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 145,
+                        "startColumn": 4,
+                        "startOffset": 5878,
+                        "endColumn": 51,
+                        "endOffset": 5925
+                    }
                 }
             },
             {
@@ -2842,7 +3184,14 @@
                     "endOffset": 5968
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 146,
+                        "startColumn": 4,
+                        "startOffset": 5930,
+                        "endColumn": 42,
+                        "endOffset": 5968
+                    }
                 }
             },
             {
@@ -2854,7 +3203,14 @@
                     "endOffset": 6013
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 147,
+                        "startColumn": 4,
+                        "startOffset": 5973,
+                        "endColumn": 44,
+                        "endOffset": 6013
+                    }
                 }
             },
             {
@@ -2866,7 +3222,14 @@
                     "endOffset": 6050
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 148,
+                        "startColumn": 4,
+                        "startOffset": 6018,
+                        "endColumn": 36,
+                        "endOffset": 6050
+                    }
                 }
             },
             {
@@ -2878,7 +3241,14 @@
                     "endOffset": 6109
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 149,
+                        "startColumn": 4,
+                        "startOffset": 6055,
+                        "endColumn": 58,
+                        "endOffset": 6109
+                    }
                 }
             },
             {
@@ -2890,7 +3260,14 @@
                     "endOffset": 6171
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 150,
+                        "startColumn": 4,
+                        "startOffset": 6114,
+                        "endColumn": 61,
+                        "endOffset": 6171
+                    }
                 }
             },
             {
@@ -2902,7 +3279,14 @@
                     "endOffset": 6227
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 151,
+                        "startColumn": 4,
+                        "startOffset": 6176,
+                        "endColumn": 55,
+                        "endOffset": 6227
+                    }
                 }
             },
             {
@@ -2914,7 +3298,14 @@
                     "endOffset": 6290
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 152,
+                        "startColumn": 4,
+                        "startOffset": 6232,
+                        "endColumn": 62,
+                        "endOffset": 6290
+                    }
                 }
             },
             {
@@ -2926,7 +3317,14 @@
                     "endOffset": 6360
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 153,
+                        "startColumn": 4,
+                        "startOffset": 6295,
+                        "endColumn": 69,
+                        "endOffset": 6360
+                    }
                 }
             },
             {
@@ -2938,7 +3336,14 @@
                     "endOffset": 6441
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 154,
+                        "startColumn": 4,
+                        "startOffset": 6365,
+                        "endColumn": 80,
+                        "endOffset": 6441
+                    }
                 }
             },
             {
@@ -2950,7 +3355,14 @@
                     "endOffset": 6485
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 155,
+                        "startColumn": 4,
+                        "startOffset": 6446,
+                        "endColumn": 43,
+                        "endOffset": 6485
+                    }
                 }
             },
             {
@@ -2962,7 +3374,14 @@
                     "endOffset": 6530
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 156,
+                        "startColumn": 4,
+                        "startOffset": 6490,
+                        "endColumn": 44,
+                        "endOffset": 6530
+                    }
                 }
             },
             {
@@ -2974,7 +3393,14 @@
                     "endOffset": 6585
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 4,
+                        "startOffset": 6535,
+                        "endColumn": 54,
+                        "endOffset": 6585
+                    }
                 }
             },
             {
@@ -2986,7 +3412,14 @@
                     "endOffset": 6624
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 158,
+                        "startColumn": 4,
+                        "startOffset": 6590,
+                        "endColumn": 38,
+                        "endOffset": 6624
+                    }
                 }
             },
             {
@@ -2998,7 +3431,14 @@
                     "endOffset": 6690
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 159,
+                        "startColumn": 4,
+                        "startOffset": 6629,
+                        "endColumn": 65,
+                        "endOffset": 6690
+                    }
                 }
             },
             {
@@ -3010,7 +3450,14 @@
                     "endOffset": 6740
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 160,
+                        "startColumn": 4,
+                        "startOffset": 6695,
+                        "endColumn": 49,
+                        "endOffset": 6740
+                    }
                 }
             },
             {
@@ -3022,7 +3469,14 @@
                     "endOffset": 6785
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 161,
+                        "startColumn": 4,
+                        "startOffset": 6745,
+                        "endColumn": 44,
+                        "endOffset": 6785
+                    }
                 }
             },
             {
@@ -3034,7 +3488,14 @@
                     "endOffset": 6840
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 162,
+                        "startColumn": 4,
+                        "startOffset": 6790,
+                        "endColumn": 54,
+                        "endOffset": 6840
+                    }
                 }
             },
             {
@@ -3046,7 +3507,14 @@
                     "endOffset": 6890
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 163,
+                        "startColumn": 4,
+                        "startOffset": 6845,
+                        "endColumn": 49,
+                        "endOffset": 6890
+                    }
                 }
             },
             {
@@ -3058,7 +3526,14 @@
                     "endOffset": 6938
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 164,
+                        "startColumn": 4,
+                        "startOffset": 6895,
+                        "endColumn": 47,
+                        "endOffset": 6938
+                    }
                 }
             },
             {
@@ -3070,7 +3545,14 @@
                     "endOffset": 6993
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 165,
+                        "startColumn": 4,
+                        "startOffset": 6943,
+                        "endColumn": 54,
+                        "endOffset": 6993
+                    }
                 }
             },
             {
@@ -3082,7 +3564,14 @@
                     "endOffset": 7045
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 166,
+                        "startColumn": 4,
+                        "startOffset": 6998,
+                        "endColumn": 51,
+                        "endOffset": 7045
+                    }
                 }
             },
             {
@@ -3094,7 +3583,14 @@
                     "endOffset": 7090
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 167,
+                        "startColumn": 4,
+                        "startOffset": 7050,
+                        "endColumn": 44,
+                        "endOffset": 7090
+                    }
                 }
             },
             {
@@ -3106,7 +3602,14 @@
                     "endOffset": 7173
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 168,
+                        "startColumn": 4,
+                        "startOffset": 7095,
+                        "endColumn": 82,
+                        "endOffset": 7173
+                    }
                 }
             },
             {
@@ -3118,7 +3621,14 @@
                     "endOffset": 7259
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 169,
+                        "startColumn": 4,
+                        "startOffset": 7178,
+                        "endColumn": 85,
+                        "endOffset": 7259
+                    }
                 }
             },
             {
@@ -3130,7 +3640,14 @@
                     "endOffset": 7325
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 170,
+                        "startColumn": 4,
+                        "startOffset": 7264,
+                        "endColumn": 65,
+                        "endOffset": 7325
+                    }
                 }
             },
             {
@@ -3142,7 +3659,14 @@
                     "endOffset": 7418
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 171,
+                        "startColumn": 4,
+                        "startOffset": 7330,
+                        "endColumn": 92,
+                        "endOffset": 7418
+                    }
                 }
             },
             {
@@ -3154,7 +3678,14 @@
                     "endOffset": 7478
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 172,
+                        "startColumn": 4,
+                        "startOffset": 7423,
+                        "endColumn": 59,
+                        "endOffset": 7478
+                    }
                 }
             },
             {
@@ -3166,7 +3697,14 @@
                     "endOffset": 7546
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 173,
+                        "startColumn": 4,
+                        "startOffset": 7483,
+                        "endColumn": 67,
+                        "endOffset": 7546
+                    }
                 }
             },
             {
@@ -3178,7 +3716,14 @@
                     "endOffset": 7614
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 174,
+                        "startColumn": 4,
+                        "startOffset": 7551,
+                        "endColumn": 67,
+                        "endOffset": 7614
+                    }
                 }
             },
             {
@@ -3190,7 +3735,14 @@
                     "endOffset": 7680
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 175,
+                        "startColumn": 4,
+                        "startOffset": 7619,
+                        "endColumn": 65,
+                        "endOffset": 7680
+                    }
                 }
             },
             {
@@ -3202,7 +3754,14 @@
                     "endOffset": 7765
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 176,
+                        "startColumn": 4,
+                        "startOffset": 7685,
+                        "endColumn": 84,
+                        "endOffset": 7765
+                    }
                 }
             },
             {
@@ -3214,7 +3773,14 @@
                     "endOffset": 7826
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 177,
+                        "startColumn": 4,
+                        "startOffset": 7770,
+                        "endColumn": 60,
+                        "endOffset": 7826
+                    }
                 }
             },
             {
@@ -3226,7 +3792,14 @@
                     "endOffset": 7889
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 178,
+                        "startColumn": 4,
+                        "startOffset": 7831,
+                        "endColumn": 62,
+                        "endOffset": 7889
+                    }
                 }
             },
             {
@@ -3238,7 +3811,14 @@
                     "endOffset": 7963
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 179,
+                        "startColumn": 4,
+                        "startOffset": 7894,
+                        "endColumn": 73,
+                        "endOffset": 7963
+                    }
                 }
             },
             {
@@ -3250,7 +3830,14 @@
                     "endOffset": 8025
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 180,
+                        "startColumn": 4,
+                        "startOffset": 7968,
+                        "endColumn": 61,
+                        "endOffset": 8025
+                    }
                 }
             },
             {
@@ -3262,7 +3849,14 @@
                     "endOffset": 8105
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 181,
+                        "startColumn": 4,
+                        "startOffset": 8030,
+                        "endColumn": 79,
+                        "endOffset": 8105
+                    }
                 }
             },
             {
@@ -3274,7 +3868,14 @@
                     "endOffset": 8182
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 182,
+                        "startColumn": 4,
+                        "startOffset": 8110,
+                        "endColumn": 76,
+                        "endOffset": 8182
+                    }
                 }
             },
             {
@@ -3286,7 +3887,14 @@
                     "endOffset": 8250
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 183,
+                        "startColumn": 4,
+                        "startOffset": 8187,
+                        "endColumn": 67,
+                        "endOffset": 8250
+                    }
                 }
             },
             {
@@ -3298,7 +3906,14 @@
                     "endOffset": 8318
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 184,
+                        "startColumn": 4,
+                        "startOffset": 8255,
+                        "endColumn": 67,
+                        "endOffset": 8318
+                    }
                 }
             },
             {
@@ -3310,7 +3925,14 @@
                     "endOffset": 8385
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 185,
+                        "startColumn": 4,
+                        "startOffset": 8323,
+                        "endColumn": 66,
+                        "endOffset": 8385
+                    }
                 }
             },
             {
@@ -3322,7 +3944,14 @@
                     "endOffset": 8456
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 186,
+                        "startColumn": 4,
+                        "startOffset": 8390,
+                        "endColumn": 70,
+                        "endOffset": 8456
+                    }
                 }
             },
             {
@@ -3334,7 +3963,14 @@
                     "endOffset": 8536
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 187,
+                        "startColumn": 4,
+                        "startOffset": 8461,
+                        "endColumn": 79,
+                        "endOffset": 8536
+                    }
                 }
             },
             {
@@ -3346,7 +3982,14 @@
                     "endOffset": 8613
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 188,
+                        "startColumn": 4,
+                        "startOffset": 8541,
+                        "endColumn": 76,
+                        "endOffset": 8613
+                    }
                 }
             },
             {
@@ -3358,7 +4001,14 @@
                     "endOffset": 8661
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 189,
+                        "startColumn": 4,
+                        "startOffset": 8618,
+                        "endColumn": 47,
+                        "endOffset": 8661
+                    }
                 }
             },
             {
@@ -3370,7 +4020,14 @@
                     "endOffset": 8720
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 190,
+                        "startColumn": 4,
+                        "startOffset": 8666,
+                        "endColumn": 58,
+                        "endOffset": 8720
+                    }
                 }
             },
             {
@@ -3382,7 +4039,14 @@
                     "endOffset": 8795
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 191,
+                        "startColumn": 4,
+                        "startOffset": 8725,
+                        "endColumn": 74,
+                        "endOffset": 8795
+                    }
                 }
             },
             {
@@ -3394,7 +4058,14 @@
                     "endOffset": 8857
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 192,
+                        "startColumn": 4,
+                        "startOffset": 8800,
+                        "endColumn": 61,
+                        "endOffset": 8857
+                    }
                 }
             },
             {
@@ -3406,7 +4077,14 @@
                     "endOffset": 8939
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 193,
+                        "startColumn": 4,
+                        "startOffset": 8862,
+                        "endColumn": 81,
+                        "endOffset": 8939
+                    }
                 }
             },
             {
@@ -3418,7 +4096,14 @@
                     "endOffset": 8993
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 194,
+                        "startColumn": 4,
+                        "startOffset": 8944,
+                        "endColumn": 53,
+                        "endOffset": 8993
+                    }
                 }
             },
             {
@@ -3430,7 +4115,14 @@
                     "endOffset": 9056
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 195,
+                        "startColumn": 4,
+                        "startOffset": 8998,
+                        "endColumn": 62,
+                        "endOffset": 9056
+                    }
                 }
             },
             {
@@ -3442,7 +4134,14 @@
                     "endOffset": 9118
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 196,
+                        "startColumn": 4,
+                        "startOffset": 9061,
+                        "endColumn": 61,
+                        "endOffset": 9118
+                    }
                 }
             },
             {
@@ -3454,7 +4153,14 @@
                     "endOffset": 9180
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 197,
+                        "startColumn": 4,
+                        "startOffset": 9123,
+                        "endColumn": 61,
+                        "endOffset": 9180
+                    }
                 }
             },
             {
@@ -3466,7 +4172,14 @@
                     "endOffset": 9255
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 198,
+                        "startColumn": 4,
+                        "startOffset": 9185,
+                        "endColumn": 74,
+                        "endOffset": 9255
+                    }
                 }
             },
             {
@@ -3478,7 +4191,14 @@
                     "endOffset": 9311
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 199,
+                        "startColumn": 4,
+                        "startOffset": 9260,
+                        "endColumn": 55,
+                        "endOffset": 9311
+                    }
                 }
             },
             {
@@ -3490,7 +4210,14 @@
                     "endOffset": 9370
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 200,
+                        "startColumn": 4,
+                        "startOffset": 9316,
+                        "endColumn": 58,
+                        "endOffset": 9370
+                    }
                 }
             },
             {
@@ -3502,7 +4229,14 @@
                     "endOffset": 9434
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 201,
+                        "startColumn": 4,
+                        "startOffset": 9375,
+                        "endColumn": 63,
+                        "endOffset": 9434
+                    }
                 }
             },
             {
@@ -3514,7 +4248,14 @@
                     "endOffset": 9488
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 202,
+                        "startColumn": 4,
+                        "startOffset": 9439,
+                        "endColumn": 53,
+                        "endOffset": 9488
+                    }
                 }
             },
             {
@@ -3526,7 +4267,14 @@
                     "endOffset": 9553
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 203,
+                        "startColumn": 4,
+                        "startOffset": 9493,
+                        "endColumn": 64,
+                        "endOffset": 9553
+                    }
                 }
             },
             {
@@ -3538,7 +4286,14 @@
                     "endOffset": 9620
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 204,
+                        "startColumn": 4,
+                        "startOffset": 9558,
+                        "endColumn": 66,
+                        "endOffset": 9620
+                    }
                 }
             },
             {
@@ -3550,7 +4305,14 @@
                     "endOffset": 9682
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 205,
+                        "startColumn": 4,
+                        "startOffset": 9625,
+                        "endColumn": 61,
+                        "endOffset": 9682
+                    }
                 }
             },
             {
@@ -3562,7 +4324,14 @@
                     "endOffset": 9737
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 206,
+                        "startColumn": 4,
+                        "startOffset": 9687,
+                        "endColumn": 54,
+                        "endOffset": 9737
+                    }
                 }
             },
             {
@@ -3574,7 +4343,14 @@
                     "endOffset": 9796
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 207,
+                        "startColumn": 4,
+                        "startOffset": 9742,
+                        "endColumn": 58,
+                        "endOffset": 9796
+                    }
                 }
             },
             {
@@ -3586,7 +4362,14 @@
                     "endOffset": 9855
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 208,
+                        "startColumn": 4,
+                        "startOffset": 9801,
+                        "endColumn": 58,
+                        "endOffset": 9855
+                    }
                 }
             },
             {
@@ -3598,7 +4381,14 @@
                     "endOffset": 9925
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 209,
+                        "startColumn": 4,
+                        "startOffset": 9860,
+                        "endColumn": 69,
+                        "endOffset": 9925
+                    }
                 }
             },
             {
@@ -3610,7 +4400,14 @@
                     "endOffset": 9993
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 210,
+                        "startColumn": 4,
+                        "startOffset": 9930,
+                        "endColumn": 67,
+                        "endOffset": 9993
+                    }
                 }
             },
             {
@@ -3622,7 +4419,14 @@
                     "endOffset": 10051
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 211,
+                        "startColumn": 4,
+                        "startOffset": 9998,
+                        "endColumn": 57,
+                        "endOffset": 10051
+                    }
                 }
             },
             {
@@ -3634,7 +4438,14 @@
                     "endOffset": 10096
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 212,
+                        "startColumn": 4,
+                        "startOffset": 10056,
+                        "endColumn": 44,
+                        "endOffset": 10096
+                    }
                 }
             },
             {
@@ -3646,7 +4457,14 @@
                     "endOffset": 10145
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
+                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 213,
+                        "startColumn": 4,
+                        "startOffset": 10101,
+                        "endColumn": 48,
+                        "endOffset": 10145
+                    }
                 }
             }
         ]

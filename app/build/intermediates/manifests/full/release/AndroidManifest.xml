@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.luoye.simpleC"
-    android:versionCode="4"
-    android:versionName="1.1.2" >
+    android:versionCode="5"
+    android:versionName="1.2.3" >
 
     <uses-sdk
         android:minSdkVersion="15"
@@ -53,6 +53,9 @@
         <activity android:name="com.luoye.simpleC.activity.FileListActivity" />
         <activity
             android:name="com.luoye.simpleC.activity.SettingActivity"
+            android:label="设置" />
+        <activity
+            android:name="com.luoye.simpleC.activity.HelpActivity"
             android:label="设置" />
         <activity
             android:name="jackpal.term.Term"

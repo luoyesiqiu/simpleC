@@ -73,24 +73,24 @@ public final class R {
 	public static final class id {
 		public static final int imageview = 0x7f0b0000;
 		public static final int mainview = 0x7f0b0001;
-		public static final int menu_preferences = 0x7f0b0012;
-		public static final int menu_special_keys = 0x7f0b0011;
-		public static final int menu_toggle_soft_keyboard = 0x7f0b0010;
+		public static final int menu_preferences = 0x7f0b0014;
+		public static final int menu_special_keys = 0x7f0b0013;
+		public static final int menu_toggle_soft_keyboard = 0x7f0b0012;
 		public static final int scrollview = 0x7f0b0002;
 		public static final int textview = 0x7f0b0003;
-		public static final int view_flipper = 0x7f0b000b;
-		public static final int window_list_close = 0x7f0b000f;
-		public static final int window_list_label = 0x7f0b000d;
-		public static final int window_list_separator = 0x7f0b000e;
+		public static final int view_flipper = 0x7f0b000d;
+		public static final int window_list_close = 0x7f0b0011;
+		public static final int window_list_label = 0x7f0b000f;
+		public static final int window_list_separator = 0x7f0b0010;
 	}
 	public static final class integer {
 		public static final int pref_actionbar_default = 0x7f0c0000;
 		public static final int pref_orientation_default = 0x7f0c0001;
 	}
 	public static final class layout {
-		public static final int term_activity = 0x7f040005;
-		public static final int window_list_item = 0x7f040007;
-		public static final int window_list_new_window = 0x7f040008;
+		public static final int term_activity = 0x7f040006;
+		public static final int window_list_item = 0x7f040008;
+		public static final int window_list_new_window = 0x7f040009;
 	}
 	public static final class menu {
 		public static final int main = 0x7f0d0000;

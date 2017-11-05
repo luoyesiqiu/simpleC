@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:fitsSystemWindows="true"
+	android:background="#fff"
+	android:clipToPadding="true"
+	android:orientation="vertical">
+<ProgressBar
+	style="?android:attr/progressBarStyleHorizontal"
+	android:id="@+id/webview_progressBar"
+	android:layout_width="match_parent"
+	android:visibility="gone"
+	android:layout_height="wrap_content" />
+
+	<com.luoye.simpleC.view.MdWebView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/previewmdWebView1"/>
+
+</LinearLayout>
+

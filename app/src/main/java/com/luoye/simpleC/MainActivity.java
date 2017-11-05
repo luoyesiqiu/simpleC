@@ -18,6 +18,7 @@ import android.view.*;
 import android.widget.*;
 
 import com.luoye.simpleC.activity.FileListActivity;
+import com.luoye.simpleC.activity.HelpActivity;
 import com.luoye.simpleC.activity.SettingActivity;
 import com.luoye.simpleC.util.ConstantPool;
 import com.luoye.simpleC.util.ShellUtils;
@@ -47,7 +48,7 @@ public class MainActivity extends Activity
 	private SharedPreferences settingPreference;
 	private boolean darkMode=false;
 	private boolean autoSave=true;
-
+	private final String PROBLEMS_URL="https://github.com/luoyesiqiu/C--Problems/blob/master/Problems.md";
 	@Override
     public void onCreate(Bundle savedInstanceState)
 	{
@@ -248,6 +249,12 @@ public class MainActivity extends Activity
 			//设置
 			case R.id.menu_setting:
 				startActivity(new Intent(MainActivity.this, SettingActivity.class));
+				break;
+			case R.id.menu_learn:
+				Intent intent=new Intent(MainActivity.this, HelpActivity.class);
+				intent.putExtra("title","练习");
+				intent.putExtra("data",PROBLEMS_URL);
+				startActivity(intent);
 				break;
 		}
 		return super.onOptionsItemSelected(item);

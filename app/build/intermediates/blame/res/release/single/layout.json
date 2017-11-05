@@ -28,6 +28,10 @@
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\file_list_layout.xml"
     },
     {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\preview_compose.xml",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\preview_compose.xml"
+    },
+    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\titlebar.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\titlebar.xml"
     },

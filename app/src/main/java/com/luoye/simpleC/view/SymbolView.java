@@ -3,6 +3,7 @@ package com.luoye.simpleC.view;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Rect;
+import android.view.GestureDetector;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -19,7 +20,7 @@ import com.luoye.simpleC.R;
  * Created by zyw on 2017/11/4.
  */
 public class SymbolView {
-
+    private  final  int TILE_WIDTH=60;
     private final String symbol="{}();,=\"|'&![]<>+-\\/*.%~?#$@:_";
     private LinearLayout linearLayout;
     private PopupWindow popupWindow;
@@ -32,27 +33,33 @@ public class SymbolView {
 
         View view = LayoutInflater.from(context).inflate(R.layout.symbol_view, null);
         linearLayout = (LinearLayout) view.findViewById(R.id.linear_container);
-
+        final float[] tempPoint=new float[2];
         for (int i = 0; i < symbol.length(); i++) {
             TextView textView = new TextView(context);
             textView.setGravity(Gravity.CENTER);
             textView.setText(String.valueOf(symbol.charAt(i)));
             textView.setClickable(true);
             textView.setTextSize(25);
-            textView.setWidth(60);
+            textView.setWidth(TILE_WIDTH);
             textView.setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
                     int color = v.getDrawingCacheBackgroundColor();
                     int motionEvent = event.getAction();
+                    TextView tv = (TextView) v;
+
                     if (motionEvent == MotionEvent.ACTION_DOWN) {
-                        TextView tv = (TextView) v;
+                        tempPoint[0]=event.getX();
+                        tempPoint[1]=event.getY();
                         tv.setBackgroundColor(Color.GRAY);
-                        if(onSymbolViewClick!=null)
-                            onSymbolViewClick.onClick(tv,tv.getText().toString());
+
                     } else if (motionEvent == MotionEvent.ACTION_UP || motionEvent == MotionEvent.ACTION_CANCEL) {
-                        TextView tv = (TextView) v;
+
                         tv.setBackgroundColor(color);
+                        if(Math.abs(event.getX()-tempPoint[0])<TILE_WIDTH) {
+                            if (onSymbolViewClick != null)
+                                onSymbolViewClick.onClick(tv, tv.getText().toString());
+                        }
                     }
                     return true;
                 }
@@ -98,9 +105,12 @@ public class SymbolView {
     {
         this.onSymbolViewClick=onSymbolViewClick;
     }
-     public   interface OnSymbolViewClick{
+
+
+    public   interface OnSymbolViewClick{
         void onClick(View view, String text);
     }
+
     private  void log(String log)
     {
         System.out.println(log);
