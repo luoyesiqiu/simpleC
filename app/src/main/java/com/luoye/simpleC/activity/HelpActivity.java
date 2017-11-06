@@ -11,6 +11,7 @@ import android.view.View;
 import android.webkit.DownloadListener;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import com.luoye.simpleC.R;
@@ -47,6 +48,7 @@ public class HelpActivity extends Activity {
             }
         });
         wv.setDownloadListener(new MyWebViewDownLoadListener());
+        wv.setWebViewClient(new MyWebViewClient());
         Intent intent=getIntent();
         String data=intent.getStringExtra("data");
         String title=intent.getStringExtra("title");
@@ -66,6 +68,14 @@ public class HelpActivity extends Activity {
             Uri uri = Uri.parse(url);
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
+        }
+    }
+
+    private  class MyWebViewClient extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            view.loadUrl(url);
+            return true;
         }
     }
     @Override

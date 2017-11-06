@@ -48,7 +48,10 @@ public class MainActivity extends Activity
 	private SharedPreferences settingPreference;
 	private boolean darkMode=false;
 	private boolean autoSave=true;
+	private boolean showSymbolView=false;
+	private  SymbolView symbolView;
 	private final String PROBLEMS_URL="https://github.com/luoyesiqiu/C--Problems/blob/master/Problems.md";
+
 	@Override
     public void onCreate(Bundle savedInstanceState)
 	{
@@ -66,8 +69,19 @@ public class MainActivity extends Activity
 		super.onResume();
 		readPreferences();
 		editor.setDark(darkMode);
+		showSymbolView();
 	}
 
+	private void showSymbolView()
+	{
+		if(showSymbolView){
+			symbolView.setVisible(true);
+		}
+		else
+		{
+			symbolView.setVisible(false);
+		}
+	}
 
 	private void autoSave()
 	{
@@ -109,7 +123,7 @@ public class MainActivity extends Activity
 		String[] arr=new String[header.size()];
 		editor.addNames(header.toArray(arr));
 		View rootView=getWindow().getDecorView();
-		SymbolView symbolView=new SymbolView(MainActivity.this,rootView);
+		symbolView=new SymbolView(MainActivity.this,rootView);
 		symbolView.setOnSymbolViewClick(new SymbolView.OnSymbolViewClick() {
 			@Override
 			public void onClick(View view, String text) {
@@ -264,6 +278,7 @@ public class MainActivity extends Activity
 	{
 		darkMode=settingPreference.getBoolean("editor_dark_mode",false);
 		autoSave=settingPreference.getBoolean("editor_auto_save",true);
+		showSymbolView=settingPreference.getBoolean("show_symbol_view",false);
 	}
 
 	@Override

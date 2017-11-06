@@ -43,7 +43,10 @@
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.luoye.simpleC.MainActivity" >
+        <activity
+            android:name="com.luoye.simpleC.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

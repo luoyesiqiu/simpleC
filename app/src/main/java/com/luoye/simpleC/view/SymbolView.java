@@ -3,13 +3,13 @@ package com.luoye.simpleC.view;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Rect;
-import android.view.GestureDetector;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
@@ -26,11 +26,15 @@ public class SymbolView {
     private PopupWindow popupWindow;
     private View rootView;
     private OnSymbolViewClick onSymbolViewClick;
-
+    private  boolean visible =false;
+    private InputMethodManager inputMethodManager;
+    private boolean isFirst=true;
+    private int maxLayoutHeight=0;//布局总长
+    private int currentLayoutHeight=0;//当前布局高
     public SymbolView(Context context, final View rootView) {
         this.rootView=rootView;
         popupWindow = new PopupWindow(context);
-
+        inputMethodManager=(InputMethodManager)context.getSystemService(Context.INPUT_METHOD_SERVICE) ;
         View view = LayoutInflater.from(context).inflate(R.layout.symbol_view, null);
         linearLayout = (LinearLayout) view.findViewById(R.id.linear_container);
         final float[] tempPoint=new float[2];
@@ -70,10 +74,9 @@ public class SymbolView {
 
         }
         popupWindow.setWidth(LinearLayout.LayoutParams.MATCH_PARENT);
-        log(LinearLayout.LayoutParams.MATCH_PARENT+"");
         popupWindow.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
-        log(LinearLayout.LayoutParams.WRAP_CONTENT+"");
-        view.setBackgroundColor(Color.WHITE);
+        popupWindow.getBackground().setAlpha(0);//窗口完全透明
+        view.setBackgroundColor(Color.argb(0xee,0xff,0xff,0xff));//视图不完全透明
 
        popupWindow.setContentView(view);
         rootView.getViewTreeObserver().addOnGlobalLayoutListener(
@@ -83,12 +86,26 @@ public class SymbolView {
                     {
                         Rect r = new Rect();
                         rootView.getWindowVisibleDisplayFrame(r);
-                        if(r.bottom==rootView.getHeight())
+                        if(isFirst)
+                        {
+                            maxLayoutHeight=r.bottom;//初始化时为布局的最高高度
+                            isFirst=false;
+                        }
+                        else {
+                            currentLayoutHeight=r.bottom;//当前弹出的布局高
+                        }
+                        if(currentLayoutHeight==maxLayoutHeight|| !visible) {
                             hide();
-                        else
-                            show(rootView.getHeight()-r.bottom);
+                        }
+                        else if( currentLayoutHeight<maxLayoutHeight&&visible){
+                            show(rootView.getHeight() - r.bottom);
+                        }
                     }
                 });
+    }
+
+    public void setVisible(boolean visible){
+        this.visible=visible;
     }
 
     private void show(int bottom)

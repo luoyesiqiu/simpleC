@@ -10,9 +10,13 @@
     <CheckBoxPreference
         android:defaultValue="true"
         android:key="editor_auto_save"
-        android:title="自动保存"
-
-        >
+        android:title="自动保存">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="show_symbol_view"
+        android:summary="在输入法上显示符号输入栏，方便输入符号"
+        android:title="显示符号栏">
     </CheckBoxPreference>
 </PreferenceCategory>
 
