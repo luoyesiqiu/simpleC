@@ -493,9 +493,10 @@ public class TermSession {
             return;
         }
 
-
+        //System.out.println(new String(mReceiveBuffer));
         // Give subclasses a chance to process the read data
         processInput(mReceiveBuffer, 0, bytesRead);
+
         notifyUpdate();
     }
 

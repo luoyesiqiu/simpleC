@@ -94,13 +94,14 @@ public class ShellTermSession extends GenericTermSession {
         if (settings.verifyPath()) {
             path = checkPath(path);
         }
-        System.out.println("------------------>initializeSession:"+path);
+        //System.out.println("------------------>initializeSession:"+path);
         String[] env = new String[3];
         env[0] = "TERM=" + settings.getTermType();
         env[1] = "PATH=" + path;
         env[2] = "HOME=" + settings.getHomePath();
 
         mProcId = createSubprocess(settings.getShell(), env);
+       //System.out.println("------------>mProcId:"+mProcId);
     }
 
     private String checkPath(String path) {
@@ -213,6 +214,10 @@ public class ShellTermSession extends GenericTermSession {
         super.finish();
     }
 
+    public int getProcId()
+    {
+        return mProcId;
+    }
     /**
      * Send SIGHUP to a process group, SIGHUP notifies a terminal client, that the terminal have been disconnected,
      * and usually results in client's death, unless it's process is a daemon or have been somehow else detached

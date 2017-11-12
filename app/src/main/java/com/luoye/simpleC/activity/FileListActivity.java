@@ -2,13 +2,19 @@ package com.luoye.simpleC.activity;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
+import android.text.TextUtils;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -31,6 +37,8 @@ import java.util.List;
  */
 public class FileListActivity extends Activity {
 
+    private Bitmap folderIcon;
+    private Bitmap fileIcon;
     private FileListAdapter adapter;
     private List<FileListItem> listItems;
     private ListView listView;
@@ -44,6 +52,14 @@ public class FileListActivity extends Activity {
         ActionBar actionBar=getActionBar();
         if(actionBar!=null)
             actionBar.setDisplayHomeAsUpEnabled(true);
+        if(fileIcon==null)
+        {
+            fileIcon=BitmapFactory.decodeResource(getResources(), R.mipmap.file);
+        }
+        if(folderIcon==null)
+        {
+            folderIcon=BitmapFactory.decodeResource(getResources(), R.mipmap.folder);
+        }
         listItems = new ArrayList<>();
         adapter = new FileListAdapter(this, listItems);
         listView = (ListView) findViewById(R.id.file_list_view);
@@ -60,7 +76,7 @@ public class FileListActivity extends Activity {
         }
 
         loadList(curpath);
-        showToast("单击文件项选择");
+        //showToast("单击文件项选择");
 
     }
 
@@ -114,13 +130,13 @@ public class FileListActivity extends Activity {
         //不是根目录添加返回上级项
         clearList();
         if (!path.getAbsolutePath().equals("/")) {
-            listItems.add(new FileListItem(BitmapFactory.decodeResource(getResources(), R.mipmap.folder), "..", "", FileListItem.UP_ITEM));
+            listItems.add(new FileListItem(folderIcon, "..", "", FileListItem.UP_ITEM));
         }
         for (File f : files) {
             if (f.isDirectory())
-                listItems.add(new FileListItem(BitmapFactory.decodeResource(getResources(), R.mipmap.folder), f.getName(), "", FileListItem.FOLDER_ITEM));
+                listItems.add(new FileListItem(folderIcon, f.getName(), "", FileListItem.FOLDER_ITEM));
             else
-                listItems.add(new FileListItem(BitmapFactory.decodeResource(getResources(), R.mipmap.file), f.getName(), formetFileSize(f.length()), FileListItem.FILE_ITEM));
+                listItems.add(new FileListItem(fileIcon, f.getName(), formetFileSize(f.length()), FileListItem.FILE_ITEM));
         }
 
         adapter.notifyDataSetChanged();
@@ -193,10 +209,46 @@ public class FileListActivity extends Activity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.file_list_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(final MenuItem item) {
         int id = item.getItemId();
         if (id == android.R.id.home) {
             finish();
+        }
+        else if (id==R.id.menu_create_folder)
+        {
+            final EditText editText=new EditText(FileListActivity.this);
+            AlertDialog alertDialog=new AlertDialog.Builder(FileListActivity.this)
+                    .setPositiveButton("创建", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            if (!TextUtils.isEmpty(editText.getText())) {
+                                File folder = new File(curpath + File.separator + editText.getText());
+
+                                boolean ok = folder.mkdir();
+                                if (ok){
+                                    listItems.add(1, new FileListItem(folderIcon, editText.getText().toString(), "", FileListItem.FOLDER_ITEM));
+                                    adapter.notifyDataSetChanged();
+                                    listView.setSelection(0);//滚动到第一项
+                                }else
+                                {
+                                    showToast("文件夹创建失败");
+                                }
+                            }
+                            else {
+                                showToast("请输入文件夹名");
+                            }
+                        }
+                    })
+                    .setTitle("输入文件夹名")
+                    .setView(editText)
+                    .create();
+            alertDialog.show();
         }
         return super.onOptionsItemSelected(item);
     }

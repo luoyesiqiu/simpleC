@@ -19,6 +19,8 @@ import java.util.zip.ZipFile;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
+import jackpal.term.RemoteInterface;
+
 /**
  * Created by zyw on 2017/9/28.
  */
@@ -36,6 +38,7 @@ public class Utils {
         String cmd = "." + f.getAbsolutePath() + File.separator + "temp.o";
         Intent intent =
                 new Intent("jackpal.androidterm.RUN_SCRIPT");
+        //intent.setAction("jackpal.androidterm.RUN_SCRIPT");
         intent.addCategory(Intent.CATEGORY_DEFAULT);
         intent.putExtra("jackpal.androidterm.iInitialCommand", cmd);
         context.startActivity(intent);
@@ -156,22 +159,25 @@ public class Utils {
      * @param context
      * @param src
      */
-    public static ShellUtils.CommandResult compile(Context context, File src)
+    public static ShellUtils.CommandResult compile(Context context, File[] src)
     {
-        File f=context.getFilesDir();
-        ShellUtils.execCommand("cp -f "+src.getAbsolutePath()+" "+f.getAbsolutePath()+File.separator+"temp.c",false);
+        File internalDir=context.getFilesDir();
+
+        StringBuilder filesString=new StringBuilder();
+        for(int i=0;i<src.length;i++)
+            filesString.append(src[i]+" ");
         StringBuilder stringBuilder=new StringBuilder();
         stringBuilder.append(".");
-        stringBuilder.append(f.getAbsolutePath()+File.separator);
-        stringBuilder.append("tcc -I");
-        stringBuilder.append(f.getAbsolutePath()+File.separator+"include ");
-        stringBuilder.append("-L");
-        stringBuilder.append(f.getAbsolutePath()+File.separator+"lib ");
-        stringBuilder.append(f.getAbsolutePath()+File.separator+"lib"+File.separator+"fix.o ");
-        stringBuilder.append("-static -ldl -lm -lrt -lpthread -lcrypt ");
-        stringBuilder.append(f.getAbsolutePath()+File.separator+"temp.c");
+        stringBuilder.append(internalDir.getAbsolutePath()+File.separator);
+        stringBuilder.append("tcc");
+        stringBuilder.append(" "+filesString);
+        stringBuilder.append(" -I"+internalDir.getAbsolutePath()+File.separator+"include");
+        stringBuilder.append(" -L");
+        stringBuilder.append(internalDir.getAbsolutePath()+File.separator+"lib");
+        stringBuilder.append(" -static -ldl -lm -lrt -lpthread -lcrypt ");
         stringBuilder.append(" -o ");
-        stringBuilder.append(f.getAbsolutePath()+File.separator+"temp.o");
+        stringBuilder.append(internalDir.getAbsolutePath()+File.separator+"temp.o");
+        stringBuilder.append(" "+internalDir.getAbsolutePath()+File.separator+"lib"+File.separator+"fix.o");
         //System.out.println("-------------------->"+stringBuilder.toString());
         ShellUtils.CommandResult result=ShellUtils.execCommand(stringBuilder.toString(),false);
 

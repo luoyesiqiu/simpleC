@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
+import android.graphics.Color;
 import android.net.wifi.WifiManager;
 import android.os.*;
 import android.preference.Preference;
@@ -25,6 +26,7 @@ import com.luoye.simpleC.util.ShellUtils;
 import com.luoye.simpleC.util.Utils;
 import com.luoye.simpleC.view.SymbolView;
 import com.luoye.simpleC.view.TextEditor;
+import com.myopicmobile.textwarrior.android.RecentFiles;
 import com.myopicmobile.textwarrior.common.ReadThread;
 import com.myopicmobile.textwarrior.common.WriteThread;
 
@@ -32,7 +34,10 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import jackpal.term.RunScript;
 import jackpal.term.RunShortcut;
@@ -51,7 +56,7 @@ public class MainActivity extends Activity
 	private boolean showSymbolView=false;
 	private  SymbolView symbolView;
 	private final String PROBLEMS_URL="https://github.com/luoyesiqiu/C--Problems/blob/master/Problems.md";
-
+	private RecentFiles recentFiles;
 	@Override
     public void onCreate(Bundle savedInstanceState)
 	{
@@ -130,6 +135,7 @@ public class MainActivity extends Activity
 				editor.paste(text);
 			}
 		});
+		recentFiles=new RecentFiles(this);
 	}
 
 
@@ -165,12 +171,8 @@ public class MainActivity extends Activity
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if(resultCode== ConstantPool.OK_SELECT_RESULT_CODE) {
 			if(data!=null) {
-				autoSave();
 				String path = data.getStringExtra("path");
-				editor.open(path);
-				ActionBar actionBar = getActionBar();
-				if (actionBar != null)
-					actionBar.setSubtitle(editor.getOpenedFile().getName());
+				openFile(path);
 			}
 		}
 		super.onActivityResult(requestCode, resultCode, data);
@@ -184,73 +186,23 @@ public class MainActivity extends Activity
 		{
 			//打开文件
 			case R.id.menu_open:
-
-				startActivityForResult(new Intent(MainActivity.this, FileListActivity.class),0);
-
+				selectFile();
 				break;
 			//保存
 			case  R.id.menu_save:
-				if(editor.getOpenedFile()!=null) {
-					editor.save(editor.getOpenedFile().getAbsolutePath());
-				}
-				else
-				{
-					showToast("没有打开文件");
-				}
+				save();
 				break;
 			//运行
 			case R.id.menu_run:
-				autoSave();//本地保存一次
-				editor.save(getFilesDir()+File.separator+"temp.c");//保存在缓存一次
-				ShellUtils.CommandResult result = Utils.compile(getApplicationContext(),new File(getFilesDir()+File.separator+"temp.c"));
-				String info = null;
-				if (result.result == 0) {
-					showToast("编译成功");
-					Utils.execBin(MainActivity.this);
-
-				} else {
-					info = result.successMsg;
-					View view=LayoutInflater.from(MainActivity.this).inflate(R.layout.console,null);
-					TextView infoTextView=(TextView)view.findViewById(R.id.console_msg);
-					infoTextView.setText(info);
-					AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
-							.setTitle("编译失败")
-							.setView(view)
-
-							.setPositiveButton("确定", null)
-							.create();
-					alertDialog.show();
-				}
+				run();
 				break;
 			//另存为
 			case R.id.menu_save_as:
-				final EditText editText=new EditText(MainActivity.this);
-				AlertDialog alertDialog=new AlertDialog.Builder(MainActivity.this)
-						.setPositiveButton("保存", new DialogInterface.OnClickListener() {
-							@Override
-							public void onClick(DialogInterface dialogInterface, int i) {
-								if (!TextUtils.isEmpty(editText.getText())) {
-									File f = new File(ConstantPool.FILE_PATH);
-									editor.save(f.getAbsolutePath() + File.separator + editText.getText());
-								} else {
-									showToast("请输入文件名");
-								}
-							}
-						})
-						.setTitle("输入文件名")
-						.setView(editText)
-						.create();
-				alertDialog.show();
+				saveAs();
 				break;
 			//关闭文件
 			case R.id.menu_close_file:
-				autoSave();
-				editor.setOpenedFile(null);
-				ActionBar actionBar=getActionBar();
-				if (actionBar != null)
-					actionBar.setSubtitle(null);
-				editor.setText("");
-
+				closeFile();
 				break;
 			//重做
 			case R.id.menu_redo:
@@ -262,17 +214,155 @@ public class MainActivity extends Activity
 				break;
 			//设置
 			case R.id.menu_setting:
-				startActivity(new Intent(MainActivity.this, SettingActivity.class));
+				preferences();
 				break;
 			case R.id.menu_learn:
-				Intent intent=new Intent(MainActivity.this, HelpActivity.class);
-				intent.putExtra("title","练习");
-				intent.putExtra("data",PROBLEMS_URL);
-				startActivity(intent);
+				exercise();
+				break;
+			case R.id.menu_recent_file:
+				recent();
 				break;
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+	private  void openFile(String path)
+	{
+		autoSave();
+		editor.open(path);
+		recentFiles.addRecentFile(path);
+		recentFiles.save();
+		ActionBar actionBar = getActionBar();
+		if (actionBar != null)
+			actionBar.setSubtitle(editor.getOpenedFile().getName());
+	}
+
+	private  void recent(){
+		final List<String> recentFilesList=recentFiles.getRecentFiles();
+
+		final String[] recentFilesArray=new String[recentFilesList.size()];
+		Iterator<String> iterator=recentFilesList.iterator();
+		for(int i=0;iterator.hasNext();i++){
+			String temp=iterator.next();
+			recentFilesArray[i]=new File(temp).getName();
+		}
+		new AlertDialog.Builder(this).setTitle("最近打开文件")
+				.setItems(recentFilesArray, new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialogInterface, int idx) {
+						openFile(recentFilesList.get(idx));
+					}
+				})
+				.create()
+				.show();
+
+	}
+	private void exercise()
+	{
+		Intent intent=new Intent(MainActivity.this, HelpActivity.class);
+		intent.putExtra("title","练习");
+		intent.putExtra("data",PROBLEMS_URL);
+		startActivity(intent);
+	}
+	private void preferences()
+	{
+		startActivity(new Intent(MainActivity.this, SettingActivity.class));
+	}
+	private  void selectFile()
+	{
+		startActivityForResult(new Intent(MainActivity.this, FileListActivity.class),0);
+	}
+	private void closeFile()
+	{
+		autoSave();
+		editor.setOpenedFile(null);
+		ActionBar actionBar=getActionBar();
+		if (actionBar != null)
+			actionBar.setSubtitle(null);
+		editor.setText("");
+	}
+	private  void save()
+	{
+		if(editor.getOpenedFile()!=null) {
+			editor.save(editor.getOpenedFile().getAbsolutePath());
+		}
+		else
+		{
+			saveAs();
+		}
+	}
+	private  void saveAs()
+	{
+		final EditText editText=new EditText(MainActivity.this);
+		AlertDialog alertDialog=new AlertDialog.Builder(MainActivity.this)
+				.setPositiveButton("保存", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialogInterface, int i) {
+						if (!TextUtils.isEmpty(editText.getText())) {
+							File f = new File(ConstantPool.FILE_PATH);
+							File newFile=new File(f.getAbsolutePath() + File.separator + editText.getText());
+							editor.save(newFile.getAbsolutePath());
+							editor.setOpenedFile(newFile.getAbsolutePath());
+							ActionBar actionBar=getActionBar();
+							if(actionBar!=null)
+							{
+								actionBar.setSubtitle(newFile.getName());
+							}
+						} else {
+							showToast("请输入文件名");
+						}
+					}
+				})
+				.setTitle("输入文件名")
+				.setView(editText)
+				.create();
+		alertDialog.show();
+	}
+	private void run()
+	{
+		autoSave();//本地保存一次
+		File[] files=new File[1];
+		//判断是否打开了文件
+		if(editor.getOpenedFile()!=null) {
+			files[0] = editor.getOpenedFile();
+		}else
+		{
+			editor.save(getFilesDir()+File.separator+"temp.c");//保存在缓存
+			files[0] = new File(getFilesDir()+File.separator+"temp.c");
+
+		}
+		ShellUtils.CommandResult result = Utils.compile(getApplicationContext(),files);
+		String info = null;
+		if (result.result == 0) {
+			showToast("编译成功");
+			Utils.execBin(MainActivity.this);
+
+		} else {
+			info = result.successMsg;
+			View view=LayoutInflater.from(MainActivity.this).inflate(R.layout.console,null);
+			TextView infoTextView=(TextView)view.findViewById(R.id.console_msg);
+			infoTextView.setText(info);
+			infoTextView.setTextColor(Color.BLACK);
+			Matcher matcher=Pattern.compile(":(\\d+):").matcher(info);
+			final String[] pos=new String[1];
+			if(matcher.find())
+				pos[0] = matcher.group(1);
+			AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
+					.setTitle("编译失败")
+					.setView(view)
+					.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+						@Override
+						public void onClick(DialogInterface dialogInterface, int i) {
+							if(pos[0]!=null)
+								editor.gotoLine(Integer.parseInt(pos[0]));
+
+						}
+					})
+					.create();
+			alertDialog.show();
+		}
+	}
+
 
 	private  void readPreferences()
 	{

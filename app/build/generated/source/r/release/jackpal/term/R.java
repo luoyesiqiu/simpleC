@@ -73,9 +73,9 @@ public final class R {
 	public static final class id {
 		public static final int imageview = 0x7f0b0000;
 		public static final int mainview = 0x7f0b0001;
-		public static final int menu_preferences = 0x7f0b0014;
-		public static final int menu_special_keys = 0x7f0b0013;
-		public static final int menu_toggle_soft_keyboard = 0x7f0b0012;
+		public static final int menu_preferences = 0x7f0b0015;
+		public static final int menu_special_keys = 0x7f0b0014;
+		public static final int menu_toggle_soft_keyboard = 0x7f0b0013;
 		public static final int scrollview = 0x7f0b0002;
 		public static final int textview = 0x7f0b0003;
 		public static final int view_flipper = 0x7f0b000d;
@@ -93,7 +93,7 @@ public final class R {
 		public static final int window_list_new_window = 0x7f040009;
 	}
 	public static final class menu {
-		public static final int main = 0x7f0d0000;
+		public static final int main = 0x7f0d0001;
 	}
 	public static final class string {
 		public static final int activity_shortcut_create = 0x7f07004e;

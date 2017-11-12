@@ -94,7 +94,7 @@ public class RecentFiles {
 
     private static final String TAG = "RecentFiles";
 
-    private static final String DATABASE_NAME = "textwarrior";
+    private static final String DATABASE_NAME = "simpleC";
     private static final String DATABASE_TABLE = "recent";
     private static final int DATABASE_VERSION = 1;
     

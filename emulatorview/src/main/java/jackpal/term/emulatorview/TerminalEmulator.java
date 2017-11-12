@@ -673,7 +673,7 @@ class TerminalEmulator {
                 header=header.replace("$","\\$");
             }
             //System.out.println("----------------->str:" + header);
-            str=str.replaceAll("(\\d+\\|)?"+header,"");
+            str=str.replaceAll("((\\d|127)\\|)?"+header,"");
             try {
                 buf=str.getBytes();
             } catch (Exception e) {

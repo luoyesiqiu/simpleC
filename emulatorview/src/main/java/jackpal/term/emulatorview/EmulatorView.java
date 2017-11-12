@@ -66,7 +66,7 @@ import android.widget.Scroller;
 public class EmulatorView extends View implements GestureDetector.OnGestureListener {
     private final static String TAG = "EmulatorView";
     private final static boolean LOG_KEY_EVENTS = false;
-    private final static boolean LOG_IME = false;
+    private final static boolean LOG_IME = true;
 
     /**
      * We defer some initialization until we have been layed out in the view
@@ -855,6 +855,7 @@ public class EmulatorView extends View implements GestureDetector.OnGestureListe
                 // In particular, del and the digit keys are sent here.
                 // (And I have reports that the HTC Magic also sends Return here.)
                 // As a bit of defensive programming, handle every key.
+
                 dispatchKeyEvent(event);
                 return true;
             }

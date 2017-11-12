@@ -102,18 +102,20 @@ public final class R {
         public static final int imageview=0x7f0b0000;
         public static final int linear_container=0x7f0b000c;
         public static final int mainview=0x7f0b0001;
-        public static final int menu_close_file=0x7f0b001b;
-        public static final int menu_learn=0x7f0b001d;
-        public static final int menu_open=0x7f0b0018;
-        public static final int menu_preferences=0x7f0b0014;
-        public static final int menu_redo=0x7f0b0017;
-        public static final int menu_run=0x7f0b0015;
-        public static final int menu_save=0x7f0b0019;
-        public static final int menu_save_as=0x7f0b001a;
-        public static final int menu_setting=0x7f0b001c;
-        public static final int menu_special_keys=0x7f0b0013;
-        public static final int menu_toggle_soft_keyboard=0x7f0b0012;
-        public static final int menu_undo=0x7f0b0016;
+        public static final int menu_close_file=0x7f0b001c;
+        public static final int menu_create_folder=0x7f0b0012;
+        public static final int menu_learn=0x7f0b001f;
+        public static final int menu_open=0x7f0b0019;
+        public static final int menu_preferences=0x7f0b0015;
+        public static final int menu_recent_file=0x7f0b001d;
+        public static final int menu_redo=0x7f0b0018;
+        public static final int menu_run=0x7f0b0016;
+        public static final int menu_save=0x7f0b001a;
+        public static final int menu_save_as=0x7f0b001b;
+        public static final int menu_setting=0x7f0b001e;
+        public static final int menu_special_keys=0x7f0b0014;
+        public static final int menu_toggle_soft_keyboard=0x7f0b0013;
+        public static final int menu_undo=0x7f0b0017;
         public static final int previewmdWebView1=0x7f0b000b;
         public static final int scrollview=0x7f0b0002;
         public static final int textview=0x7f0b0003;
@@ -141,8 +143,9 @@ public final class R {
         public static final int window_list_new_window=0x7f040009;
     }
     public static final class menu {
-        public static final int main=0x7f0d0000;
-        public static final int main_menu=0x7f0d0001;
+        public static final int file_list_menu=0x7f0d0000;
+        public static final int main=0x7f0d0001;
+        public static final int main_menu=0x7f0d0002;
     }
     public static final class mipmap {
         public static final int file=0x7f030000;

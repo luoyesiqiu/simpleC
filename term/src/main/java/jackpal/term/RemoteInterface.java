@@ -148,7 +148,7 @@ public class RemoteInterface extends Activity {
             builder.append(c);
         }
         builder.append('"');
-        System.out.println("-------------->quoteForBash:"+builder.toString());
+        //System.out.println("-------------->quoteForBash:"+builder.toString());
         return builder.toString();
     }
 
@@ -206,7 +206,6 @@ public class RemoteInterface extends Activity {
             // Target window not found, open a new one
             return openNewWindow(iInitialCommand);
         }
-
         if (iInitialCommand != null) {
             target.write(iInitialCommand);
             target.write('\r');

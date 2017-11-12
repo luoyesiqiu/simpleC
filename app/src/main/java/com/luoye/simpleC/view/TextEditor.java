@@ -122,6 +122,14 @@ public class TextEditor extends FreeScrollingTextField {
 		return  _hDoc.subSequence(getSelectionStart(), getSelectionEnd() - getSelectionStart()).toString();
 	}
 
+	public void gotoLine(int line) {
+		if (line > _hDoc.getRowCount()) {
+			line = _hDoc.getRowCount();
+		}
+		int i=getText().getLineOffset(line - 1);
+		setSelection(i);
+	}
+
     @Override
     public boolean onKeyShortcut(int keyCode, KeyEvent event) {
         final int filteredMetaState = event.getMetaState() & ~KeyEvent.META_CTRL_MASK;
@@ -200,7 +208,8 @@ public class TextEditor extends FreeScrollingTextField {
 		int newPosition = doc.undo();
 
 		if (newPosition >= 0) {
-			//TODO editor.setEdited(false); if reached original condition of file
+			//TODO editor.setEdited(false);
+			// if reached original condition of file
 			setEdited(true);
 
 			respan();
