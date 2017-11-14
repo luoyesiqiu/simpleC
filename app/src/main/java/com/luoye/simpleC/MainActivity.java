@@ -15,6 +15,8 @@ import com.luoye.simpleC.activity.FileListActivity;
 import com.luoye.simpleC.activity.HelpActivity;
 import com.luoye.simpleC.activity.SettingActivity;
 import com.luoye.simpleC.interfaces.CompileCallback;
+import com.luoye.simpleC.interfaces.ExecCallback;
+import com.luoye.simpleC.interfaces.UnzipCallback;
 import com.luoye.simpleC.util.ConstantPool;
 import com.luoye.simpleC.util.ShellUtils;
 import com.luoye.simpleC.util.Utils;
@@ -38,14 +40,16 @@ public class MainActivity extends Activity
 	private SharedPreferences sharedPreferences;
 	private ProgressDialog progressDialog;
 	private  static  final String KEY_FIRST_RUN="isFirstRun";
+	private  static  final String KEY_APP_VERSION="appVersion";
 	private ArrayList<String> header;
 	private SharedPreferences settingPreference;
 	private boolean darkMode=false;
 	private boolean autoSave=true;
 	private boolean showSymbolView=false;
 	private  SymbolView symbolView;
-	private final String PROBLEMS_URL="https://github.com/luoyesiqiu/C--Problems/blob/master/Problems.md";
+
 	private RecentFiles recentFiles;
+	private final  int MSG_INIT=0x100;
 	@Override
     public void onCreate(Bundle savedInstanceState)
 	{
@@ -89,23 +93,54 @@ public class MainActivity extends Activity
 		autoSave();
 	}
 
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		if(progressDialog!=null)
+			progressDialog.dismiss();
+	}
+
 	private  void init()
 	{
-		if(sharedPreferences.getBoolean(KEY_FIRST_RUN,true)) {
+		if(sharedPreferences.getBoolean(KEY_FIRST_RUN,true)
+				||!sharedPreferences.getString(KEY_APP_VERSION,"").equals(Utils.getAppVersion(MainActivity.this))) {
 			progressDialog=ProgressDialog.show(this,"","初始化中，请等待...",false,false);
 			new Thread() {
 				@Override
 				public void run() {
 					try {
 						InputStream inputStream=getAssets().open("bin.zip");
-						boolean step1=Utils.unzip(inputStream,getFilesDir());//解压bin
-						inputStream=getAssets().open("lib.zip");
-						boolean step2=Utils.unzip(inputStream,getFilesDir());//解压lib
-						Utils.changeToExecutable(new File(getFilesDir()+ File.separator+"tcc"));
-						//Utils.writeFile(MainActivity.this,"make",getFilesDir(),"make");
-						//Utils.changeToExecutable(new File(getFilesDir()+File.separator+"make"));
-						boolean success=step1&&step2;
-						handler.sendMessage(Message.obtain(handler,0,success));
+						//解压bin
+						Utils.unzip(inputStream, getFilesDir(), new UnzipCallback() {
+							@Override
+							public void onResult(boolean success) {
+								if(success) {
+									Utils.changeToExecutable(new File(getFilesDir() + File.separator + "tcc"));
+									Utils.changeToExecutable(new File(getFilesDir() + File.separator + "indent"));
+									try {
+										//解压lib
+										InputStream libInputStream=getAssets().open("lib.zip");
+										Utils.unzip(libInputStream, getFilesDir(), new UnzipCallback() {
+											@Override
+											public void onResult(boolean success) {
+												if(success){
+													handler.sendMessage(Message.obtain(handler,MSG_INIT,true));
+												}
+												else{
+													handler.sendMessage(Message.obtain(handler,MSG_INIT,false));
+												}
+											}
+										});
+									} catch (IOException e) {
+										e.printStackTrace();
+									}
+								}else
+								{
+									handler.sendMessage(Message.obtain(handler,MSG_INIT,false));
+								}
+							}
+						});//解压bin
+
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
@@ -131,8 +166,9 @@ public class MainActivity extends Activity
 	private  Handler handler=new Handler(){
 		@Override
 		public void handleMessage(Message msg) {
-			if(msg.what==0)
+			if(msg.what==MSG_INIT)
 			{
+				if(progressDialog!=null)
 				progressDialog.dismiss();
 				if(!(boolean)msg.obj)
 				{
@@ -150,6 +186,7 @@ public class MainActivity extends Activity
 					//写入
 					SharedPreferences.Editor editor=sharedPreferences.edit();
 					editor.putBoolean(KEY_FIRST_RUN,false);
+					editor.putString(KEY_APP_VERSION,Utils.getAppVersion(MainActivity.this));
 					editor.apply();
 				}
 			}
@@ -211,10 +248,33 @@ public class MainActivity extends Activity
 			case R.id.menu_recent_file:
 				recent();
 				break;
+			case R.id.menu_indent_code:
+				indent();
+				break;
 		}
 		return super.onOptionsItemSelected(item);
 	}
 
+	private  void indent()
+	{
+		final File[] fs=new File[1];
+		if(editor.getOpenedFile()==null) {
+
+			fs[0] = new File(getFilesDir()+File.separator+"temp.c");
+			editor.save(fs[0].getAbsolutePath());//保存在缓存
+		}
+		else
+		{
+			fs[0] = editor.getOpenedFile();
+			editor.save(fs[0].getAbsolutePath());//保存在缓存
+		}
+		Utils.execBin(MainActivity.this, new File(getFilesDir() + File.separator + "indent"),ConstantPool.INDENT_ARGS+" "+ fs[0].getAbsolutePath(), new ExecCallback() {
+			@Override
+			public void onResult(ShellUtils.CommandResult result) {
+				editor.open(fs[0].getAbsolutePath());
+			}
+		});
+	}
 	private  void openFile(String path)
 	{
 		autoSave();
@@ -250,7 +310,7 @@ public class MainActivity extends Activity
 	{
 		Intent intent=new Intent(MainActivity.this, HelpActivity.class);
 		intent.putExtra("title","练习");
-		intent.putExtra("data",PROBLEMS_URL);
+		intent.putExtra("data",ConstantPool.PROBLEMS_URL);
 		startActivity(intent);
 	}
 	private void preferences()

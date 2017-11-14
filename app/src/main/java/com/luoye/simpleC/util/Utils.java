@@ -2,10 +2,14 @@ package com.luoye.simpleC.util;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 
 import com.luoye.simpleC.activity.ConsoleActivity;
 import com.luoye.simpleC.interfaces.CompileCallback;
+import com.luoye.simpleC.interfaces.ExecCallback;
+import com.luoye.simpleC.interfaces.UnzipCallback;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -69,7 +73,7 @@ public class Utils {
         return  list;
     }
     /**
-     * 写文件
+     * 将Assets文件写出
      * @param context
      * @param assetName
      * @param outputDir
@@ -139,23 +143,25 @@ public class Utils {
      * @param context
      * @param src
      */
-    public static ShellUtils.CommandResult execBin(Context context, File src)
+    public static void execBin(Context context, File src,String args, ExecCallback execCallback)
     {
         File f=context.getFilesDir();
         StringBuilder stringBuilder=new StringBuilder();
         stringBuilder.append(".");
-        stringBuilder.append(f.getAbsolutePath()+File.separator+"temp.o");
-        System.out.println("-------------------->"+stringBuilder.toString());
+        stringBuilder.append(src.getAbsolutePath());
+        stringBuilder.append(" "+args);
+        //System.out.println("-------------------->"+stringBuilder.toString());
         ShellUtils.CommandResult result=ShellUtils.execCommand(stringBuilder.toString(),false);
 
-        return result;
+        if(execCallback!=null)
+            execCallback.onResult(result);
     }
     /**
      * 编译代码
      * @param context
      * @param src
      */
-    public static ShellUtils.CommandResult compile(Context context, File[] src,CompileCallback compileCallback)
+    public static void compile(Context context, File[] src,CompileCallback compileCallback)
     {
         File internalDir=context.getFilesDir();
 
@@ -176,8 +182,8 @@ public class Utils {
         stringBuilder.append(" "+internalDir.getAbsolutePath()+File.separator+"lib"+File.separator+"fix.o");
         //System.out.println("-------------------->"+stringBuilder.toString());
         ShellUtils.CommandResult result=ShellUtils.execCommand(stringBuilder.toString(),false);
-        compileCallback.onCompileResult(result);
-        return result;
+        if(compileCallback!=null)
+            compileCallback.onCompileResult(result);
     }
 
     /**
@@ -192,16 +198,17 @@ public class Utils {
      * 解压文件
      * @param srcIn
      * @param targetDir
+     * @param unzipCallback  解压回调
      * @return
      */
-    public static  boolean unzip(InputStream srcIn, File targetDir)
+    public static  void unzip(InputStream srcIn, File targetDir,UnzipCallback unzipCallback)
     {
         ZipInputStream zipInputStream=null;
         try {
             zipInputStream = new ZipInputStream(srcIn);
             ZipEntry zipEntry = null;
             while ((zipEntry = zipInputStream.getNextEntry()) != null) {
-                //System.out.println("============>:"+zipEntry.getName());
+                //System.out.println("------------>:"+zipEntry.getName());
                 if (zipEntry.isDirectory()) {
                     File file=new File(targetDir+File.separator+zipEntry.getName());
                     file.mkdir();
@@ -217,9 +224,12 @@ public class Utils {
                         fileOutputStream.close();
                     }
                 }
+            if(unzipCallback!=null)
+                unzipCallback.onResult(true);
             }catch(IOException e){
                 e.printStackTrace();
-                return false;
+                if(unzipCallback!=null)
+                    unzipCallback.onResult(false);
             }
             finally{
                 if (zipInputStream != null)
@@ -230,6 +240,23 @@ public class Utils {
                     }
 
             }
-        return true;
+
+    }
+    /**
+     * 获取app版本号
+     * @return 当前应用的版本号
+     */
+    public static String getAppVersion(Context context) {
+        String version=null;
+        try {
+            PackageManager manager = context.getPackageManager();
+            PackageInfo info = manager.getPackageInfo(context.getPackageName(), 0);
+             version = info.versionName;
+            return  version;
+        } catch (Exception e) {
+            e.printStackTrace();
+            version="0.0.0";
+        }
+        return version;
     }
 }

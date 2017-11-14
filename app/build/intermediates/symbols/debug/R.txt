@@ -29,14 +29,15 @@ int id file_size_tv 0x7f0a0004
 int id linear_container 0x7f0a0009
 int id menu_close_file 0x7f0a0012
 int id menu_create_folder 0x7f0a000b
-int id menu_learn 0x7f0a0015
+int id menu_indent_code 0x7f0a0014
+int id menu_learn 0x7f0a0016
 int id menu_open 0x7f0a000f
 int id menu_recent_file 0x7f0a0013
 int id menu_redo 0x7f0a000e
 int id menu_run 0x7f0a000c
 int id menu_save 0x7f0a0010
 int id menu_save_as 0x7f0a0011
-int id menu_setting 0x7f0a0014
+int id menu_setting 0x7f0a0015
 int id menu_undo 0x7f0a000d
 int id previewmdWebView1 0x7f0a0008
 int id titlebarTextView1 0x7f0a000a

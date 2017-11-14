@@ -46,14 +46,15 @@ public final class R {
         public static final int linear_container=0x7f0a0009;
         public static final int menu_close_file=0x7f0a0012;
         public static final int menu_create_folder=0x7f0a000b;
-        public static final int menu_learn=0x7f0a0015;
+        public static final int menu_indent_code=0x7f0a0014;
+        public static final int menu_learn=0x7f0a0016;
         public static final int menu_open=0x7f0a000f;
         public static final int menu_recent_file=0x7f0a0013;
         public static final int menu_redo=0x7f0a000e;
         public static final int menu_run=0x7f0a000c;
         public static final int menu_save=0x7f0a0010;
         public static final int menu_save_as=0x7f0a0011;
-        public static final int menu_setting=0x7f0a0014;
+        public static final int menu_setting=0x7f0a0015;
         public static final int menu_undo=0x7f0a000d;
         public static final int previewmdWebView1=0x7f0a0008;
         public static final int titlebarTextView1=0x7f0a000a;
