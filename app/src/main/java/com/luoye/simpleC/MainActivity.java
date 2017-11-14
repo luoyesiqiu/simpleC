@@ -4,31 +4,23 @@ import android.app.*;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.AssetManager;
 import android.graphics.Color;
-import android.net.wifi.WifiManager;
 import android.os.*;
-import android.preference.Preference;
 import android.preference.PreferenceManager;
-import android.text.InputType;
 import android.text.TextUtils;
-import android.util.DisplayMetrics;
-import android.util.Log;
-import android.util.TypedValue;
 import android.view.*;
 import android.widget.*;
 
 import com.luoye.simpleC.activity.FileListActivity;
 import com.luoye.simpleC.activity.HelpActivity;
 import com.luoye.simpleC.activity.SettingActivity;
+import com.luoye.simpleC.interfaces.CompileCallback;
 import com.luoye.simpleC.util.ConstantPool;
 import com.luoye.simpleC.util.ShellUtils;
 import com.luoye.simpleC.util.Utils;
 import com.luoye.simpleC.view.SymbolView;
 import com.luoye.simpleC.view.TextEditor;
 import com.myopicmobile.textwarrior.android.RecentFiles;
-import com.myopicmobile.textwarrior.common.ReadThread;
-import com.myopicmobile.textwarrior.common.WriteThread;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,9 +31,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import jackpal.term.RunScript;
-import jackpal.term.RunShortcut;
-import jackpal.term.Term;
 
 public class MainActivity extends Activity
 {
@@ -331,36 +320,41 @@ public class MainActivity extends Activity
 			files[0] = new File(getFilesDir()+File.separator+"temp.c");
 
 		}
-		ShellUtils.CommandResult result = Utils.compile(getApplicationContext(),files);
-		String info = null;
-		if (result.result == 0) {
-			showToast("编译成功");
-			Utils.execBin(MainActivity.this);
+		 Utils.compile(getApplicationContext(), files, new CompileCallback() {
+			@Override
+			public void onCompileResult(ShellUtils.CommandResult result) {
+				String info = null;
+				if (result.result == 0) {
+					showToast("编译成功");
+					Utils.execBin(MainActivity.this);
 
-		} else {
-			info = result.successMsg;
-			View view=LayoutInflater.from(MainActivity.this).inflate(R.layout.console,null);
-			TextView infoTextView=(TextView)view.findViewById(R.id.console_msg);
-			infoTextView.setText(info);
-			infoTextView.setTextColor(Color.BLACK);
-			Matcher matcher=Pattern.compile(":(\\d+):").matcher(info);
-			final String[] pos=new String[1];
-			if(matcher.find())
-				pos[0] = matcher.group(1);
-			AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
-					.setTitle("编译失败")
-					.setView(view)
-					.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-						@Override
-						public void onClick(DialogInterface dialogInterface, int i) {
-							if(pos[0]!=null)
-								editor.gotoLine(Integer.parseInt(pos[0]));
+				} else {
+					info = result.successMsg;
+					View view=LayoutInflater.from(MainActivity.this).inflate(R.layout.compile_error_layout,null);
+					TextView infoTextView=(TextView)view.findViewById(R.id.console_msg);
+					infoTextView.setText(info);
+					infoTextView.setTextColor(Color.BLACK);
+					Matcher matcher=Pattern.compile(":(\\d+):").matcher(info);
+					final String[] pos=new String[1];
+					if(matcher.find())
+						pos[0] = matcher.group(1);
+					AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
+							.setTitle("编译失败")
+							.setView(view)
+							.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+								@Override
+								public void onClick(DialogInterface dialogInterface, int i) {
+									if(pos[0]!=null)
+										editor.gotoLine(Integer.parseInt(pos[0]));
 
-						}
-					})
-					.create();
-			alertDialog.show();
-		}
+								}
+							})
+							.create();
+					alertDialog.show();
+				}
+			}
+		});
+
 	}
 
 

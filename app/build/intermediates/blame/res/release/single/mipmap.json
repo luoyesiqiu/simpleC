@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\mipmap\\redo.png",
-        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\redo.png"
-    },
-    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\mipmap\\icon.png",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\icon.png"
+    },
+    {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\mipmap\\redo.png",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\redo.png"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\mipmap\\undo.png",

@@ -655,43 +655,17 @@ class TerminalEmulator {
 
     /**
      * Accept bytes (typically from the pseudo-teletype) and process them.
-     * 输入终端模拟器的东西
+     *
      * @param buffer a byte array containing the bytes to be processed
      * @param base the first index of the array to process
      * @param length the number of bytes in the array to process
      */
-    String header=null;
     public void append(byte[] buffer, int base, int length) {
-        //改过
-        String str=new String(buffer,base,length);
-        int idx=str.indexOf("$");
-        byte[] buf=null;
-       //System.out.println("----------------->buffer1:" + EmulatorDebug.bytesToString(buffer, 0, length));
-        if(idx>-1) {
-            if(header==null) {
-                header = str.substring(0, idx + 1);
-                header=header.replace("$","\\$");
-            }
-            //System.out.println("----------------->str:" + header);
-            str=str.replaceAll("((\\d|127)\\|)?"+header,"");
-            try {
-                buf=str.getBytes();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            length=str.getBytes().length;
-            //System.out.println("----------------->buffer2:" + EmulatorDebug.bytesToString(buf, 0, length));
-        }else
-        {
-            buf=buffer;
-        }
-
         if (EmulatorDebug.LOG_CHARACTERS_FLAG) {
             Log.d(EmulatorDebug.LOG_TAG, "In: '" + EmulatorDebug.bytesToString(buffer, base, length) + "'");
         }
-
-        for (int i = 0; i < length ; i++) {
-            byte b = buf[base + i];
+        for (int i = 0; i < length; i++) {
+            byte b = buffer[base + i];
             try {
                 process(b);
                 mProcessedCharCount++;
@@ -744,13 +718,13 @@ class TerminalEmulator {
             setCursorCol(nextTabStop(mCursorCol));
             break;
 
-        case 13:
+        case 12:
             setCursorCol(0);
             break;
 
         case 10: // CR
         case 11: // VT
-        case 12: // LF
+        case 13: // LF
             doLinefeed();
             break;
 
@@ -779,7 +753,9 @@ class TerminalEmulator {
                 doEscRightSquareBracket(b);
             }
             break;
-
+            case 127: // DEL
+                System.out.println("-------------->mCursorCol:"+mCursorCol+",mColumns:"+mColumns);
+                break;
         default:
             mContinueSequence = false;
             switch (mEscapeState) {
@@ -1036,6 +1012,7 @@ class TerminalEmulator {
             scroll();
             newCursorRow = mBottomMargin - 1;
         }
+        setCursorCol(0);
         setCursorRow(newCursorRow);
     }
 

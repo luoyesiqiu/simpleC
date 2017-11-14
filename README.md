@@ -6,6 +6,8 @@ simpleC是手机上的C语言开发环境，可以编辑并编译C代码，并�
 
 [APK下载](https://www.coolapk.com/apk/166409)
 
+我的相似项目：[simpleJS](https://github.com/luoyesiqiu/simpleJS)
+
 ## 截图
 
 ![GIF](/screenshot/simpleC.gif)

@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 
-import java.io.BufferedInputStream;
+import com.luoye.simpleC.activity.ConsoleActivity;
+import com.luoye.simpleC.interfaces.CompileCallback;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,13 +15,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
 import java.util.zip.ZipInputStream;
-import java.util.zip.ZipOutputStream;
 
-import jackpal.term.RemoteInterface;
 
 /**
  * Created by zyw on 2017/9/28.
@@ -37,10 +35,8 @@ public class Utils {
         File f = context.getFilesDir();
         String cmd = "." + f.getAbsolutePath() + File.separator + "temp.o";
         Intent intent =
-                new Intent("jackpal.androidterm.RUN_SCRIPT");
-        //intent.setAction("jackpal.androidterm.RUN_SCRIPT");
-        intent.addCategory(Intent.CATEGORY_DEFAULT);
-        intent.putExtra("jackpal.androidterm.iInitialCommand", cmd);
+                new Intent(context, ConsoleActivity.class);
+        intent.putExtra("bin", cmd);
         context.startActivity(intent);
     }
 
@@ -159,7 +155,7 @@ public class Utils {
      * @param context
      * @param src
      */
-    public static ShellUtils.CommandResult compile(Context context, File[] src)
+    public static ShellUtils.CommandResult compile(Context context, File[] src,CompileCallback compileCallback)
     {
         File internalDir=context.getFilesDir();
 
@@ -180,7 +176,7 @@ public class Utils {
         stringBuilder.append(" "+internalDir.getAbsolutePath()+File.separator+"lib"+File.separator+"fix.o");
         //System.out.println("-------------------->"+stringBuilder.toString());
         ShellUtils.CommandResult result=ShellUtils.execCommand(stringBuilder.toString(),false);
-
+        compileCallback.onCompileResult(result);
         return result;
     }
 

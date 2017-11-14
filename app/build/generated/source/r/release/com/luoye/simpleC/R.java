@@ -8,144 +8,70 @@
 package com.luoye.simpleC;
 
 public final class R {
-    public static final class array {
-        public static final int control_keys_short_names=0x7f060000;
-        public static final int entries_actionbar_preference=0x7f060001;
-        public static final int entries_backaction_preference=0x7f060002;
-        public static final int entries_color_preference=0x7f060003;
-        public static final int entries_controlkey_preference=0x7f060004;
-        public static final int entries_cursorblink_preference=0x7f060005;
-        public static final int entries_cursorstyle_preference=0x7f060006;
-        public static final int entries_fnkey_preference=0x7f060007;
-        public static final int entries_fontsize_preference=0x7f060008;
-        public static final int entries_ime_preference=0x7f060009;
-        public static final int entries_orientation_preference=0x7f06000c;
-        public static final int entries_statusbar_preference=0x7f06000a;
-        public static final int entries_termtype_preference=0x7f06000d;
-        public static final int entryvalues_actionbar_preference=0x7f06000e;
-        public static final int entryvalues_backaction_preference=0x7f06000f;
-        public static final int entryvalues_color_preference=0x7f060010;
-        public static final int entryvalues_controlkey_preference=0x7f060011;
-        public static final int entryvalues_cursorblink_preference=0x7f060012;
-        public static final int entryvalues_cursorstyle_preference=0x7f060013;
-        public static final int entryvalues_fnkey_preference=0x7f060014;
-        public static final int entryvalues_fontsize_preference=0x7f060015;
-        public static final int entryvalues_ime_preference=0x7f060016;
-        public static final int entryvalues_orientation_preference=0x7f060017;
-        public static final int entryvalues_statusbar_preference=0x7f060018;
-        public static final int fn_keys_short_names=0x7f06000b;
-    }
     public static final class attr {
     }
-    public static final class bool {
-        public static final int pref_allow_prepend_path_default=0x7f0a0000;
-        public static final int pref_alt_sends_esc_default=0x7f0a0001;
-        public static final int pref_close_window_on_process_exit_default=0x7f0a0002;
-        public static final int pref_do_path_extensions_default=0x7f0a0003;
-        public static final int pref_mouse_tracking_default=0x7f0a0004;
-        public static final int pref_use_keyboard_shortcuts_default=0x7f0a0005;
-        public static final int pref_utf8_by_default_default=0x7f0a0006;
-        public static final int pref_verify_path_default=0x7f0a0007;
-    }
     public static final class color {
-        public static final int BLACK=0x7f080008;
-        public static final int BLUE=0x7f080009;
-        public static final int DARK_GREY=0x7f08000a;
-        public static final int DARK_RED=0x7f08000b;
-        public static final int GREEN=0x7f08000c;
-        public static final int GREY=0x7f08000d;
-        public static final int INDIGO=0x7f08000e;
-        public static final int LIGHT_BLUE=0x7f08000f;
-        public static final int LIGHT_BLUE2=0x7f080010;
-        public static final int LIGHT_GREY=0x7f080011;
-        public static final int MAROON=0x7f080012;
-        public static final int OFF_BLACK=0x7f080013;
-        public static final int OFF_WHITE=0x7f080014;
-        public static final int OLIVE_GREEN=0x7f080015;
-        public static final int ONDINE=0x7f080016;
-        public static final int PINK=0x7f080017;
-        public static final int PURPLE=0x7f080018;
-        public static final int RED=0x7f080019;
-        public static final int WHITE=0x7f08001a;
-        public static final int accent=0x7f080005;
-        public static final int colorAccent=0x7f080000;
-        public static final int colorPrimary=0x7f080001;
-        public static final int colorPrimaryDark=0x7f080002;
-        public static final int horizontal_divider=0x7f080003;
-        public static final int horizontal_vertical=0x7f080004;
-        public static final int primary=0x7f080006;
-        public static final int primary_dark=0x7f080007;
+        public static final int BLACK=0x7f070000;
+        public static final int BLUE=0x7f070001;
+        public static final int DARK_GREY=0x7f070002;
+        public static final int DARK_RED=0x7f070003;
+        public static final int GREEN=0x7f070004;
+        public static final int GREY=0x7f070005;
+        public static final int INDIGO=0x7f070006;
+        public static final int LIGHT_BLUE=0x7f070007;
+        public static final int LIGHT_BLUE2=0x7f070008;
+        public static final int LIGHT_GREY=0x7f070009;
+        public static final int MAROON=0x7f07000a;
+        public static final int OFF_BLACK=0x7f07000b;
+        public static final int OFF_WHITE=0x7f07000c;
+        public static final int OLIVE_GREEN=0x7f07000d;
+        public static final int ONDINE=0x7f07000e;
+        public static final int PINK=0x7f07000f;
+        public static final int PURPLE=0x7f070010;
+        public static final int RED=0x7f070011;
+        public static final int WHITE=0x7f070012;
     }
     public static final class drawable {
         public static final int atari_small=0x7f020000;
         public static final int atari_small_nodpi=0x7f020001;
-        public static final int btn_close_window=0x7f020002;
-        public static final int close_background=0x7f020003;
-        public static final int ic_folder=0x7f020004;
-        public static final int ic_folderup=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int ic_menu_add=0x7f020007;
-        public static final int ic_menu_back=0x7f020008;
-        public static final int ic_menu_close_clear_cancel=0x7f020009;
-        public static final int ic_menu_forward=0x7f02000a;
-        public static final int ic_menu_preferences=0x7f02000b;
-        public static final int ic_menu_windows=0x7f02000c;
-        public static final int ic_stat_service_notification_icon=0x7f02000d;
     }
     public static final class id {
-        public static final int console_msg=0x7f0b0004;
-        public static final int editor=0x7f0b0009;
-        public static final int file_icon=0x7f0b0005;
-        public static final int file_list_view=0x7f0b0008;
-        public static final int file_name_tv=0x7f0b0006;
-        public static final int file_size_tv=0x7f0b0007;
-        public static final int imageview=0x7f0b0000;
-        public static final int linear_container=0x7f0b000c;
-        public static final int mainview=0x7f0b0001;
-        public static final int menu_close_file=0x7f0b001c;
-        public static final int menu_create_folder=0x7f0b0012;
-        public static final int menu_learn=0x7f0b001f;
-        public static final int menu_open=0x7f0b0019;
-        public static final int menu_preferences=0x7f0b0015;
-        public static final int menu_recent_file=0x7f0b001d;
-        public static final int menu_redo=0x7f0b0018;
-        public static final int menu_run=0x7f0b0016;
-        public static final int menu_save=0x7f0b001a;
-        public static final int menu_save_as=0x7f0b001b;
-        public static final int menu_setting=0x7f0b001e;
-        public static final int menu_special_keys=0x7f0b0014;
-        public static final int menu_toggle_soft_keyboard=0x7f0b0013;
-        public static final int menu_undo=0x7f0b0017;
-        public static final int previewmdWebView1=0x7f0b000b;
-        public static final int scrollview=0x7f0b0002;
-        public static final int textview=0x7f0b0003;
-        public static final int titlebarTextView1=0x7f0b000e;
-        public static final int view_flipper=0x7f0b000d;
-        public static final int webview_progressBar=0x7f0b000a;
-        public static final int window_list_close=0x7f0b0011;
-        public static final int window_list_label=0x7f0b000f;
-        public static final int window_list_separator=0x7f0b0010;
-    }
-    public static final class integer {
-        public static final int pref_actionbar_default=0x7f0c0000;
-        public static final int pref_orientation_default=0x7f0c0001;
+        public static final int console_msg=0x7f0a0000;
+        public static final int editor=0x7f0a0006;
+        public static final int emulatorView=0x7f0a0001;
+        public static final int file_icon=0x7f0a0002;
+        public static final int file_list_view=0x7f0a0005;
+        public static final int file_name_tv=0x7f0a0003;
+        public static final int file_size_tv=0x7f0a0004;
+        public static final int linear_container=0x7f0a0009;
+        public static final int menu_close_file=0x7f0a0012;
+        public static final int menu_create_folder=0x7f0a000b;
+        public static final int menu_learn=0x7f0a0015;
+        public static final int menu_open=0x7f0a000f;
+        public static final int menu_recent_file=0x7f0a0013;
+        public static final int menu_redo=0x7f0a000e;
+        public static final int menu_run=0x7f0a000c;
+        public static final int menu_save=0x7f0a0010;
+        public static final int menu_save_as=0x7f0a0011;
+        public static final int menu_setting=0x7f0a0014;
+        public static final int menu_undo=0x7f0a000d;
+        public static final int previewmdWebView1=0x7f0a0008;
+        public static final int titlebarTextView1=0x7f0a000a;
+        public static final int webview_progressBar=0x7f0a0007;
     }
     public static final class layout {
-        public static final int console=0x7f040000;
-        public static final int file_list_item=0x7f040001;
-        public static final int file_list_layout=0x7f040002;
-        public static final int main=0x7f040003;
-        public static final int preview_compose=0x7f040004;
-        public static final int symbol_view=0x7f040005;
-        public static final int term_activity=0x7f040006;
+        public static final int compile_error_layout=0x7f040000;
+        public static final int console=0x7f040001;
+        public static final int file_list_item=0x7f040002;
+        public static final int file_list_layout=0x7f040003;
+        public static final int main=0x7f040004;
+        public static final int preview_compose=0x7f040005;
+        public static final int symbol_view=0x7f040006;
         public static final int titlebar=0x7f040007;
-        public static final int window_list_item=0x7f040008;
-        public static final int window_list_new_window=0x7f040009;
     }
     public static final class menu {
-        public static final int file_list_menu=0x7f0d0000;
-        public static final int main=0x7f0d0001;
-        public static final int main_menu=0x7f0d0002;
+        public static final int file_list_menu=0x7f090000;
+        public static final int main_menu=0x7f090001;
     }
     public static final class mipmap {
         public static final int file=0x7f030000;
@@ -156,155 +82,12 @@ public final class R {
         public static final int undo=0x7f030005;
     }
     public static final class string {
-        public static final int action_settings=0x7f070081;
-        public static final int activity_shortcut_create=0x7f07004e;
-        public static final int activity_term_here_title=0x7f07004f;
-        public static final int addshortcut_arguments_label=0x7f070050;
-        public static final int addshortcut_button_find_command=0x7f070073;
-        public static final int addshortcut_button_text_icon=0x7f070074;
-        public static final int addshortcut_command_hint=0x7f070075;
-        public static final int addshortcut_command_window_instructions=0x7f070076;
-        public static final int addshortcut_example_hint=0x7f070077;
-        public static final int addshortcut_make_text_icon=0x7f070078;
-        public static final int addshortcut_navigator_title=0x7f070079;
-        public static final int addshortcut_shortcut_label=0x7f07007a;
-        public static final int addshortcut_text_icon_instructions=0x7f070082;
-        public static final int addshortcut_title=0x7f07007b;
-        public static final int alt_sends_esc=0x7f070051;
-        public static final int alt_sends_esc_summary_off=0x7f070052;
-        public static final int alt_sends_esc_summary_on=0x7f070053;
-        public static final int app_name=0x7f070083;
-        public static final int application_terminal=0x7f070000;
-        public static final int author=0x7f070084;
-        public static final int close_window=0x7f070001;
-        public static final int colorvalue_icon_text_entry_hint=0x7f07007c;
-        public static final int colorvalue_label_lock_button_column=0x7f07007d;
-        public static final int colorvalue_letter_alpha=0x7f07007e;
-        public static final int colorvalue_letter_blue=0x7f070054;
-        public static final int colorvalue_letter_green=0x7f070055;
-        public static final int colorvalue_letter_red=0x7f070056;
-        public static final int confirm_window_close_message=0x7f070002;
-        public static final int control_key_dialog_control_disabled_text=0x7f070003;
-        public static final int control_key_dialog_control_text=0x7f070004;
-        public static final int control_key_dialog_fn_disabled_text=0x7f070005;
-        public static final int control_key_dialog_fn_text=0x7f070006;
-        public static final int control_key_dialog_title=0x7f070007;
-        public static final int copy_all=0x7f070008;
-        public static final int dialog_title_actionbar_preference=0x7f070009;
-        public static final int dialog_title_backaction_preference=0x7f07000a;
-        public static final int dialog_title_color_preference=0x7f07000b;
-        public static final int dialog_title_controlkey_preference=0x7f07000c;
-        public static final int dialog_title_cursorblink_preference=0x7f07000d;
-        public static final int dialog_title_cursorstyle_preference=0x7f07000e;
-        public static final int dialog_title_fnkey_preference=0x7f07000f;
-        public static final int dialog_title_fontsize_preference=0x7f070010;
-        public static final int dialog_title_ime_preference=0x7f070011;
-        public static final int dialog_title_initialcommand_preference=0x7f070012;
-        public static final int dialog_title_orientation_preference=0x7f070057;
-        public static final int dialog_title_shell_preference=0x7f070013;
-        public static final int dialog_title_statusbar_preference=0x7f070014;
-        public static final int dialog_title_termtype_preference=0x7f070015;
-        public static final int disable_wakelock=0x7f070016;
-        public static final int disable_wifilock=0x7f070017;
-        public static final int edit_text=0x7f070018;
-        public static final int email_transcript_chooser_title=0x7f070058;
-        public static final int email_transcript_no_email_activity_found=0x7f070059;
-        public static final int email_transcript_subject=0x7f07005a;
-        public static final int enable_wakelock=0x7f070019;
-        public static final int enable_wifilock=0x7f07001a;
-        public static final int fsnavigator_change_theme=0x7f07005b;
-        public static final int fsnavigator_no_external_storage=0x7f07005c;
-        public static final int fsnavigator_optional_enter_path=0x7f07005d;
-        public static final int fsnavigator_title=0x7f07005e;
-        public static final int github=0x7f070085;
-        public static final int hello_world=0x7f070086;
-        public static final int help=0x7f07005f;
-        public static final int help_url=0x7f070087;
-        public static final int keyboard_preferences=0x7f07001b;
-        public static final int new_window=0x7f07001c;
-        public static final int next_window=0x7f07001d;
-        public static final int paste=0x7f07001e;
-        public static final int perm_append_to_path=0x7f070060;
-        public static final int perm_prepend_to_path=0x7f070061;
-        public static final int perm_run_script=0x7f070062;
-        public static final int permdesc_append_to_path=0x7f070063;
-        public static final int permdesc_prepend_to_path=0x7f070064;
-        public static final int permdesc_run_script=0x7f070065;
-        public static final int pref_backaction_default=0x7f070088;
-        public static final int pref_color_default=0x7f070089;
-        public static final int pref_controlkey_default=0x7f07008a;
-        public static final int pref_cursorblink_default=0x7f07008b;
-        public static final int pref_cursorstyle_default=0x7f07008c;
-        public static final int pref_fnkey_default=0x7f07008d;
-        public static final int pref_fontsize_default=0x7f07008e;
-        public static final int pref_ime_default=0x7f07008f;
-        public static final int pref_initialcommand_default=0x7f070090;
-        public static final int pref_shell_default=0x7f070091;
-        public static final int pref_statusbar_default=0x7f070092;
-        public static final int pref_termtype_default=0x7f070093;
-        public static final int preferences=0x7f07001f;
-        public static final int prev_window=0x7f070020;
-        public static final int process_exit_message=0x7f070021;
-        public static final int qq_group=0x7f070094;
-        public static final int reset=0x7f070022;
-        public static final int reset_toast_notification=0x7f070023;
-        public static final int screen_preferences=0x7f070024;
-        public static final int select_text=0x7f070025;
-        public static final int send_control_key=0x7f070026;
-        public static final int send_email=0x7f070027;
-        public static final int send_fn_key=0x7f070028;
-        public static final int service_notify_text=0x7f070029;
-        public static final int shell_preferences=0x7f07002a;
-        public static final int special_keys=0x7f07002b;
-        public static final int summary_actionbar_preference=0x7f07002c;
-        public static final int summary_allow_prepend_path_preference=0x7f070066;
-        public static final int summary_backaction_preference=0x7f07002d;
-        public static final int summary_close_window_on_process_exit_preference=0x7f07002e;
-        public static final int summary_color_preference=0x7f07002f;
-        public static final int summary_controlkey_preference=0x7f070030;
-        public static final int summary_cursorblink_preference=0x7f070031;
-        public static final int summary_cursorstyle_preference=0x7f070032;
-        public static final int summary_do_path_extensions_preference=0x7f070067;
-        public static final int summary_fnkey_preference=0x7f070033;
-        public static final int summary_fontsize_preference=0x7f070034;
-        public static final int summary_home_path_preference=0x7f070068;
-        public static final int summary_ime_preference=0x7f070035;
-        public static final int summary_initialcommand_preference=0x7f070036;
-        public static final int summary_mouse_tracking_preference=0x7f070069;
-        public static final int summary_orientation_preference=0x7f07006a;
-        public static final int summary_shell_preference=0x7f070037;
-        public static final int summary_statusbar_preference=0x7f070038;
-        public static final int summary_termtype_preference=0x7f070039;
-        public static final int summary_utf8_by_default_preference=0x7f07003a;
-        public static final int summary_verify_path_preference=0x7f07006b;
-        public static final int text_preferences=0x7f07003b;
-        public static final int title_actionbar_preference=0x7f07003c;
-        public static final int title_allow_prepend_path_preference=0x7f07007f;
-        public static final int title_backaction_preference=0x7f07003d;
-        public static final int title_close_window_on_process_exit_preference=0x7f07003e;
-        public static final int title_color_preference=0x7f07003f;
-        public static final int title_controlkey_preference=0x7f070040;
-        public static final int title_cursorblink_preference=0x7f070041;
-        public static final int title_cursorstyle_preference=0x7f070042;
-        public static final int title_do_path_extensions_preference=0x7f07006c;
-        public static final int title_fnkey_preference=0x7f070043;
-        public static final int title_fontsize_preference=0x7f070044;
-        public static final int title_home_path_preference=0x7f07006d;
-        public static final int title_ime_preference=0x7f070045;
-        public static final int title_initialcommand_preference=0x7f070046;
-        public static final int title_mouse_tracking_preference=0x7f07006e;
-        public static final int title_orientation_preference=0x7f07006f;
-        public static final int title_shell_preference=0x7f070047;
-        public static final int title_statusbar_preference=0x7f070048;
-        public static final int title_termtype_preference=0x7f070049;
-        public static final int title_use_keyboard_shortcuts=0x7f070070;
-        public static final int title_utf8_by_default_preference=0x7f07004a;
-        public static final int title_verify_path_preference=0x7f070071;
-        public static final int toggle_soft_keyboard=0x7f07004b;
-        public static final int use_keyboard_shortcuts_summary_off=0x7f070072;
-        public static final int use_keyboard_shortcuts_summary_on=0x7f070080;
-        public static final int window_list=0x7f07004c;
-        public static final int window_title=0x7f07004d;
+        public static final int action_settings=0x7f080000;
+        public static final int app_name=0x7f080001;
+        public static final int author=0x7f080002;
+        public static final int github=0x7f080003;
+        public static final int hello_world=0x7f080004;
+        public static final int qq_group=0x7f080005;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
@@ -315,25 +98,12 @@ public final class R {
             backward-compatibility can go here.
         
          */
-        public static final int AppBaseTheme=0x7f090001;
-        /**  Customize your theme here. 
- All customizations that are NOT specific to a particular API-level can go here. 
+        public static final int AppBaseTheme=0x7f060000;
+        /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f090000;
-        public static final int Theme=0x7f090002;
-        public static final int Theme_Holo=0x7f090003;
-        public static final int Theme_Holo_ActionBarOverlay=0x7f090004;
-        public static final int Widget_ActionBarOverlay=0x7f090005;
+        public static final int AppTheme=0x7f060001;
     }
     public static final class xml {
-        public static final int preferences=0x7f050000;
-        public static final int setting=0x7f050001;
+        public static final int setting=0x7f050000;
     }
-    public static final class styleable {
-        /** Attributes that can be used with a EmulatorView.
-         */
-        public static final int[] EmulatorView = {
-            
-        };
-    };
 }

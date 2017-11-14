@@ -66,7 +66,7 @@ import android.widget.Scroller;
 public class EmulatorView extends View implements GestureDetector.OnGestureListener {
     private final static String TAG = "EmulatorView";
     private final static boolean LOG_KEY_EVENTS = false;
-    private final static boolean LOG_IME = true;
+    private final static boolean LOG_IME = false;
 
     /**
      * We defer some initialization until we have been layed out in the view
@@ -668,6 +668,9 @@ public class EmulatorView extends View implements GestureDetector.OnGestureListe
             private void mapAndSend(int c) throws IOException {
                 int result = mKeyListener.mapControlChar(c);
                 if (result < TermKeyListener.KEYCODE_OFFSET) {
+                    if(LOG_IME){
+                        System.out.println("KEYCODE_OFFSET:"+result);
+                    }
                     mTermSession.write(result);
                 } else {
                     mKeyListener.handleKeyCode(result - TermKeyListener.KEYCODE_OFFSET, null, getKeypadApplicationMode());
@@ -1112,6 +1115,9 @@ public class EmulatorView extends View implements GestureDetector.OnGestureListe
                 (byte)(32 + x),
                 (byte)(32 + y) };
             mTermSession.write(data, 0, data.length);
+            if(LOG_IME){
+                System.out.println("out_of_bounds:"+new String(data,0,data.length));
+            }
         }
     }
 

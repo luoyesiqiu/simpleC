@@ -21,6 +21,7 @@
         </activity>
         <activity android:name=".activity.FileListActivity"></activity>
         <activity android:name=".activity.SettingActivity" android:label="设置"></activity>
-        <activity android:name=".activity.HelpActivity" android:label="设置"></activity>
+        <activity android:name=".activity.HelpActivity" android:label="练习"></activity>
+        <activity android:name=".activity.ConsoleActivity" android:windowSoftInputMode="adjustResize" android:label="控制台"></activity>
     </application>
 </manifest>

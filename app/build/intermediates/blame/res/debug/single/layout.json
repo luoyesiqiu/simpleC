@@ -12,40 +12,12 @@
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\console.xml"
     },
     {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\layout\\symbol_view.xml",
-        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\layout\\symbol_view.xml"
-    },
-    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\file_list_item.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\file_list_item.xml"
     },
     {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\layout\\titlebar.xml",
-        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\layout\\titlebar.xml"
-    },
-    {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\layout\\console.xml",
-        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\layout\\console.xml"
-    },
-    {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\layout\\term_activity.xml",
-        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\layout\\term_activity.xml"
-    },
-    {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\layout\\file_list_item.xml",
-        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\layout\\file_list_item.xml"
-    },
-    {
-        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\window_list_item.xml",
-        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\layout\\window_list_item.xml"
-    },
-    {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\layout\\window_list_new_window.xml",
-        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\layout\\window_list_new_window.xml"
-    },
-    {
-        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\term_activity.xml",
-        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\layout\\term_activity.xml"
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\compile_error_layout.xml",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\compile_error_layout.xml"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\file_list_layout.xml",
@@ -56,23 +28,7 @@
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\symbol_view.xml"
     },
     {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\layout\\window_list_item.xml",
-        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\layout\\window_list_item.xml"
-    },
-    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\main.xml"
-    },
-    {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\layout\\file_list_layout.xml",
-        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\layout\\file_list_layout.xml"
-    },
-    {
-        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\window_list_new_window.xml",
-        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\layout\\window_list_new_window.xml"
-    },
-    {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
-        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\layout\\main.xml"
     }
 ]

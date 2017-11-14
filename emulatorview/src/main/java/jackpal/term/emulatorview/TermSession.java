@@ -62,7 +62,10 @@ public class TermSession {
 
     private TermKeyListener mKeyListener;
 
+    private  final  boolean Debug=false;
+
     private ColorScheme mColorScheme = BaseTextRenderer.defaultColorScheme;
+
     private UpdateCallback mNotify;
 
     private OutputStream mTermOut;
@@ -110,6 +113,12 @@ public class TermSession {
     }
     private FinishCallback mFinishCallback;
 
+    public interface EOFCallback {
+
+        void onEOF();
+    }
+    private EOFCallback mEOFCallback;
+
     private boolean mIsRunning = false;
     private Handler mMsgHandler = new Handler() {
         @Override
@@ -155,6 +164,9 @@ public class TermSession {
                         int read = mTermIn.read(mBuffer);
                         if (read == -1) {
                             // EOF -- process exited
+                            if (mEOFCallback != null) {
+                                mEOFCallback.onEOF();
+                            }
                             break;
                         }
                         int offset = 0;
@@ -170,7 +182,9 @@ public class TermSession {
                 } catch (IOException e) {
                 } catch (InterruptedException e) {
                 }
-
+//                if (mEOFCallback != null) {
+//                    mEOFCallback.onEOF();
+//                }
                 if (exitOnEOF) mMsgHandler.sendMessage(mMsgHandler.obtainMessage(EOF));
             }
         };
@@ -214,15 +228,21 @@ public class TermSession {
                 }
 
                 try {
+
                     writeQueue.read(buffer, 0, bytesToWrite);
+                    if(Debug) {
+                        for (int i=0;i<bytesToWrite;i++)
+                        {
+                            System.out.println("writeToOutput:"+buffer[i]);
+                        }
+                    }
                     termOut.write(buffer, 0, bytesToWrite);
                     termOut.flush();
-                } catch (IOException e) {
+                } catch (IOException|InterruptedException e) {
                     // Ignore exception
                     // We don't really care if the receiver isn't listening.
                     // We just make a best effort to answer the query.
-                    e.printStackTrace();
-                } catch (InterruptedException e) {
+
                     e.printStackTrace();
                 }
             }
@@ -609,6 +629,9 @@ public class TermSession {
         mFinishCallback = callback;
     }
 
+    public void setEOFCallback(EOFCallback callback) {
+        mEOFCallback = callback;
+    }
     /**
      * Finish this terminal session.  Frees resources used by the terminal
      * emulator and closes the attached <code>InputStream</code> and

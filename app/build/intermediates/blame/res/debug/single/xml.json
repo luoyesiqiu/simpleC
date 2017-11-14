@@ -1,18 +1,6 @@
 [
     {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\xml\\setting.xml",
-        "source": "D:\\Documents\\simpleC\\app\\src\\main\\res\\xml\\setting.xml"
-    },
-    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\xml\\setting.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\xml\\setting.xml"
-    },
-    {
-        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\xml\\preferences.xml"
-    },
-    {
-        "merged": "D:\\Documents\\simpleC\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "D:\\Documents\\simpleC\\app\\build\\intermediates\\exploded-aar\\simpleC\\term\\unspecified\\res\\xml\\preferences.xml"
     }
 ]

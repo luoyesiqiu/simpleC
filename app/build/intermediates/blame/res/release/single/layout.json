@@ -4,24 +4,16 @@
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\console.xml"
     },
     {
-        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\term_activity.xml",
-        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\layout\\term_activity.xml"
-    },
-    {
-        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\window_list_item.xml",
-        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\layout\\window_list_item.xml"
-    },
-    {
-        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\window_list_new_window.xml",
-        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\term\\unspecified\\res\\layout\\window_list_new_window.xml"
-    },
-    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\symbol_view.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\symbol_view.xml"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\file_list_item.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\file_list_item.xml"
+    },
+    {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\compile_error_layout.xml",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\compile_error_layout.xml"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\file_list_layout.xml",

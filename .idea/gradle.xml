@@ -11,8 +11,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/emulatorview" />
-            <option value="$PROJECT_DIR$/libtermexec" />
-            <option value="$PROJECT_DIR$/term" />
           </set>
         </option>
         <option name="myModules">
@@ -20,8 +18,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/emulatorview" />
-            <option value="$PROJECT_DIR$/libtermexec" />
-            <option value="$PROJECT_DIR$/term" />
           </set>
         </option>
       </GradleProjectSettings>
