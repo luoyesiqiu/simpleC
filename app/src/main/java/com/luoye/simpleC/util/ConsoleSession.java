@@ -22,7 +22,6 @@ public class ConsoleSession extends TermSession
     private  final  int LF = 10;
     private  final  int CR = 13;
     private  boolean finish=false;
-    private  FinishCallback finishCallback;
 
     public ConsoleSession(InputStream inputStream,OutputStream outputStream)
     {

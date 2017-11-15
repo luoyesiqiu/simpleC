@@ -27,6 +27,7 @@ public class ReadThread extends Thread
 
 	private  void readFile(String file)
 	{
+		boolean isOk=false;
 		FileInputStream fileInputStream = null;
 		StringBuilder stringBuilder=new StringBuilder();
 		try {
@@ -36,10 +37,11 @@ public class ReadThread extends Thread
 			while ((len=fileInputStream.read(buf))!=-1){
 				stringBuilder.append(new String(buf,0,len));
 			}
-			handler.sendMessage(Message.obtain(handler, MSG_READ_OK,stringBuilder.toString()));
+			isOk=true;
+
 		} catch (IOException e) {
 			e.printStackTrace();
-			handler.sendMessage(Message.obtain(handler, MSG_READ_FAIL));
+			isOk=false;
 		}finally {
 			if(fileInputStream!=null)
 			{
@@ -49,6 +51,15 @@ public class ReadThread extends Thread
 					e.printStackTrace();
 				}
 			}
+		}
+		if(isOk)
+		{
+			if(handler!=null)
+			handler.sendMessage(Message.obtain(handler, MSG_READ_OK,stringBuilder.toString()));
+		}else
+		{
+			if(handler!=null)
+			handler.sendMessage(Message.obtain(handler, MSG_READ_FAIL));
 		}
 
 	}

@@ -35,7 +35,7 @@ public class WriteThread extends  Thread {
      * @throws IOException
      */
     private   void writeFile( final  String text,File outputFile)  {
-
+        boolean isOk=false;
         if(!outputFile.getParentFile().exists())
             outputFile.getParentFile().mkdirs();
         FileOutputStream fileOutputStream=null;
@@ -43,10 +43,10 @@ public class WriteThread extends  Thread {
             fileOutputStream=new FileOutputStream(outputFile);
             fileOutputStream.write(text.getBytes());
             fileOutputStream.flush();
-            handler.sendMessage(Message.obtain(handler, MSG_WRITE_OK));
+            isOk=true;
         }catch (IOException e){
             e.printStackTrace();
-            handler.sendMessage(Message.obtain(handler, MSG_WRITE_FAIL));
+            isOk=false;
 
         }finally {
             if(fileOutputStream!=null)
@@ -56,6 +56,14 @@ public class WriteThread extends  Thread {
                     e.printStackTrace();
                 }
         }
-
+        if(isOk) {
+            if (handler != null)
+                handler.sendMessage(Message.obtain(handler, MSG_WRITE_OK));
+        }
+        else
+        {
+            if(handler!=null)
+                handler.sendMessage(Message.obtain(handler, MSG_WRITE_FAIL));
+        }
     }
 }

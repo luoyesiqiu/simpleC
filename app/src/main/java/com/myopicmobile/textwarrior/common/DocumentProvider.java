@@ -43,6 +43,7 @@ public class DocumentProvider implements CharSequence
 		_currIndex = 0;
 		_theText = rhs._theText;
 	}
+
 	@Override
 	public int length()
 	{

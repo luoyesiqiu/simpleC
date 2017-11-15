@@ -177,13 +177,14 @@ public class TextEditor extends FreeScrollingTextField {
 	{
 		_lastSelectFile=file;
 	}
+
 	public void insert(int idx, String text) {
 		selectText(false);
 		moveCaret(idx);
 		paste(text);
 	}
 
-	public void setText(CharSequence c, boolean isRep) {
+	public void replaceAll(CharSequence c) {
 		replaceText(0, getLength() - 1, c.toString());
 	}
 
@@ -204,14 +205,14 @@ public class TextEditor extends FreeScrollingTextField {
 
 
 	public void undo() {
-		DocumentProvider doc = createDocumentProvider();
+
+		DocumentProvider doc=createDocumentProvider();
 		int newPosition = doc.undo();
 
 		if (newPosition >= 0) {
 			//TODO editor.setEdited(false);
 			// if reached original condition of file
 			setEdited(true);
-
 			respan();
 			selectText(false);
 			moveCaret(newPosition);
@@ -221,6 +222,7 @@ public class TextEditor extends FreeScrollingTextField {
 	}
 
 	public void redo() {
+
 		DocumentProvider doc = createDocumentProvider();
 		int newPosition = doc.redo();
 

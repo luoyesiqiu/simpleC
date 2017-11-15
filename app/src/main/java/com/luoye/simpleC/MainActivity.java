@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.os.*;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.*;
 import android.widget.*;
 
@@ -23,6 +24,8 @@ import com.luoye.simpleC.util.Utils;
 import com.luoye.simpleC.view.SymbolView;
 import com.luoye.simpleC.view.TextEditor;
 import com.myopicmobile.textwarrior.android.RecentFiles;
+import com.myopicmobile.textwarrior.common.ReadThread;
+import com.myopicmobile.textwarrior.common.WriteThread;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,8 +42,12 @@ public class MainActivity extends Activity
 	private TextEditor editor;
 	private SharedPreferences sharedPreferences;
 	private ProgressDialog progressDialog;
+	//SharedPreference
 	private  static  final String KEY_FIRST_RUN="isFirstRun";
 	private  static  final String KEY_APP_VERSION="appVersion";
+	//Bundle
+	private  static  final String KEY_FILE_PATH="filePath";
+	private  static  final String KEY_FILE_CONTENT="fileContent";
 	private ArrayList<String> header;
 	private SharedPreferences settingPreference;
 	private boolean darkMode=false;
@@ -58,8 +65,35 @@ public class MainActivity extends Activity
 		setContentView(editor);
 		settingPreference= PreferenceManager.getDefaultSharedPreferences(this);
 		sharedPreferences=getSharedPreferences("setting",MODE_PRIVATE);
+		if(savedInstanceState!=null)
+		{
+			editor.replaceAll(savedInstanceState.getString(KEY_FILE_CONTENT,""));
+			String openFileName=savedInstanceState.getString(KEY_FILE_CONTENT,"");
+			if(!openFileName.equals("")){
+				setSubtitle(new File(openFileName).getName());
+			}
+		}
 		init();
 
+	}
+
+
+	private void setSubtitle(String title)
+	{
+		ActionBar actionBar=getActionBar();
+		if(actionBar!=null)
+		{
+			actionBar.setSubtitle(title);
+		}
+	}
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		if(editor.getOpenedFile()!=null) {
+			outState.putString(KEY_FILE_PATH, editor.getOpenedFile().getAbsolutePath());
+		}
+		if(editor.getText().toString().equals("")){
+			outState.putString(KEY_FILE_CONTENT, editor.getText().toString());
+		}
 	}
 
 	@Override
@@ -255,35 +289,54 @@ public class MainActivity extends Activity
 		return super.onOptionsItemSelected(item);
 	}
 
+	/**
+	 *缩进代码
+	 */
 	private  void indent()
 	{
-		final File[] fs=new File[1];
-		if(editor.getOpenedFile()==null) {
+		if(editor.getText().toString().equals(""))
+			return;
+		final File tempIndent= new File(getFilesDir()+File.separator+ConstantPool.INDENT_FILE_NAME);
 
-			fs[0] = new File(getFilesDir()+File.separator+"temp.c");
-			editor.save(fs[0].getAbsolutePath());//保存在缓存
-		}
-		else
-		{
-			fs[0] = editor.getOpenedFile();
-			editor.save(fs[0].getAbsolutePath());//保存在缓存
-		}
-		Utils.execBin(MainActivity.this, new File(getFilesDir() + File.separator + "indent"),ConstantPool.INDENT_ARGS+" "+ fs[0].getAbsolutePath(), new ExecCallback() {
+		//写出缓存文件
+		WriteThread writeThread=new WriteThread(editor.getText().toString(),tempIndent.getAbsolutePath(),new Handler(){
 			@Override
-			public void onResult(ShellUtils.CommandResult result) {
-				editor.open(fs[0].getAbsolutePath());
+			public void handleMessage(Message msg) {
+				if(msg.what==WriteThread.MSG_WRITE_OK)
+				{
+					//执行缩进
+					Utils.execBin(MainActivity.this, new File(getFilesDir() + File.separator + "indent"),ConstantPool.INDENT_ARGS+" "+ tempIndent.getAbsolutePath(), new ExecCallback() {
+						@Override
+						public void onResult(ShellUtils.CommandResult result) {
+							ReadThread readThread=new ReadThread(tempIndent.getAbsolutePath(),new Handler(){
+								@Override
+								public void handleMessage(Message msg) {
+									if(msg.what==ReadThread.MSG_READ_OK)
+									{
+										editor.replaceAll(msg.obj.toString());
+									}
+								}
+							});
+							readThread.start();
+						}
+					});
+				}
 			}
 		});
+		writeThread.start();
+
 	}
 	private  void openFile(String path)
 	{
-		autoSave();
+		//这里很重要！文件不要重复打开！！！
+		if(editor.getOpenedFile()!=null) {
+			if (!path.equals(editor.getOpenedFile().getAbsolutePath()))
+				autoSave();
+		}
 		editor.open(path);
 		recentFiles.addRecentFile(path);
 		recentFiles.save();
-		ActionBar actionBar = getActionBar();
-		if (actionBar != null)
-			actionBar.setSubtitle(editor.getOpenedFile().getName());
+		setSubtitle(editor.getOpenedFile().getName());
 	}
 
 	private  void recent(){
@@ -325,9 +378,7 @@ public class MainActivity extends Activity
 	{
 		autoSave();
 		editor.setOpenedFile(null);
-		ActionBar actionBar=getActionBar();
-		if (actionBar != null)
-			actionBar.setSubtitle(null);
+		setSubtitle(null);
 		editor.setText("");
 	}
 	private  void save()
@@ -352,11 +403,7 @@ public class MainActivity extends Activity
 							File newFile=new File(f.getAbsolutePath() + File.separator + editText.getText());
 							editor.save(newFile.getAbsolutePath());
 							editor.setOpenedFile(newFile.getAbsolutePath());
-							ActionBar actionBar=getActionBar();
-							if(actionBar!=null)
-							{
-								actionBar.setSubtitle(newFile.getName());
-							}
+							setSubtitle(newFile.getName());
 						} else {
 							showToast("请输入文件名");
 						}
@@ -367,20 +414,9 @@ public class MainActivity extends Activity
 				.create();
 		alertDialog.show();
 	}
-	private void run()
-	{
-		autoSave();//本地保存一次
-		File[] files=new File[1];
-		//判断是否打开了文件
-		if(editor.getOpenedFile()!=null) {
-			files[0] = editor.getOpenedFile();
-		}else
-		{
-			editor.save(getFilesDir()+File.separator+"temp.c");//保存在缓存
-			files[0] = new File(getFilesDir()+File.separator+"temp.c");
 
-		}
-		 Utils.compile(getApplicationContext(), files, new CompileCallback() {
+	private  void compile(File[] files){
+		Utils.compile(getApplicationContext(), files, new CompileCallback() {
 			@Override
 			public void onCompileResult(ShellUtils.CommandResult result) {
 				String info = null;
@@ -414,6 +450,31 @@ public class MainActivity extends Activity
 				}
 			}
 		});
+
+	}
+	private void run()
+	{
+
+		final File[] files=new File[1];
+		//判断是否打开了文件,编译前**一定要**保存
+		if(editor.getOpenedFile()!=null) {
+			files[0] = editor.getOpenedFile();
+
+		}else
+		{
+			files[0] = new File(getFilesDir()+File.separator+ConstantPool.TEMP_FILE_NAME);
+
+		}
+		WriteThread writeThread=new WriteThread(editor.getText().toString(),files[0].getAbsolutePath(),new Handler(){
+			@Override
+			public void handleMessage(Message msg) {
+				if(msg.what==WriteThread.MSG_WRITE_OK)
+				{
+					compile(files);
+				}
+			}
+		});
+		writeThread.start();
 
 	}
 

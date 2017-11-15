@@ -709,7 +709,7 @@ class TerminalEmulator {
             }
             break;
 
-        case 8: // BS
+        case 8: // BS，退格
             setCursorCol(Math.max(0, mCursorCol - 1));
             break;
 
@@ -754,7 +754,8 @@ class TerminalEmulator {
             }
             break;
             case 127: // DEL
-                System.out.println("-------------->mCursorCol:"+mCursorCol+",mColumns:"+mColumns);
+                blockClear(Math.max(0, mCursorCol - 1),mCursorRow,1);
+                setCursorCol(Math.max(0, mCursorCol - 1));
                 break;
         default:
             mContinueSequence = false;
