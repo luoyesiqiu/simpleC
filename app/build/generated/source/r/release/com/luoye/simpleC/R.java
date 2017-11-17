@@ -37,38 +37,42 @@ public final class R {
     }
     public static final class id {
         public static final int console_msg=0x7f0a0000;
-        public static final int editor=0x7f0a0006;
-        public static final int emulatorView=0x7f0a0001;
-        public static final int file_icon=0x7f0a0002;
-        public static final int file_list_view=0x7f0a0005;
-        public static final int file_name_tv=0x7f0a0003;
-        public static final int file_size_tv=0x7f0a0004;
-        public static final int linear_container=0x7f0a0009;
-        public static final int menu_close_file=0x7f0a0012;
-        public static final int menu_create_folder=0x7f0a000b;
-        public static final int menu_indent_code=0x7f0a0014;
-        public static final int menu_learn=0x7f0a0016;
-        public static final int menu_open=0x7f0a000f;
-        public static final int menu_recent_file=0x7f0a0013;
-        public static final int menu_redo=0x7f0a000e;
-        public static final int menu_run=0x7f0a000c;
-        public static final int menu_save=0x7f0a0010;
-        public static final int menu_save_as=0x7f0a0011;
-        public static final int menu_setting=0x7f0a0015;
-        public static final int menu_undo=0x7f0a000d;
-        public static final int previewmdWebView1=0x7f0a0008;
-        public static final int titlebarTextView1=0x7f0a000a;
-        public static final int webview_progressBar=0x7f0a0007;
+        public static final int editor=0x7f0a0008;
+        public static final int emulatorView=0x7f0a0003;
+        public static final int file_icon=0x7f0a0004;
+        public static final int file_list_view=0x7f0a0007;
+        public static final int file_name_tv=0x7f0a0005;
+        public static final int file_size_tv=0x7f0a0006;
+        public static final int linear_container=0x7f0a000b;
+        public static final int menu_close_file=0x7f0a0014;
+        public static final int menu_compile_option=0x7f0a0017;
+        public static final int menu_create_folder=0x7f0a000d;
+        public static final int menu_indent_code=0x7f0a0016;
+        public static final int menu_learn=0x7f0a0019;
+        public static final int menu_open=0x7f0a0011;
+        public static final int menu_recent_file=0x7f0a0015;
+        public static final int menu_redo=0x7f0a0010;
+        public static final int menu_run=0x7f0a000e;
+        public static final int menu_save=0x7f0a0012;
+        public static final int menu_save_as=0x7f0a0013;
+        public static final int menu_setting=0x7f0a0018;
+        public static final int menu_undo=0x7f0a000f;
+        public static final int multi_file_check_box=0x7f0a0001;
+        public static final int multi_file_edit=0x7f0a0002;
+        public static final int previewmdWebView1=0x7f0a000a;
+        public static final int titlebarTextView1=0x7f0a000c;
+        public static final int webview_progressBar=0x7f0a0009;
     }
     public static final class layout {
         public static final int compile_error_layout=0x7f040000;
-        public static final int console=0x7f040001;
-        public static final int file_list_item=0x7f040002;
-        public static final int file_list_layout=0x7f040003;
-        public static final int main=0x7f040004;
-        public static final int preview_compose=0x7f040005;
-        public static final int symbol_view=0x7f040006;
-        public static final int titlebar=0x7f040007;
+        public static final int compile_option_layout=0x7f040001;
+        public static final int console=0x7f040002;
+        public static final int file_list_item=0x7f040003;
+        public static final int file_list_layout=0x7f040004;
+        public static final int main=0x7f040005;
+        public static final int preview_compose=0x7f040006;
+        public static final int symbol_view=0x7f040007;
+        public static final int titlebar=0x7f040008;
     }
     public static final class menu {
         public static final int file_list_menu=0x7f090000;

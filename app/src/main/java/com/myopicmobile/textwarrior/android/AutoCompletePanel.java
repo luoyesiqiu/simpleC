@@ -84,12 +84,24 @@ public class AutoCompletePanel {
 				@Override
 				public void onItemClick(AdapterView<?> p1, View p2, int p3, long p4) {
 					// TODO: Implement this method
-					_textField.replaceText(_textField.getCaretPosition() - _constraint.length(), _constraint.length(), ((TextView)p2).getText().toString());
-					_adapter.abort();
-					dismiss();
+					select(p2);
 				}
 			});
-			
+
+	}
+	public void selectFirst()
+	{
+		View first=_adapter.getView(0,null,null);
+		_textField.replaceText(_textField.getCaretPosition() - _constraint.length(), _constraint.length(), ((TextView)first).getText().toString());
+		_adapter.abort();
+		dismiss();
+	}
+
+	public void select(View pos)
+	{
+		_textField.replaceText(_textField.getCaretPosition() - _constraint.length(), _constraint.length(), ((TextView)pos).getText().toString());
+		_adapter.abort();
+		dismiss();
 	}
 
 	public void setWidth(int width) {
@@ -154,6 +166,10 @@ public class AutoCompletePanel {
 		return _globalLanguage;
 	}
 
+	public boolean isShow() {
+		return  _autoCompletePanel.isShowing();
+	}
+
 	/**
 	 * Adapter定义
 	 */
@@ -206,7 +222,8 @@ public class AutoCompletePanel {
 			item.measure(0, 0);
 			_h = item.getMeasuredHeight();
 			return _h;
-		}/**
+		}
+		/**
 		 * 实现自动完成的过滤算法
 		 */
 		@Override

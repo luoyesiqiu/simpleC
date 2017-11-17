@@ -234,8 +234,8 @@ public class ConsoleActivity extends Activity implements TermSession.EOFCallback
         Process exec = null;
         try {
             startTime=System.currentTimeMillis();
-            exec = Runtime.getRuntime().exec(bin);
-            //execBuild.start();
+            exec =// Runtime.getRuntime().exec(bin);
+            execBuild.start();
 
         } catch (Exception e) {
             Log.e(TAG, "Could not start terminal process.", e);

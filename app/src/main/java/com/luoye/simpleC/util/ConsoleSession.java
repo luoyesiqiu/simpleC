@@ -25,10 +25,12 @@ public class ConsoleSession extends TermSession
 
     public ConsoleSession(InputStream inputStream,OutputStream outputStream)
     {
+        super();
+        list=new ArrayList<>();
         setTermIn(inputStream);
         setTermOut(outputStream);
         setDefaultUTF8Mode(true);
-        list=new ArrayList<>();
+
     }
 
     public void setFinish(boolean finish)

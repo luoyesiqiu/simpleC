@@ -18,6 +18,7 @@ import com.luoye.simpleC.activity.SettingActivity;
 import com.luoye.simpleC.interfaces.CompileCallback;
 import com.luoye.simpleC.interfaces.ExecCallback;
 import com.luoye.simpleC.interfaces.UnzipCallback;
+import com.luoye.simpleC.util.CFileNameFilter;
 import com.luoye.simpleC.util.ConstantPool;
 import com.luoye.simpleC.util.ShellUtils;
 import com.luoye.simpleC.util.Utils;
@@ -28,6 +29,7 @@ import com.myopicmobile.textwarrior.common.ReadThread;
 import com.myopicmobile.textwarrior.common.WriteThread;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -48,6 +50,8 @@ public class MainActivity extends Activity
 	//Bundle
 	private  static  final String KEY_FILE_PATH="filePath";
 	private  static  final String KEY_FILE_CONTENT="fileContent";
+	private  static  final String KEY_IS_MULTI_COMPILE="isMultiCompile";
+	private  static  final String KEY_MULTI_COMPILE_FILES_NAME="multiCompileFilesName";
 	private ArrayList<String> header;
 	private SharedPreferences settingPreference;
 	private boolean darkMode=false;
@@ -57,6 +61,9 @@ public class MainActivity extends Activity
 
 	private RecentFiles recentFiles;
 	private final  int MSG_INIT=0x100;
+
+	private  boolean isMultiFileCompile=false;
+	private  String multiFilesName="";
 	@Override
     public void onCreate(Bundle savedInstanceState)
 	{
@@ -72,11 +79,12 @@ public class MainActivity extends Activity
 			if(!openFileName.equals("")){
 				setSubtitle(new File(openFileName).getName());
 			}
+			multiFilesName=savedInstanceState.getString(KEY_MULTI_COMPILE_FILES_NAME,"");
+			isMultiFileCompile=savedInstanceState.getBoolean(KEY_IS_MULTI_COMPILE,false);
 		}
 		init();
 
 	}
-
 
 	private void setSubtitle(String title)
 	{
@@ -94,6 +102,8 @@ public class MainActivity extends Activity
 		if(editor.getText().toString().equals("")){
 			outState.putString(KEY_FILE_CONTENT, editor.getText().toString());
 		}
+		outState.putBoolean(KEY_IS_MULTI_COMPILE, isMultiFileCompile);
+		outState.putString(KEY_MULTI_COMPILE_FILES_NAME, multiFilesName);
 	}
 
 	@Override
@@ -212,6 +222,7 @@ public class MainActivity extends Activity
 								@Override
 								public void onClick(DialogInterface dialogInterface, int i) {
 									finish();
+									System.exit(0);
 								}
 							})
 							.create()
@@ -237,6 +248,7 @@ public class MainActivity extends Activity
 		}
 		super.onActivityResult(requestCode, resultCode, data);
 	}
+
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
@@ -285,10 +297,65 @@ public class MainActivity extends Activity
 			case R.id.menu_indent_code:
 				indent();
 				break;
+			case R.id.menu_compile_option:
+				compileOption();
+				break;
 		}
 		return super.onOptionsItemSelected(item);
 	}
 
+	private void compileOption()
+	{
+		View view=getLayoutInflater().inflate(R.layout.compile_option_layout,null);
+		CheckBox checkBox=(CheckBox) view.findViewById(R.id.multi_file_check_box);
+		final EditText editText=(EditText) view.findViewById(R.id.multi_file_edit);
+		if(editor.getOpenedFile()==null) {
+			isMultiFileCompile=false;
+			multiFilesName="";
+			checkBox.setEnabled(false);
+		}
+		checkBox.setChecked(isMultiFileCompile);
+		editText.setText(multiFilesName);
+
+		editText.setEnabled(checkBox.isChecked());
+
+		checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton compoundButton, boolean check) {
+				editText.setEnabled(check);
+				if(check) {
+					isMultiFileCompile = check;
+					if (editor.getOpenedFile() != null) {
+						String temp = "";
+						File[] sameDirFiles = editor.getOpenedFile().getParentFile().listFiles(new CFileNameFilter());
+						for (File f : sameDirFiles) {
+							temp += (f.getName()+" ");
+						}
+						editText.setText(temp);
+					}
+				}else{
+					File path=null;
+					if((path=editor.getOpenedFile())!=null) {
+						multiFilesName = path.getName();
+						editText.setText(multiFilesName);
+					}
+				}
+			}
+		});
+
+		new AlertDialog.Builder(this)
+				.setTitle("编译选项")
+				.setView(view)
+				.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialogInterface, int i) {
+						multiFilesName=editText.getText().toString();
+					}
+				})
+				.setNegativeButton("取消",null)
+				.create()
+				.show();
+	}
 	/**
 	 *缩进代码
 	 */
@@ -326,6 +393,11 @@ public class MainActivity extends Activity
 		writeThread.start();
 
 	}
+
+	/**
+	 * 打开一个文本文件
+	 * @param path
+     */
 	private  void openFile(String path)
 	{
 		//这里很重要！文件不要重复打开！！！
@@ -337,8 +409,14 @@ public class MainActivity extends Activity
 		recentFiles.addRecentFile(path);
 		recentFiles.save();
 		setSubtitle(editor.getOpenedFile().getName());
+
+		multiFilesName=new File(path).getName();
+		isMultiFileCompile=false;
 	}
 
+	/**
+	 * 最近打开文件
+	 */
 	private  void recent(){
 		final List<String> recentFilesList=recentFiles.getRecentFiles();
 
@@ -359,6 +437,10 @@ public class MainActivity extends Activity
 				.show();
 
 	}
+
+	/**
+	 * 练习
+	 */
 	private void exercise()
 	{
 		Intent intent=new Intent(MainActivity.this, HelpActivity.class);
@@ -374,6 +456,10 @@ public class MainActivity extends Activity
 	{
 		startActivityForResult(new Intent(MainActivity.this, FileListActivity.class),0);
 	}
+
+	/**
+	 * 关闭文件
+	 */
 	private void closeFile()
 	{
 		autoSave();
@@ -381,6 +467,10 @@ public class MainActivity extends Activity
 		setSubtitle(null);
 		editor.setText("");
 	}
+
+	/**
+	 * 保存
+	 */
 	private  void save()
 	{
 		if(editor.getOpenedFile()!=null) {
@@ -391,6 +481,10 @@ public class MainActivity extends Activity
 			saveAs();
 		}
 	}
+
+	/**
+	 * 另存为
+	 */
 	private  void saveAs()
 	{
 		final EditText editText=new EditText(MainActivity.this);
@@ -415,6 +509,10 @@ public class MainActivity extends Activity
 		alertDialog.show();
 	}
 
+	/**
+	 * 编译
+	 * @param files
+     */
 	private  void compile(File[] files){
 		Utils.compile(getApplicationContext(), files, new CompileCallback() {
 			@Override
@@ -452,25 +550,43 @@ public class MainActivity extends Activity
 		});
 
 	}
+
+	/**
+	 * 运行
+	 */
+	 File[] compileFiles=null;
 	private void run()
 	{
-
-		final File[] files=new File[1];
-		//判断是否打开了文件,编译前**一定要**保存
+		File openFile=null;
+		//判断是否打开了文件,编译前!!一定要!!保存
 		if(editor.getOpenedFile()!=null) {
-			files[0] = editor.getOpenedFile();
-
+			//判断是否多文件编译
+			openFile=editor.getOpenedFile();
+			if(!isMultiFileCompile) {
+				compileFiles=new File[1];
+				compileFiles[0]=editor.getOpenedFile();
+			}
+			else{
+				String[] fileNames=multiFilesName.split(" ");
+				compileFiles=new File[fileNames.length];
+				for(int i=0;i<fileNames.length;i++){
+					compileFiles[i]=new File(editor.getOpenedFile().getParent()+File.separator+fileNames[i]);
+					//log("----------->"+compileFiles[i].getAbsolutePath());
+				}
+			}
 		}else
 		{
-			files[0] = new File(getFilesDir()+File.separator+ConstantPool.TEMP_FILE_NAME);
+			compileFiles=new File[1];
+			openFile=compileFiles[0] = new File(getFilesDir()+File.separator+ConstantPool.TEMP_FILE_NAME);
 
 		}
-		WriteThread writeThread=new WriteThread(editor.getText().toString(),files[0].getAbsolutePath(),new Handler(){
+
+		WriteThread writeThread=new WriteThread(editor.getText().toString(),openFile.getAbsolutePath(),new Handler(){
 			@Override
 			public void handleMessage(Message msg) {
 				if(msg.what==WriteThread.MSG_WRITE_OK)
 				{
-					compile(files);
+					compile(compileFiles);
 				}
 			}
 		});
@@ -478,7 +594,13 @@ public class MainActivity extends Activity
 
 	}
 
+	private void log(String text) {
+		System.out.println("MainActivity:"+text);
+	}
 
+	/**
+	 * 读取Preferences，并保存在文件
+	 */
 	private  void readPreferences()
 	{
 		darkMode=settingPreference.getBoolean("editor_dark_mode",false);
@@ -491,6 +613,7 @@ public class MainActivity extends Activity
 	{
 		// TODO: Implement this method
 		getMenuInflater().inflate(R.menu.main_menu,menu);
+
 		return super.onCreateOptionsMenu(menu);
 	}
 

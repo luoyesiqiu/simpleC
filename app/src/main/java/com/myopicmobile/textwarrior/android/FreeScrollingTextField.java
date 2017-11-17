@@ -3151,6 +3151,15 @@ implements Document.TextFieldMetrics{
 				case KeyEvent.KEYCODE_MOVE_END:
 					moveCaret(_hDoc.length()-1);
 					break;
+				case KeyEvent.KEYCODE_ENTER:
+					if(_autoCompletePanel.isShow()){
+						_autoCompletePanel.selectFirst();
+					}
+					else
+					{
+						return super.sendKeyEvent(event);
+					}
+					break;
 				default:
 					return super.sendKeyEvent(event);
 				}

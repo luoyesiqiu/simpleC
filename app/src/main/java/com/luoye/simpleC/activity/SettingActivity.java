@@ -11,6 +11,7 @@ import android.preference.PreferenceFragment;
 import android.view.MenuItem;
 
 import com.luoye.simpleC.R;
+import com.luoye.simpleC.util.Utils;
 
 /**
  * Created by zyw on 2017/11/2.
@@ -46,9 +47,8 @@ public class SettingActivity extends PreferenceActivity {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
                     try {
-                        Intent it = new Intent(Intent.ACTION_VIEW);
-                        it.setData(Uri.parse("https://jq.qq.com/?_wv=1027&k=56wZNxE"));
-                        startActivity(it);
+                        Utils.joinQQGroup(getActivity(),"UiGfmkfCXFsmxwv1-sQ4LCwnMoXaTuxr");
+
                     }catch (Exception e)
                     {
                         e.printStackTrace();

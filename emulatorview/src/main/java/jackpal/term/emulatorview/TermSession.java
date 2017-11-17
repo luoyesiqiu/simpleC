@@ -209,7 +209,7 @@ public class TermSession {
                     }
                 };
 
-                // Drain anything in the queue from before we started
+                // Drain(写出) anything in the queue from before we started
                 writeToOutput();
 
                 Looper.loop();

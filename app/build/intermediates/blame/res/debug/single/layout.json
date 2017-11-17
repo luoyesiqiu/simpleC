@@ -16,6 +16,10 @@
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\file_list_item.xml"
     },
     {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\compile_option_layout.xml",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\compile_option_layout.xml"
+    },
+    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\compile_error_layout.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\compile_error_layout.xml"
     },
