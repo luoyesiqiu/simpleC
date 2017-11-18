@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\emulatorview\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="077db67f43fd8b37e86259b87fe87e0187bf5f9f">
+        <dex dex="D:\Documents\MulCode\app\build\intermediates\pre-dexed\release\MulCode-emulatorview-unspecified_4c93bb2eacc8b77ba9bd36aad17918e818e77b58.jar" />
+    </item>
+
+</items>

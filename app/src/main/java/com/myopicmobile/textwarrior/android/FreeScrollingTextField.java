@@ -2007,6 +2007,10 @@ implements Document.TextFieldMetrics{
 			case KeyEvent.KEYCODE_DPAD_UP:
 				_fieldController.moveCaretUp();
 				break;
+			case KeyEvent.KEYCODE_ENTER:
+				if(_autoCompletePanel.isShow())
+					_autoCompletePanel.selectFirst();
+				break;
 			default:
 				break;
 		}
@@ -2071,9 +2075,11 @@ implements Document.TextFieldMetrics{
 
 	@Override
 	public boolean onKeyUp(int keyCode, KeyEvent event) {
+
 		if(_navMethod.onKeyUp(keyCode, event)){
 			return true;
 		}
+
 
 		return super.onKeyUp(keyCode, event);
 	}
@@ -3152,6 +3158,7 @@ implements Document.TextFieldMetrics{
 					moveCaret(_hDoc.length()-1);
 					break;
 				case KeyEvent.KEYCODE_ENTER:
+				case KeyEvent.KEYCODE_NUMPAD_ENTER:
 					if(_autoCompletePanel.isShow()){
 						_autoCompletePanel.selectFirst();
 					}
@@ -3205,7 +3212,6 @@ implements Document.TextFieldMetrics{
 				text.toString());
 			_composingCharCount = 0;
 			_hDoc.endBatchEdit();
-
 			//TODO reduce invalidate calls
 			if(newCursorPosition > 1){
 				_fieldController.moveCaret(_caretPosition + newCursorPosition - 1);

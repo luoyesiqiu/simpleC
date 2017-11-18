@@ -15,95 +15,60 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="./data" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6fdea52-25c7-45a1-b6ec-3732ec3ae2d1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$4$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$4$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$7$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$4$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$4$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$7$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/simpleC_1.2.10.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/simpleC_1.2.11.apk" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$xml.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$xml.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$EmulatorViewGestureListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$EmulatorViewGestureListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/FileListActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/FileListActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/HelpActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/HelpActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/SettingActivity$SettingFragment$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/SettingActivity$SettingFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/SettingActivity$SettingFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/SettingActivity$SettingFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/SettingActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/SettingActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/adapter/FileListAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/adapter/FileListAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/util/ConsoleSession.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/util/ConsoleSession.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/util/Utils.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/util/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/view/SymbolView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/view/SymbolView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$xml.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$xml.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$EmulatorViewGestureListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$EmulatorViewGestureListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/FileListActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/FileListActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/HelpActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/HelpActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/SettingActivity$SettingFragment$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/SettingActivity$SettingFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/SettingActivity$SettingFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/SettingActivity$SettingFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/SettingActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/SettingActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/adapter/FileListAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/adapter/FileListAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/util/ConsoleSession.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/util/ConsoleSession.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/util/Utils.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/util/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/view/SymbolView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/view/SymbolView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/AutoCompletePanel$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/AutoCompletePanel$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/AutoCompletePanel$MyAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/AutoCompletePanel.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/AutoCompletePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/emulatorview/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/emulatorview/unspecified/jars/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/MulCode-emulatorview-unspecified_4c93bb2eacc8b77ba9bd36aad17918e818e77b58.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/MulCode-emulatorview-unspecified_4c93bb2eacc8b77ba9bd36aad17918e818e77b58.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_a4d36fbbec21eef8af5f6ea38730e983b8ba93a6.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_a4d36fbbec21eef8af5f6ea38730e983b8ba93a6.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/release/MulCode-emulatorview-unspecified_4c93bb2eacc8b77ba9bd36aad17918e818e77b58.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/release/MulCode-emulatorview-unspecified_4c93bb2eacc8b77ba9bd36aad17918e818e77b58.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/release/release_4f22197c8d0c8891edb2a1584e9f4b3913c9868c.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/release/release_4f22197c8d0c8891edb2a1584e9f4b3913c9868c.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-release.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-release.ap_" />
@@ -113,28 +78,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/luoye/simpleC/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/luoye/simpleC/test/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/luoye/simpleC/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/luoye/simpleC/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/luoye/simpleC/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/luoye/simpleC/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/luoye/simpleC/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/luoye/simpleC/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/com/luoye/simpleC/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/com/luoye/simpleC/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/release/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/release/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeReleaseResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/main_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/main_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/menu/main_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/menu/main_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/release/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/release/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" afterPath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/ConsoleActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/ConsoleActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/SettingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/SettingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/ConsoleSession.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/ConsoleSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emulatorview/emulatorview.iml" afterPath="$PROJECT_DIR$/emulatorview/emulatorview.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TermSession.java" afterPath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TermSession.java" />
     </list>
@@ -164,60 +119,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java">
+      <file leaf-file-name="AutoCompletePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-48.484848">
-              <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+            <state vertical-scroll-proportion="-84.878784">
+              <caret line="164" column="46" selection-start-line="164" selection-start-column="46" selection-end-line="164" selection-end-column="46" />
               <folding>
-                <element signature="method#init#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#6551#6741#0" expanded="true" />
-                <element signature="e#6740#6741#0" expanded="true" />
-                <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#8788#9471#0" expanded="true" />
-                <element signature="e#9470#9471#0" expanded="true" />
-                <element signature="e#9577#9763#0" expanded="true" />
-                <element signature="e#9762#9763#0" expanded="true" />
-                <element signature="e#10136#10869#0" expanded="true" />
-                <element signature="e#10419#10852#0" expanded="true" />
-                <element signature="e#10591#10808#0" expanded="true" />
-                <element signature="e#10807#10808#0" expanded="true" />
-                <element signature="e#10851#10852#0" expanded="true" />
-                <element signature="e#10868#10869#0" expanded="true" />
-                <element signature="e#11774#11952#0" expanded="true" />
-                <element signature="e#11951#11952#0" expanded="true" />
-                <element signature="e#12241#12242#0" expanded="true" />
-                <element signature="e#12315#12316#0" expanded="true" />
-                <element signature="e#12949#13467#0" expanded="true" />
-                <element signature="e#13466#13467#0" expanded="true" />
-                <element signature="e#13679#14793#0" expanded="true" />
-                <element signature="e#14508#14734#0" expanded="true" />
-                <element signature="e#14733#14734#0" expanded="true" />
-                <element signature="e#14792#14793#0" expanded="true" />
-                <element signature="e#15669#15832#0" expanded="true" />
-                <element signature="e#15831#15832#0" expanded="true" />
-                <element signature="e#15894#15895#0" expanded="true" />
-                <element signature="e#15941#15942#0" expanded="true" />
+                <element signature="e#4531#4532#0" expanded="true" />
+                <element signature="e#4576#4577#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_menu.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml">
+      <file leaf-file-name="EmulatorView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/EmulatorView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.823529">
-              <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/SettingActivity.java">
+      <file leaf-file-name="ByteQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/ByteQueue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -226,28 +155,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28337532">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsoleActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/ConsoleActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="15" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.5506608">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -257,7 +166,36 @@
         <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TermSession.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="161" column="21" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
+              <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+              <folding>
+                <element signature="e#4230#4756#0" expanded="true" />
+                <element signature="e#4755#4756#0" expanded="true" />
+                <element signature="e#4835#4836#0" expanded="true" />
+                <element signature="e#4862#4863#0" expanded="true" />
+                <element signature="e#7102#7484#0" expanded="true" />
+                <element signature="e#7483#7484#0" expanded="true" />
+                <element signature="e#21162#21163#0" expanded="true" />
+                <element signature="e#21204#21205#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsoleActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/ConsoleActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FreeScrollingTextField.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2009" column="0" selection-start-line="2009" selection-start-column="0" selection-end-line="2012" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -2120,7 +2058,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6017966652009" />
+        <entry key="$PROJECT_DIR$" value="6018138065330" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2714,7 +2652,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/TelnetSession.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/console.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/EmulatorView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/interfaces/FinishCallback.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/interfaces/CompileCallback.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/interfaces/UnzipCallback.java" />
@@ -2727,16 +2664,17 @@
         <option value="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TerminalEmulator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/SettingActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/ConsoleSession.java" />
-        <option value="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TermSession.java" />
         <option value="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/ByteQueue.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/ConsoleActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/CFileNameFilter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/compile_option_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java" />
+        <option value="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/EmulatorView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/ConsoleActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" />
+        <option value="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TermSession.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
@@ -2972,7 +2910,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
+              <option name="myItemId" value="activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3286,7 +3224,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.48715204" order="7" side_tool="false" content_ui="tabs" />
@@ -3294,28 +3232,28 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5235546" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39580908" sideWeight="0.4764454" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39580908" sideWeight="0.4764454" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.49785867" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.254818" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25267667" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25107068" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25053534" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -3362,60 +3300,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libtermexec/src/main/jni/process.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04892368">
-          <caret line="252" column="31" selection-start-line="252" selection-start-column="14" selection-end-line="252" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/term/src/main/java/jackpal/term/ShellTermSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/term/src/main/java/jackpal/term/Term.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8382353">
-          <caret line="524" column="21" selection-start-line="524" selection-start-column="21" selection-end-line="524" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libtermexec/src/main/java/jackpal/term/TermExec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="15" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/RecentFiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="56" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/file_list_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2058823">
-          <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/ShellUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3485,13 +3374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/os/Handler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3786611">
-          <caret line="92" column="25" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TermKeyListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3506,18 +3388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/EmulatorView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.09823183">
-          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3624,20 +3498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="146" column="19" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#17566#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2892#2893#0" expanded="false" />
-            <element signature="e#2930#2931#0" expanded="false" />
-            <element signature="e#3436#3437#0" expanded="false" />
-            <element signature="e#3481#3482#0" expanded="false" />
-            <element signature="e#11155#11156#0" expanded="false" />
-            <element signature="e#11199#11200#0" expanded="false" />
-            <element signature="e#11366#11367#0" expanded="false" />
-            <element signature="e#11420#11421#0" expanded="false" />
-            <element signature="e#17232#17233#0" expanded="false" />
-            <element signature="e#17277#17278#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3645,72 +3505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="756" column="67" selection-start-line="756" selection-start-column="67" selection-end-line="756" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#63934#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#1396#1397#0" expanded="false" />
-            <element signature="e#1428#1429#0" expanded="false" />
-            <element signature="e#14368#14369#0" expanded="false" />
-            <element signature="e#14398#14399#0" expanded="false" />
-            <element signature="e#21048#21049#0" expanded="false" />
-            <element signature="e#21081#21082#0" expanded="false" />
-            <element signature="e#21227#21228#0" expanded="false" />
-            <element signature="e#21260#21261#0" expanded="false" />
-            <element signature="e#21306#21307#0" expanded="false" />
-            <element signature="e#21368#21369#0" expanded="false" />
-            <element signature="e#21412#21413#0" expanded="false" />
-            <element signature="e#21472#21473#0" expanded="false" />
-            <element signature="e#21527#21528#0" expanded="false" />
-            <element signature="e#21573#21574#0" expanded="false" />
-            <element signature="e#21777#21778#0" expanded="false" />
-            <element signature="e#21818#21819#0" expanded="false" />
-            <element signature="e#22974#22975#0" expanded="false" />
-            <element signature="e#23006#23007#0" expanded="false" />
-            <element signature="e#32897#32898#0" expanded="false" />
-            <element signature="e#32937#32938#0" expanded="false" />
-            <element signature="e#33104#33105#0" expanded="false" />
-            <element signature="e#33141#33142#0" expanded="false" />
-            <element signature="e#33191#33192#0" expanded="false" />
-            <element signature="e#33228#33229#0" expanded="false" />
-            <element signature="e#50231#50232#0" expanded="false" />
-            <element signature="e#50271#50272#0" expanded="false" />
-            <element signature="e#50429#50430#0" expanded="false" />
-            <element signature="e#50462#50463#0" expanded="false" />
-            <element signature="e#50496#50497#0" expanded="false" />
-            <element signature="e#50529#50530#0" expanded="false" />
-            <element signature="e#50560#50561#0" expanded="false" />
-            <element signature="e#50590#50591#0" expanded="false" />
-            <element signature="e#53712#53713#0" expanded="false" />
-            <element signature="e#53764#53765#0" expanded="false" />
-            <element signature="e#53809#53810#0" expanded="false" />
-            <element signature="e#53861#53862#0" expanded="false" />
-            <element signature="e#54175#54176#0" expanded="false" />
-            <element signature="e#54208#54209#0" expanded="false" />
-            <element signature="e#54484#54485#0" expanded="false" />
-            <element signature="e#54525#54526#0" expanded="false" />
-            <element signature="e#57484#57485#0" expanded="false" />
-            <element signature="e#57523#57524#0" expanded="false" />
-            <element signature="e#57564#57565#0" expanded="false" />
-            <element signature="e#57628#57629#0" expanded="false" />
-            <element signature="e#59647#59648#0" expanded="false" />
-            <element signature="e#59682#59683#0" expanded="false" />
-            <element signature="e#61270#61271#0" expanded="false" />
-            <element signature="e#61307#61308#0" expanded="false" />
-            <element signature="e#61347#61348#0" expanded="false" />
-            <element signature="e#61381#61382#0" expanded="false" />
-            <element signature="e#63202#63203#0" expanded="false" />
-            <element signature="e#63234#63235#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/ByteQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#3949#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3718,31 +3512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#945#946#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1012#1013#0" expanded="false" />
-            <element signature="e#1041#1042#0" expanded="false" />
-            <element signature="e#2276#2277#0" expanded="false" />
-            <element signature="e#2306#2307#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TermSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="161" column="21" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/ConsoleActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="15" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3750,17 +3519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/SettingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3768,35 +3526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36136663">
           <caret line="184" column="19" selection-start-line="184" selection-start-column="19" selection-end-line="184" selection-end-column="19" />
-          <folding>
-            <element signature="e#4869#4870#0" expanded="true" />
-            <element signature="e#4920#4921#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.121212">
-          <caret line="201" column="20" selection-start-line="201" selection-start-column="20" selection-end-line="201" selection-end-column="20" />
-          <folding>
-            <element signature="e#1339#1372#0" expanded="true" />
-            <element signature="e#2325#2505#0" expanded="true" />
-            <element signature="e#2504#2505#0" expanded="true" />
-            <element signature="e#4548#4549#0" expanded="true" />
-            <element signature="e#4593#4594#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5454545">
-          <caret line="3164" column="17" selection-start-line="3164" selection-start-column="17" selection-end-line="3164" selection-end-column="17" />
-          <folding>
-            <element signature="e#12206#12207#0" expanded="true" />
-            <element signature="e#12247#12248#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3811,63 +3540,192 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-48.484848">
-          <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
           <folding>
-            <element signature="method#init#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6551#6741#0" expanded="true" />
-            <element signature="e#6740#6741#0" expanded="true" />
-            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#8788#9471#0" expanded="true" />
-            <element signature="e#9470#9471#0" expanded="true" />
-            <element signature="e#9577#9763#0" expanded="true" />
-            <element signature="e#9762#9763#0" expanded="true" />
-            <element signature="e#10136#10869#0" expanded="true" />
-            <element signature="e#10419#10852#0" expanded="true" />
-            <element signature="e#10591#10808#0" expanded="true" />
-            <element signature="e#10807#10808#0" expanded="true" />
-            <element signature="e#10851#10852#0" expanded="true" />
-            <element signature="e#10868#10869#0" expanded="true" />
-            <element signature="e#11774#11952#0" expanded="true" />
-            <element signature="e#11951#11952#0" expanded="true" />
-            <element signature="e#12241#12242#0" expanded="true" />
-            <element signature="e#12315#12316#0" expanded="true" />
-            <element signature="e#12949#13467#0" expanded="true" />
-            <element signature="e#13466#13467#0" expanded="true" />
-            <element signature="e#13679#14793#0" expanded="true" />
-            <element signature="e#14508#14734#0" expanded="true" />
-            <element signature="e#14733#14734#0" expanded="true" />
-            <element signature="e#14792#14793#0" expanded="true" />
-            <element signature="e#15669#15832#0" expanded="true" />
-            <element signature="e#15831#15832#0" expanded="true" />
-            <element signature="e#15894#15895#0" expanded="true" />
-            <element signature="e#15941#15942#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/EmulatorDebug.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/view/KeyEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4545455">
+          <caret line="117" column="28" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.823529">
+        <state vertical-scroll-proportion="0.33774835">
           <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/TouchNavigationMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <caret line="407" column="19" selection-start-line="407" selection-start-column="19" selection-end-line="407" selection-end-column="19" />
+          <folding>
+            <element signature="e#10080#10081#0" expanded="false" />
+            <element signature="e#10099#10100#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.714876">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+          <folding>
+            <element signature="method#init#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5454545">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/os/MessageQueue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/os/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1060605">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding>
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1060605">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+          <folding>
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#2337#2338#0" expanded="true" />
+            <element signature="e#2388#2389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/widget/BaseAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3847981">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding>
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/SettingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/ByteQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-84.878784">
+          <caret line="164" column="46" selection-start-line="164" selection-start-column="46" selection-end-line="164" selection-end-column="46" />
+          <folding>
+            <element signature="e#4531#4532#0" expanded="true" />
+            <element signature="e#4576#4577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2009" column="0" selection-start-line="2009" selection-start-column="0" selection-end-line="2012" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/EmulatorView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/ConsoleActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TermSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+          <folding>
+            <element signature="e#4230#4756#0" expanded="true" />
+            <element signature="e#4755#4756#0" expanded="true" />
+            <element signature="e#4835#4836#0" expanded="true" />
+            <element signature="e#4862#4863#0" expanded="true" />
+            <element signature="e#7102#7484#0" expanded="true" />
+            <element signature="e#7483#7484#0" expanded="true" />
+            <element signature="e#21162#21163#0" expanded="true" />
+            <element signature="e#21204#21205#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28337532">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.5506608">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
         </state>
       </provider>

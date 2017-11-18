@@ -98,6 +98,7 @@ public class TermSession {
     private static final int FINISH = 3;
     private static final int EOF = 4;
 
+    private  final int READ_DELAY =10;//读取数据间隔
     /**
      * Callback to be invoked when a {@link TermSession} finishes.
      *
@@ -175,6 +176,7 @@ public class TermSession {
                                     offset, read);
                             offset += written;
                             read -= written;
+                            Thread.sleep(READ_DELAY);
                             mMsgHandler.sendMessage(
                                     mMsgHandler.obtainMessage(NEW_INPUT));
                         }
@@ -182,9 +184,7 @@ public class TermSession {
                 } catch (IOException e) {
                 } catch (InterruptedException e) {
                 }
-//                if (mEOFCallback != null) {
-//                    mEOFCallback.onEOF();
-//                }
+
                 if (exitOnEOF) mMsgHandler.sendMessage(mMsgHandler.obtainMessage(EOF));
             }
         };
@@ -197,7 +197,11 @@ public class TermSession {
             @Override
             public void run() {
                 Looper.prepare();
-
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 mWriterHandler = new Handler() {
                     @Override
                     public void handleMessage(Message msg) {

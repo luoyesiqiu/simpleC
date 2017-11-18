@@ -8,7 +8,6 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Message;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -24,7 +23,6 @@ import com.luoye.simpleC.util.ConsoleSession;
 
 import java.util.List;
 import android.os.Handler;
-import java.util.logging.LogRecord;
 
 import jackpal.term.emulatorview.EmulatorView;
 import jackpal.term.emulatorview.TermSession;
@@ -35,7 +33,7 @@ import jackpal.term.emulatorview.compat.ClipboardManagerCompatFactory;
  * Created by zyw on 2017/11/12.
  */
 public class ConsoleActivity extends Activity implements TermSession.EOFCallback {
-
+    Process process = null;
     private static final String TAG = "ConsoleActivity";
     private EmulatorView mEmulatorView;
     private ConsoleSession mSession;
@@ -209,9 +207,11 @@ public class ConsoleActivity extends Activity implements TermSession.EOFCallback
          * the Telnet session, it closes the network connection.
          */
         if (mSession != null) {
+
             mSession.finish();
         }
-
+        if(process !=null)
+            process.destroy();
         super.onDestroy();
     }
 
@@ -231,20 +231,19 @@ public class ConsoleActivity extends Activity implements TermSession.EOFCallback
         ProcessBuilder execBuild =
                 new ProcessBuilder(bin);
         execBuild.redirectErrorStream(true);
-        Process exec = null;
+
         try {
             startTime=System.currentTimeMillis();
-            exec =// Runtime.getRuntime().exec(bin);
-            execBuild.start();
+            process = execBuild.start();
 
         } catch (Exception e) {
             Log.e(TAG, "Could not start terminal process.", e);
             return null;
         }
 
-        final ConsoleSession session = new ConsoleSession(exec.getInputStream(),exec.getOutputStream());
+        final ConsoleSession session = new ConsoleSession(process.getInputStream(), process.getOutputStream());
         /* You're done! */
-        final Process finalExec = exec;
+        final Process finalExec = process;
         new Thread(new Runnable() {
             @Override
             public void run() {

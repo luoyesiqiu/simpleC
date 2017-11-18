@@ -17,21 +17,14 @@ public class AutoCompletePanel {
 	private ListPopupWindow _autoCompletePanel;
 	private MyAdapter _adapter;
 	private Filter _filter;
-
 	private int _verticalOffset;
-
 	private int _height;
-
 	private int _horizontal;
-
 	private CharSequence _constraint;
-
 	private int _backgroundColor;
-
 	private GradientDrawable gd;
-
 	private int _textColor;
-
+	private  boolean isShow=false;
 	public AutoCompletePanel(FreeScrollingTextField textField) {
 		_textField = textField;
 		_context = textField.getContext();
@@ -62,7 +55,6 @@ public class AutoCompletePanel {
 		_autoCompletePanel.setAnchorView(_textField);
 		_adapter = new MyAdapter(_context, android.R.layout.simple_list_item_1);
 		_autoCompletePanel.setAdapter(_adapter);
-		//_autoCompletePanel.setDropDownGravity(Gravity.BOTTOM | Gravity.LEFT);
 		_filter = _adapter.getFilter();
 		setHeight(300);
 
@@ -151,12 +143,15 @@ public class AutoCompletePanel {
 		if (!_autoCompletePanel.isShowing())
 			_autoCompletePanel.show();
 		_autoCompletePanel.getListView().setFadingEdgeLength(0);
+		isShow=true;
 	}
 
 	public void dismiss() {
 		if (_autoCompletePanel.isShowing()) {
+			isShow=false;
 			_autoCompletePanel.dismiss();
 		}
+
 	}
 	synchronized public static void setLanguage(Language lang) {
 		_globalLanguage = lang;
