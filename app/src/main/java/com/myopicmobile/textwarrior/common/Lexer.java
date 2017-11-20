@@ -220,8 +220,10 @@ public class Lexer
 			}
 			StringReader stringReader=new StringReader(hDoc.toString());
 			CLexer cLexer=new CLexer(stringReader);
-				CType cType=null;
-				int idx=0;
+			CType cType=null;
+			int idx=0;
+			String identifier=null;//存储标识符
+			language.clearUserWord();
 				while (cType!=CType.EOF){
 					try {
 						cType=cLexer.yylex();
@@ -249,6 +251,25 @@ public class Lexer
 							case INTEGER_LITERAL:
 							case FLOATING_POINT_LITERAL:
 								tokens.add(new Pair(idx, NUMBER));
+								break;
+							case IDENTIFIER:
+								identifier=cLexer.yytext();
+								tokens.add(new Pair(idx, NORMAL));
+								break;
+							//处理标识符后面的符号
+							case  LPAREN://左括号
+							case  RPAREN://右括号
+							case  LBRACK://左中括号
+							case COMMA://逗号
+							case WHITE_CHAR://空格
+							case SEMICOLON://分号
+							case OPERATOR://运算符
+								if(identifier!=null) {
+									language.addUserWord(identifier);
+									language.updateUserWord();
+									identifier=null;
+								}
+								tokens.add(new Pair(idx, NORMAL));
 								break;
 							default:
 								tokens.add(new Pair(idx, NORMAL));

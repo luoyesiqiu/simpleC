@@ -176,7 +176,7 @@ public class TermSession {
                                     offset, read);
                             offset += written;
                             read -= written;
-                            Thread.sleep(READ_DELAY);
+                            Thread.sleep(READ_DELAY);//sleep
                             mMsgHandler.sendMessage(
                                     mMsgHandler.obtainMessage(NEW_INPUT));
                         }
@@ -198,7 +198,7 @@ public class TermSession {
             public void run() {
                 Looper.prepare();
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(READ_DELAY);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
