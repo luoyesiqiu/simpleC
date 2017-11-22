@@ -1,14 +1,20 @@
-package com.luoye.simpleC.activity;
+package com.luoye.simpleC.term;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.os.Message;
+import android.os.Vibrator;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -19,7 +25,10 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
 import com.luoye.simpleC.R;
-import com.luoye.simpleC.util.ConsoleSession;
+import com.luoye.simpleC.term.ConsoleSession;
+import com.luoye.simpleC.term.TermuxService;
+import com.termux.terminal.TerminalSession;
+import com.termux.view.TerminalView;
 
 import java.util.List;
 import android.os.Handler;
@@ -32,14 +41,15 @@ import jackpal.term.emulatorview.compat.ClipboardManagerCompatFactory;
 /**
  * Created by zyw on 2017/11/12.
  */
-public class ConsoleActivity extends Activity implements TermSession.EOFCallback {
-    Process process = null;
+public class ConsoleActivity extends Activity implements ServiceConnection{
+    private Process process = null;
     private static final String TAG = "ConsoleActivity";
-    private EmulatorView mEmulatorView;
+    private TerminalView mEmulatorView;
     private ConsoleSession mSession;
     private final  int MSG_SESSION_FINISH=0x100;
     private  long currentTime=0L;
     private long startTime=0L;
+    private TermuxService mTermService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,21 +58,24 @@ public class ConsoleActivity extends Activity implements TermSession.EOFCallback
         ActionBar actionBar=getActionBar();
         if(actionBar!=null)
             actionBar.setDisplayHomeAsUpEnabled(true);
-        mEmulatorView=(EmulatorView)findViewById(R.id.emulatorView) ;
+        mEmulatorView=(TerminalView) findViewById(R.id.emulatorView) ;
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        mEmulatorView.setDensity(metrics);
         String cmd=getIntent().getStringExtra("bin");
         mSession = createLocalTermSession(cmd);
         mEmulatorView.setOnKeyListener(mKeyListener);
-        mEmulatorView.setExtGestureListener(new EmulatorViewGestureListener(mEmulatorView));
-        mEmulatorView.attachSession(mSession);
-        mSession.setEOFCallback(this);
+
     }
 
-    @Override
-    public void onEOF() {
-        handler.sendEmptyMessage(MSG_SESSION_FINISH);
+
+    void addNewSession(boolean failSafe, String sessionName) {
+
+        String executablePath = (failSafe ? "/system/bin/sh" : null);
+
+        TerminalSession newSession = mTermService.createTermSession(executablePath, null, null, failSafe);
+        if (sessionName != null) {
+            newSession.mSessionName = sessionName;
+        }
     }
 
 
@@ -122,42 +135,8 @@ public class ConsoleActivity extends Activity implements TermSession.EOFCallback
             }
         }
     };
-    private boolean canPaste() {
-        ClipboardManagerCompat clip = ClipboardManagerCompatFactory
-                .getManager(getApplicationContext());
-        if (clip.hasText()) {
-            return true;
-        }
-        return false;
-    }
 
-    private void doPaste() {
-        if (!canPaste()) {
-            return;
-        }
-        ClipboardManagerCompat clip = ClipboardManagerCompatFactory
-                .getManager(getApplicationContext());
-        CharSequence paste = clip.getText();
-        mSession.write(paste.toString());
-    }
-    private class EmulatorViewGestureListener extends GestureDetector.SimpleOnGestureListener
-    {
-        private EmulatorView view;
 
-        public EmulatorViewGestureListener(EmulatorView view) {
-            this.view = view;
-        }
-
-        @Override
-        public boolean onSingleTapUp(MotionEvent e) {
-            // Let the EmulatorView handle taps if mouse tracking is active
-            if (view.isMouseTrackingActive()) return false;
-
-            doToggleSoftKeyboard();
-            return true;
-        }
-
-    }
     /**
      *
      * Send a URL up to Android to be handled by a browser.
@@ -184,14 +163,12 @@ public class ConsoleActivity extends Activity implements TermSession.EOFCallback
 
         /* You should call this to let EmulatorView know that it's visible
            on screen. */
-        mEmulatorView.onResume();
     }
 
     @Override
     protected void onPause() {
         /* You should call this to let EmulatorView know that it's no longer
            visible on screen. */
-        mEmulatorView.onPause();
 
         super.onPause();
     }
@@ -267,5 +244,81 @@ public class ConsoleActivity extends Activity implements TermSession.EOFCallback
             finish();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+        mTermService = ((TermuxService.LocalBinder) service).service;
+
+        mTermService.mSessionChangeCallback = new TerminalSession.SessionChangedCallback() {
+            @Override
+            public void onTextChanged(TerminalSession changedSession) {
+                if (!mIsVisible) return;
+                if (getCurrentTermSession() == changedSession) mTerminalView.onScreenUpdated();
+            }
+
+            @Override
+            public void onTitleChanged(TerminalSession updatedSession) {
+                if (!mIsVisible) return;
+                if (updatedSession != getCurrentTermSession()) {
+                    // Only show toast for other sessions than the current one, since the user
+                    // probably consciously caused the title change to change in the current session
+                    // and don't want an annoying toast for that.
+                    showToast(toToastTitle(updatedSession), false);
+                }
+                mListViewAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onSessionFinished(final TerminalSession finishedSession) {
+                if (mTermService.mWantsToStop) {
+                    // The service wants to stop as soon as possible.
+                    finish();
+                    return;
+                }
+                if (mIsVisible && finishedSession != getCurrentTermSession()) {
+                    // Show toast for non-current sessions that exit.
+                    int indexOfSession = mTermService.getSessions().indexOf(finishedSession);
+                    // Verify that session was not removed before we got told about it finishing:
+                    if (indexOfSession >= 0)
+                        showToast(toToastTitle(finishedSession) + " - exited", true);
+                }
+                mListViewAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onClipboardText(TerminalSession session, String text) {
+                if (!mIsVisible) return;
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                clipboard.setPrimaryClip(new ClipData(null, new String[]{"text/plain"}, new ClipData.Item(text)));
+            }
+
+            @Override
+            public void onBell(TerminalSession session) {
+                if (!mIsVisible) return;
+
+                switch (mSettings.mBellBehaviour) {
+                    case TermuxPreferences.BELL_BEEP:
+                        mBellSoundPool.play(mBellSoundId, 1.f, 1.f, 1, 0, 1.f);
+                        break;
+                    case TermuxPreferences.BELL_VIBRATE:
+                        ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(50);
+                        break;
+                    case TermuxPreferences.BELL_IGNORE:
+                        // Ignore the bell character.
+                        break;
+                }
+
+            }
+
+            @Override
+            public void onColorsChanged(TerminalSession changedSession) {
+                if (getCurrentTermSession() == changedSession) updateBackgroundColor();
+            }
+    }
+
+    @Override
+    public void onServiceDisconnected(ComponentName componentName) {
+
     }
 }
