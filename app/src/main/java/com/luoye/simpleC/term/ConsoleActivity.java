@@ -15,8 +15,10 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Message;
 import android.os.Vibrator;
+import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.GestureDetector;
 import android.view.KeyEvent;
 import android.view.MenuItem;
@@ -27,68 +29,89 @@ import android.view.inputmethod.InputMethodManager;
 import com.luoye.simpleC.R;
 import com.luoye.simpleC.term.ConsoleSession;
 import com.luoye.simpleC.term.TermuxService;
+import com.termux.terminal.TerminalEmulator;
 import com.termux.terminal.TerminalSession;
 import com.termux.view.TerminalView;
 
 import java.util.List;
 import android.os.Handler;
 
-import jackpal.term.emulatorview.EmulatorView;
-import jackpal.term.emulatorview.TermSession;
-import jackpal.term.emulatorview.compat.ClipboardManagerCompat;
-import jackpal.term.emulatorview.compat.ClipboardManagerCompatFactory;
-
 /**
  * Created by zyw on 2017/11/12.
  */
 public class ConsoleActivity extends Activity implements ServiceConnection{
+
     private Process process = null;
     private static final String TAG = "ConsoleActivity";
-    private TerminalView mEmulatorView;
-    private ConsoleSession mSession;
+    public TerminalView mEmulatorView;
+    private TerminalSession mSession;
     private final  int MSG_SESSION_FINISH=0x100;
     private  long currentTime=0L;
     private long startTime=0L;
-    private TermuxService mTermService;
-
+    public TermuxService mTermService;
+    private String cmd;
+    private int mFontSize;
+    private static int MIN_FONTSIZE;
+    private static final int MAX_FONTSIZE = 256;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.console);
+        computeFontSize();
+        initView();
+        startService();
+    }
+
+    private void computeFontSize(){
+        //计算字体大小
+        float dipInPixels = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 1, this.getResources().getDisplayMetrics());
+        MIN_FONTSIZE = (int) (4f * dipInPixels);
+        int defaultFontSize = Math.round(12 * dipInPixels);
+        // Make it divisible by 2 since that is the minimal adjustment step:
+        if (defaultFontSize % 2 == 1) defaultFontSize--;
+
+        mFontSize = defaultFontSize;
+        mFontSize = Math.max(MIN_FONTSIZE, Math.min(mFontSize, MAX_FONTSIZE));
+
+    }
+    private  void initView(){
         ActionBar actionBar=getActionBar();
         if(actionBar!=null)
             actionBar.setDisplayHomeAsUpEnabled(true);
         mEmulatorView=(TerminalView) findViewById(R.id.emulatorView) ;
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        String cmd=getIntent().getStringExtra("bin");
-        mSession = createLocalTermSession(cmd);
-        mEmulatorView.setOnKeyListener(mKeyListener);
-
+        cmd=getIntent().getStringExtra("bin");
+        mEmulatorView.setTextSize(mFontSize);
+        mEmulatorView.requestFocus();
+        mEmulatorView.setOnKeyListener(new TermuxViewClient(this));
+    }
+    private void  startService(){
+        Intent serviceIntent = new Intent(this, TermuxService.class);
+        // Start the service and make it run regardless of who is bound to it:
+        serviceIntent.setAction(TermuxService.ACTION_EXECUTE);
+        String uriStr =  "file:///"+cmd;
+        serviceIntent.setData(Uri.parse(uriStr));
+        startService(serviceIntent);
+        if (!bindService(serviceIntent, this, 0))
+            throw new RuntimeException("bindService() failed");
     }
 
-
-    void addNewSession(boolean failSafe, String sessionName) {
+    void addNewSession(boolean failSafe, String sessionName,String cmd) {
 
         String executablePath = (failSafe ? "/system/bin/sh" : null);
 
-        TerminalSession newSession = mTermService.createTermSession(executablePath, null, null, failSafe);
+        mSession = mTermService.createTermSession(executablePath, null, cmd, failSafe);
         if (sessionName != null) {
-            newSession.mSessionName = sessionName;
+            mSession.mSessionName = sessionName;
         }
     }
 
-
-    Handler handler=new Handler(){
-        @Override
-        public void handleMessage(Message msg) {
-            if(msg.what==MSG_SESSION_FINISH){
-                mSession.setFinish(true);
-                mSession.appendTextToEmulator("\n\n["+"程序执行完毕，耗时："+((double)currentTime-startTime)/1000+"s"+"]\n");
-                mSession.update();
-            }
-        }
-    };
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mEmulatorView.onScreenUpdated();
+    }
 
     /**
      * Intercepts keys before the view/terminal gets it.
@@ -135,7 +158,18 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
             }
         }
     };
+    void doPaste() {
+        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+        ClipData clipData = clipboard.getPrimaryClip();
+        if (clipData == null) return;
+        CharSequence paste = clipData.getItemAt(0).coerceToText(this);
+        if (!TextUtils.isEmpty(paste))
+            getCurrentTermSession().getEmulator().paste(paste.toString());
+    }
 
+    private TerminalSession getCurrentTermSession() {
+        return mTermService.getTermSession();
+    }
 
     /**
      *
@@ -151,91 +185,15 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
         if(handlers.size() > 0)
             startActivity(openLink);
     }
-    private void doToggleSoftKeyboard() {
-        InputMethodManager imm = (InputMethodManager)
-                getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
-
-    }
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        /* You should call this to let EmulatorView know that it's visible
-           on screen. */
-    }
-
-    @Override
-    protected void onPause() {
-        /* You should call this to let EmulatorView know that it's no longer
-           visible on screen. */
-
-        super.onPause();
-    }
 
     @Override
     protected void onDestroy() {
-        /**
-         * Finish the TermSession when we're destroyed.  This will free
-         * resources, stop I/O threads, and close the I/O streams attached
-         * to the session.
-         *
-         * For the local session, closing the streams will kill the shell; for
-         * the Telnet session, it closes the network connection.
-         */
-        if (mSession != null) {
 
-            mSession.finish();
-        }
-        if(process !=null)
-            process.destroy();
         super.onDestroy();
+        unbindService(this);
+        mTermService.stopSelf();
     }
 
-    /**
-     * Create a TermSession connected to a local shell.
-     */
-    private ConsoleSession createLocalTermSession(String bin) {
-        /* Instantiate the TermSession ... */
-
-
-        /* ... create a process ... */
-        /* TODO:Make local session work without execpty.
-        String execPath = LaunchActivity.getDataDir(this) + "/bin/execpty";
-        ProcessBuilder execBuild =
-                new ProcessBuilder(execPath, "/system/bin/sh", "-");
-        */
-        ProcessBuilder execBuild =
-                new ProcessBuilder(bin);
-        execBuild.redirectErrorStream(true);
-
-        try {
-            startTime=System.currentTimeMillis();
-            process = execBuild.start();
-
-        } catch (Exception e) {
-            Log.e(TAG, "Could not start terminal process.", e);
-            return null;
-        }
-
-        final ConsoleSession session = new ConsoleSession(process.getInputStream(), process.getOutputStream());
-        /* You're done! */
-        final Process finalExec = process;
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    finalExec.waitFor();
-                    currentTime=System.currentTimeMillis();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }).start();
-
-        return session;
-
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -247,26 +205,18 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
     }
 
     @Override
-    public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+    public void onServiceConnected(ComponentName componentName, IBinder service) {
         mTermService = ((TermuxService.LocalBinder) service).service;
-
+        mEmulatorView.attachSession(mTermService.getTermSession());
         mTermService.mSessionChangeCallback = new TerminalSession.SessionChangedCallback() {
             @Override
             public void onTextChanged(TerminalSession changedSession) {
-                if (!mIsVisible) return;
-                if (getCurrentTermSession() == changedSession) mTerminalView.onScreenUpdated();
+                mEmulatorView.onScreenUpdated();
             }
 
             @Override
             public void onTitleChanged(TerminalSession updatedSession) {
-                if (!mIsVisible) return;
-                if (updatedSession != getCurrentTermSession()) {
-                    // Only show toast for other sessions than the current one, since the user
-                    // probably consciously caused the title change to change in the current session
-                    // and don't want an annoying toast for that.
-                    showToast(toToastTitle(updatedSession), false);
-                }
-                mListViewAdapter.notifyDataSetChanged();
+
             }
 
             @Override
@@ -276,49 +226,36 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
                     finish();
                     return;
                 }
-                if (mIsVisible && finishedSession != getCurrentTermSession()) {
-                    // Show toast for non-current sessions that exit.
-                    int indexOfSession = mTermService.getSessions().indexOf(finishedSession);
-                    // Verify that session was not removed before we got told about it finishing:
-                    if (indexOfSession >= 0)
-                        showToast(toToastTitle(finishedSession) + " - exited", true);
-                }
-                mListViewAdapter.notifyDataSetChanged();
+
             }
 
             @Override
             public void onClipboardText(TerminalSession session, String text) {
-                if (!mIsVisible) return;
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
                 clipboard.setPrimaryClip(new ClipData(null, new String[]{"text/plain"}, new ClipData.Item(text)));
             }
 
             @Override
             public void onBell(TerminalSession session) {
-                if (!mIsVisible) return;
 
-                switch (mSettings.mBellBehaviour) {
-                    case TermuxPreferences.BELL_BEEP:
-                        mBellSoundPool.play(mBellSoundId, 1.f, 1.f, 1, 0, 1.f);
-                        break;
-                    case TermuxPreferences.BELL_VIBRATE:
-                        ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(50);
-                        break;
-                    case TermuxPreferences.BELL_IGNORE:
-                        // Ignore the bell character.
-                        break;
-                }
 
             }
 
             @Override
             public void onColorsChanged(TerminalSession changedSession) {
-                if (getCurrentTermSession() == changedSession) updateBackgroundColor();
+
             }
-    }
+        };
+    };
 
     @Override
     public void onServiceDisconnected(ComponentName componentName) {
 
+    }
+
+    public void changeFontSize(boolean increase) {
+        mFontSize += (increase ? 1 : -1) * 2;
+        mFontSize = Math.max(MIN_FONTSIZE, Math.min(mFontSize, MAX_FONTSIZE));
+        mEmulatorView.setTextSize(mFontSize);
     }
 }

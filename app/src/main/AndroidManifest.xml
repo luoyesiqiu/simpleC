@@ -22,6 +22,13 @@
         <activity android:name=".activity.FileListActivity"></activity>
         <activity android:name=".activity.SettingActivity" android:label="设置"></activity>
         <activity android:name=".activity.HelpActivity" android:label="练习"></activity>
-        <activity android:name=".activity.ConsoleActivity" android:windowSoftInputMode="adjustResize" android:label="控制台"></activity>
+        <activity android:name=".term.ConsoleActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:label="控制台">
+        </activity>
+        <service
+            android:name="com.luoye.simpleC.term.TermuxService"
+            android:exported="false" />
     </application>
 </manifest>

@@ -70,6 +70,7 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
 		editor =new TextEditor(this);
 		setContentView(editor);
+		editor.requestFocus();
 		settingPreference= PreferenceManager.getDefaultSharedPreferences(this);
 		sharedPreferences=getSharedPreferences("setting",MODE_PRIVATE);
 		if(savedInstanceState!=null)

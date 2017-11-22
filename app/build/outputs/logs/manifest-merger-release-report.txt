@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:5:5-80
 	android:name
 		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:5:22-78
 application
-ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:7:5-26:19
+ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:7:5-33:19
 	android:label
 		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:11:9-41
 	android:allowBackup
@@ -65,17 +65,26 @@ ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:24:9-87
 		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:24:57-75
 	android:name
 		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:24:19-56
-activity#com.luoye.simpleC.activity.ConsoleActivity
-ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:25:9-134
+activity#com.luoye.simpleC.term.ConsoleActivity
+ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:25:9-29:20
 	android:label
-		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:25:103-122
+		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:28:13-32
 	android:windowSoftInputMode
-		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:25:60-102
+		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:26:13-55
+	android:theme
+		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:27:13-63
 	android:name
-		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:25:19-59
+		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:25:19-55
+service#com.luoye.simpleC.term.TermuxService
+ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:30:9-32:40
+	android:exported
+		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml:31:13-64
 uses-sdk
 INJECTED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [MulCode:emulatorview:unspecified] D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\emulatorview\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [MulCode:terminal-emulator-release:unspecified] D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\terminal-emulator-release\unspecified\AndroidManifest.xml:6:5-8:41
+MERGED from [MulCode:terminal-view-release:unspecified] D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\terminal-view-release\unspecified\AndroidManifest.xml:6:5-8:41
 	android:targetSdkVersion
 		INJECTED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Documents\MulCode\app\src\main\AndroidManifest.xml

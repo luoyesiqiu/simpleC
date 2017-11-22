@@ -7,7 +7,7 @@ import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.net.Uri;
 
-import com.luoye.simpleC.activity.ConsoleActivity;
+import com.luoye.simpleC.term.ConsoleActivity;
 import com.luoye.simpleC.interfaces.CompileCallback;
 import com.luoye.simpleC.interfaces.ExecCallback;
 import com.luoye.simpleC.interfaces.UnzipCallback;

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\text_select_handle_left_mtrl_alpha.png",
+        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\terminal-view-release\\unspecified\\res\\drawable-xxhdpi-v4\\text_select_handle_left_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\text_select_handle_right_mtrl_alpha.png",
+        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\terminal-view-release\\unspecified\\res\\drawable-xxhdpi-v4\\text_select_handle_right_mtrl_alpha.png"
+    }
+]

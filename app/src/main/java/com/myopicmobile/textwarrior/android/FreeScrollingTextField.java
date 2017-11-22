@@ -639,6 +639,7 @@ implements Document.TextFieldMetrics{
 		if(_showLineNumbers){
 			_brushLine.setColor(_colorScheme.getColor(Colorable.NON_PRINTING_GLYPH));
 			_brushLine.setStrokeWidth(3.0f);
+			_brushLine.setFakeBoldText(true);
 			canvas.drawLine(_leftOffset-_spaceWidth/2,getScrollY(),_leftOffset-_spaceWidth/2,getScrollY()+getHeight(),_brushLine);
 		}
 		_hDoc.seekChar(currentIndex);//从currentIndex开始迭代
