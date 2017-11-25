@@ -1,19 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
-    <item
-        jar="D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\terminal-emulator-release\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="73cd62a38dd087cecb2a2ec00f73f9a79b3004fe">
-        <dex dex="D:\Documents\MulCode\app\build\intermediates\pre-dexed\release\MulCode-terminal-emulator-release-unspecified_82053339b5f539b80bd367590a975e28d7d7207a.jar" />
-    </item>
-    <item
-        jar="D:\Documents\MulCode\app\build\intermediates\exploded-aar\MulCode\terminal-view-release\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1fa158a5f34b9ad4d56a954ec1014193d6cade96">
-        <dex dex="D:\Documents\MulCode\app\build\intermediates\pre-dexed\release\MulCode-terminal-view-release-unspecified_44f3d881ed897c8d9de21d348e89b87fe7ffbe51.jar" />
-    </item>
-
-</items>

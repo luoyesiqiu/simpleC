@@ -15,296 +15,19 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Server" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="AndroidRun" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6fdea52-25c7-45a1-b6ec-3732ec3ae2d1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_22.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/jackpal/term/emulatorview/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/jackpal/term/emulatorview/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity$EmulatorViewGestureListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/ConsoleActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/util/ConsoleSession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/jackpal/term/emulatorview/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/jackpal/term/emulatorview/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity$EmulatorViewGestureListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/ConsoleActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/util/ConsoleSession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/jackpal/term/emulatorview/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/jackpal/term/emulatorview/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/jniLibs/debug/armeabi/libjackpal-androidterm5.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/jniLibs/debug/armeabi/libjackpal-termexec2.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/jniLibs/release/armeabi/libjackpal-androidterm5.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/jniLibs/release/armeabi/libjackpal-termexec2.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/MulCode-emulatorview-unspecified_4c93bb2eacc8b77ba9bd36aad17918e818e77b58.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/release/MulCode-emulatorview-unspecified_4c93bb2eacc8b77ba9bd36aad17918e818e77b58.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/atari_small_nodpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/atari_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-nodpi-v4/atari_small_nodpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable/atari_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi/libjackpal-androidterm5.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi/libjackpal-termexec2.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/release/folders/2000/1f/main/lib/armeabi/libjackpal-androidterm5.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/release/folders/2000/1f/main/lib/armeabi/libjackpal-termexec2.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/libs/armeabi/libjackpal-androidterm5.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/libs/armeabi/libjackpal-termexec2.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/simpleC_1.2.13.apk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/emulatorview.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/BaseTextRenderer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/Bitmap4x8FontRenderer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/ByteQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/ColorScheme.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/EmulatorDebug.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/EmulatorView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/GrowableIntArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/PaintRenderer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/Screen.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/StyleRow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TermKeyListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TermSession.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TerminalEmulator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TextRenderer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TextStyle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/TranscriptScreen.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/UnicodeTranscript.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/UpdateCallback.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/compat/AndroidCharacterCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/compat/AndroidCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/compat/ClipboardManagerCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/compat/ClipboardManagerCompatFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/compat/ClipboardManagerCompatV1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/compat/ClipboardManagerCompatV11.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/compat/KeyCharacterMapCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/compat/KeycodeConstants.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/compat/Patterns.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/java/jackpal/term/emulatorview/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/res/drawable-nodpi/atari_small_nodpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/emulatorview/src/main/res/drawable/atari_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/libtermexec.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/proguard-rules.pro" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/androidTest/java/jackpal/term/libtermexec/ApplicationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/main/aidl/jackpal/term/libtermexec/v1/ITerminal.aidl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/main/java/jackpal/term/TermExec.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/main/jni/process.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/main/jni/process.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/main/jni/unuse.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/main/libs/armeabi-v7a/libjackpal-termexec2.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/main/libs/armeabi/libjackpal-termexec2.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/main/libs/mips/libjackpal-termexec2.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libtermexec/src/main/libs/x86/libjackpal-termexec2.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/lint.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/BoundSession.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/Exec.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/GenericTermSession.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/RemoteInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/RunScript.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/RunShortcut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/ShellTermSession.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/Term.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/TermDebug.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/TermPreferences.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/TermService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/TermView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/TermViewFlipper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/WindowList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/WindowListAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/compat/ActionBarCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/compat/ActivityCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/compat/AlertDialogCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/compat/AndroidCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/compat/Base64.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/compat/FileCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/compat/MenuItemCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/compat/PRNGFixes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/compat/ServiceForegroundCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/shortcuts/AddShortcut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/shortcuts/ColorValue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/shortcuts/FSNavigator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/shortcuts/TextIcon.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/util/SessionList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/util/ShortcutEncryption.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/java/jackpal/term/util/TermSettings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/jni/common.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/jni/common.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/jni/fileCompat.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/jni/fileCompat.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/jni/termExec.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/jni/termExec.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi-v11/ic_menu_add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi-v11/ic_menu_back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi-v11/ic_menu_close_clear_cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi-v11/ic_menu_forward.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi-v11/ic_menu_preferences.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi-v11/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi-v9/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi/btn_close_window.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi/ic_menu_add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi/ic_menu_back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi/ic_menu_close_clear_cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi/ic_menu_forward.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi/ic_menu_preferences.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi/ic_menu_windows.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-hdpi/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi-v11/ic_menu_add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi-v11/ic_menu_back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi-v11/ic_menu_close_clear_cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi-v11/ic_menu_forward.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi-v11/ic_menu_preferences.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi-v11/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi-v9/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi/ic_menu_add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi/ic_menu_close_clear_cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi/ic_menu_preferences.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-ldpi/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi-v11/ic_menu_add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi-v11/ic_menu_back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi-v11/ic_menu_close_clear_cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi-v11/ic_menu_forward.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi-v11/ic_menu_preferences.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi-v11/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi-v9/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi/btn_close_window.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi/ic_menu_add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi/ic_menu_back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi/ic_menu_close_clear_cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi/ic_menu_forward.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi/ic_menu_preferences.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi/ic_menu_windows.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-mdpi/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xhdpi-v11/ic_menu_add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xhdpi-v11/ic_menu_back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xhdpi-v11/ic_menu_close_clear_cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xhdpi-v11/ic_menu_forward.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xhdpi-v11/ic_menu_preferences.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xhdpi-v11/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xhdpi-v9/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xhdpi/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable-xxxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/btn_close_window.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/close_background.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/ic_folder.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/ic_folderup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/ic_menu_add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/ic_menu_back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/ic_menu_close_clear_cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/ic_menu_forward.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/ic_menu_preferences.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/ic_menu_windows.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/drawable/ic_stat_service_notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/layout/term_activity.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/layout/window_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/layout/window_list_new_window.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/menu/main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-cs/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-cs/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-de/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-de/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-es/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-es/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-eu/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-eu/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-fr/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-fr/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-hu/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-hu/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-it/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-it/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-iw/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-iw/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ja/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ja/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ka/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ka/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ko/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ko/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-nb/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-nb/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-nl/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-nl/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-pl/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-pl/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-pt-rPT/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-pt-rPT/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-pt/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-pt/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ro/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ro/colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ro/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ro/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ru/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-ru/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-sk/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-sk/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-sr/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-sr/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-sv/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-sv/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-tr/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-tr/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-uk/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-uk/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-v11/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-v21/colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-v21/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-zh-rCN/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-zh-rCN/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-zh-rTW/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values-zh-rTW/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values/arrays.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values/arraysNoLocalize.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values/attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values/defaults.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values/id.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/values/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/src/main/res/xml/preferences.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term/term.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/simpleC_1.2.14.apk" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$6$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$6$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$6$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$6$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$9$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$9$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$menu.class" />
@@ -312,40 +35,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$xml.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/SettingActivity$SettingFragment$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/SettingActivity$SettingFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/util/Utils.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/util/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/FileListActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/FileListActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/FileListActivity$ItemClick.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/FileListActivity$ItemClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/FileListActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/FileListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/HelpActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/activity/HelpActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/adapter/FileListAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/adapter/FileListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/view/SymbolView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/view/SymbolView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$6$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$6$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$6$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$6$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$9$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$9$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$menu.class" />
@@ -353,24 +50,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$xml.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/SettingActivity$SettingFragment$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/SettingActivity$SettingFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/util/Utils.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/util/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/emulatorview/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/emulatorview/unspecified/jars/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/FileListActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/FileListActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/FileListActivity$ItemClick.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/FileListActivity$ItemClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/FileListActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/FileListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/HelpActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/activity/HelpActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/adapter/FileListAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/adapter/FileListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/view/SymbolView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/view/SymbolView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_a4d36fbbec21eef8af5f6ea38730e983b8ba93a6.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_a4d36fbbec21eef8af5f6ea38730e983b8ba93a6.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/release/release_4f22197c8d0c8891edb2a1584e9f4b3913c9868c.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/release/release_4f22197c8d0c8891edb2a1584e9f4b3913c9868c.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-release.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-release.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
@@ -378,9 +66,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_22.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_android_22.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
@@ -389,34 +75,21 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/luoye/simpleC/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/luoye/simpleC/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/luoye/simpleC/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/luoye/simpleC/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/com/luoye/simpleC/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/com/luoye/simpleC/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/release/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/release/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/release/single/drawable.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/release/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/release/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/release/single/layout.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeReleaseResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/console.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/console.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/layout/console.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/layout/console.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/file_list_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/file_list_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/menu/file_list_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/menu/file_list_menu.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/release/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/release/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" afterPath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-release-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-release-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/console.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/console.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/FileListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/FileListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/file_list_menu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/file_list_menu.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/ConsoleActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/ConsoleActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/ConsoleSession.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/ConsoleSession.java" />
     </list>
     <ignored path="simpleC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -444,38 +117,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java">
+      <file leaf-file-name="FileListActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/FileListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="176" column="36" selection-start-line="176" selection-start-column="36" selection-end-line="176" selection-end-column="36" />
+              <caret line="368" column="116" selection-start-line="368" selection-start-column="116" selection-end-line="368" selection-end-column="116" />
+              <folding>
+                <element signature="e#4564#5377#0" expanded="true" />
+                <element signature="e#5376#5377#0" expanded="true" />
+                <element signature="e#11417#13266#0" expanded="true" />
+                <element signature="e#13265#13266#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileListItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/entity/FileListItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.088235">
-              <caret line="22" column="89" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="89" />
-              <folding>
-                <element signature="e#439#457#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsoleActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/ConsoleActivity.java">
+      <file leaf-file-name="FileOutputStream.java" pinned="false" current-in-tab="false">
+        <entry file="file://E:/code/Java/android-4.0-ics-src/java/io/FileOutputStream.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="193" column="32" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6013#6014#0" expanded="true" />
-                <element signature="e#6065#6066#0" expanded="true" />
-              </folding>
+              <caret line="82" column="11" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -483,74 +155,28 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38546255">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.4955947">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java">
+      <file leaf-file-name="File.java" pinned="false" current-in-tab="false">
+        <entry file="file://E:/code/Java/android-4.0-ics-src/java/io/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="48.484848">
-              <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="972" column="28" selection-start-line="972" selection-start-column="22" selection-end-line="972" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TermuxViewClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxViewClient.java">
+      <file leaf-file-name="file_list_menu.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/file_list_menu.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1642#1643#0" expanded="true" />
-                <element signature="e#1701#1702#0" expanded="true" />
-                <element signature="e#3480#3481#0" expanded="true" />
-                <element signature="e#3508#3509#0" expanded="true" />
-                <element signature="e#3557#3558#0" expanded="true" />
-                <element signature="e#3585#3586#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BackgroundJob.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/BackgroundJob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="60" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TermuxService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5731#5732#0" expanded="true" />
-                <element signature="e#5771#5772#0" expanded="true" />
-                <element signature="e#7775#7776#0" expanded="true" />
-                <element signature="e#7805#7806#0" expanded="true" />
-                <element signature="e#8971#8972#0" expanded="true" />
-                <element signature="e#8997#8998#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TerminalSession.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/terminal-emulator-release/unspecified/jars/classes.jar!/com/termux/terminal/TerminalSession.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="8.0">
-              <caret line="266" column="38" selection-start-line="266" selection-start-column="29" selection-end-line="266" selection-end-column="38" />
+            <state vertical-scroll-proportion="-4.4117646">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -563,8 +189,8 @@
       <list>
         <option value="resourceFile" />
         <option value="Interface" />
-        <option value="layoutResourceFile_vertical" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -1789,1168 +1415,6 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/emulatorview">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the Android dependencies of the project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="androidDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all the Test applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="assembleAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Debug builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="assembleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="assembleDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="assembleDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="assembleDefault" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Release builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="assembleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="assembleReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':emulatorview'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a bundle containing the library in debug." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="bundleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a bundle containing the library in release." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="bundleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="checkDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="checkReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugAndroidTestAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugAndroidTestNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugAndroidTestRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugAndroidTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugUnitTestJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileDebugUnitTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileReleaseAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileReleaseJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileReleaseNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileReleaseUnitTestJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="compileReleaseUnitTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':emulatorview'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs instrumentation tests for all flavors on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="connectedAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="connectedCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for debug on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="connectedDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="copyDebugLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="copyReleaseLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':emulatorview'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':emulatorview'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs instrumentation tests using all Device Providers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="deviceAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="deviceCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateDebugAndroidTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateDebugAndroidTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateDebugAndroidTestResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateDebugAndroidTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateDebugBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateDebugResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateReleaseBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateReleaseResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="generateReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="installDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="lint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="lintDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="lintRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="mergeDebugAndroidTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="mergeDebugAndroidTestJniLibFolders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="mergeDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="mergeDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="mergeDebugJniLibFolders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="mergeDebugProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="mergeReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="mergeReleaseJniLibFolders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="mergeReleaseProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="mockableAndroidJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':emulatorview'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="packageDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="packageDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="packageDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="packageReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="packageReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="preDebugAndroidTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="preDebugBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="preDebugUnitTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="prePackageMarkerForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="preReleaseBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="preReleaseUnitTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="prepareDebugAndroidTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="prepareDebugDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="prepareDebugUnitTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="prepareReleaseDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="prepareReleaseUnitTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processDebugAndroidTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processDebugAndroidTestManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processDebugJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processDebugUnitTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processReleaseJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="processReleaseUnitTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':emulatorview'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':emulatorview'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the signing info for each variant." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="signingReport" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prints out all the source sets defined in this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="sourceSets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':emulatorview'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for the debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="testDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for the release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="testReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformClassesAndResourcesWithSyncLibJarsForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformClassesAndResourcesWithSyncLibJarsForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformClassesWithDexForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformNative_libsWithMergeJniLibsForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformNative_libsWithMergeJniLibsForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformNative_libsWithMergeJniLibsForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformNative_libsWithSyncJniLibsForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformNative_libsWithSyncJniLibsForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformResourcesWithMergeJavaResForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformResourcesWithMergeJavaResForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformResourcesWithMergeJavaResForDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformResourcesWithMergeJavaResForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="transformResourcesWithMergeJavaResForReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="uninstallAll" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="uninstallDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/emulatorview" />
-                <option name="name" value="validateDebugSigning" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/libtermexec">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="addPublicDebugAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="addPublicReleaseAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the Android dependencies of the project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="androidDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all the Test applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="assembleAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Debug builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="assembleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="assembleDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="assembleDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="assembleDefault" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Release builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="assembleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="assembleReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':libtermexec'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a bundle containing the library in debug." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="bundleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a bundle containing the library in release." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="bundleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="checkDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="checkReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugAndroidTestAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugAndroidTestNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugAndroidTestRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugAndroidTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugUnitTestJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileDebugUnitTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileReleaseAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileReleaseJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileReleaseNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileReleaseUnitTestJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="compileReleaseUnitTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':libtermexec'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs instrumentation tests for all flavors on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="connectedAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="connectedCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for debug on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="connectedDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="copyDebugLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="copyReleaseLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':libtermexec'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':libtermexec'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs instrumentation tests using all Device Providers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="deviceAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="deviceCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Extracts Android annotations for the debug variant into the archive file" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="extractDebugAnnotations" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Extracts Android annotations for the release variant into the archive file" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="extractReleaseAnnotations" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateDebugAndroidTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateDebugAndroidTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateDebugAndroidTestResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateDebugAndroidTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateDebugBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateDebugResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateReleaseBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateReleaseResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="generateReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="installDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="lint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="lintDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="lintRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="mergeDebugAndroidTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="mergeDebugAndroidTestJniLibFolders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="mergeDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="mergeDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="mergeDebugJniLibFolders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="mergeDebugProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="mergeReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="mergeReleaseJniLibFolders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="mergeReleaseProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="mockableAndroidJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':libtermexec'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="packageDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="packageDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="packageDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="packageReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="packageReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="preDebugAndroidTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="preDebugBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="preDebugUnitTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="prePackageMarkerForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="preReleaseBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="preReleaseUnitTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="prepareDebugAndroidTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="prepareDebugDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="prepareDebugUnitTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="prepareReleaseDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="prepareReleaseUnitTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processDebugAndroidTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processDebugAndroidTestManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processDebugJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processDebugUnitTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processReleaseJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="processReleaseUnitTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':libtermexec'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':libtermexec'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the signing info for each variant." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="signingReport" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prints out all the source sets defined in this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="sourceSets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':libtermexec'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for the debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="testDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for the release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="testReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformClassesAndResourcesWithSyncLibJarsForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformClassesAndResourcesWithSyncLibJarsForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformClassesWithDexForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformNative_libsWithMergeJniLibsForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformNative_libsWithMergeJniLibsForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformNative_libsWithMergeJniLibsForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformNative_libsWithSyncJniLibsForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformNative_libsWithSyncJniLibsForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformResourcesWithMergeJavaResForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformResourcesWithMergeJavaResForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformResourcesWithMergeJavaResForDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformResourcesWithMergeJavaResForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="transformResourcesWithMergeJavaResForReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="uninstallAll" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="uninstallDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/libtermexec" />
-                <option name="name" value="validateDebugSigning" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/terminal-emulator-release">
           <value>
             <list>
@@ -3057,7 +1521,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="7535503589125" />
+        <entry key="$PROJECT_DIR$" value="7535503929229" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -3822,8 +2286,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/HelpActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/setting.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/view/SymbolView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/file_list_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/FileListActivity.java" />
         <option value="$PROJECT_DIR$/term/src/main/java/jackpal/term/RemoteInterface.java" />
         <option value="$PROJECT_DIR$/term/src/main/res/values/defaults.xml" />
         <option value="$PROJECT_DIR$/term/src/main/java/jackpal/term/GenericTermSession.java" />
@@ -3866,6 +2328,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxViewClient.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/ConsoleActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/file_context_menu_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/FileListActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/file_list_menu.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
@@ -3901,7 +2366,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3929,12 +2397,95 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpleC" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpleC" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpleC" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpleC" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpleC" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpleC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3944,7 +2495,7 @@
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="device.picker.selection" value="172.19.108.101:5555" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/aar/terminal-view-release.aar" />
+    <property name="last_opened_file_path" value="E:/code/Java/android-4.0-ics-src" />
     <property name="ExportApk.ApkPath" value="D:\Documents\MulCode\app" />
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.BuildType" value="release" />
@@ -4245,7 +2796,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.48715204" order="7" side_tool="false" content_ui="tabs" />
@@ -4262,7 +2813,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25267667" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25267667" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25053534" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -4326,34 +2877,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/UndoStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.6746325">
-          <caret line="198" column="25" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/TextBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.033088">
-          <caret line="621" column="28" selection-start-line="621" selection-start-column="28" selection-end-line="621" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/DocumentProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.454545">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/WriteThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -4459,10 +2982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="169" column="7" selection-start-line="169" selection-start-column="7" selection-end-line="169" selection-end-column="7" />
-          <folding>
-            <element signature="e#4531#4532#0" expanded="false" />
-            <element signature="e#4576#4577#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4470,7 +2989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4478,7 +2996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4486,7 +3003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="114" column="14" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4494,7 +3010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4502,17 +3017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/FileListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4520,7 +3024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3847981">
           <caret line="100" column="23" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4528,7 +3031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4536,7 +3038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-359.0909">
           <caret line="641" column="33" selection-start-line="641" selection-start-column="23" selection-end-line="641" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4544,7 +3045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19710907">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4552,10 +3052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3847981">
           <caret line="360" column="15" selection-start-line="360" selection-start-column="15" selection-end-line="360" selection-end-column="15" />
-          <folding>
-            <element signature="e#24473#24474#0" expanded="true" />
-            <element signature="e#24524#24525#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4563,7 +3059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.333333">
           <caret line="2223" column="16" selection-start-line="2223" selection-start-column="16" selection-end-line="2223" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4571,7 +3066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9850745">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -4582,7 +3076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4590,15 +3083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.64271045">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="176" column="36" selection-start-line="176" selection-start-column="36" selection-end-line="176" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4606,17 +3090,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35682818">
           <caret line="337" column="16" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.088235">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="89" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="89" />
-          <folding>
-            <element signature="e#439#457#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4630,7 +3111,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="48.484848">
+        <state vertical-scroll-proportion="0.0">
           <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
           <folding />
         </state>
@@ -4640,11 +3121,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="193" column="32" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6013#6014#0" expanded="true" />
-            <element signature="e#6065#6066#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4653,20 +3130,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1701#1702#0" expanded="true" />
-            <element signature="e#3480#3481#0" expanded="true" />
-            <element signature="e#3508#3509#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3585#3586#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="false" />
+            <element signature="e#870#871#0" expanded="false" />
+            <element signature="e#1461#1462#0" expanded="false" />
+            <element signature="e#1488#1489#0" expanded="false" />
+            <element signature="e#3368#3369#0" expanded="false" />
+            <element signature="e#3427#3428#0" expanded="false" />
+            <element signature="e#7377#7378#0" expanded="false" />
+            <element signature="e#7405#7406#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/terminal-emulator-release/unspecified/jars/classes.jar!/com/termux/terminal/TerminalSession.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="266" column="38" selection-start-line="266" selection-start-column="29" selection-end-line="266" selection-end-column="38" />
           <folding />
         </state>
@@ -4675,23 +3153,139 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
+          <caret line="114" column="50" selection-start-line="114" selection-start-column="50" selection-end-line="114" selection-end-column="50" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5731#5732#0" expanded="true" />
-            <element signature="e#5771#5772#0" expanded="true" />
-            <element signature="e#7775#7776#0" expanded="true" />
-            <element signature="e#7805#7806#0" expanded="true" />
-            <element signature="e#8971#8972#0" expanded="true" />
-            <element signature="e#8997#8998#0" expanded="true" />
+            <element signature="e#5598#5599#0" expanded="false" />
+            <element signature="e#5628#5629#0" expanded="false" />
+            <element signature="e#5731#5732#0" expanded="false" />
+            <element signature="e#5771#5772#0" expanded="false" />
+            <element signature="e#7775#7776#0" expanded="false" />
+            <element signature="e#7805#7806#0" expanded="false" />
+            <element signature="e#8971#8972#0" expanded="false" />
+            <element signature="e#8997#8998#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="180" column="71" selection-start-line="180" selection-start-column="71" selection-end-line="180" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/ProgressObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/ProgressSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/widget/ArrayAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6515152">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/file_context_menu_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.74626863">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/view/MenuItem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0757575">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/view/Menu.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0757575">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/code/Java/android-4.0-ics-src/android/view/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33264887">
+          <caret line="167" column="20" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/code/Java/android-4.0-ics-src/java/io/FileOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="11" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/code/Java/android-4.0-ics-src/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="972" column="28" selection-start-line="972" selection-start-column="22" selection-end-line="972" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/activity/FileListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="368" column="116" selection-start-line="368" selection-start-column="116" selection-end-line="368" selection-end-column="116" />
+          <folding>
+            <element signature="e#4564#5377#0" expanded="true" />
+            <element signature="e#5376#5377#0" expanded="true" />
+            <element signature="e#11417#13266#0" expanded="true" />
+            <element signature="e#13265#13266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/entity/FileListItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/file_list_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4117646">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38546255">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.4955947">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding />
         </state>
       </provider>

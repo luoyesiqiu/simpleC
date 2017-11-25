@@ -12,6 +12,10 @@
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\console.xml"
     },
     {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\file_context_menu_item.xml",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\file_context_menu_item.xml"
+    },
+    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\file_list_item.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\file_list_item.xml"
     },

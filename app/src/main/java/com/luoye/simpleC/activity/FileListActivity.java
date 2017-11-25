@@ -10,10 +10,12 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
 import android.text.TextUtils;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -26,6 +28,8 @@ import com.luoye.simpleC.util.ConstantPool;
 import com.luoye.simpleC.util.FileNameSort;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -42,9 +46,8 @@ public class FileListActivity extends Activity {
     private FileListAdapter adapter;
     private List<FileListItem> listItems;
     private ListView listView;
-    private static File curpath = null;
+    private static File curPath = null;
     private Toast toast;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,18 +69,106 @@ public class FileListActivity extends Activity {
         listView.setDivider(getResources().getDrawable(android.R.drawable.divider_horizontal_dark));
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new ItemClick());
-        if (curpath == null)//为空才重新设置目录，这样可以打开上次打开的目录
+        registerForContextMenu(listView);
+        if (curPath == null)//为空才重新设置目录，这样可以打开上次打开的目录
         {
-            curpath = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "simpleC");
-            if(!curpath.exists())
+            curPath = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "simpleC");
+            if(!curPath.exists())
             {
-                curpath.mkdirs();
+                curPath.mkdirs();
             }
         }
 
-        loadList(curpath);
-        //showToast("单击文件项选择");
+        loadList(curPath);
+    }
 
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo menuInfo =
+                (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+
+        File f=new File(curPath+File.separator+adapter.getItem(menuInfo.position).getName());
+        switch (item.getItemId())
+        {
+            case 0:
+                rename(f,menuInfo.position);
+                break;
+            case 1:
+                deleteFile(f);
+                listItems.remove(menuInfo.position);
+                adapter.notifyDataSetChanged();
+                break;
+        }
+        return super.onContextItemSelected(item);
+    }
+    /**
+     * 深度优先遍历
+     * 删除文件夹下所有文件和文件夹
+     * @param file
+     */
+    public static void deleteFile(File file)
+    {
+        if(file.isFile()) {
+            file.delete();
+            return;
+        }
+        File[] fs=file.listFiles();
+
+        for (File f:fs)
+        {
+            if (f.isFile())
+            {
+                f.delete();
+            }
+            else{
+                deleteFile(f);
+                f.delete();
+            }
+
+        }
+        file.delete();
+    }
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        if(((AdapterView.AdapterContextMenuInfo)menuInfo).position==0)
+        {
+            //第一项不产生菜单
+            return ;
+        }
+        //第2个参数是id
+        menu.add(0,0,0,"重命名");
+        menu.add(0,1,1,"删除");
+        super.onCreateContextMenu(menu, v, menuInfo);
+    }
+    /*
+    * 重命名
+    */
+    private void rename(final File oldName, final int idx)
+    {
+        final EditText editText=new EditText(this);
+        editText.setText(oldName.getName());
+        AlertDialog alertDialog=new AlertDialog.Builder(this)
+                .setTitle("重命名")
+                .setView(editText)
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String text=editText.getText().toString();
+                        if(!text.equals(""))
+                        {
+                            oldName.renameTo(new File(oldName.getParent()+File.separator+text));
+                            FileListItem fileListItem=listItems.get(idx);
+                            fileListItem.setName(text.toString());
+                            listItems.set(idx,fileListItem);
+                            adapter.notifyDataSetChanged();
+                        }else
+                        {
+                            showToast("重命名失败");
+                        }
+                    }
+                })
+                .create();
+        alertDialog.show();
     }
 
     /**
@@ -88,20 +179,20 @@ public class FileListActivity extends Activity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             FileListItem fileListItem = listItems.get(position);
             if (position == 0 && fileListItem.getType() == FileListItem.UP_ITEM) {
-                if(!curpath.getAbsolutePath().equals("/")) {
-                    curpath = curpath.getParentFile();
+                if(!curPath.getAbsolutePath().equals("/")) {
+                    curPath = curPath.getParentFile();
 
-                    loadList(curpath);
+                    loadList(curPath);
                 }
             } else if (fileListItem.getType() == FileListItem.FOLDER_ITEM) {
-                curpath = new File(curpath.getPath() + File.separator + fileListItem.getName());
+                curPath = new File(curPath.getPath() + File.separator + fileListItem.getName());
 
-                loadList(curpath);
+                loadList(curPath);
             }
             else if(fileListItem.getType()==FileListItem.FILE_ITEM)
             {
                 Intent resultIntent = new Intent();
-                resultIntent.putExtra("path", curpath.getAbsolutePath() + File.separator + listItems.get(position).getName());
+                resultIntent.putExtra("path", curPath.getAbsolutePath() + File.separator + listItems.get(position).getName());
                 setResult(ConstantPool.OK_SELECT_RESULT_CODE, resultIntent);//选择结果回馈
                 finish();
             }
@@ -141,7 +232,7 @@ public class FileListActivity extends Activity {
 
         adapter.notifyDataSetChanged();
         listView.setSelection(0);//滚动到第一项
-        setTitle(getShortPath(curpath.getAbsolutePath()));
+        setTitle(getShortPath(curPath.getAbsolutePath()));
     }
 
     /**
@@ -228,7 +319,7 @@ public class FileListActivity extends Activity {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             if (!TextUtils.isEmpty(editText.getText())) {
-                                File folder = new File(curpath + File.separator + editText.getText());
+                                File folder = new File(curPath + File.separator + editText.getText());
 
                                 boolean ok = folder.mkdir();
                                 if (ok){
@@ -246,6 +337,49 @@ public class FileListActivity extends Activity {
                         }
                     })
                     .setTitle("输入文件夹名")
+                    .setView(editText)
+                    .create();
+            alertDialog.show();
+        }
+        else if (id==R.id.menu_create_file)
+        {
+            final EditText editText=new EditText(FileListActivity.this);
+            AlertDialog alertDialog=new AlertDialog.Builder(FileListActivity.this)
+                    .setPositiveButton("创建", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            if (!TextUtils.isEmpty(editText.getText())) {
+                                File file = new File(curPath + File.separator + editText.getText());
+                                FileOutputStream fileOutputStream=null;
+                                boolean ok = false;
+                                try {
+                                    fileOutputStream=new FileOutputStream(file);
+                                    ok=true;
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }finally {
+                                    if(fileOutputStream!=null)
+                                        try {
+                                            fileOutputStream.close();
+                                        } catch (IOException e) {
+                                            e.printStackTrace();
+                                        }
+                                }
+                                if (ok){
+                                    listItems.add(1, new FileListItem(fileIcon, editText.getText().toString(), "0.0b", FileListItem.FILE_ITEM));
+                                    adapter.notifyDataSetChanged();
+                                    listView.setSelection(0);//滚动到第一项
+                                }else
+                                {
+                                    showToast("文件创建失败");
+                                }
+                            }
+                            else {
+                                showToast("请输入文件名");
+                            }
+                        }
+                    })
+                    .setTitle("输入文件名")
                     .setView(editText)
                     .create();
             alertDialog.show();
