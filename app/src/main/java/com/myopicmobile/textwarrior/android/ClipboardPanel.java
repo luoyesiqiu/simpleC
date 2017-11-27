@@ -122,6 +122,9 @@ public class ClipboardPanel {
 
 	}
 
+	/**
+	 * 处理注释
+	 */
 	private  void   dealComment()
 	{
 		DocumentProvider documentProvider=_textField.createDocumentProvider();
@@ -193,6 +196,11 @@ public class ClipboardPanel {
 
 
 	}
+
+	/**
+	 * 注释
+	 * @param row
+     */
 	public void commentRow(int row)
 	{
 		DocumentProvider documentProvider=_textField.createDocumentProvider();
