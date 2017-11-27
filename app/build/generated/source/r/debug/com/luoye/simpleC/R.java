@@ -32,11 +32,12 @@ public final class R {
         public static final int WHITE=0x7f070012;
     }
     public static final class drawable {
-        public static final int terminal_scroll_shape=0x7f020000;
-        public static final int text_select_handle_left_material=0x7f020001;
-        public static final int text_select_handle_left_mtrl_alpha=0x7f020002;
-        public static final int text_select_handle_right_material=0x7f020003;
-        public static final int text_select_handle_right_mtrl_alpha=0x7f020004;
+        public static final int slash=0x7f020000;
+        public static final int terminal_scroll_shape=0x7f020001;
+        public static final int text_select_handle_left_material=0x7f020002;
+        public static final int text_select_handle_left_mtrl_alpha=0x7f020003;
+        public static final int text_select_handle_right_material=0x7f020004;
+        public static final int text_select_handle_right_mtrl_alpha=0x7f020005;
     }
     public static final class id {
         public static final int console_msg=0x7f0a0000;
@@ -95,12 +96,13 @@ public final class R {
         public static final int action_settings=0x7f080000;
         public static final int app_name=0x7f080001;
         public static final int author=0x7f080002;
-        public static final int copy_text=0x7f080003;
-        public static final int github=0x7f080004;
-        public static final int hello_world=0x7f080005;
-        public static final int paste_text=0x7f080006;
-        public static final int qq_group=0x7f080007;
-        public static final int text_selection_more=0x7f080008;
+        public static final int comment=0x7f080003;
+        public static final int copy_text=0x7f080004;
+        public static final int github=0x7f080005;
+        public static final int hello_world=0x7f080006;
+        public static final int paste_text=0x7f080007;
+        public static final int qq_group=0x7f080008;
+        public static final int text_selection_more=0x7f080009;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

@@ -52,6 +52,7 @@ public class MainActivity extends Activity
 	private  static  final String KEY_FILE_CONTENT="fileContent";
 	private  static  final String KEY_IS_MULTI_COMPILE="isMultiCompile";
 	private  static  final String KEY_MULTI_COMPILE_FILES_NAME="multiCompileFilesName";
+	private final  int MSG_INIT=0x100;
 	private ArrayList<String> header;
 	private SharedPreferences settingPreference;
 	private boolean darkMode=false;
@@ -60,7 +61,6 @@ public class MainActivity extends Activity
 	private  SymbolView symbolView;
 
 	private RecentFiles recentFiles;
-	private final  int MSG_INIT=0x100;
 
 	private  boolean isMultiFileCompile=false;
 	private  String multiFilesName="";
@@ -75,8 +75,9 @@ public class MainActivity extends Activity
 		sharedPreferences=getSharedPreferences("setting",MODE_PRIVATE);
 		if(savedInstanceState!=null)
 		{
-			editor.replaceAll(savedInstanceState.getString(KEY_FILE_CONTENT,""));
-			String openFileName=savedInstanceState.getString(KEY_FILE_CONTENT,"");
+			editor.requestFocus();
+			editor.setText(savedInstanceState.getString(KEY_FILE_CONTENT,""));
+			String openFileName=savedInstanceState.getString(KEY_FILE_PATH,"");
 			if(!openFileName.equals("")){
 				setSubtitle(new File(openFileName).getName());
 			}
@@ -100,7 +101,7 @@ public class MainActivity extends Activity
 		if(editor.getOpenedFile()!=null) {
 			outState.putString(KEY_FILE_PATH, editor.getOpenedFile().getAbsolutePath());
 		}
-		if(editor.getText().toString().equals("")){
+		if(!editor.getText().toString().equals("")){
 			outState.putString(KEY_FILE_CONTENT, editor.getText().toString());
 		}
 		outState.putBoolean(KEY_IS_MULTI_COMPILE, isMultiFileCompile);

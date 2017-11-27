@@ -14,6 +14,6 @@
         <item android:id="@+id/menu_indent_code" android:title="代码对齐"/>
         <item android:id="@+id/menu_compile_option" android:title="编译选项"/>
         <item android:id="@+id/menu_setting" android:title="设置"/>
-        <item android:id="@+id/menu_learn" android:title="练习"/>
+        <item android:id="@+id/menu_learn" android:title="帮助"/>
     </group>
 </menu>

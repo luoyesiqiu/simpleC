@@ -125,6 +125,7 @@ public class TextEditor extends FreeScrollingTextField {
 	public void gotoLine(int line) {
 		if (line > _hDoc.getRowCount()) {
 			line = _hDoc.getRowCount();
+
 		}
 		int i=getText().getLineOffset(line - 1);
 		setSelection(i);
@@ -183,6 +184,7 @@ public class TextEditor extends FreeScrollingTextField {
 		moveCaret(idx);
 		paste(text);
 	}
+
 
 	public void replaceAll(CharSequence c) {
 		replaceText(0, getLength() - 1, c.toString());
