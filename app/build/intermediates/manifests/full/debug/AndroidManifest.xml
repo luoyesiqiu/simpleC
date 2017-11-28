@@ -43,12 +43,13 @@
             android:label="设置" />
         <activity
             android:name="com.luoye.simpleC.activity.HelpActivity"
-            android:label="练习" />
+            android:label="帮助" />
         <activity
             android:name="com.luoye.simpleC.term.ConsoleActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
             android:label="控制台"
             android:theme="@android:style/Theme.DeviceDefault"
-            android:windowSoftInputMode="adjustResize" >
+            android:windowSoftInputMode="adjustResize|stateHidden" >
         </activity>
 
         <service
