@@ -19,22 +19,4 @@
         android:title="显示符号栏">
     </CheckBoxPreference>
 </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="关于">
-        <Preference
-            android:summary="@string/author"
-            android:title="作者" >
-        </Preference>
-        <Preference
-            android:key="preference_qq_group"
-            android:summary="@string/qq_group"
-            android:title="编程讨论群" >
-        </Preference>
-        <Preference
-            android:key="preference_github"
-            android:summary="@string/github"
-            android:title="开源地址" >
-        </Preference>
-    </PreferenceCategory>
 </PreferenceScreen>

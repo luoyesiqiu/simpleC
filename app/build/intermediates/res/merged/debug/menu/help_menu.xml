@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_join_qq_group" android:title="入群交流"/>
+    <item android:id="@+id/menu_exercise" android:title="在线练习"/>
+    <item android:id="@+id/menu_api_ref" android:title="API参考"/>
+    <item android:id="@+id/menu_app_version" android:title="软件版本"/>
+</menu>

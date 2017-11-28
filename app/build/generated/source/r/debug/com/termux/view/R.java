@@ -14,8 +14,8 @@ public final class R {
 		public static final int text_select_handle_right_mtrl_alpha = 0x7f020005;
 	}
 	public static final class string {
-		public static final int copy_text = 0x7f080004;
-		public static final int paste_text = 0x7f080007;
-		public static final int text_selection_more = 0x7f080009;
+		public static final int copy_text = 0x7f080005;
+		public static final int paste_text = 0x7f080009;
+		public static final int text_selection_more = 0x7f08000b;
 	}
 }

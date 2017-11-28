@@ -6,5 +6,9 @@
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\menu\\main_menu.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\menu\\help_menu.xml",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\menu\\help_menu.xml"
     }
 ]

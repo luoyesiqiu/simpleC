@@ -37,39 +37,10 @@ public class SettingActivity extends PreferenceActivity {
 
     public  static class SettingFragment extends PreferenceFragment
     {
-
-
         @Override
         public void onActivityCreated(Bundle savedInstanceState) {
             super.onActivityCreated(savedInstanceState);
             addPreferencesFromResource(R.xml.setting);
-            findPreference("preference_qq_group").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    try {
-                        Utils.joinQQGroup(getActivity(),"UiGfmkfCXFsmxwv1-sQ4LCwnMoXaTuxr");
-
-                    }catch (Exception e)
-                    {
-                        e.printStackTrace();
-                    }
-                    return false;
-                }
-            });
-            findPreference("preference_github").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    try {
-                        Intent it = new Intent(Intent.ACTION_VIEW);
-                        it.setData(Uri.parse(getString(R.string.github)));
-                        startActivity(it);
-                    }catch (Exception e)
-                    {
-                        e.printStackTrace();
-                    }
-                    return false;
-                }
-            });
         }
     }
 }

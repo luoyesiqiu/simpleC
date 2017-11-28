@@ -20,12 +20,14 @@
     <color name="RED">#FFFF0000</color>
     <color name="WHITE">#FFFFFFE0</color>
     <string name="action_settings">Settings</string>
+    <string name="api_ref">http://zh.cppreference.com/w/c</string>
     <string name="app_name">simple C</string>
     <string name="author">落叶似秋</string>
-    <string name="comment">注释</string>
+    <string name="comment">注释/取消注释</string>
     <string name="copy_text">Copy</string>
     <string name="github">https://github.com/luoyesiqiu/simpleC</string>
     <string name="hello_world">Hello world!</string>
+    <string name="oj">https://acm.sjtu.edu.cn/OnlineJudge/problems</string>
     <string name="paste_text">Paste</string>
     <string name="qq_group">236121720</string>
     <string name="text_selection_more">More…</string>

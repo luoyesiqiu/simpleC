@@ -8,14 +8,14 @@ package com.termux.view;
 
 public final class R {
 	public static final class drawable {
-		public static final int text_select_handle_left_material = 0x7f020001;
-		public static final int text_select_handle_left_mtrl_alpha = 0x7f020002;
-		public static final int text_select_handle_right_material = 0x7f020003;
-		public static final int text_select_handle_right_mtrl_alpha = 0x7f020004;
+		public static final int text_select_handle_left_material = 0x7f020002;
+		public static final int text_select_handle_left_mtrl_alpha = 0x7f020003;
+		public static final int text_select_handle_right_material = 0x7f020004;
+		public static final int text_select_handle_right_mtrl_alpha = 0x7f020005;
 	}
 	public static final class string {
-		public static final int copy_text = 0x7f080003;
-		public static final int paste_text = 0x7f080006;
-		public static final int text_selection_more = 0x7f080008;
+		public static final int copy_text = 0x7f080005;
+		public static final int paste_text = 0x7f080009;
+		public static final int text_selection_more = 0x7f08000b;
 	}
 }

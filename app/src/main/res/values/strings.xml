@@ -7,5 +7,7 @@
 	<string name="author">落叶似秋</string>
 	<string name="github">https://github.com/luoyesiqiu/simpleC</string>
     <string name="qq_group">236121720</string>
-    <string name="comment">注释</string>
+    <string name="comment">注释/取消注释</string>
+    <string name="api_ref">http://zh.cppreference.com/w/c</string>
+    <string name="oj">https://acm.sjtu.edu.cn/OnlineJudge/problems</string>
 </resources>

@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.os.*;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.*;
 import android.widget.*;
 
@@ -20,6 +19,7 @@ import com.luoye.simpleC.interfaces.ExecCallback;
 import com.luoye.simpleC.interfaces.UnzipCallback;
 import com.luoye.simpleC.util.CFileNameFilter;
 import com.luoye.simpleC.util.ConstantPool;
+import com.luoye.simpleC.util.IO;
 import com.luoye.simpleC.util.ShellUtils;
 import com.luoye.simpleC.util.Utils;
 import com.luoye.simpleC.view.SymbolView;
@@ -29,7 +29,6 @@ import com.myopicmobile.textwarrior.common.ReadThread;
 import com.myopicmobile.textwarrior.common.WriteThread;
 
 import java.io.File;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -41,6 +40,7 @@ import java.util.regex.Pattern;
 
 public class MainActivity extends Activity
 {
+	private static final boolean DEBUG = false;
 	private TextEditor editor;
 	private SharedPreferences sharedPreferences;
 	private ProgressDialog progressDialog;
@@ -206,8 +206,27 @@ public class MainActivity extends Activity
 			}
 		});
 		recentFiles=new RecentFiles(this);
+		//外部打开文件
+		Intent intent=getIntent();
+		externalOpenFile(intent);
+		log("----------->onCreate");
 	}
 
+	private  void externalOpenFile(Intent intent)
+	{
+		if(intent.getAction().equals(Intent.ACTION_VIEW))
+		{
+			String path=intent.getData().getPath();
+			openFile(path);
+		}
+	}
+	@Override
+	protected void onNewIntent(Intent intent) {
+		//Intent intent=getIntent();
+		log("----------->onNewIntent");
+		externalOpenFile(intent);
+
+	}
 
 	private  Handler handler=new Handler(){
 		@Override
@@ -291,7 +310,7 @@ public class MainActivity extends Activity
 				preferences();
 				break;
 			case R.id.menu_learn:
-				exercise();
+				help();
 				break;
 			case R.id.menu_recent_file:
 				recent();
@@ -443,11 +462,11 @@ public class MainActivity extends Activity
 	/**
 	 * 练习
 	 */
-	private void exercise()
+	private void help()
 	{
 		Intent intent=new Intent(MainActivity.this, HelpActivity.class);
-		intent.putExtra("title","练习");
-		intent.putExtra("data",ConstantPool.PROBLEMS_URL);
+		intent.putExtra("title","帮助");
+		intent.putExtra("data", IO.getFromAssets(this,"help.md"));
 		startActivity(intent);
 	}
 	private void preferences()
@@ -597,6 +616,7 @@ public class MainActivity extends Activity
 	}
 
 	private void log(String text) {
+		if(DEBUG)
 		System.out.println("MainActivity:"+text);
 	}
 

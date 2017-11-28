@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="markdownpapers-core-1.4.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/markdownpapers-core-1.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

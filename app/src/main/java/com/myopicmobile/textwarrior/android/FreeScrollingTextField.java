@@ -2081,7 +2081,6 @@ implements Document.TextFieldMetrics{
 			return true;
 		}
 
-
 		return super.onKeyUp(keyCode, event);
 	}
 
@@ -3128,9 +3127,6 @@ implements Document.TextFieldMetrics{
 			
 			return false;
 		}
-
-			
-		
 		
 		public boolean sendKeyEvent(KeyEvent event){
 			switch(event.getKeyCode()){

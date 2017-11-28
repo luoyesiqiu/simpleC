@@ -7,8 +7,8 @@ android {
         applicationId "com.luoye.simpleC"
         minSdkVersion 18
         targetSdkVersion 22
-        versionName "1.2.15"
-        versionCode 16
+        versionName "1.2.16"
+        versionCode 17
     }
 
     buildTypes {
@@ -29,4 +29,5 @@ dependencies {
     //:libtermexec
     compile project(':terminal-emulator-release')
     compile project(':terminal-view-release')
+    compile files('libs/markdownpapers-core-1.4.1.jar')
 }

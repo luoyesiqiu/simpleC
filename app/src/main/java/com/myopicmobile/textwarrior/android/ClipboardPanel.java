@@ -19,7 +19,6 @@ public class ClipboardPanel {
 		_textField = textField;
 		_context = textField.getContext();
 		
-		
 	}
 
 
@@ -119,7 +118,6 @@ public class ClipboardPanel {
 						_clipboardActionMode = null;
 					}
 				});
-
 	}
 
 	/**
