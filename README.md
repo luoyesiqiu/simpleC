@@ -10,7 +10,7 @@ APK下载：[下载](https://www.coolapk.com/apk/166409)
 
 我的相似项目：[simpleJS](https://github.com/luoyesiqiu/simpleJS)
 
-项目用到的词法分析器：[词法分析器](https://www.coolapk.com/apk/166409)
+项目用到的词法分析器：[词法分析器](https://github.com/luoyesiqiu/Lexer)
 
 ## 截图
 
