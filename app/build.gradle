@@ -27,7 +27,7 @@ android {
 
 dependencies {
     //:libtermexec
+    compile files('libs/markdownpapers-core-1.4.1.jar')
     compile project(':terminal-emulator-release')
     compile project(':terminal-view-release')
-    compile files('libs/markdownpapers-core-1.4.1.jar')
 }

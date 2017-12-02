@@ -212,7 +212,6 @@ public class Lexer
 			//这里用ArrayList速度会发生质的飞跃
 			List<Pair> tokens = new ArrayList<>();
 
-			//language.isProgLang()返回真
 			if(!language.isProgLang()){
 				tokens.add(new Pair(0, NORMAL));
 				_tokens = tokens;
