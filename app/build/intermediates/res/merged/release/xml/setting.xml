@@ -10,6 +10,7 @@
     <CheckBoxPreference
         android:defaultValue="true"
         android:key="editor_auto_save"
+        android:summary="离开编辑界面或者关闭软件时自动保存"
         android:title="自动保存">
     </CheckBoxPreference>
     <CheckBoxPreference
@@ -17,6 +18,20 @@
         android:key="show_symbol_view"
         android:summary="在输入法上显示符号输入栏，方便输入符号"
         android:title="显示符号栏">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="show_line_number"
+        android:summary="显示行号可以更方便找出错误的位置"
+        android:title="显示行号">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="auto_compete"
+        android:summary="在输入关键字，头文件名，标识符时提示输入"
+        android:title="开启代码提示">
     </CheckBoxPreference>
 </PreferenceCategory>
 </PreferenceScreen>

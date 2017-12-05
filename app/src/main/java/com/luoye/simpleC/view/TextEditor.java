@@ -8,6 +8,7 @@ import android.util.*;
 import android.view.*;
 import android.widget.*;
 
+import com.luoye.simpleC.util.Setting;
 import com.myopicmobile.textwarrior.android.*;
 import com.myopicmobile.textwarrior.common.*;
 import java.io.*;
@@ -34,10 +35,11 @@ public class TextEditor extends FreeScrollingTextField {
 	{
 		setTypeface(Typeface.MONOSPACE);
 		DisplayMetrics dm=mContext.getResources().getDisplayMetrics();
-
+		//设置字体大小
 		float size= TypedValue.applyDimension(2, BASE_TEXT_SIZE_PIXELS, dm);
 		setTextSize((int)size);
 		setShowLineNumbers(true);
+		setAutoCompete(true);
 		setHighlightCurrentRow(true);
 		setWordWrap(false);
 		setAutoIndentWidth(2);
@@ -47,6 +49,7 @@ public class TextEditor extends FreeScrollingTextField {
 		int selectionText =Color.argb(255,0,120,215);//选择文字颜色
 		setTextColor(textColor);
 		setTextHighlightColor(selectionText);
+
 	}
 
 	@Override

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.luoye.simpleC"
-    android:versionCode="17"
-    android:versionName="1.2.16" >
+    android:versionCode="18"
+    android:versionName="1.2.17" >
 
     <uses-sdk
         android:minSdkVersion="18"
@@ -43,12 +43,15 @@
             android:label="设置" />
         <activity
             android:name="com.luoye.simpleC.activity.HelpActivity"
-            android:label="练习" />
+            android:label="帮助"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.luoye.simpleC.activity" />
         <activity
             android:name="com.luoye.simpleC.term.ConsoleActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
             android:label="控制台"
             android:theme="@android:style/Theme.DeviceDefault"
-            android:windowSoftInputMode="adjustResize" >
+            android:windowSoftInputMode="adjustResize|stateHidden" >
         </activity>
 
         <service

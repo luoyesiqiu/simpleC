@@ -20,6 +20,7 @@ import com.luoye.simpleC.interfaces.UnzipCallback;
 import com.luoye.simpleC.util.CFileNameFilter;
 import com.luoye.simpleC.util.ConstantPool;
 import com.luoye.simpleC.util.IO;
+import com.luoye.simpleC.util.Setting;
 import com.luoye.simpleC.util.ShellUtils;
 import com.luoye.simpleC.util.Utils;
 import com.luoye.simpleC.view.SymbolView;
@@ -54,10 +55,7 @@ public class MainActivity extends Activity
 	private  static  final String KEY_MULTI_COMPILE_FILES_NAME="multiCompileFilesName";
 	private final  int MSG_INIT=0x100;
 	private ArrayList<String> header;
-	private SharedPreferences settingPreference;
-	private boolean darkMode=false;
-	private boolean autoSave=true;
-	private boolean showSymbolView=false;
+	private Setting setting;
 	private  SymbolView symbolView;
 
 	private RecentFiles recentFiles;
@@ -71,7 +69,7 @@ public class MainActivity extends Activity
 		editor =new TextEditor(this);
 		setContentView(editor);
 		editor.requestFocus();
-		settingPreference= PreferenceManager.getDefaultSharedPreferences(this);
+		setting=Setting.getInstance(this);
 		sharedPreferences=getSharedPreferences("setting",MODE_PRIVATE);
 		if(savedInstanceState!=null)
 		{
@@ -111,14 +109,17 @@ public class MainActivity extends Activity
 	@Override
 	protected void onResume() {
 		super.onResume();
-		readPreferences();
-		editor.setDark(darkMode);
+		setting.update();//加载设置
+		editor.setDark(setting.isDarkMode());
 		showSymbolView();
+		editor.setAutoCompete(setting.isAutoCompete());
+		editor.setShowLineNumbers(setting.isShowLineNumber());
+		editor.invalidate();
 	}
 
 	private void showSymbolView()
 	{
-		if(showSymbolView){
+		if(setting.isShowSymbolView()){
 			symbolView.setVisible(true);
 		}
 		else
@@ -129,7 +130,7 @@ public class MainActivity extends Activity
 
 	private void autoSave()
 	{
-		if(autoSave&&editor.getOpenedFile()!=null) {
+		if(setting.isAutoSave()&&editor.getOpenedFile()!=null) {
 			editor.save(editor.getOpenedFile().getAbsolutePath());
 		}
 	}
@@ -155,21 +156,39 @@ public class MainActivity extends Activity
 				@Override
 				public void run() {
 					try {
-						InputStream inputStream=getAssets().open("bin.zip");
+						InputStream inputStream=getAssets().open("gcc.zip");
 						//解压bin
 						Utils.unzip(inputStream, getFilesDir(), new UnzipCallback() {
 							@Override
 							public void onResult(boolean success) {
 								if(success) {
-									Utils.changeToExecutable(new File(getFilesDir() + File.separator + "tcc"));
-									Utils.changeToExecutable(new File(getFilesDir() + File.separator + "indent"));
+									File binDir1=new File(getFilesDir()+File.separator+"gcc"+File.separator+"bin");
+									File binDir2=new File(getFilesDir()+File.separator+"gcc"+File.separator+"arm-linux-androideabi"+File.separator+"bin");
+									File binDir3=new File(getFilesDir()+File.separator+"gcc"+File.separator+"libexec/gcc/arm-linux-androideabi/6.1.0");
+									for(File f:binDir1.listFiles())
+									{
+										if(f.isFile())
+											Utils.changeToExecutable(f);
+									}
+									for(File f:binDir2.listFiles())
+									{
+										if(f.isFile())
+											Utils.changeToExecutable(f);
+									}
+									for(File f:binDir3.listFiles())
+									{
+										if(f.isFile())
+											Utils.changeToExecutable(f);
+									}
 									try {
 										//解压lib
-										InputStream libInputStream=getAssets().open("lib.zip");
+										InputStream libInputStream=getAssets().open("bin.zip");
 										Utils.unzip(libInputStream, getFilesDir(), new UnzipCallback() {
 											@Override
 											public void onResult(boolean success) {
 												if(success){
+													File f=new File(getFilesDir()+"/indent");
+													Utils.changeToExecutable(f);
 													handler.sendMessage(Message.obtain(handler,MSG_INIT,true));
 												}
 												else{
@@ -212,6 +231,10 @@ public class MainActivity extends Activity
 		log("----------->onCreate");
 	}
 
+	/**
+	 * 外部应用打开文件
+	 * @param intent
+     */
 	private  void externalOpenFile(Intent intent)
 	{
 		if(intent.getAction().equals(Intent.ACTION_VIEW))
@@ -223,7 +246,7 @@ public class MainActivity extends Activity
 	@Override
 	protected void onNewIntent(Intent intent) {
 		//Intent intent=getIntent();
-		log("----------->onNewIntent");
+		//log("----------->onNewIntent");
 		externalOpenFile(intent);
 
 	}
@@ -464,9 +487,11 @@ public class MainActivity extends Activity
 	 */
 	private void help()
 	{
-		Intent intent=new Intent(MainActivity.this, HelpActivity.class);
+		Intent intent=new Intent();
 		intent.putExtra("title","帮助");
 		intent.putExtra("data", IO.getFromAssets(this,"help.md"));
+		intent.setClass(MainActivity.this, HelpActivity.class);
+		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		startActivity(intent);
 	}
 	private void preferences()
@@ -535,7 +560,7 @@ public class MainActivity extends Activity
 	 * @param files
      */
 	private  void compile(File[] files){
-		Utils.compile(getApplicationContext(), files, new CompileCallback() {
+		Utils.gccCompile(getApplicationContext(), files, new CompileCallback() {
 			@Override
 			public void onCompileResult(ShellUtils.CommandResult result) {
 				String info = null;
@@ -544,18 +569,20 @@ public class MainActivity extends Activity
 					Utils.execBin(MainActivity.this);
 
 				} else {
-					info = result.successMsg;
+					info = result.getMsg();
 					View view=LayoutInflater.from(MainActivity.this).inflate(R.layout.compile_error_layout,null);
 					TextView infoTextView=(TextView)view.findViewById(R.id.console_msg);
 					infoTextView.setText(info);
 					infoTextView.setTextColor(Color.BLACK);
+					ScrollView scrollView=new ScrollView(MainActivity.this);
+					scrollView.addView(view, LinearLayout.LayoutParams.MATCH_PARENT);
 					Matcher matcher=Pattern.compile(":(\\d+):").matcher(info);
 					final String[] pos=new String[1];
 					if(matcher.find())
 						pos[0] = matcher.group(1);
 					AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
 							.setTitle("编译失败")
-							.setView(view)
+							.setView(scrollView)
 							.setPositiveButton("确定", new DialogInterface.OnClickListener() {
 								@Override
 								public void onClick(DialogInterface dialogInterface, int i) {
@@ -620,15 +647,6 @@ public class MainActivity extends Activity
 		System.out.println("MainActivity:"+text);
 	}
 
-	/**
-	 * 读取Preferences，并保存在文件
-	 */
-	private  void readPreferences()
-	{
-		darkMode=settingPreference.getBoolean("editor_dark_mode",false);
-		autoSave=settingPreference.getBoolean("editor_auto_save",true);
-		showSymbolView=settingPreference.getBoolean("show_symbol_view",false);
-	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)

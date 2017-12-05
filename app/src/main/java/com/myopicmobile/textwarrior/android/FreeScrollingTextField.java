@@ -70,6 +70,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.webkit.WebView;
 import android.widget.Scroller;
 
+import com.luoye.simpleC.util.Setting;
 import com.myopicmobile.textwarrior.common.ColorScheme;
 import com.myopicmobile.textwarrior.common.ColorScheme.Colorable;
 import com.myopicmobile.textwarrior.common.ColorSchemeLight;
@@ -161,9 +162,14 @@ implements Document.TextFieldMetrics{
 
 	
 	private int _leftOffset=0;
+	//编辑器设置
 	private boolean _showLineNumbers=false;
+
+	private boolean _autoCompete=true;
+
 	private ClipboardPanel _clipboardPanel;
 	private ClipboardManager _clipboardManager;
+
 	private float _zoomFactor=1;
 	private int _caretX;
 	private int _caretY;
@@ -251,7 +257,13 @@ implements Document.TextFieldMetrics{
 	{
 		return _showLineNumbers;
 	}
+	public boolean isAutoCompete() {
+		return _autoCompete;
+	}
 
+	public void setAutoCompete(boolean autoCompete) {
+		this._autoCompete = autoCompete;
+	}
 	public int getLeftOffset()
 	{
 		return _leftOffset;
@@ -351,8 +363,12 @@ implements Document.TextFieldMetrics{
 						break;
 					}
 				}
-				if(_caretPosition-curr>0)
-					_autoCompletePanel.update(_hDoc.subSequence(curr,_caretPosition-curr));
+				if(_caretPosition-curr>0) {
+					//是否开启代码提示
+					if(_autoCompete) {
+						_autoCompletePanel.update(_hDoc.subSequence(curr, _caretPosition - curr));
+					}
+				}
 				else
 					_autoCompletePanel.dismiss();
 				}
@@ -572,9 +588,7 @@ implements Document.TextFieldMetrics{
 						getScrollY() + getHeight() - getPaddingBottom());
 		canvas.translate(getPaddingLeft(), getPaddingTop());
 		realDraw(canvas);
-
 		canvas.restore();
-
  		_navMethod.onTextDrawComplete(canvas);
 	}
 
@@ -593,8 +607,13 @@ implements Document.TextFieldMetrics{
 		int currRowNum = getBeginPaintRow(canvas);
 		int currLineNum=isWordWrap() ? _hDoc.findLineNumber(currentIndex)+1 : currRowNum+1;
 		int lastLineNum=0;
-		if(_showLineNumbers)
-			_leftOffset=(int) _brushLine.measureText(_hDoc.getRowCount() + " ");
+		if(_showLineNumbers) {
+			_leftOffset = (int) _brushLine.measureText(_hDoc.getRowCount() + " ");
+		}
+		else
+		{
+			_leftOffset=0;
+		}
 		//----------------------------------------------
 		// set up span coloring settings
 		//----------------------------------------------

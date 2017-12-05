@@ -1,12 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
-    <item
-        jar="D:\Documents\MulCode\app\libs\markdownpapers-core-1.4.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c8b51105aa0332712e3f5fa54e6cebbb1d31258f">
-        <dex dex="D:\Documents\MulCode\app\build\intermediates\pre-dexed\release\markdownpapers-core-1.4.1_76003ccbac58ecc829a94828f6211a1c1e9ff494.jar" />
-    </item>
-
-</items>

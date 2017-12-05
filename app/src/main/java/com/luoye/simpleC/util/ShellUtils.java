@@ -5,6 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
+import java.util.Map;
 
 
 public class ShellUtils {
@@ -20,8 +21,6 @@ public class ShellUtils {
 
     /**
      * 检查是否有root的权限
-     *
-     * @return
      */
     public static boolean checkRootPermission() {
         return execCommand("echo root", true, false).result == 0;
@@ -29,94 +28,58 @@ public class ShellUtils {
 
     /**
      * 执行shell命令，默认返回执行结果
-     *
-     * @param command command
-     * @param isRoot whether need to run with root
-     * @return
-     * @see ShellUtils#execCommand(String[], boolean, boolean)
      */
     public static CommandResult execCommand(String command, boolean isRoot) {
-        return execCommand(new String[] {command}, isRoot, true);
+        return execCommand(new String[] {command}, isRoot, true,null);
     }
 
     /**
      * 执行shell命令，默认返回执行结果
-     *
-     * @param commands command list
-     * @param isRoot whether need to run with root
-     * @return
-     * @see ShellUtils#execCommand(String[], boolean, boolean)
      */
     public static CommandResult execCommand(List<String> commands, boolean isRoot) {
-        return execCommand(commands == null ? null : commands.toArray(new String[] {}), isRoot, true);
+        return execCommand(commands == null ? null : commands.toArray(new String[] {}), isRoot, true,null);
     }
 
     /**
      * 执行shell命令，默认返回执行结果
-     *
-     * @param commands command array
-     * @param isRoot whether need to run with root
-     * @return
-     * @see ShellUtils#execCommand(String[], boolean, boolean)
      */
     public static CommandResult execCommand(String[] commands, boolean isRoot) {
-        return execCommand(commands, isRoot, true);
+        return execCommand(commands, isRoot, true,null);
     }
 
     /**
      * 执行shell命令，默认返回执行结果
-     *
-     * @param command command
-     * @param isRoot whether need to run with root
-     * @param isNeedResultMsg whether need result msg
-     * @return
-     * @see ShellUtils#execCommand(String[], boolean, boolean)
      */
     public static CommandResult execCommand(String command, boolean isRoot, boolean isNeedResultMsg) {
-        return execCommand(new String[] {command}, isRoot, isNeedResultMsg);
+        return execCommand(new String[] {command}, isRoot, isNeedResultMsg,null);
     }
 
     /**
      * 执行shell命令，默认返回执行结果
-     *
-     * @param commands command list
-     * @param isRoot whether need to run with root
-     * @param isNeedResultMsg whether need result msg
-     * @return
-     * @see ShellUtils#execCommand(String[], boolean, boolean)
      */
     public static CommandResult execCommand(List<String> commands, boolean isRoot, boolean isNeedResultMsg) {
-        return execCommand(commands == null ? null : commands.toArray(new String[] {}), isRoot, isNeedResultMsg);
+        return execCommand(commands == null ? null : commands.toArray(new String[] {}), isRoot, isNeedResultMsg,null);
     }
 
 
     /**
      * 执行shell命令，默认返回执行结果
-     *
-     * @param commands command array
-     * @param isRoot whether need to run with root
-     * @param isNeedResultMsg whether need result msg
-     * @return <ul>
-     *         <li>if isNeedResultMsg is false, {@link CommandResult#successMsg} is null and
-     *         {@link CommandResult#errorMsg} is null.</li>
-     *         <li>if {@link CommandResult#result} is -1, there maybe some excepiton.</li>
-     *         </ul>
      */
-    public static CommandResult execCommand(String[] commands, boolean isRoot, boolean isNeedResultMsg) {
+    public static CommandResult execCommand(String[] commands, boolean isRoot, boolean isNeedResultMsg,String[] env) {
         int result = -1;
         if (commands == null || commands.length == 0) {
-            return new CommandResult(result, null, null);
+            return new CommandResult(result, null);
         }
 
         Process process = null;
         BufferedReader successResult = null;
         //BufferedReader errorResult = null;
-        StringBuilder successMsg = null;
+        StringBuilder msg = null;
        // StringBuilder errorMsg = null;
 
         DataOutputStream os = null;
         try {
-            process = Runtime.getRuntime().exec(isRoot ? COMMAND_SU : COMMAND_SH);
+            process = Runtime.getRuntime().exec(isRoot ? COMMAND_SU : COMMAND_SH,env);
             os = new DataOutputStream(process.getOutputStream());
             for (String command : commands) {
                 if (command == null) {
@@ -133,23 +96,22 @@ public class ShellUtils {
             result = process.waitFor();
             // get command result
             if (isNeedResultMsg) {
-                successMsg = new StringBuilder();
+                msg = new StringBuilder();
                 //errorMsg = new StringBuilder();
                 successResult = new BufferedReader(new InputStreamReader(process.getInputStream()));
                 //errorResult = new BufferedReader(new InputStreamReader(process.getErrorStream()));
                 String s=null;
                 while ((s = successResult.readLine()) != null) {
-                    successMsg.append(s);
-                    successMsg.append("\n");
+                    msg.append(s);
+                    msg.append("\n");
                 }
 
             }
-        } catch (IOException e) {
-            successMsg.append(e.toString());
-            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
+            if(msg!=null)
+                msg.append(e.toString());
+        }  finally {
             try {
                 if (os != null) {
                     os.close();
@@ -166,37 +128,85 @@ public class ShellUtils {
                 process.destroy();
             }
         }
-        return new CommandResult(result, successMsg == null ? null : successMsg.toString(), null);
+        return new CommandResult(result, msg==null?null:msg.toString());
     }
+    /**
+     * 携带环境变量执行shell命令
+     */
+    public static CommandResult execCommand(String command,List<String> args,Map<String,String> env) {
+        int result = -1;
+        if (command == null || command.length() == 0) {
+            return new CommandResult(result, null);
+        }
 
+        Process process = null;
+        BufferedReader inputBufferedReader = null;
+        StringBuilder msg = null;
+        try {
+            ProcessBuilder processBuilder=new ProcessBuilder(command);
+           List<String> argsList=processBuilder.command();
+            for(String arg:args)
+            {
+                argsList.add(arg);
+            }
+            processBuilder.redirectErrorStream(true);//合并输入流和错误流
+            Map<String,String> map=processBuilder.environment();
+            map.clear();
+            for (Map.Entry<String,String> entry:env.entrySet())
+            {
+                map.put(entry.getKey(),entry.getValue());
+            }
+            process=processBuilder.start();
+            result = process.waitFor();
+             msg = new StringBuilder();
+
+            inputBufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+            String s=null;
+            while ((s = inputBufferedReader.readLine()) != null) {
+                msg.append(s);
+                msg.append("\n");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            if(msg!=null)
+                msg.append(e.toString());
+        }  finally {
+            try {
+                if (inputBufferedReader != null) {
+                    inputBufferedReader.close();
+                }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            if (process != null) {
+                process.destroy();
+            }
+        }
+        return new CommandResult(result, msg==null?"":msg.toString());
+    }
     /**
      * 命令结果类
-     * <ul>
-     * <li>{@link CommandResult#result} means result of command, 0 means normal, else means error, same to excute in
-     * linux shell</li>
-     * <li>{@link CommandResult#successMsg} means success message of command result</li>
-     * <li>{@link CommandResult#errorMsg} means error message of command result</li>
-     * </ul>
-     *
-     * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2013-5-16
      */
     public static class CommandResult {
 
-        /** result of command **/
         public int    result;
-        /** success message of command result **/
-        public String successMsg;
-        /** error message of command result **/
-        public String errorMsg;
+
+        public String getMsg() {
+            return msg;
+        }
+
+        public String msg;
+
 
         public CommandResult(int result) {
             this.result = result;
         }
 
-        public CommandResult(int result, String successMsg, String errorMsg) {
+        public CommandResult(int result, String msg) {
             this.result = result;
-            this.successMsg = successMsg;
-            this.errorMsg = errorMsg;
+            this.msg=msg;
         }
     }
 }

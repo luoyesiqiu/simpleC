@@ -224,7 +224,6 @@ public class AutoCompletePanel {
 		@Override
 		public Filter getFilter() {
 			Filter filter = new Filter() {
-
 				/**
 				 * 本方法在后台线程执行，定义过滤算法
 				 */

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="terminal-emulator-release-unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/terminal-emulator-release/unspecified/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/MulCode/terminal-emulator-release/unspecified/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

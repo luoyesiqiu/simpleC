@@ -80,6 +80,8 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundles" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dependency-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/MulCode/terminal-emulator-release/unspecified/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/MulCode/terminal-view-release/unspecified/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-support" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
@@ -95,6 +97,10 @@
     <orderEntry type="jdk" jdkName="Android API 22 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="markdownpapers-core-1.4.1" level="project" />
+    <orderEntry type="module" module-name="terminal-view-release" exported="" />
+    <orderEntry type="module" module-name="terminal-emulator-release" exported="" />
     <orderEntry type="library" exported="" name="android-android-22" level="project" />
+    <orderEntry type="library" exported="" name="terminal-view-release-unspecified" level="project" />
+    <orderEntry type="library" exported="" name="terminal-emulator-release-unspecified" level="project" />
   </component>
 </module>
