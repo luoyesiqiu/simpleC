@@ -8,28 +8,32 @@
 package com.luoye.simpleC;
 
 public final class R {
+    public static final class array {
+        public static final int compiler_list=0x7f070000;
+        public static final int compiler_list_value=0x7f070001;
+    }
     public static final class attr {
     }
     public static final class color {
-        public static final int BLACK=0x7f070000;
-        public static final int BLUE=0x7f070001;
-        public static final int DARK_GREY=0x7f070002;
-        public static final int DARK_RED=0x7f070003;
-        public static final int GREEN=0x7f070004;
-        public static final int GREY=0x7f070005;
-        public static final int INDIGO=0x7f070006;
-        public static final int LIGHT_BLUE=0x7f070007;
-        public static final int LIGHT_BLUE2=0x7f070008;
-        public static final int LIGHT_GREY=0x7f070009;
-        public static final int MAROON=0x7f07000a;
-        public static final int OFF_BLACK=0x7f07000b;
-        public static final int OFF_WHITE=0x7f07000c;
-        public static final int OLIVE_GREEN=0x7f07000d;
-        public static final int ONDINE=0x7f07000e;
-        public static final int PINK=0x7f07000f;
-        public static final int PURPLE=0x7f070010;
-        public static final int RED=0x7f070011;
-        public static final int WHITE=0x7f070012;
+        public static final int BLACK=0x7f080000;
+        public static final int BLUE=0x7f080001;
+        public static final int DARK_GREY=0x7f080002;
+        public static final int DARK_RED=0x7f080003;
+        public static final int GREEN=0x7f080004;
+        public static final int GREY=0x7f080005;
+        public static final int INDIGO=0x7f080006;
+        public static final int LIGHT_BLUE=0x7f080007;
+        public static final int LIGHT_BLUE2=0x7f080008;
+        public static final int LIGHT_GREY=0x7f080009;
+        public static final int MAROON=0x7f08000a;
+        public static final int OFF_BLACK=0x7f08000b;
+        public static final int OFF_WHITE=0x7f08000c;
+        public static final int OLIVE_GREEN=0x7f08000d;
+        public static final int ONDINE=0x7f08000e;
+        public static final int PINK=0x7f08000f;
+        public static final int PURPLE=0x7f080010;
+        public static final int RED=0x7f080011;
+        public static final int WHITE=0x7f080012;
     }
     public static final class drawable {
         public static final int slash=0x7f020000;
@@ -40,37 +44,37 @@ public final class R {
         public static final int text_select_handle_right_mtrl_alpha=0x7f020005;
     }
     public static final class id {
-        public static final int console_msg=0x7f0a0000;
-        public static final int editor=0x7f0a0008;
-        public static final int emulatorView=0x7f0a0003;
-        public static final int file_icon=0x7f0a0004;
-        public static final int file_list_view=0x7f0a0007;
-        public static final int file_name_tv=0x7f0a0005;
-        public static final int file_size_tv=0x7f0a0006;
-        public static final int linear_container=0x7f0a000b;
-        public static final int menu_api_ref=0x7f0a0011;
-        public static final int menu_app_version=0x7f0a0012;
-        public static final int menu_close_file=0x7f0a0019;
-        public static final int menu_compile_option=0x7f0a001c;
-        public static final int menu_create_file=0x7f0a000d;
-        public static final int menu_create_folder=0x7f0a000e;
-        public static final int menu_exercise=0x7f0a0010;
-        public static final int menu_indent_code=0x7f0a001b;
-        public static final int menu_join_qq_group=0x7f0a000f;
-        public static final int menu_learn=0x7f0a001e;
-        public static final int menu_open=0x7f0a0016;
-        public static final int menu_recent_file=0x7f0a001a;
-        public static final int menu_redo=0x7f0a0015;
-        public static final int menu_run=0x7f0a0013;
-        public static final int menu_save=0x7f0a0017;
-        public static final int menu_save_as=0x7f0a0018;
-        public static final int menu_setting=0x7f0a001d;
-        public static final int menu_undo=0x7f0a0014;
-        public static final int multi_file_check_box=0x7f0a0001;
-        public static final int multi_file_edit=0x7f0a0002;
-        public static final int previewmdWebView1=0x7f0a000a;
-        public static final int titlebarTextView1=0x7f0a000c;
-        public static final int webview_progressBar=0x7f0a0009;
+        public static final int console_msg=0x7f0b0000;
+        public static final int editor=0x7f0b0008;
+        public static final int emulatorView=0x7f0b0003;
+        public static final int file_icon=0x7f0b0004;
+        public static final int file_list_view=0x7f0b0007;
+        public static final int file_name_tv=0x7f0b0005;
+        public static final int file_size_tv=0x7f0b0006;
+        public static final int linear_container=0x7f0b000b;
+        public static final int menu_api_ref=0x7f0b0011;
+        public static final int menu_app_version=0x7f0b0012;
+        public static final int menu_close_file=0x7f0b0019;
+        public static final int menu_compile_option=0x7f0b001c;
+        public static final int menu_create_file=0x7f0b000d;
+        public static final int menu_create_folder=0x7f0b000e;
+        public static final int menu_exercise=0x7f0b0010;
+        public static final int menu_indent_code=0x7f0b001b;
+        public static final int menu_join_qq_group=0x7f0b000f;
+        public static final int menu_learn=0x7f0b001e;
+        public static final int menu_open=0x7f0b0016;
+        public static final int menu_recent_file=0x7f0b001a;
+        public static final int menu_redo=0x7f0b0015;
+        public static final int menu_run=0x7f0b0013;
+        public static final int menu_save=0x7f0b0017;
+        public static final int menu_save_as=0x7f0b0018;
+        public static final int menu_setting=0x7f0b001d;
+        public static final int menu_undo=0x7f0b0014;
+        public static final int multi_file_check_box=0x7f0b0001;
+        public static final int multi_file_edit=0x7f0b0002;
+        public static final int previewmdWebView1=0x7f0b000a;
+        public static final int titlebarTextView1=0x7f0b000c;
+        public static final int webview_progressBar=0x7f0b0009;
     }
     public static final class layout {
         public static final int compile_error_layout=0x7f040000;
@@ -85,9 +89,9 @@ public final class R {
         public static final int titlebar=0x7f040009;
     }
     public static final class menu {
-        public static final int file_list_menu=0x7f090000;
-        public static final int help_menu=0x7f090001;
-        public static final int main_menu=0x7f090002;
+        public static final int file_list_menu=0x7f0a0000;
+        public static final int help_menu=0x7f0a0001;
+        public static final int main_menu=0x7f0a0002;
     }
     public static final class mipmap {
         public static final int file=0x7f030000;
@@ -98,18 +102,18 @@ public final class R {
         public static final int undo=0x7f030005;
     }
     public static final class string {
-        public static final int action_settings=0x7f080000;
-        public static final int api_ref=0x7f080001;
-        public static final int app_name=0x7f080002;
-        public static final int author=0x7f080003;
-        public static final int comment=0x7f080004;
-        public static final int copy_text=0x7f080005;
-        public static final int github=0x7f080006;
-        public static final int hello_world=0x7f080007;
-        public static final int oj=0x7f080008;
-        public static final int paste_text=0x7f080009;
-        public static final int qq_group=0x7f08000a;
-        public static final int text_selection_more=0x7f08000b;
+        public static final int action_settings=0x7f090000;
+        public static final int api_ref=0x7f090001;
+        public static final int app_name=0x7f090002;
+        public static final int author=0x7f090003;
+        public static final int comment=0x7f090004;
+        public static final int copy_text=0x7f090005;
+        public static final int github=0x7f090006;
+        public static final int hello_world=0x7f090007;
+        public static final int oj=0x7f090008;
+        public static final int paste_text=0x7f090009;
+        public static final int qq_group=0x7f09000a;
+        public static final int text_selection_more=0x7f09000b;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

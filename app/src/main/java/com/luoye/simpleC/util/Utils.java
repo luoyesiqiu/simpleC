@@ -48,15 +48,44 @@ public class Utils {
     }
 
     /**
-     * 获取头文件
+     * 获取c头文件
      * @param context
      */
-    public static ArrayList<String> getHeader(Context context)
+    public static ArrayList<String> getCHeader(Context context)
     {
         ArrayList<String> list=new ArrayList<>();
         InputStream inputStream=null;
         try {
              inputStream= context.getAssets().open("cheader");
+            BufferedReader bufferedInputStream=new BufferedReader(new InputStreamReader(inputStream));
+            String line=null;
+            while ((line=bufferedInputStream.readLine())!=null){
+                list.add(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            if(inputStream!=null)
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+        }
+        return  list;
+    }
+
+    /**
+     * 获取cpp头文件
+     * @param context
+     */
+    public static ArrayList<String> getCppHeader(Context context)
+    {
+        ArrayList<String> list=new ArrayList<>();
+        InputStream inputStream=null;
+        try {
+            inputStream= context.getAssets().open("cppheader");
             BufferedReader bufferedInputStream=new BufferedReader(new InputStreamReader(inputStream));
             String line=null;
             while ((line=bufferedInputStream.readLine())!=null){
@@ -182,6 +211,47 @@ public class Utils {
         }
         flags.add("-pie");
         flags.add("-std=c99");
+        flags.add("-lz");
+        flags.add("-ldl");
+        flags.add("-lm");
+        flags.add("-llog");
+        flags.add("-o");
+        flags.add(internalDir.getAbsolutePath()+File.separator+"temp.o");
+
+        String TEMPEnv=internalDir.getAbsolutePath()+"/gcc/tmpdir";
+        String PATHEnv=internalDir.getAbsolutePath()+":"+GCC_BIN_PATH+":"+ARM_GCC_PATH+":"+SYS_PATH;
+        Map<String,String> envMap=new HashMap<>();
+        envMap.put("PATH",PATHEnv);
+        envMap.put("TEMP",TEMPEnv);
+//        System.out.println("gccCompile_path:"+cmd.toString());
+//        System.out.println("gccCompile_env:"+PATHEnv);
+        ShellUtils.CommandResult result=ShellUtils.execCommand(cmd.toString(),flags,envMap);
+
+        if(compileCallback!=null)
+            compileCallback.onCompileResult(result);
+    }
+    /**
+     * g++编译代码
+     * @param context
+     * @param src
+     */
+    public static void gplusplusCompile(Context context, File[] src,CompileCallback compileCallback)
+    {
+        File internalDir=context.getFilesDir();
+        final  String SYS_PATH=System.getenv("PATH");
+        final  String GCC_BIN_PATH=internalDir.getAbsolutePath()+File.separator+"gcc"+File.separator+"bin";
+        final  String ARM_GCC_PATH=internalDir.getAbsolutePath()+File.separator+"gcc"+File.separator+"arm-linux-androideabi" +File.separator+"bin";
+
+        StringBuilder cmd=new StringBuilder();
+        cmd.append(".");
+        cmd.append(GCC_BIN_PATH+File.separator);
+        cmd.append("arm-linux-androideabi-g++");
+        List<String> flags=new ArrayList<>();
+        for(int i=0;i<src.length;i++) {
+            flags.add(src[i].getAbsolutePath());
+        }
+        flags.add("-pie");
+        flags.add("-std=c++14");
         flags.add("-lz");
         flags.add("-ldl");
         flags.add("-lm");

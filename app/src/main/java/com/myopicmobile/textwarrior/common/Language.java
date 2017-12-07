@@ -37,7 +37,7 @@ public abstract class Language
 	protected HashMap<String, Integer> _keywords = new HashMap<String, Integer>(0);
 	protected HashMap<String, Integer> _names = new HashMap<String, Integer>(0);
 	protected HashMap<String, String[]> _bases = new HashMap<String, String[]>(0);
-	protected HashMap<String, Integer> _users = new HashMap<String, Integer>(0);
+	protected HashMap<String, Integer> _users = new HashMap<String, Integer>(0);//userWord是那种用户自己定义的标识符
 	protected HashMap<Character, Integer> _operators = generateOperators(BASIC_C_OPERATORS);
 	
 	private ArrayList<String> _ueserCache = new ArrayList<String>();

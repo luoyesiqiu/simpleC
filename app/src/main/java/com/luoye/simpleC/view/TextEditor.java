@@ -43,7 +43,7 @@ public class TextEditor extends FreeScrollingTextField {
 		setHighlightCurrentRow(true);
 		setWordWrap(false);
 		setAutoIndentWidth(2);
-		Lexer.setLanguage(LanguageC.getInstance());
+		Lexer.setLanguage(LanguageCpp.getInstance());
 		setNavigationMethod(new YoyoNavigationMethod(this));
 		int textColor = Color.BLACK;// 默认文字颜色
 		int selectionText =Color.argb(255,0,120,215);//选择文字颜色
@@ -70,7 +70,7 @@ public class TextEditor extends FreeScrollingTextField {
 	}
 
 	public void addNames(String[] names) {
-		LanguageC lang=(LanguageC) Lexer.getLanguage();
+		LanguageCpp lang=(LanguageCpp) Lexer.getLanguage();
 		String[] old=lang.getNames();
 		String[] news=new String[old.length + names.length];
 		System.arraycopy(old, 0, news, 0, old.length);

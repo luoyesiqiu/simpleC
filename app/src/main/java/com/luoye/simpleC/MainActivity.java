@@ -1,6 +1,7 @@
 package com.luoye.simpleC;
 
 import android.app.*;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -54,7 +55,6 @@ public class MainActivity extends Activity
 	private  static  final String KEY_IS_MULTI_COMPILE="isMultiCompile";
 	private  static  final String KEY_MULTI_COMPILE_FILES_NAME="multiCompileFilesName";
 	private final  int MSG_INIT=0x100;
-	private ArrayList<String> header;
 	private Setting setting;
 	private  SymbolView symbolView;
 
@@ -74,10 +74,16 @@ public class MainActivity extends Activity
 		if(savedInstanceState!=null)
 		{
 			editor.requestFocus();
-			editor.setText(savedInstanceState.getString(KEY_FILE_CONTENT,""));
-			String openFileName=savedInstanceState.getString(KEY_FILE_PATH,"");
-			if(!openFileName.equals("")){
-				setSubtitle(new File(openFileName).getName());
+
+			String openedFilePath=savedInstanceState.getString(KEY_FILE_PATH,"");
+			if(!openedFilePath.equals("")){
+				editor.open(openedFilePath);
+				setSubtitle(new File(openedFilePath).getName());
+			}
+			else
+			{
+				//没有打开文件时
+				editor.setText(savedInstanceState.getString(KEY_FILE_CONTENT,""));
 			}
 			multiFilesName=savedInstanceState.getString(KEY_MULTI_COMPILE_FILES_NAME,"");
 			isMultiFileCompile=savedInstanceState.getBoolean(KEY_IS_MULTI_COMPILE,false);
@@ -213,9 +219,15 @@ public class MainActivity extends Activity
 				}
 			}.start();
 		}
-		header=Utils.getHeader(MainActivity.this);
-		String[] arr=new String[header.size()];
-		editor.addNames(header.toArray(arr));
+		//加载头文件名
+		ArrayList<String> cHeader=Utils.getCHeader(MainActivity.this);
+		String[] arr1=new String[cHeader.size()];
+		editor.addNames(cHeader.toArray(arr1));
+
+		ArrayList<String> cppHeader=Utils.getCppHeader(MainActivity.this);
+		String[] arr2=new String[cppHeader.size()];
+		editor.addNames(cppHeader.toArray(arr2));
+
 		View rootView=getWindow().getDecorView();
 		symbolView=new SymbolView(MainActivity.this,rootView);
 		symbolView.setOnSymbolViewClick(new SymbolView.OnSymbolViewClick() {
@@ -556,11 +568,30 @@ public class MainActivity extends Activity
 	}
 
 	/**
-	 * 编译
+	 * 选择编译器编译
+	 * @param context
 	 * @param files
+	 * @param compileCallback
+	 * @param gccCompile 是否gcc编译
+     */
+	private void compile(Context context,File[] files,CompileCallback compileCallback,boolean gccCompile)
+	{
+		if(gccCompile)
+		{
+			Utils.gccCompile(context,files,compileCallback);
+		}
+		else
+		{
+			Utils.gplusplusCompile(context,files,compileCallback);
+		}
+	}
+	/**
+	 * 编译
+	 * @param files 要编译的文件
      */
 	private  void compile(File[] files){
-		Utils.gccCompile(getApplicationContext(), files, new CompileCallback() {
+		boolean gccCompile=setting.isGccCompile();
+		compile(getApplicationContext(), files, new CompileCallback() {
 			@Override
 			public void onCompileResult(ShellUtils.CommandResult result) {
 				String info = null;
@@ -595,7 +626,7 @@ public class MainActivity extends Activity
 					alertDialog.show();
 				}
 			}
-		});
+		},gccCompile);
 
 	}
 

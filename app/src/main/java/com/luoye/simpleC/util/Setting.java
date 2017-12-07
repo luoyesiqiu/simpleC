@@ -51,6 +51,15 @@ public class Setting {
         this.autoCompete = autoCompete;
     }
 
+    public boolean isGccCompile() {
+        return gccCompile==0;
+    }
+
+    public void setGccCompile(boolean gccCompile) {
+        this.gccCompile = gccCompile?0:1;
+    }
+
+    private  int gccCompile;
     private  boolean autoCompete;
     private  boolean showLineNumber;
     private boolean darkMode;
@@ -75,5 +84,6 @@ public class Setting {
         showSymbolView=sharedPreferences.getBoolean("show_symbol_view",false);
         showLineNumber=sharedPreferences.getBoolean("show_line_number",true);
         autoCompete=sharedPreferences.getBoolean("auto_compete",true);
+        gccCompile=Integer.parseInt(sharedPreferences.getString("select_compiler","0"));
     }
 }

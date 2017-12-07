@@ -26,8 +26,7 @@ public class LanguageC extends Language{
 		"goto", "if", "return", "switch", "while",
 		"define","include","ifdef","endif","ifndef","error","elif","line","pragma","undef"
 		};
-	private  final  static  String[] funtions={
-
+	private  final  static  String[] functions={
 			"abort","abs","acos","asctime","asin","assert","atan","atan2","atexit","atof","atoi","atol"
 			,"bsearch","calloc","ceil","clearerr","clock","cos","cosh","ctime","difftime","div"
 			,"exit","exp","fabs","fclose","feof","ferror","fflush","fgetc","fgetpos","fgets","floor"
@@ -56,9 +55,9 @@ public class LanguageC extends Language{
 	}
 	
 	private LanguageC(){
-		String[] diyWord= new String[header.length+funtions.length];
-		System.arraycopy(funtions,0,diyWord,0,funtions.length);
-		System.arraycopy(header,0,diyWord,funtions.length,header.length);
+		String[] diyWord= new String[header.length+functions.length];
+		System.arraycopy(functions,0,diyWord,0,functions.length);
+		System.arraycopy(header,0,diyWord,functions.length,header.length);
 		setKeywords(keywords);
 		setNames(diyWord);
 		setOperators(BASIC_C_OPERATORS);

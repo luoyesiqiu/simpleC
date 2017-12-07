@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="compiler_list">
+        <item>gcc(用于编译C代码)</item>
+        <item>g++(用于编译C++代码)</item>
+    </string-array>
+    <string-array name="compiler_list_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
     <color name="BLACK">#FF000000</color>
     <color name="BLUE">#FF0000FF</color>
     <color name="DARK_GREY">#FF606060</color>

@@ -376,7 +376,7 @@ implements Document.TextFieldMetrics{
 		resetView();
 		_clipboardPanel=new ClipboardPanel(this);
 		_autoCompletePanel=new AutoCompletePanel(this);
-		_autoCompletePanel.setLanguage(LanguageC.getInstance());
+		_autoCompletePanel.setLanguage(LanguageCpp.getInstance());
 		//TODO find out if this function works
 		//setScrollContainer(true);
 		invalidate();
