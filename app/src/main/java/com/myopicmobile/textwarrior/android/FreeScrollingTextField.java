@@ -2368,7 +2368,7 @@ implements Document.TextFieldMetrics{
 				}
 				if(c==Language.TAB)
 				{
-					whitespaceCount+=4;
+					whitespaceCount+=getAutoIndentWidth();
 				}
 				if(c==' ')
 					++whitespaceCount;
@@ -2386,7 +2386,7 @@ implements Document.TextFieldMetrics{
 			}
 			//最后字符为'{',缩进
 			if(endChar=='{')
-				whitespaceCount+=4;
+				whitespaceCount+=getAutoIndentWidth();
 			if(whitespaceCount<0)
 				return new char[]{Language.NEWLINE};
 			

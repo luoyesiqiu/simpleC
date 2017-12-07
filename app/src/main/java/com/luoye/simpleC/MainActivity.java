@@ -589,44 +589,62 @@ public class MainActivity extends Activity
 	 * 编译
 	 * @param files 要编译的文件
      */
-	private  void compile(File[] files){
-		boolean gccCompile=setting.isGccCompile();
-		compile(getApplicationContext(), files, new CompileCallback() {
+	private  void compile(final File[] files){
+		final boolean gccCompile=setting.isGccCompile();
+		final ProgressDialog compileDialog=ProgressDialog.show(this,"","正在编译...",false,false);
+		compileDialog.show();
+		//thread
+		new Thread(new Runnable() {
 			@Override
-			public void onCompileResult(ShellUtils.CommandResult result) {
-				String info = null;
-				if (result.result == 0) {
-					showToast("编译成功");
-					Utils.execBin(MainActivity.this);
-
-				} else {
-					info = result.getMsg();
-					View view=LayoutInflater.from(MainActivity.this).inflate(R.layout.compile_error_layout,null);
-					TextView infoTextView=(TextView)view.findViewById(R.id.console_msg);
-					infoTextView.setText(info);
-					infoTextView.setTextColor(Color.BLACK);
-					ScrollView scrollView=new ScrollView(MainActivity.this);
-					scrollView.addView(view, LinearLayout.LayoutParams.MATCH_PARENT);
-					Matcher matcher=Pattern.compile(":(\\d+):").matcher(info);
-					final String[] pos=new String[1];
-					if(matcher.find())
-						pos[0] = matcher.group(1);
-					AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
-							.setTitle("编译失败")
-							.setView(scrollView)
-							.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+			public void run() {
+				//headler
+				compile(getApplicationContext(), files, new CompileCallback() {
+						public void onCompileResult (final ShellUtils.CommandResult result){
+							runOnUiThread(new Runnable() {
 								@Override
-								public void onClick(DialogInterface dialogInterface, int i) {
-									if(pos[0]!=null)
-										editor.gotoLine(Integer.parseInt(pos[0]));
+								public void run() {
+									String info = null;
+									if (result.result == 0) {
+										if (compileDialog != null)
+											compileDialog.dismiss();
+										showToast("编译成功");
+										Utils.execBin(MainActivity.this);
 
+									} else {
+										if (compileDialog != null)
+											compileDialog.dismiss();
+										info = result.getMsg();
+										View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.compile_error_layout, null);
+										TextView infoTextView = (TextView) view.findViewById(R.id.console_msg);
+										infoTextView.setText(info);
+										infoTextView.setTextColor(Color.BLACK);
+										ScrollView scrollView = new ScrollView(MainActivity.this);
+										scrollView.addView(view, LinearLayout.LayoutParams.MATCH_PARENT);
+										Matcher matcher = Pattern.compile(":(\\d+):").matcher(info);
+										final String[] pos = new String[1];
+										if (matcher.find())
+											pos[0] = matcher.group(1);
+										AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
+												.setTitle("编译失败")
+												.setView(scrollView)
+												.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+													@Override
+													public void onClick(DialogInterface dialogInterface, int i) {
+														if (pos[0] != null)
+															editor.gotoLine(Integer.parseInt(pos[0]));
+
+													}
+												})
+												.create();
+										alertDialog.show();
+									}
 								}
-							})
-							.create();
-					alertDialog.show();
+							});
+						}
+
+					},gccCompile);
 				}
-			}
-		},gccCompile);
+		}).start();
 
 	}
 

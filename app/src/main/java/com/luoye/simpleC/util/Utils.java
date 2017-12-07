@@ -40,7 +40,7 @@ public class Utils {
     public  static  void execBin(Context context)
     {
         File f = context.getFilesDir();
-        String cmd = "." + f.getAbsolutePath() + File.separator + "temp.o";
+        String cmd = "." + f.getAbsolutePath() + File.separator + ConstantPool.TEMP_BIN_NAME;
         Intent intent =
                 new Intent(context, ConsoleActivity.class);
         intent.putExtra("bin", cmd);
@@ -216,7 +216,7 @@ public class Utils {
         flags.add("-lm");
         flags.add("-llog");
         flags.add("-o");
-        flags.add(internalDir.getAbsolutePath()+File.separator+"temp.o");
+        flags.add(internalDir.getAbsolutePath()+File.separator+ConstantPool.TEMP_BIN_NAME);
 
         String TEMPEnv=internalDir.getAbsolutePath()+"/gcc/tmpdir";
         String PATHEnv=internalDir.getAbsolutePath()+":"+GCC_BIN_PATH+":"+ARM_GCC_PATH+":"+SYS_PATH;
@@ -257,7 +257,7 @@ public class Utils {
         flags.add("-lm");
         flags.add("-llog");
         flags.add("-o");
-        flags.add(internalDir.getAbsolutePath()+File.separator+"temp.o");
+        flags.add(internalDir.getAbsolutePath()+File.separator+ConstantPool.TEMP_BIN_NAME);
 
         String TEMPEnv=internalDir.getAbsolutePath()+"/gcc/tmpdir";
         String PATHEnv=internalDir.getAbsolutePath()+":"+GCC_BIN_PATH+":"+ARM_GCC_PATH+":"+SYS_PATH;

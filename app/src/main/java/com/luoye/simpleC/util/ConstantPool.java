@@ -9,6 +9,7 @@ import java.io.File;
  */
 public class ConstantPool {
     public static final String TEMP_FILE_NAME="temp.c";
+    public static final String TEMP_BIN_NAME="temp";
     public static final String INDENT_FILE_NAME="indent.c";
     public  static  final  String INDENT_ARGS="-nbap -bli0 -i2 -l79 -ts2 -ncs -npcs -npsl -fca -lc79 -fc1 -ts1 -ce -br -cdw -brs -brf";
     public static final String PROBLEMS_URL="https://github.com/luoyesiqiu/C--Problems/blob/master/Problems.md";

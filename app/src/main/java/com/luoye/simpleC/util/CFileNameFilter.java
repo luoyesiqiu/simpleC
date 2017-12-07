@@ -9,6 +9,6 @@ import java.io.FilenameFilter;
 public class CFileNameFilter implements FilenameFilter {
     @Override
     public boolean accept(File file, String fileName) {
-        return fileName.endsWith(".c")||fileName.endsWith(".h");
+        return fileName.endsWith(".c")||fileName.endsWith(".h")||fileName.endsWith(".cpp");
     }
 }
