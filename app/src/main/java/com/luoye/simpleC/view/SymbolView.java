@@ -15,13 +15,14 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.luoye.simpleC.R;
+import com.luoye.simpleC.util.Utils;
 
 /**
  * Created by zyw on 2017/11/4.
  */
 public class SymbolView {
     private  final  int TILE_WIDTH=60;
-    private final String symbol="{}();,=\"|'&![]<>+-\\/*.%~?#$@:_";
+    private final String symbol="→{}();,=\"|'&![]<>+-\\/*.%~?#$@:_";
     private LinearLayout linearLayout;
     private PopupWindow popupWindow;
     private View rootView;
@@ -41,10 +42,16 @@ public class SymbolView {
         for (int i = 0; i < symbol.length(); i++) {
             TextView textView = new TextView(context);
             textView.setGravity(Gravity.CENTER);
-            textView.setText(String.valueOf(symbol.charAt(i)));
+            if(i==0) {
+                textView.setText(String.valueOf("--|"));
+            }
+            else
+            {
+                textView.setText(String.valueOf(symbol.charAt(i)));
+            }
             textView.setClickable(true);
             textView.setTextSize(25);
-            textView.setWidth(TILE_WIDTH);
+            textView.setMinWidth(TILE_WIDTH);
             textView.setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
@@ -125,7 +132,7 @@ public class SymbolView {
 
 
     public   interface OnSymbolViewClick{
-        void onClick(View view, String text);
+        void onClick(View view,String text);
     }
 
     private  void log(String log)

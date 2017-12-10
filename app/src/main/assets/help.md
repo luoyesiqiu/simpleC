@@ -29,7 +29,21 @@
 
 >编译后生成的二进制文件默认存放路径：```/data/data/com.luoye.simpleC/files/temp```
 
+3.为什么编译时提示找不到windows.h?
+
+>windows.h这个头文件在Windows平台才能使用，Linux中不支持这个头文件。
+
+4.为什么编译时提示File format not recognized?
+
+>源码文件格式不正确，将文件名改为xxx.c或者xxx.cpp等形式后再尝试编译。
+
 ##更新内容
+
+**1.2.20**
+
+* 符号栏支持输入空格
+
+* 文件选择器增加返回工作目录
 
 **1.2.19**
 

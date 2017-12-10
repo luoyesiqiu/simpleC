@@ -344,7 +344,10 @@ public class Utils {
         }
         return version;
     }
-
+    public static int dp2px(Context context, float dpValue) {
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
+    }
     /****************
      *
      * 发起添加群流程。群号：simpleC编程技术交流群(236121720) 的 key 为： UiGfmkfCXFsmxwv1-sQ4LCwnMoXaTuxr

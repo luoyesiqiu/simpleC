@@ -48,6 +48,7 @@ public class FileListActivity extends Activity {
     private ListView listView;
     private static File curPath = null;
     private Toast toast;
+    private  final File HOME_PATH=new File(Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "simpleC");
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +73,7 @@ public class FileListActivity extends Activity {
         registerForContextMenu(listView);
         if (curPath == null)//为空才重新设置目录，这样可以打开上次打开的目录
         {
-            curPath = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "simpleC");
+            curPath = HOME_PATH;
             if(!curPath.exists())
             {
                 curPath.mkdirs();
@@ -212,7 +213,7 @@ public class FileListActivity extends Activity {
      *
      * @param path
      */
-    private void loadList(File path) {
+    private  void loadList(File path) {
         File[] files = path.listFiles();
 
         if (files == null)
@@ -232,7 +233,7 @@ public class FileListActivity extends Activity {
 
         adapter.notifyDataSetChanged();
         listView.setSelection(0);//滚动到第一项
-        setTitle(getShortPath(curPath.getAbsolutePath()));
+        setTitle(getShortPath(path.getAbsolutePath()));
     }
 
     /**
@@ -383,6 +384,11 @@ public class FileListActivity extends Activity {
                     .setView(editText)
                     .create();
             alertDialog.show();
+        }
+        else if(id==R.id.menu_open_workspace)
+        {
+            curPath=HOME_PATH;
+            loadList(curPath);
         }
         return super.onOptionsItemSelected(item);
     }

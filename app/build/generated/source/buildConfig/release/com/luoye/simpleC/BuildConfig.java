@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.luoye.simpleC";
   public static final String BUILD_TYPE = "release";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 20;
-  public static final String VERSION_NAME = "1.2.19";
+  public static final int VERSION_CODE = 21;
+  public static final String VERSION_NAME = "1.2.20";
 }

@@ -233,7 +233,11 @@ public class MainActivity extends Activity
 		symbolView.setOnSymbolViewClick(new SymbolView.OnSymbolViewClick() {
 			@Override
 			public void onClick(View view, String text) {
-				editor.paste(text);
+				if(text.equals("--|")){
+					editor.paste("  ");//两个空格
+				}else {
+					editor.paste(text);
+				}
 			}
 		});
 		recentFiles=new RecentFiles(this);

@@ -3,5 +3,6 @@
     <group>
         <item android:id="@+id/menu_create_file" android:title="新建空文件"/>
         <item android:id="@+id/menu_create_folder" android:title="新建文件夹"/>
+        <item android:id="@+id/menu_open_workspace" android:title="打开工作目录"/>
     </group>
 </menu>
