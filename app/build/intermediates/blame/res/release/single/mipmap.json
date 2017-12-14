@@ -12,8 +12,16 @@
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\undo.png"
     },
     {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\mipmap\\icon_method.png",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\icon_method.png"
+    },
+    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\mipmap\\folder.png",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\folder.png"
+    },
+    {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\mipmap\\icon_class.png",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\mipmap\\icon_class.png"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\mipmap\\file.png",

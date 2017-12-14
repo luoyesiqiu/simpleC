@@ -34,13 +34,13 @@ public abstract class Language
 	};
 
 
-	protected HashMap<String, Integer> _keywords = new HashMap<String, Integer>(0);
-	protected HashMap<String, Integer> _names = new HashMap<String, Integer>(0);
-	protected HashMap<String, String[]> _bases = new HashMap<String, String[]>(0);
-	protected HashMap<String, Integer> _users = new HashMap<String, Integer>(0);//userWord是那种用户自己定义的标识符
-	protected HashMap<Character, Integer> _operators = generateOperators(BASIC_C_OPERATORS);
+	protected HashMap<String, Integer> _keywordsMap = new HashMap<String, Integer>(0);
+	protected HashMap<String, Integer> _namesMap = new HashMap<String, Integer>(0);
+	protected HashMap<String, String[]> _basesMap = new HashMap<String, String[]>(0);
+	protected HashMap<String, Integer> _usersMap = new HashMap<String, Integer>(0);//userWord是那种用户自己定义的标识符
+	protected HashMap<Character, Integer> _operatorsMap = generateOperators(BASIC_C_OPERATORS);
 	
-	private ArrayList<String> _ueserCache = new ArrayList<String>();
+	private ArrayList<String> _userCache = new ArrayList<String>();
 	private String[] _userWords=new String[0];
 	private String[] _keyword;
 	private String[] _name;
@@ -48,8 +48,8 @@ public abstract class Language
 	public void updateUserWord()
 	{
 		// TODO: Implement this method
-		String[] uw = new String[_ueserCache.size()];
-		_userWords = _ueserCache.toArray(uw);
+		String[] uw = new String[_userCache.size()];
+		_userWords = _userCache.toArray(uw);
 	}
 
 	public String[] getUserWord()
@@ -64,7 +64,7 @@ public abstract class Language
 	
 	public String[] getBasePackage(String name)
 	{
-		return _bases.get(name);
+		return _basesMap.get(name);
 	}
 	
 	public String[] getKeywords()
@@ -74,11 +74,15 @@ public abstract class Language
 
 	public void setKeywords(String[] keywords)
 	{
-		_keyword = keywords;
-		_keywords = new HashMap<String, Integer>(keywords.length);
+		_keyword = new String[keywords.length];
+		for(int i=0;i<keywords.length;i++){
+			_keyword[i]=keywords[i]+"[keyword]";
+		}
+
+		_keywordsMap = new HashMap<String, Integer>(keywords.length);
 		for (int i = 0; i < keywords.length; ++i)
 		{
-			_keywords.put(keywords[i], Lexer.KEYWORD);
+			_keywordsMap.put(keywords[i], Lexer.KEYWORD);
 		}
 	}
 
@@ -86,12 +90,12 @@ public abstract class Language
 	{
 		_name = names;
 		ArrayList<String> buf=new ArrayList<String>();
-		_names = new HashMap<String, Integer>(names.length);
+		_namesMap = new HashMap<String, Integer>(names.length);
 		for (int i = 0; i < names.length; ++i) 
 		{
 			if(!buf.contains(names[i]))
 				buf.add(names[i]);
-			_names.put(names[i], Lexer.NAME);
+			_namesMap.put(names[i], Lexer.NAME);
 		}
 		_name=new String[buf.size()];
 		buf.toArray(_name);
@@ -99,25 +103,25 @@ public abstract class Language
 
 	public void addBasePackage(String name, String[] names)
 	{
-		_bases.put(name, names);
+		_basesMap.put(name, names);
 	}
 
 	public void clearUserWord()
 	{
-		_ueserCache.clear();
-		_users.clear();
+		_userCache.clear();
+		_usersMap.clear();
 	}
 
 	public void addUserWord(String name)
 	{
-		if(!_ueserCache.contains(name) && !_names.containsKey(name))
-			_ueserCache.add(name);
-		_users.put(name, Lexer.NAME);	
+		if(!_userCache.contains(name) && !_namesMap.containsKey(name))
+			_userCache.add(name);
+		_usersMap.put(name, Lexer.NAME);
 	}
 
 	protected void setOperators(char[] operators)
 	{
-		_operators = generateOperators(operators);
+		_operatorsMap = generateOperators(operators);
 	}
 
 	private HashMap<Character, Integer> generateOperators(char[] operators)
@@ -132,27 +136,27 @@ public abstract class Language
 
 	public final boolean isOperator(char c)
 	{
-		return _operators.containsKey(Character.valueOf(c));
+		return _operatorsMap.containsKey(Character.valueOf(c));
 	}
 
 	public final boolean isKeyword(String s)
 	{
-		return _keywords.containsKey(s);
+		return _keywordsMap.containsKey(s);
 	}
 
 	public final boolean isName(String s)
 	{
-		return _names.containsKey(s);
+		return _namesMap.containsKey(s);
 	}
 
 	public final boolean isBasePackage(String s)
 	{
-		return _bases.containsKey(s);
+		return _basesMap.containsKey(s);
 	}
 
 	public final boolean isBaseWord(String p, String s)
 	{
-		String[] pkg= _bases.get(p);
+		String[] pkg= _basesMap.get(p);
 		for (String n:pkg)
 		{
 			if (n.equals(s))
@@ -163,7 +167,7 @@ public abstract class Language
 
 	public final boolean isUserWord(String s)
 	{
-		return _users.containsKey(s);
+		return _usersMap.containsKey(s);
 	}
 
 	private boolean contains(String[] a, String s)

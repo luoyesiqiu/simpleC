@@ -17,4 +17,4 @@
     </string-array><string-array name="compiler_list_value">
         <item>0</item>
         <item>1</item>
-    </string-array></file></source><source path="D:\Documents\MulCode\app\build\generated\res\rs\release"/><source path="D:\Documents\MulCode\app\build\generated\res\resValues\release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="D:\Documents\MulCode\app\src\release\res"/></dataSet><mergedItems/></merger>
+    </string-array></file><file name="icon_method" path="D:\Documents\MulCode\app\src\main\res\mipmap\icon_method.png" qualifiers="" type="mipmap"/><file name="icon_class" path="D:\Documents\MulCode\app\src\main\res\mipmap\icon_class.png" qualifiers="" type="mipmap"/><file name="auto_panel_item" path="D:\Documents\MulCode\app\src\main\res\layout\auto_panel_item.xml" qualifiers="" type="layout"/></source><source path="D:\Documents\MulCode\app\build\generated\res\rs\release"/><source path="D:\Documents\MulCode\app\build\generated\res\resValues\release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="D:\Documents\MulCode\app\src\release\res"/></dataSet><mergedItems/></merger>

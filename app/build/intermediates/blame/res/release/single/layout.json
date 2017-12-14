@@ -8,6 +8,10 @@
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\file_context_menu_item.xml"
     },
     {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\auto_panel_item.xml",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\auto_panel_item.xml"
+    },
+    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\layout\\symbol_view.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\layout\\symbol_view.xml"
     },

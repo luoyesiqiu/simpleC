@@ -1,10 +1,20 @@
 package com.myopicmobile.textwarrior.android;
 import android.content.*;
 import android.content.res.*;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.*;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.StyleSpan;
 import android.view.*;
 import android.widget.*;
 import android.widget.AdapterView.*;
+
+import com.luoye.simpleC.R;
 import com.myopicmobile.textwarrior.common.*;
 import java.util.*;
 import android.util.*;
@@ -15,7 +25,7 @@ public class AutoCompletePanel {
 	private Context _context;
 	private static Language _globalLanguage = LanguageNonProg.getInstance();
 	private ListPopupWindow _autoCompletePanel;
-	private MyAdapter _adapter;
+	private AutoPanelAdapter _adapter;
 	private Filter _filter;
 	private int _verticalOffset;
 	private int _height;
@@ -25,6 +35,8 @@ public class AutoCompletePanel {
 	private GradientDrawable gd;
 	private int _textColor;
 	private  boolean isShow=false;
+	private  final  int PADDING=20;
+	private  final  boolean DEBUG=true;
 	public AutoCompletePanel(FreeScrollingTextField textField) {
 		_textField = textField;
 		_context = textField.getContext();
@@ -53,10 +65,11 @@ public class AutoCompletePanel {
 	private void initAutoCompletePanel() {
 		_autoCompletePanel = new ListPopupWindow(_context);
 		_autoCompletePanel.setAnchorView(_textField);
-		_adapter = new MyAdapter(_context, android.R.layout.simple_list_item_1);
+		_adapter = new AutoPanelAdapter(_context);
 		_autoCompletePanel.setAdapter(_adapter);
 		_filter = _adapter.getFilter();
-		setHeight(300);
+		_autoCompletePanel.setContentWidth(ListPopupWindow.WRAP_CONTENT);
+		//setHeight(300);
 
 		TypedArray array = _context.getTheme().obtainStyledAttributes(new int[] {  
 																		  android.R.attr.colorBackground, 
@@ -76,24 +89,36 @@ public class AutoCompletePanel {
 				@Override
 				public void onItemClick(AdapterView<?> p1, View p2, int p3, long p4) {
 					// TODO: Implement this method
-					select(p2);
+					select(p3);
 				}
 			});
 
 	}
 	public void selectFirst()
 	{
-		View first=_adapter.getView(0,null,null);
-		_textField.replaceText(_textField.getCaretPosition() - _constraint.length(), _constraint.length(), ((TextView)first).getText().toString());
-		_adapter.abort();
-		dismiss();
+		select(0);
 	}
 
-	public void select(View pos)
+	public void select(int pos)
 	{
-		_textField.replaceText(_textField.getCaretPosition() - _constraint.length(), _constraint.length(), ((TextView)pos).getText().toString());
+		View view=_adapter.getView(pos,null,null);
+		TextView textView=(TextView) view.findViewById(R.id.auto_panel_text);
+		String text=textView.getText().toString();
+		String commitText=null;
+		boolean isFunc=text.contains("(");
+		if(isFunc)
+		{
+			commitText=text.substring(0,text.indexOf('('))+"()";
+		}
+		else{
+			commitText=text;
+		}
+		_textField.replaceText(_textField.getCaretPosition() - _constraint.length(), _constraint.length(), commitText);
 		_adapter.abort();
 		dismiss();
+		if(isFunc) {
+			_textField.moveCaretLeft();
+		}
 	}
 
 	public void setWidth(int width) {
@@ -165,22 +190,50 @@ public class AutoCompletePanel {
 		return  _autoCompletePanel.isShowing();
 	}
 
+
+	class ListItem{
+		public ListItem(Bitmap bitmap, String text) {
+			this.bitmap = bitmap;
+			this.text = text;
+		}
+
+		private  Bitmap bitmap;
+
+		public Bitmap getBitmap() {
+			return bitmap;
+		}
+
+		public void setBitmap(Bitmap bitmap) {
+			this.bitmap = bitmap;
+		}
+
+		public String getText() {
+			return text;
+		}
+
+		public void setText(String text) {
+			this.text = text;
+		}
+
+		private  String text;
+
+
+	}
 	/**
 	 * Adapter定义
 	 */
-	class MyAdapter extends ArrayAdapter<String> implements Filterable {
+	class AutoPanelAdapter extends BaseAdapter implements Filterable {
 
 		private int _h;
 		private Flag _abort;
-
 		private DisplayMetrics dm;
-
-		public MyAdapter(Context context, int resource) {
-			super(context, resource);
+		private List<ListItem> listItems;
+		private  Bitmap bitmap;
+		public AutoPanelAdapter(Context context) {
 			_abort = new Flag();
-			setNotifyOnChange(false);
+			listItems=new ArrayList<>();
 			dm=context.getResources().getDisplayMetrics();
-			
+			bitmap= BitmapFactory.decodeResource(context.getResources(),R.mipmap.icon_method);
 		}
 
 		public void abort() {
@@ -192,30 +245,84 @@ public class AutoCompletePanel {
 			// TODO: Implement this method
 			return (int)TypedValue.applyDimension(1,n,dm);
 		}
-		
+
 		@Override
-		public View getView(int position, View convertView, ViewGroup parent) {
-			// TODO: Implement this method
-			TextView view=(TextView) super.getView(position, convertView, parent);
-			view.setTextColor(_textColor);
-			return view;
+		public int getCount() {
+			return listItems.size();
 		}
 
+		@Override
+		public ListItem getItem(int i) {
+			return listItems.get(i);
+		}
 
-		
+		@Override
+		public long getItemId(int i) {
+			return i;
+		}
+
+		@Override
+		public View getView(int i, View view, ViewGroup viewGroup) {
+			View tempView=null;
+			if(view==null)
+			{
+				View rootView=LayoutInflater.from(_context).inflate(R.layout.auto_panel_item,null);
+				tempView=rootView;
+			}
+			else {
+				tempView=view;
+			}
+			TextView textView=(TextView)tempView.findViewById(R.id.auto_panel_text);
+			ImageView imageView=(ImageView)tempView.findViewById(R.id.auto_panel_icon);
+			String text=getItem(i).getText();
+			SpannableString spannableString=null;
+			ForegroundColorSpan foregroundColorSpan =null;
+			log(text);
+			if(text.contains("(")) {
+				//函数
+				spannableString=new SpannableString(text);
+				foregroundColorSpan=new ForegroundColorSpan(Color.BLACK);
+				spannableString.setSpan(foregroundColorSpan, 0,text.indexOf('('), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+			}
+			else if(text.contains("[keyword]"))
+			{
+				//log("key:"+text);
+				//关键字
+				foregroundColorSpan = new ForegroundColorSpan(Color.BLUE);
+				int idx=text.indexOf("[keyword]");
+				text=text.substring(0,idx);
+				spannableString=new SpannableString(text);
+				spannableString.setSpan(foregroundColorSpan, 0,text.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+			}
+			else
+			{
+				//其他
+				spannableString=new SpannableString(text);
+				foregroundColorSpan=new ForegroundColorSpan(Color.BLACK);
+				spannableString.setSpan(foregroundColorSpan, 0,text.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+			}
+			textView.setText(spannableString);
+			imageView.setImageBitmap(getItem(i).getBitmap());
+			return tempView;
+		}
+
 		public void restart() {
 			// TODO: Implement this method
 			_abort.clear();
 		}
 
+		/**
+		 * 计算列表高
+		 * @return
+         */
 		public int getItemHeight() {
 			if (_h != 0)
 				return _h;
+			LayoutInflater inflater = LayoutInflater.from(_context);
+			View rootView =  inflater.inflate(R.layout.auto_panel_item, null);
+			rootView.measure(0, 0);
+			_h = rootView.getMeasuredHeight();
 
-			LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			TextView item = (TextView) inflater.inflate(android.R.layout.simple_list_item_1, null);
-			item.measure(0, 0);
-			_h = item.getMeasuredHeight();
 			return _h;
 		}
 		/**
@@ -229,53 +336,27 @@ public class AutoCompletePanel {
 				 */
 				@Override
 				protected FilterResults performFiltering(CharSequence constraint) {
-
 					// 此处实现过滤
 					// 过滤后利用FilterResults将过滤结果返回
-					ArrayList <String>buf = new ArrayList<String>();
-					String keyword = String.valueOf(constraint).toLowerCase();
-					String[] ss=keyword.split("\\.");
-					if (ss.length == 2) {
-						String pkg=ss[0];
-						keyword = ss[1];
-						if (_globalLanguage.isBasePackage(pkg)) {
-							String[] keywords=_globalLanguage.getBasePackage(pkg);
-							for (String k:keywords) {
-								if (k.toLowerCase().startsWith(keyword))
-									buf.add(k);
-							}
-						}
+					ArrayList<String> buf = new ArrayList<String>();
+					String input = String.valueOf(constraint).toLowerCase();
+
+					String[] keywords = _globalLanguage.getUserWord();
+					for (String k:keywords) {
+						if (k.toLowerCase().startsWith(input))
+							buf.add(k);
 					}
-					else if (ss.length == 1) {
-						if (keyword.charAt(keyword.length() - 1) == '.') {
-							String pkg=keyword.substring(0, keyword.length() - 1);
-							keyword = "";
-							if (_globalLanguage.isBasePackage(pkg)) {
-								String[] keywords=_globalLanguage.getBasePackage(pkg);
-								for (String k:keywords) {
-									buf.add(k);
-								}
-							}
-						}
-						else {
-							String[] keywords = _globalLanguage.getUserWord();
-							for (String k:keywords) {
-								if (k.toLowerCase().startsWith(keyword))
-									buf.add(k);
-							}
-							keywords = _globalLanguage.getKeywords();
-							for (String k:keywords) {
-								if (k.indexOf(keyword) == 0)
-									buf.add(k);
-							}
-							keywords = _globalLanguage.getNames();
-							for (String k:keywords) {
-								if (k.toLowerCase().startsWith(keyword))
-									buf.add(k);
-							}
-						}
+					keywords = _globalLanguage.getKeywords();
+					for (String k:keywords) {
+						if (k.indexOf(input) == 0)
+							buf.add(k);
 					}
-					_constraint = keyword;
+					keywords = _globalLanguage.getNames();
+					for (String k:keywords) {
+						if (k.toLowerCase().startsWith(input))
+							buf.add(k);
+					}
+					_constraint = input;
 					FilterResults filterResults = new FilterResults();
 					filterResults.values = buf;   // results是上面的过滤结果
 					filterResults.count = buf.size();  // 结果数量
@@ -288,11 +369,24 @@ public class AutoCompletePanel {
 				protected void publishResults(CharSequence constraint, FilterResults results) {
 					if (results != null && results.count > 0 && !_abort.isSet()) {
 						// 有过滤结果，显示自动完成列表
-						MyAdapter.this.clear();   // 清空旧列表
-						MyAdapter.this.addAll((ArrayList<String>)results.values);
+						listItems.clear();   // 清空旧列表
+						ArrayList<String> stringArrayList=(ArrayList<String>) results.values;
+						for(int i=0;i<stringArrayList.size();i++)
+						{
+							String itemText=stringArrayList.get(i);
+							if(itemText.contains("(")){
+								listItems.add(new ListItem(bitmap,itemText));
+							}
+							else
+							{
+								listItems.add(new ListItem(null,itemText));
+							}
+						}
 						int y = _textField.getCaretY() + _textField.rowHeight() / 2 - _textField.getScrollY();
 						setHeight(getItemHeight() * Math.min(2, results.count));
-						setHorizontalOffset(_textField.getCaretX() - _textField.getScrollX());
+
+						setHorizontalOffset(PADDING);
+						setWidth(_textField.getWidth()-PADDING*2);
 						setVerticalOffset(y - _textField.getHeight());//_textField.getCaretY()-_textField.getScrollY()-_textField.getHeight());
 						notifyDataSetChanged();
 						show();
@@ -305,6 +399,14 @@ public class AutoCompletePanel {
 
 			};
 			return filter;
+		}
+	}
+
+	private  void log(String log)
+	{
+		if(DEBUG)
+		{
+			System.out.println("-------------->AutoCompletePanel:"+log);
 		}
 	}
 }

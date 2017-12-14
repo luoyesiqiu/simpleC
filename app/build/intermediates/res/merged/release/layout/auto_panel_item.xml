@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="left|center"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="35dp"
+        android:id="@+id/auto_panel_icon"
+        android:layout_height="35dp" />
+    <TextView
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:id="@+id/auto_panel_text"
+        android:layout_height="wrap_content" />
+</LinearLayout>
