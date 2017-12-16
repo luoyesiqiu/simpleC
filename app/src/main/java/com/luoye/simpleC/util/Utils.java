@@ -211,10 +211,11 @@ public class Utils {
         }
         flags.add("-pie");
         flags.add("-std=c99");
-        flags.add("-lz");
+        flags.add("-lz");//zlib
         flags.add("-ldl");
-        flags.add("-lm");
+        flags.add("-lm");//math
         flags.add("-llog");
+        flags.add("-lncurses");
         flags.add("-o");
         flags.add(internalDir.getAbsolutePath()+File.separator+ConstantPool.TEMP_BIN_NAME);
 
@@ -256,6 +257,7 @@ public class Utils {
         flags.add("-ldl");
         flags.add("-lm");
         flags.add("-llog");
+        flags.add("-lncurses");
         flags.add("-o");
         flags.add(internalDir.getAbsolutePath()+File.separator+ConstantPool.TEMP_BIN_NAME);
 

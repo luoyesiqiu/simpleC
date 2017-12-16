@@ -36,7 +36,7 @@ public class AutoCompletePanel {
 	private int _textColor;
 	private  boolean isShow=false;
 	private  final  int PADDING=20;
-	private  final  boolean DEBUG=true;
+	private  final  boolean DEBUG=false;
 	public AutoCompletePanel(FreeScrollingTextField textField) {
 		_textField = textField;
 		_context = textField.getContext();

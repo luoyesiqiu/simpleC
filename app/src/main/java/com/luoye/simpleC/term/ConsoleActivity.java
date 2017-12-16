@@ -19,6 +19,7 @@ import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.luoye.simpleC.R;
 import com.termux.terminal.TerminalSession;
@@ -36,8 +37,7 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
     public TerminalView mEmulatorView;
     private TerminalSession mSession;
     private final  int MSG_SESSION_FINISH=0x100;
-    private  long currentTime=0L;
-    private long startTime=0L;
+
     public TermuxService mTermService;
     private String cmd;
     private int mFontSize;
@@ -85,16 +85,6 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
         startService(serviceIntent);
         if (!bindService(serviceIntent, this, 0))
             throw new RuntimeException("bindService() failed");
-    }
-
-    void addNewSession(boolean failSafe, String sessionName,String cmd) {
-
-        String executablePath = (failSafe ? "/system/bin/sh" : null);
-
-        mSession = mTermService.createTermSession(executablePath, null, cmd, failSafe);
-        if (sessionName != null) {
-            mSession.mSessionName = sessionName;
-        }
     }
 
     @Override
@@ -194,10 +184,13 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
         return super.onOptionsItemSelected(item);
     }
 
+    private long startTime;
+    private long endTime;
     @Override
     public void onServiceConnected(ComponentName componentName, IBinder service) {
         mTermService = ((TermuxService.LocalBinder) service).service;
         mEmulatorView.attachSession(mTermService.getTermSession());
+        startTime=System.currentTimeMillis();
         mTermService.mSessionChangeCallback = new TerminalSession.SessionChangedCallback() {
             @Override
             public void onTextChanged(TerminalSession changedSession) {
@@ -211,11 +204,13 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
 
             @Override
             public void onSessionFinished(final TerminalSession finishedSession) {
-                if (mTermService.mWantsToStop) {
+               // if (mTermService.mWantsToStop) {
                     // The service wants to stop as soon as possible.
-                    finish();
-                    return;
-                }
+                    endTime=System.currentTimeMillis();
+                    showToast("程序结束，耗时："+(endTime-startTime)/1000.0+"s");
+               //     finish();
+               //     return;
+              //  }
 
             }
 
@@ -247,5 +242,19 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
         mFontSize += (increase ? 1 : -1) * 2;
         mFontSize = Math.max(MIN_FONTSIZE, Math.min(mFontSize, MAX_FONTSIZE));
         mEmulatorView.setTextSize(mFontSize);
+    }
+
+    private Toast toast;
+    private void showToast(CharSequence text)
+    {
+        if(toast==null)
+        {
+            toast=Toast.makeText(this,text,Toast.LENGTH_LONG);
+        }
+        else
+        {
+            toast.setText(text);
+        }
+        toast.show();
     }
 }

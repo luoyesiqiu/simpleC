@@ -234,9 +234,11 @@ public class MainActivity extends Activity
 			@Override
 			public void onClick(View view, String text) {
 				if(text.equals("--|")){
-					editor.paste("  ");//两个空格
+					//editor.paste("  ");//两个空格
+					editor.insert(editor.getCaretPosition(),"  ");
 				}else {
-					editor.paste(text);
+					//editor.paste(text);
+					editor.insert(editor.getCaretPosition(),text);
 				}
 			}
 		});

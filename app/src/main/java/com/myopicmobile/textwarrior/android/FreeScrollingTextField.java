@@ -125,6 +125,7 @@ import android.view.animation.*;
 public class FreeScrollingTextField extends View
 implements Document.TextFieldMetrics{
 
+	private static final boolean DEBUG = false;
 	protected boolean _isEdited = false; // whether the text field is dirtied
 	protected TouchNavigationMethod _navMethod;
 	protected DocumentProvider _hDoc; // the model in MVC
@@ -331,7 +332,6 @@ implements Document.TextFieldMetrics{
 		};
 		
 		_textLis = new TextChangeListener(){
-
 			@Override
 			public void onNewLine(String c, int _caretPosition, int p2)
 			{
@@ -339,14 +339,13 @@ implements Document.TextFieldMetrics{
 				_caretSpan.setFirst(_caretSpan.getFirst()+1);
 				_autoCompletePanel.dismiss();
 			}
-
-
 			@Override
 			public void onDel(CharSequence text, int _caretPosition, int delCount)
 			{
 				// TODO: Implement this method
-				if(delCount<=_caretSpan.getFirst())
-				_caretSpan.setFirst(_caretSpan.getFirst()-1);
+				if(delCount<=_caretSpan.getFirst()) {
+					_caretSpan.setFirst(_caretSpan.getFirst() - 1);
+				}
 				_autoCompletePanel.dismiss();
 			}
 
@@ -354,8 +353,11 @@ implements Document.TextFieldMetrics{
 			public void onAdd(CharSequence text, int caretPosition, int addCount)
 			{
 				// TODO: Implement this method
+				log("onAdd:"+text+","+caretPosition+","+addCount);
+
 				_caretSpan.setFirst(_caretSpan.getFirst()+addCount);
 				int curr=_caretPosition;
+				//找到空格或者其他
 				for(;curr>=0;curr--){
 					char c=_hDoc.charAt(curr - 1);
 					if (!(Character.isLetterOrDigit(c) || c=='_' || c=='.'))
@@ -363,15 +365,18 @@ implements Document.TextFieldMetrics{
 						break;
 					}
 				}
-				if(_caretPosition-curr>0) {
+				char ch=text.charAt(0);
+				if(_caretPosition-curr > 0&&Character.isLetterOrDigit(ch)) {
 					//是否开启代码提示
+					log("subSequence:"+_hDoc.subSequence(curr, _caretPosition - curr));
 					if(_autoCompete) {
 						_autoCompletePanel.update(_hDoc.subSequence(curr, _caretPosition - curr));
 					}
 				}
-				else
+				else {
 					_autoCompletePanel.dismiss();
 				}
+			}
 		};
 		resetView();
 		_clipboardPanel=new ClipboardPanel(this);
@@ -720,7 +725,8 @@ implements Document.TextFieldMetrics{
 
 	private  void log(String log)
 	{
-		System.out.println("------------------>Free:"+log);
+		if(DEBUG)
+		System.out.println("------------------>FreeScrollingTextField:"+log);
 	}
 	/**
 	 * Underline the caret row if the option for highlighting it is set
@@ -2330,6 +2336,7 @@ implements Document.TextFieldMetrics{
 					break;
 
 				default:
+					log("onPrintableChar:"+c);
 					_hDoc.insertBefore(c, _caretPosition, System.nanoTime());
 					moveCaretRight(true);
 					_textLis.onAdd(c+"",_caretPosition,1);
@@ -3220,6 +3227,12 @@ implements Document.TextFieldMetrics{
 			return true;
 		}
 
+		/**
+		 * 输入法传递过来的字符串
+		 * @param text
+		 * @param newCursorPosition
+         * @return
+         */
 		@Override
 		public boolean commitText(CharSequence text, int newCursorPosition) {
 			_fieldController.replaceComposingText(
@@ -3236,6 +3249,7 @@ implements Document.TextFieldMetrics{
 				_fieldController.moveCaret(_caretPosition - text.length() - newCursorPosition);
 			}
 			_isComposing = false;
+			log("commitText:"+text);
 			return true;
 		}
 
@@ -3415,4 +3429,6 @@ implements Document.TextFieldMetrics{
 		PICKER_SETS.put('<', "\u2264\u00ab\u2039");
 		PICKER_SETS.put('>', "\u2265\u00bb\u203a");
 	}
+
+
 }

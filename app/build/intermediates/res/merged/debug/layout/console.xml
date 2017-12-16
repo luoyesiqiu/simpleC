@@ -9,5 +9,6 @@
         android:focusable="true"
         android:scrollbarThumbVertical="@drawable/terminal_scroll_shape"
         android:scrollbars="vertical"
+        android:background="@color/BLACK"
         android:focusableInTouchMode="true" />
 </LinearLayout>

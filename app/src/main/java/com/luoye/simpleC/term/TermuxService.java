@@ -16,6 +16,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.util.Log;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import com.termux.terminal.EmulatorDebug;
 import com.termux.terminal.TerminalSession;
@@ -55,7 +56,6 @@ public final class TermuxService extends Service implements SessionChangedCallba
 
     private final Handler mHandler = new Handler();
 
-
    private TerminalSession mTerminalSessions = null;
 
     SessionChangedCallback mSessionChangeCallback;
@@ -70,10 +70,11 @@ public final class TermuxService extends Service implements SessionChangedCallba
     @SuppressLint("Wakelock")
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+
         String action = intent.getAction();
         if (ACTION_STOP_SERVICE.equals(action)) {
             mWantsToStop = true;
-                mTerminalSessions.finishIfRunning();
+            mTerminalSessions.finishIfRunning();
             stopSelf();
         } else if (ACTION_LOCK_WAKE.equals(action)) {
             if (mWakeLock == null) {
@@ -235,5 +236,20 @@ public final class TermuxService extends Service implements SessionChangedCallba
 
     public void onBackgroundJobExited(final BackgroundJob task) {
         stopSelf();
+    }
+
+
+    private Toast toast;
+    private void showToast(CharSequence text)
+    {
+        if(toast==null)
+        {
+            toast=Toast.makeText(this,text,Toast.LENGTH_SHORT);
+        }
+        else
+        {
+            toast.setText(text);
+        }
+        toast.show();
     }
 }
