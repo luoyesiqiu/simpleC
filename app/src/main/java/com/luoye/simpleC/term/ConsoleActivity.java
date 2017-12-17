@@ -130,7 +130,7 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
 
         private boolean backkeyInterceptor(int keyCode, KeyEvent event) {
             if (keyCode == KeyEvent.KEYCODE_BACK ) {
-                onKeyUp(keyCode, event);
+                //onKeyUp(keyCode, event);
 
                 return false;
             } else {

@@ -19,12 +19,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6fdea52-25c7-45a1-b6ec-3732ec3ae2d1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/simpleC_1.2.21.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/simpleC_1.2.22.apk" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/BuildConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$3$1.class" />
@@ -42,28 +43,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/MainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/term/ConsoleActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/term/ConsoleActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/term/ConsoleActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/term/ConsoleActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/term/ConsoleActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/term/ConsoleActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/term/TermuxService$LocalBinder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/term/TermuxService$LocalBinder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/term/TermuxService.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/term/TermuxService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/util/Utils.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/luoye/simpleC/util/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/AutoCompletePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/BuildConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$2.class" />
@@ -82,28 +62,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/MainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/term/ConsoleActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/term/ConsoleActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/term/ConsoleActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/term/ConsoleActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/term/ConsoleActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/term/ConsoleActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/term/TermuxService$LocalBinder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/term/TermuxService$LocalBinder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/term/TermuxService.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/term/TermuxService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/util/Utils.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/luoye/simpleC/util/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/AutoCompletePanel.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/AutoCompletePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldInputConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField$TextFieldUiState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/myopicmobile/textwarrior/android/FreeScrollingTextField.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_a4d36fbbec21eef8af5f6ea38730e983b8ba93a6.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_a4d36fbbec21eef8af5f6ea38730e983b8ba93a6.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/release/release_4f22197c8d0c8891edb2a1584e9f4b3913c9868c.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/release/release_4f22197c8d0c8891edb2a1584e9f4b3913c9868c.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
@@ -113,26 +72,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshot/console.png" afterPath="$PROJECT_DIR$/screenshot/console.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/luoye/simpleC/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/luoye/simpleC/test/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/luoye/simpleC/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/luoye/simpleC/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/luoye/simpleC/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/luoye/simpleC/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/help.md" afterPath="$PROJECT_DIR$/app/build/intermediates/assets/debug/help.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/assets/release/help.md" afterPath="$PROJECT_DIR$/app/build/intermediates/assets/release/help.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/console.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/console.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/layout/console.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/layout/console.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" afterPath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/help.md" afterPath="$PROJECT_DIR$/app/src/main/assets/help.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/ConsoleActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/ConsoleActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/util/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/console.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/console.xml" />
     </list>
     <ignored path="simpleC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -163,8 +115,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-402.27274">
-              <caret line="615" column="40" selection-start-line="615" selection-start-column="40" selection-end-line="615" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="236" column="72" selection-start-line="236" selection-start-column="72" selection-end-line="236" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -173,8 +125,8 @@
       <file leaf-file-name="help.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/assets/help.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3593429">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="53" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.92402464">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -183,30 +135,9 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state vertical-scroll-proportion="-7.5757575">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FreeScrollingTextField.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.4848485">
-              <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
-              <folding>
-                <element signature="e#10096#10348#0" expanded="true" />
-                <element signature="e#10347#10348#0" expanded="true" />
-                <element signature="e#43413#43414#0" expanded="true" />
-                <element signature="e#43441#43442#0" expanded="true" />
-                <element signature="e#47743#47744#0" expanded="true" />
-                <element signature="e#47778#47779#0" expanded="true" />
-                <element signature="e#84812#84813#0" expanded="true" />
-                <element signature="e#84835#84836#0" expanded="true" />
-                <element signature="e#86521#86522#0" expanded="true" />
-                <element signature="e#86549#86550#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -223,14 +154,14 @@
       </file>
       <file leaf-file-name="console.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/console.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.1044774">
               <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -248,7 +179,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="24" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="24" />
+              <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -1594,7 +1525,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="7537563428092" />
+        <entry key="$PROJECT_DIR$" value="7537628472849" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2400,12 +2331,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/view/TextEditor.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/console.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/ConsoleActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/AutoCompletePanel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/assets/help.md" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
   </component>
@@ -2440,7 +2371,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2471,7 +2402,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -2483,6 +2413,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2796,8 +2727,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282887" sideWeight="0.48715204" order="7" side_tool="false" content_ui="tabs" />
@@ -2805,7 +2736,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39580908" sideWeight="0.5256959" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39580908" sideWeight="0.47430408" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39580908" sideWeight="0.47430408" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2879,13 +2810,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/LanguageCFamily.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24183796">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/CType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3006,7 +2930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030229745">
           <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3014,18 +2937,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6674728">
           <caret line="390" column="28" selection-start-line="390" selection-start-column="28" selection-end-line="390" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/data/res/layout/simple_list_item_1.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/view/View.class">
@@ -3064,21 +2986,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/auto_panel_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4925373">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/common/ColorSchemeLight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.078028746">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3086,7 +3007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5646817">
           <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3094,11 +3014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9052864">
           <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding>
-            <element signature="e#1199#1216#0" expanded="false" />
-            <element signature="e#2130#2131#0" expanded="false" />
-            <element signature="e#2152#2153#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3113,11 +3028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="114" column="47" selection-start-line="114" selection-start-column="47" selection-end-line="114" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#4104#0" expanded="false" />
-            <element signature="e#810#811#0" expanded="false" />
-            <element signature="e#846#847#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3125,9 +3035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#8856#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3135,7 +3042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="236" column="17" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3143,10 +3049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="613" column="27" selection-start-line="613" selection-start-column="27" selection-end-line="613" selection-end-column="27" />
-          <folding>
-            <element signature="e#15507#15508#0" expanded="false" />
-            <element signature="e#15539#15540#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3154,10 +3056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="218" column="23" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
-          <folding>
-            <element signature="e#5698#5699#0" expanded="false" />
-            <element signature="e#5728#5729#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3165,7 +3063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19710907">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3181,7 +3078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33252722">
           <caret line="210" column="16" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3189,15 +3085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.0">
           <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="24" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3205,10 +3092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22996058">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3216,7 +3099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30229747">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3224,6 +3106,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.2727273">
           <caret line="187" column="11" selection-start-line="187" selection-start-column="11" selection-end-line="187" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030229745">
+          <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/Administrator/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/os/PowerManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3469119">
+          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/TermuxService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -3237,14 +3142,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/console.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.1044774">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/term/ConsoleActivity.java">
@@ -3255,45 +3160,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myopicmobile/textwarrior/android/FreeScrollingTextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.4848485">
-          <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
-          <folding>
-            <element signature="e#10096#10348#0" expanded="true" />
-            <element signature="e#10347#10348#0" expanded="true" />
-            <element signature="e#43413#43414#0" expanded="true" />
-            <element signature="e#43441#43442#0" expanded="true" />
-            <element signature="e#47743#47744#0" expanded="true" />
-            <element signature="e#47778#47779#0" expanded="true" />
-            <element signature="e#84812#84813#0" expanded="true" />
-            <element signature="e#84835#84836#0" expanded="true" />
-            <element signature="e#86521#86522#0" expanded="true" />
-            <element signature="e#86549#86550#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/luoye/simpleC/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-402.27274">
-          <caret line="615" column="40" selection-start-line="615" selection-start-column="40" selection-end-line="615" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="236" column="72" selection-start-line="236" selection-start-column="72" selection-end-line="236" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state vertical-scroll-proportion="-7.5757575">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/help.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3593429">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="53" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.92402464">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>

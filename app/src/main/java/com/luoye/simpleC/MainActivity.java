@@ -234,10 +234,8 @@ public class MainActivity extends Activity
 			@Override
 			public void onClick(View view, String text) {
 				if(text.equals("--|")){
-					//editor.paste("  ");//两个空格
-					editor.insert(editor.getCaretPosition(),"  ");
+					editor.insert(editor.getCaretPosition(),"  ");//两个空格
 				}else {
-					//editor.paste(text);
 					editor.insert(editor.getCaretPosition(),text);
 				}
 			}
@@ -613,7 +611,7 @@ public class MainActivity extends Activity
 									if (result.result == 0) {
 										if (compileDialog != null)
 											compileDialog.dismiss();
-										showToast("编译成功");
+										//showToast("编译成功");
 										Utils.execBin(MainActivity.this);
 
 									} else {

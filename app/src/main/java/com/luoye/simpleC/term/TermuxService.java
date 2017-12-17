@@ -107,7 +107,7 @@ public final class TermuxService extends Service implements SessionChangedCallba
             if (intent.getBooleanExtra(EXTRA_EXECUTE_IN_BACKGROUND, false)) {
                 BackgroundJob task = new BackgroundJob(cwd, executablePath, arguments, this);
             } else {
-                mTerminalSessions = createTermSession(executablePath, arguments, cwd, false);
+                mTerminalSessions = createTermSession(executablePath, arguments, cwd, true);//true使用系统环境变量
 
                 // Transform executable path to session name, e.g. "/bin/do-something.sh" => "do something.sh".
                 if (executablePath != null) {
