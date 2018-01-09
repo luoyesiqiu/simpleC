@@ -41,7 +41,7 @@ public class WriteThread extends  Thread {
         FileOutputStream fileOutputStream=null;
         try {
             fileOutputStream=new FileOutputStream(outputFile);
-            fileOutputStream.write(text.getBytes());
+            fileOutputStream.write(text.getBytes("UTF-8"));
             fileOutputStream.flush();
             isOk=true;
         }catch (IOException e){

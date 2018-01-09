@@ -354,7 +354,8 @@ implements Document.TextFieldMetrics{
 			{
 				// TODO: Implement this method
 				log("onAdd:"+text+","+caretPosition+","+addCount);
-
+				if(text.length()==0)
+					return ;
 				_caretSpan.setFirst(_caretSpan.getFirst()+addCount);
 				int curr=_caretPosition;
 				//找到空格或者其他
@@ -366,6 +367,7 @@ implements Document.TextFieldMetrics{
 					}
 				}
 				char ch=text.charAt(0);
+
 				if(_caretPosition-curr > 0&&Character.isLetterOrDigit(ch)) {
 					//是否开启代码提示
 					log("subSequence:"+_hDoc.subSequence(curr, _caretPosition - curr));

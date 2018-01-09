@@ -216,6 +216,7 @@ public class Utils {
         flags.add("-lm");//math
         flags.add("-llog");
         flags.add("-lncurses");
+        flags.add("-Og");
         flags.add("-o");
         flags.add(internalDir.getAbsolutePath()+File.separator+ConstantPool.TEMP_BIN_NAME);
 
@@ -258,6 +259,7 @@ public class Utils {
         flags.add("-lm");
         flags.add("-llog");
         flags.add("-lncurses");
+        flags.add("-Og");
         flags.add("-o");
         flags.add(internalDir.getAbsolutePath()+File.separator+ConstantPool.TEMP_BIN_NAME);
 
