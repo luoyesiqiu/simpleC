@@ -253,7 +253,10 @@ public class MainActivity extends Activity
      */
 	private  void externalOpenFile(Intent intent)
 	{
-		if(intent.getAction().equals(Intent.ACTION_VIEW))
+		String action=intent.getAction();
+		if(action==null)
+			return;
+		if(action.equals(Intent.ACTION_VIEW))
 		{
 			String path=intent.getData().getPath();
 			openFile(path);
