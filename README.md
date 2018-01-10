@@ -14,8 +14,6 @@ APK下载：[下载](https://www.coolapk.com/apk/166409)
 
 ## 截图
 
-![GIF](/screenshot/simpleC.gif)
-
 <img src="/screenshot/editor.png" alt="编辑器" width="50%" height="50%" />
 
 <img src="/screenshot/console.png" alt="控制台" width="50%" height="50%" />
