@@ -2,9 +2,5 @@
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\terminal_scroll_shape.xml",
         "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\drawable-mdpi\\terminal_scroll_shape.xml"
-    },
-    {
-        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\slash.png",
-        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\drawable-mdpi\\slash.png"
     }
 ]

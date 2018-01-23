@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.*;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.*;
 import android.widget.*;
@@ -21,6 +22,7 @@ import com.luoye.simpleC.interfaces.UnzipCallback;
 import com.luoye.simpleC.util.CFileNameFilter;
 import com.luoye.simpleC.util.ConstantPool;
 import com.luoye.simpleC.util.IO;
+import com.luoye.simpleC.util.PermissionHelper;
 import com.luoye.simpleC.util.Setting;
 import com.luoye.simpleC.util.ShellUtils;
 import com.luoye.simpleC.util.Utils;
@@ -62,6 +64,7 @@ public class MainActivity extends Activity
 
 	private  boolean isMultiFileCompile=false;
 	private  String multiFilesName="";
+	private PermissionHelper mPermissionHelper;
 	@Override
     public void onCreate(Bundle savedInstanceState)
 	{
@@ -244,8 +247,19 @@ public class MainActivity extends Activity
 		//外部打开文件
 		Intent intent=getIntent();
 		externalOpenFile(intent);
+		mPermissionHelper=new PermissionHelper(this);
+		if (Build.VERSION.SDK_INT >= 23&&!mPermissionHelper.isAllRequestedPermissionGranted()) {
+			mPermissionHelper.applyPermissions();
+		}
 		log("----------->onCreate");
 	}
+
+	@Override
+	public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+		mPermissionHelper.onRequestPermissionsResult(requestCode, permissions, grantResults);
+	}
+
 
 	/**
 	 * 外部应用打开文件
@@ -310,6 +324,7 @@ public class MainActivity extends Activity
 			}
 		}
 		super.onActivityResult(requestCode, resultCode, data);
+		mPermissionHelper.onActivityResult(requestCode, resultCode, data);
 	}
 
 

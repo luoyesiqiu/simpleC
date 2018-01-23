@@ -1,14 +1,10 @@
 [
     {
-        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atari_small.png",
-        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\emulatorview\\unspecified\\res\\drawable\\atari_small.png"
-    },
-    {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_select_handle_left_material.xml",
-        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\terminal-view-release\\unspecified\\res\\drawable\\text_select_handle_left_material.xml"
+        "source": "C:\\Users\\zyw\\.android\\build-cache\\da473d688e295858e9dee9ba95599c1e93852313\\output\\res\\drawable\\text_select_handle_left_material.xml"
     },
     {
         "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_select_handle_right_material.xml",
-        "source": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\terminal-view-release\\unspecified\\res\\drawable\\text_select_handle_right_material.xml"
+        "source": "C:\\Users\\zyw\\.android\\build-cache\\da473d688e295858e9dee9ba95599c1e93852313\\output\\res\\drawable\\text_select_handle_right_material.xml"
     }
 ]

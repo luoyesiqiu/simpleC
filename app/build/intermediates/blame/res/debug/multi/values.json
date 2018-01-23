@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "outputFile": "D:\\Documents\\MulCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -418,9 +418,9 @@
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 102,
+                        "startOffset": 101,
                         "endColumn": 52,
-                        "endOffset": 150
+                        "endOffset": 149
                     }
                 }
             },
@@ -437,9 +437,9 @@
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 406,
+                        "startOffset": 405,
                         "endColumn": 66,
-                        "endOffset": 468
+                        "endOffset": 467
                     }
                 }
             },
@@ -448,17 +448,17 @@
                     "startLine": 31,
                     "startColumn": 4,
                     "startOffset": 1251,
-                    "endColumn": 45,
-                    "endOffset": 1292
+                    "endColumn": 48,
+                    "endOffset": 1295
                 },
                 "from": {
                     "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 56,
-                        "endColumn": 45,
-                        "endOffset": 97
+                        "startOffset": 548,
+                        "endColumn": 48,
+                        "endOffset": 592
                     }
                 }
             },
@@ -466,18 +466,18 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 1297,
-                    "endColumn": 39,
-                    "endOffset": 1332
+                    "startOffset": 1300,
+                    "endColumn": 44,
+                    "endOffset": 1340
                 },
                 "from": {
                     "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 6,
-                        "startColumn": 1,
-                        "startOffset": 205,
-                        "endColumn": 36,
-                        "endOffset": 240
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 44,
+                        "endOffset": 96
                     }
                 }
             },
@@ -485,18 +485,18 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 1337,
-                    "endColumn": 43,
-                    "endOffset": 1376
+                    "startOffset": 1345,
+                    "endColumn": 39,
+                    "endOffset": 1380
                 },
                 "from": {
                     "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 362,
-                        "endColumn": 43,
-                        "endOffset": 401
+                        "startLine": 6,
+                        "startColumn": 1,
+                        "startOffset": 204,
+                        "endColumn": 36,
+                        "endOffset": 239
                     }
                 }
             },
@@ -504,12 +504,31 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 1381,
-                    "endColumn": 42,
-                    "endOffset": 1419
+                    "startOffset": 1385,
+                    "endColumn": 43,
+                    "endOffset": 1424
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\terminal-view-release\\unspecified\\res\\values\\values.xml",
+                    "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 361,
+                        "endColumn": 43,
+                        "endOffset": 400
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1429,
+                    "endColumn": 42,
+                    "endOffset": 1467
+                },
+                "from": {
+                    "file": "C:\\Users\\zyw\\.android\\build-cache\\da473d688e295858e9dee9ba95599c1e93852313\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -521,39 +540,20 @@
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 1424,
+                    "startOffset": 1472,
                     "endColumn": 72,
-                    "endOffset": 1492
+                    "endOffset": 1540
                 },
                 "from": {
                     "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 1,
-                        "startOffset": 242,
+                        "startOffset": 241,
                         "endColumn": 69,
-                        "endOffset": 310
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 36,
-                    "startColumn": 4,
-                    "startOffset": 1497,
-                    "endColumn": 52,
-                    "endOffset": 1545
-                },
-                "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 155,
-                        "endColumn": 52,
-                        "endOffset": 203
+                        "endOffset": 309
                     }
                 }
             },
@@ -561,18 +561,18 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 1550,
-                    "endColumn": 75,
-                    "endOffset": 1621
+                    "startOffset": 1545,
+                    "endColumn": 52,
+                    "endOffset": 1593
                 },
                 "from": {
                     "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 473,
-                        "endColumn": 75,
-                        "endOffset": 544
+                        "startOffset": 154,
+                        "endColumn": 52,
+                        "endOffset": 202
                     }
                 }
             },
@@ -580,12 +580,31 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 1626,
-                    "endColumn": 44,
-                    "endOffset": 1666
+                    "startOffset": 1598,
+                    "endColumn": 75,
+                    "endOffset": 1669
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\terminal-view-release\\unspecified\\res\\values\\values.xml",
+                    "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 472,
+                        "endColumn": 75,
+                        "endOffset": 543
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 1674,
+                    "endColumn": 44,
+                    "endOffset": 1714
+                },
+                "from": {
+                    "file": "C:\\Users\\zyw\\.android\\build-cache\\da473d688e295858e9dee9ba95599c1e93852313\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -597,33 +616,33 @@
             },
             {
                 "to": {
-                    "startLine": 39,
+                    "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 1671,
+                    "startOffset": 1719,
                     "endColumn": 46,
-                    "endOffset": 1713
+                    "endOffset": 1761
                 },
                 "from": {
                     "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 315,
+                        "startOffset": 314,
                         "endColumn": 46,
-                        "endOffset": 357
+                        "endOffset": 356
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 1718,
+                    "startOffset": 1766,
                     "endColumn": 53,
-                    "endOffset": 1767
+                    "endOffset": 1815
                 },
                 "from": {
-                    "file": "D:\\Documents\\MulCode\\app\\build\\intermediates\\exploded-aar\\MulCode\\terminal-view-release\\unspecified\\res\\values\\values.xml",
+                    "file": "C:\\Users\\zyw\\.android\\build-cache\\da473d688e295858e9dee9ba95599c1e93852313\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -635,12 +654,12 @@
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 1772,
-                    "endLine": 47,
+                    "startOffset": 1820,
+                    "endLine": 48,
                     "endColumn": 12,
-                    "endOffset": 2079
+                    "endOffset": 2127
                 },
                 "from": {
                     "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\styles.xml",
@@ -656,12 +675,12 @@
             },
             {
                 "to": {
-                    "startLine": 48,
+                    "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 2084,
-                    "endLine": 50,
+                    "startOffset": 2132,
+                    "endLine": 51,
                     "endColumn": 12,
-                    "endOffset": 2239
+                    "endOffset": 2287
                 },
                 "from": {
                     "file": "D:\\Documents\\MulCode\\app\\src\\main\\res\\values\\styles.xml",

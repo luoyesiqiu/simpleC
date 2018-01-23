@@ -32,6 +32,7 @@ import android.util.*;
  */
 public class TouchNavigationMethod extends GestureDetector.SimpleOnGestureListener
 {
+	private static final boolean DEBUG = true;
 	protected FreeScrollingTextField _textField;
 	private GestureDetector _gestureDetector;
 	protected boolean _isCaretTouched = false;
@@ -97,40 +98,40 @@ public class TouchNavigationMethod extends GestureDetector.SimpleOnGestureListen
 	@Override
 	public boolean onSingleTapUp(MotionEvent e){
 		int x = screenToViewX((int) e.getX());
-	int y = screenToViewY((int) e.getY());
-	int charOffset = _textField.coordToCharIndex(x, y);
+		int y = screenToViewY((int) e.getY());
+		int charOffset = _textField.coordToCharIndex(x, y);
 
-	if (_textField.isSelectText())
-	{
-		int strictCharOffset = _textField.coordToCharIndexStrict(x, y);
-		if (_textField.inSelectionRange(strictCharOffset) ||
-				isNearChar(x, y, _textField.getSelectionStart()) ||
-				isNearChar(x, y, _textField.getSelectionEnd()))
+		if (_textField.isSelectText())
 		{
-			// do nothing
+			int strictCharOffset = _textField.coordToCharIndexStrict(x, y);
+			if (_textField.inSelectionRange(strictCharOffset) ||
+					isNearChar(x, y, _textField.getSelectionStart()) ||
+					isNearChar(x, y, _textField.getSelectionEnd()))
+			{
+				// do nothing
+			}
+			else
+			{
+				_textField.selectText(false);
+				if (strictCharOffset >= 0)
+				{
+					_textField.moveCaret(charOffset);
+				}
+			}
 		}
 		else
 		{
-			_textField.selectText(false);
-			if (strictCharOffset >= 0)
+			if (charOffset >= 0)
 			{
 				_textField.moveCaret(charOffset);
 			}
 		}
-	}
-	else
-	{
-		if (charOffset >= 0)
+		boolean displayIME = true;
+		if (displayIME)
 		{
-			_textField.moveCaret(charOffset);
+			_textField.showIME(true);
 		}
-	}
-	boolean displayIME = true;
-	if (displayIME)
-	{
-		_textField.showIME(true);
-	}
-	return true;
+		return true;
 }
 
 	/**
@@ -154,23 +155,21 @@ public class TouchNavigationMethod extends GestureDetector.SimpleOnGestureListen
 	}
 
 	@Override
-	public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX,
-							float distanceY)
+	public boolean onScroll(MotionEvent e1, MotionEvent e2
+			, float distanceX,float distanceY)
 	{
-		
-		//onTouchZoon(e2);
-			
 		if (_isCaretTouched)
 		{
 			dragCaret(e2);
 		}
 		else if (e2.getPointerCount() == 1)
 		{
-			if(fling==0)
-				if(Math.abs(distanceX)>Math.abs(distanceY))
-					fling=1;
+			if(fling==0) {
+				if (Math.abs(distanceX) > Math.abs(distanceY))
+					fling = 1;
 				else
-					fling=-1;
+					fling = -1;
+			}
 			if(fling==1)
 				distanceY=0;
 			else if(fling==-1)
@@ -267,11 +266,15 @@ public class TouchNavigationMethod extends GestureDetector.SimpleOnGestureListen
 		{
 			newY = 0;
 		}
-		//_textField.scrollTo(newX, newY);
+
+
 		_textField.smoothScrollTo(newX, newY);
 		
 	}
 
+	private  void log(){
+
+	}
 
 	@Override
 	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
@@ -279,7 +282,6 @@ public class TouchNavigationMethod extends GestureDetector.SimpleOnGestureListen
 	{
 		if (!_isCaretTouched)
 		{
-			
 			if(fling==1)
 				velocityY=0;
 			else if(fling==-1)
@@ -543,5 +545,12 @@ public class TouchNavigationMethod extends GestureDetector.SimpleOnGestureListen
 	private TouchNavigationMethod()
 	{
 		// do not invoke; always needs a valid _textField
+	}
+
+	private  void log(String log)
+	{
+		if(DEBUG) {
+			System.out.println("------------------>TouchNavigationMethod:" + log);
+		}
 	}
 }

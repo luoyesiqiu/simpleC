@@ -125,7 +125,7 @@ import android.view.animation.*;
 public class FreeScrollingTextField extends View
 implements Document.TextFieldMetrics{
 
-	private static final boolean DEBUG = false;
+	private static final boolean DEBUG = true;
 	protected boolean _isEdited = false; // whether the text field is dirtied
 	protected TouchNavigationMethod _navMethod;
 	protected DocumentProvider _hDoc; // the model in MVC
@@ -354,10 +354,10 @@ implements Document.TextFieldMetrics{
 			{
 				// TODO: Implement this method
 				log("onAdd:"+text+","+caretPosition+","+addCount);
-				if(text.length()==0)
-					return ;
 				_caretSpan.setFirst(_caretSpan.getFirst()+addCount);
 				int curr=_caretPosition;
+				if(text.length()==0)
+					return ;
 				//找到空格或者其他
 				for(;curr>=0;curr--){
 					char c=_hDoc.charAt(curr - 1);
@@ -494,8 +494,9 @@ implements Document.TextFieldMetrics{
 			Rect rect=new Rect();
 			getWindowVisibleDisplayFrame(rect);
 			_topOffset = rect.top + rect.height() - getHeight();
-			if(!_isLayout)
+			if(!_isLayout) {
 				respan();
+			}
 			_isLayout=right>0;
 			invalidate();
 			_autoCompletePanel.setWidth(getWidth()/2);
@@ -604,7 +605,7 @@ implements Document.TextFieldMetrics{
 	 * @param canvas
      */
 	private void realDraw(Canvas canvas){
-
+		log("_leftOffset:"+_leftOffset);
 		int beginPaintRow = getBeginPaintRow(canvas);
 		int currentIndex = _hDoc.getLineOffset(beginPaintRow);
 
@@ -653,7 +654,7 @@ implements Document.TextFieldMetrics{
 		//----------------------------------------------
 		// set up graphics settings
 		//----------------------------------------------
-		int paintX = 0;
+		int paintX;
 		int paintY = getPaintBaseline(beginPaintRow);
 		int endY = getPaintBaseline(getEndPaintRow(canvas));
 
@@ -666,6 +667,7 @@ implements Document.TextFieldMetrics{
 			_brushLine.setColor(_colorScheme.getColor(Colorable.NON_PRINTING_GLYPH));
 			_brushLine.setStrokeWidth(3.0f);
 			_brushLine.setFakeBoldText(true);
+			log("_leftOffset:"+_leftOffset);
 			canvas.drawLine(_leftOffset-_spaceWidth/2,getScrollY(),_leftOffset-_spaceWidth/2,getScrollY()+getHeight(),_brushLine);
 		}
 		_hDoc.seekChar(currentIndex);//从currentIndex开始迭代
@@ -704,7 +706,6 @@ implements Document.TextFieldMetrics{
 				_caretSpan=currSpan;
 			}
 			char c = _hDoc.next();
-
 			 if (_fieldController.inSelectionRange(currentIndex)){
 				paintX += drawSelectedText(canvas, c, paintX, paintY);
 			}
@@ -715,20 +716,22 @@ implements Document.TextFieldMetrics{
 			++currentIndex;
 			if (c == LanguageCFamily.NEWLINE){
 				paintY += rowHeight();
-				if (paintX > _xExtent){
+				if (paintX >= _xExtent){
 					_xExtent = paintX;
 				}
 				paintX = _leftOffset;
 				currLineNum++;
 			}
 		} // end while
+		log("paintX:"+paintX);
 		doOptionHighlightRow(canvas);
 	}
 
 	private  void log(String log)
 	{
-		if(DEBUG)
-		System.out.println("------------------>FreeScrollingTextField:"+log);
+		if(DEBUG) {
+			System.out.println("------------------>FreeScrollingTextField:" + log);
+		}
 	}
 	/**
 	 * Underline the caret row if the option for highlighting it is set
@@ -1411,6 +1414,7 @@ implements Document.TextFieldMetrics{
             }
             scrollBy(dx, dy);
         }
+        log("smoothScrollBy:"+dx+","+dy+":"+getScrollX()+","+getScrollY());
         mLastScroll = AnimationUtils.currentAnimationTimeMillis();
     }
 
@@ -3057,7 +3061,7 @@ implements Document.TextFieldMetrics{
 	//*********************************************************************
 	//**************** UI State for saving and restoring ******************
 	//*********************************************************************
-//TODO change private
+	//TODO change private
 	public static class TextFieldUiState implements Parcelable {
 		final int _caretPosition;
 		final int _scrollX;
@@ -3099,8 +3103,7 @@ implements Document.TextFieldMetrics{
 			out.writeInt(_selectEnd);
 		}
 
-		public static final Creator<TextFieldUiState> CREATOR
-		= new Creator<TextFieldUiState>() {
+		public static final Creator<TextFieldUiState> CREATOR = new Creator<TextFieldUiState>() {
 			@Override
 			public TextFieldUiState createFromParcel(Parcel in) {
 				return new TextFieldUiState(in);
