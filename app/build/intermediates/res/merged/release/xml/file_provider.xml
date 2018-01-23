@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<paths xmlns:android="http://schemas.android.com/apk/res/android" >
-    <cache-path
-        name="apk1"
-        path="." />
-    <external-path
-        name="apk2"
-        path="." />
-</paths >
