@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compiler_list">
+        <item>gcc(用于编译C代码)</item>
+        <item>g++(用于编译C++代码)</item>
+    </string-array>
+    <string-array name="compiler_list_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <color name="BLACK">#FF000000</color>
+    <color name="BLUE">#FF0000FF</color>
+    <color name="DARK_GREY">#FF606060</color>
+    <color name="DARK_RED">#FFA31515</color>
+    <color name="GREEN">#FF88AA88</color>
+    <color name="GREY">#FF808080</color>
+    <color name="INDIGO">#FF2A40FF</color>
+    <color name="LIGHT_BLUE">#FF6080FF</color>
+    <color name="LIGHT_BLUE2">#FF40B0FF</color>
+    <color name="LIGHT_GREY">#FFAAAAAA</color>
+    <color name="MAROON">#FF800000</color>
+    <color name="OFF_BLACK">#FF040404</color>
+    <color name="OFF_WHITE">#FFD0D2D3</color>
+    <color name="OLIVE_GREEN">#FF3F7F5F</color>
+    <color name="ONDINE">#FF97C024</color>
+    <color name="PINK">#FFD040DD</color>
+    <color name="PURPLE">#FFDD4488</color>
+    <color name="RED">#FFFF0000</color>
+    <color name="WHITE">#FFFFFFE0</color>
+    <string name="action_settings">Settings</string>
+    <string name="api_ref">http://zh.cppreference.com/w/c</string>
+    <string name="app_desc">让C/C++编程更方便</string>
+    <string name="app_name">simpleC</string>
+    <string name="author">落叶似秋</string>
+    <string name="comment">注释/取消注释</string>
+    <string name="copy_text">Copy</string>
+    <string name="github">https://github.com/luoyesiqiu/simpleC</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="oj">https://acm.sjtu.edu.cn/OnlineJudge/problems</string>
+    <string name="paste_text">Paste</string>
+    <string name="qq_group">236121720</string>
+    <string name="text_selection_more">More…</string>
+    <style name="AppBaseTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

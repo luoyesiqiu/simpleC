@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 23 10:07:56 CST 2018
+#Tue Jan 23 12:44:28 CST 2018
 5.base=D\:\\Documents\\MulCode\\app\\build\\intermediates\\res\\resources-debug.ap_
 42.base=D\:\\Documents\\MulCode\\app\\build\\intermediates\\res\\resources-debug.ap_
 32.set=ANDROID_RESOURCE

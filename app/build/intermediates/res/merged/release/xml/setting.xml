@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory
+    android:title="编辑器">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="editor_dark_mode"
+        android:title="夜间模式" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="editor_auto_save"
+        android:summary="离开编辑界面或者关闭软件时自动保存"
+        android:title="自动保存">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="show_symbol_view"
+        android:summary="在输入法上显示符号输入栏，方便输入符号"
+        android:title="显示符号栏">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="show_line_number"
+        android:summary="显示行号可以更方便找出错误的位置"
+        android:title="显示行号（建议开启）">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="auto_compete"
+        android:summary="在输入关键字，头文件名，标识符时提示输入"
+        android:title="开启代码提示（建议开启）">
+    </CheckBoxPreference>
+</PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="编译器">
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="选择编译器"
+            android:entries="@array/compiler_list"
+            android:entryValues="@array/compiler_list_value"
+
+            android:key="select_compiler"
+            android:summary="选择一个编译器来编译代码"
+            android:title="选择编译器">
+        </ListPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

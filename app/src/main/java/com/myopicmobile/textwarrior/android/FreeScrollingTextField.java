@@ -125,7 +125,7 @@ import android.view.animation.*;
 public class FreeScrollingTextField extends View
 implements Document.TextFieldMetrics{
 
-	private static final boolean DEBUG = true;
+	private static final boolean DEBUG = false;
 	protected boolean _isEdited = false; // whether the text field is dirtied
 	protected TouchNavigationMethod _navMethod;
 	protected DocumentProvider _hDoc; // the model in MVC
@@ -595,6 +595,7 @@ implements Document.TextFieldMetrics{
 						getScrollX() + getWidth() - getPaddingRight(),
 						getScrollY() + getHeight() - getPaddingBottom());
 		canvas.translate(getPaddingLeft(), getPaddingTop());
+        log("x:"+getScrollX()+",y:"+getScrollY()+"{left}"+getPaddingLeft()+"{top}"+getPaddingTop());
 		realDraw(canvas);
 		canvas.restore();
  		_navMethod.onTextDrawComplete(canvas);
@@ -1056,7 +1057,10 @@ implements Document.TextFieldMetrics{
 			return false;
 		}
 		else{
-			scrollBy(scrollHorizontalBy, scrollVerticalBy);
+            if(charOffset!=0) {
+                scrollBy(scrollHorizontalBy, scrollVerticalBy);
+            }
+            log("makeCharVisible:"+scrollHorizontalBy+","+getScrollX()+","+charOffset);
 			return true;
 		}
 	}
@@ -1377,8 +1381,10 @@ implements Document.TextFieldMetrics{
 
 	@Override
 	public void computeScroll() {
+
 		if (_scroller.computeScrollOffset()){
 			scrollTo(_scroller.getCurrX(), _scroller.getCurrY());
+            log("computeScroll:"+_scroller.getCurrX()+","+getScrollX());
 			postInvalidate();
 		}
 	}
@@ -1869,6 +1875,7 @@ implements Document.TextFieldMetrics{
 		double x = getScrollX() * ((double)getAdvance('a') / oldWidth);
 		double y = getScrollY() * ((double)rowHeight() / oldHeight);
 		scrollTo((int)x, (int)y);
+        log("setTextSize:"+x+","+y);
 		_alphaWidth=(int)_brush.measureText("a");
 		_spaceWidth=(int)_brush.measureText(" ");
 		{

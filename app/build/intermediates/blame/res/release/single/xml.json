@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\xml\\file_provider.xml",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\xml\\file_provider.xml"
+    },
+    {
+        "merged": "D:\\Documents\\MulCode\\app\\build\\intermediates\\res\\merged\\release\\xml\\setting.xml",
+        "source": "D:\\Documents\\MulCode\\app\\src\\main\\res\\xml\\setting.xml"
+    }
+]
