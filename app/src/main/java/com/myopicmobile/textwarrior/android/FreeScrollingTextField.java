@@ -350,10 +350,10 @@ implements Document.TextFieldMetrics{
 			}
 
 			@Override
-			public void onAdd(CharSequence text, int caretPosition, int addCount)
+			public void onAdd(CharSequence text, int _caretPosition, int addCount)
 			{
 				// TODO: Implement this method
-				log("onAdd:"+text+","+caretPosition+","+addCount);
+				log("onAdd:"+text+","+_caretPosition+","+addCount);
 				_caretSpan.setFirst(_caretSpan.getFirst()+addCount);
 				int curr=_caretPosition;
 				if(text.length()==0)
@@ -3236,6 +3236,7 @@ implements Document.TextFieldMetrics{
 			else if (newCursorPosition <= 0){
 				_fieldController.moveCaret(_caretPosition - text.length() - newCursorPosition);
 			}
+			log("setComposingText:"+text+","+newCursorPosition);
 			return true;
 		}
 
@@ -3254,14 +3255,14 @@ implements Document.TextFieldMetrics{
 			_composingCharCount = 0;
 			_hDoc.endBatchEdit();
 			//TODO reduce invalidate calls
-			if(newCursorPosition > 1){
+			if(newCursorPosition >= 1){
 				_fieldController.moveCaret(_caretPosition + newCursorPosition - 1);
 			}
 			else if (newCursorPosition <= 0){
 				_fieldController.moveCaret(_caretPosition - text.length() - newCursorPosition);
 			}
 			_isComposing = false;
-			log("commitText:"+text);
+			log("commitText:"+text+","+newCursorPosition);
 			return true;
 		}
 
