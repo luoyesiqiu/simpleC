@@ -3248,6 +3248,7 @@ implements Document.TextFieldMetrics{
          */
 		@Override
 		public boolean commitText(CharSequence text, int newCursorPosition) {
+			log("commitText:"+text+","+newCursorPosition+","+_composingCharCount);
 			_fieldController.replaceComposingText(
 				getCaretPosition() - _composingCharCount,
 				_composingCharCount,
@@ -3255,14 +3256,17 @@ implements Document.TextFieldMetrics{
 			_composingCharCount = 0;
 			_hDoc.endBatchEdit();
 			//TODO reduce invalidate calls
-			if(newCursorPosition >= 1){
+			if(newCursorPosition > 1){
 				_fieldController.moveCaret(_caretPosition + newCursorPosition - 1);
 			}
+//			else if(newCursorPosition==1){
+//				_fieldController.moveCaret(getCaretPosition() + newCursorPosition);
+//			}
 			else if (newCursorPosition <= 0){
 				_fieldController.moveCaret(_caretPosition - text.length() - newCursorPosition);
 			}
 			_isComposing = false;
-			log("commitText:"+text+","+newCursorPosition);
+
 			return true;
 		}
 
@@ -3357,8 +3361,18 @@ implements Document.TextFieldMetrics{
 
 		@Override
 		public boolean setSelection(int start, int end) {
+			log("setSelection:"+start+","+end);
+
 			if(start == end){
-				_fieldController.moveCaret(start);
+				if(start==0)
+				{
+					//适配搜狗输入法
+					if(getCaretPosition()>0) {
+						_fieldController.moveCaret(getCaretPosition() - 1);
+					}
+				}else {
+					_fieldController.moveCaret(start);
+				}
 			}
 			else{
 				_fieldController.setSelectionRange(start, end-start, false,true);
