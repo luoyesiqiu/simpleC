@@ -125,7 +125,7 @@ import android.view.animation.*;
 public class FreeScrollingTextField extends View
 implements Document.TextFieldMetrics{
 
-	private static final boolean DEBUG = false;
+	private static final boolean DEBUG = true;
 	protected boolean _isEdited = false; // whether the text field is dirtied
 	protected TouchNavigationMethod _navMethod;
 	protected DocumentProvider _hDoc; // the model in MVC
@@ -617,7 +617,7 @@ implements Document.TextFieldMetrics{
 		int currLineNum=isWordWrap() ? _hDoc.findLineNumber(currentIndex)+1 : currRowNum+1;
 		int lastLineNum=0;
 		if(_showLineNumbers) {
-			_leftOffset = (int) _brushLine.measureText(_hDoc.getRowCount() + " ");
+			_leftOffset = (int) _brushLine.measureText(" "+_hDoc.getRowCount() );
 		}
 		else
 		{
@@ -673,6 +673,9 @@ implements Document.TextFieldMetrics{
 		}
 		_hDoc.seekChar(currentIndex);//从currentIndex开始迭代
 		paintX = _leftOffset;
+
+
+
 		while (paintY <= endY && _hDoc.hasNext()){
 
 			if (currRowNum > rowCount) {
@@ -683,6 +686,12 @@ implements Document.TextFieldMetrics{
 			{
 				lastLineNum=currLineNum;
 				String num=String.valueOf(currLineNum);
+//				int len=num.length();
+//				int numX=(int)((maxTextLen-len)*getTextSize());
+
+
+
+//				log("len:"+numX+","+getTextSize());
 				drawLineNum(canvas, num, 0, paintY);
 			}
 
@@ -728,12 +737,7 @@ implements Document.TextFieldMetrics{
 		doOptionHighlightRow(canvas);
 	}
 
-	private  void log(String log)
-	{
-		if(DEBUG) {
-			System.out.println("------------------>FreeScrollingTextField:" + log);
-		}
-	}
+
 	/**
 	 * Underline the caret row if the option for highlighting it is set
 	 */
@@ -845,6 +849,7 @@ implements Document.TextFieldMetrics{
 	private int drawLineNum(Canvas canvas, String s, int paintX, int paintY){
 		//int originalColor = _brush.getColor();
 		//_brush.setColor(_colorScheme.getColor(Colorable.NON_PRINTING_GLYPH));
+
 		canvas.drawText(s, paintX, paintY, _brushLine);
 		//_brush.setColor(originalColor);
 		return 0;
@@ -3457,5 +3462,11 @@ implements Document.TextFieldMetrics{
 		PICKER_SETS.put('>', "\u2265\u00bb\u203a");
 	}
 
+	private  void log(String log)
+	{
+		if(DEBUG) {
+			System.out.println("------------------>FreeScrollingTextField:" + log);
+		}
+	}
 
 }

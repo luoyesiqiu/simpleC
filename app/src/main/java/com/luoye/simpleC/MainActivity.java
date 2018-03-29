@@ -56,6 +56,7 @@ public class MainActivity extends Activity
 	private  static  final String KEY_FILE_CONTENT="fileContent";
 	private  static  final String KEY_IS_MULTI_COMPILE="isMultiCompile";
 	private  static  final String KEY_MULTI_COMPILE_FILES_NAME="multiCompileFilesName";
+	private final String GCC_VERSION="7.2.0";
 	private final  int MSG_INIT=0x100;
 	private Setting setting;
 	private  SymbolView symbolView;
@@ -173,7 +174,7 @@ public class MainActivity extends Activity
 								if(success) {
 									File binDir1=new File(getFilesDir()+File.separator+"gcc"+File.separator+"bin");
 									File binDir2=new File(getFilesDir()+File.separator+"gcc"+File.separator+"arm-linux-androideabi"+File.separator+"bin");
-									File binDir3=new File(getFilesDir()+File.separator+"gcc"+File.separator+"libexec/gcc/arm-linux-androideabi/6.1.0");
+									File binDir3=new File(getFilesDir()+File.separator+"gcc"+File.separator+"libexec/gcc/arm-linux-androideabi/"+GCC_VERSION);
 									for(File f:binDir1.listFiles())
 									{
 										if(f.isFile())
