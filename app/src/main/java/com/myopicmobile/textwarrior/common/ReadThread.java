@@ -5,6 +5,7 @@ import android.os.Message;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * Created by zyw on 2017/10/2.
@@ -22,19 +23,22 @@ public class ReadThread extends Thread
 	}
 	@Override
 	public void run() {
-		readFile(path);
+		synchronized (handler) {
+			readFile(path);
+		}
 	}
 
 	private  void readFile(String file)
 	{
 		boolean isOk=false;
 		FileInputStream fileInputStream = null;
+		InputStreamReader inputStreamReader=null;
 		StringBuilder stringBuilder=new StringBuilder();
 		try {
-			fileInputStream=new FileInputStream(file);
-			byte[] buf=new byte[1024];
+			inputStreamReader=new InputStreamReader(new FileInputStream(file),"utf-8");
+			char[] buf=new char[1024];
 			int len=0;
-			while ((len=fileInputStream.read(buf))!=-1){
+			while ((len=inputStreamReader.read(buf))!=-1){
 				stringBuilder.append(new String(buf,0,len));
 			}
 			isOk=true;
@@ -43,10 +47,10 @@ public class ReadThread extends Thread
 			e.printStackTrace();
 			isOk=false;
 		}finally {
-			if(fileInputStream!=null)
+			if(inputStreamReader!=null)
 			{
 				try {
-					fileInputStream.close();
+					inputStreamReader.close();
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
