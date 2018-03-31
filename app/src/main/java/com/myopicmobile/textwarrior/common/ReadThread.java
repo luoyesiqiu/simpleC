@@ -35,7 +35,8 @@ public class ReadThread extends Thread
 		InputStreamReader inputStreamReader=null;
 		StringBuilder stringBuilder=new StringBuilder();
 		try {
-			inputStreamReader=new InputStreamReader(new FileInputStream(file),"utf-8");
+			fileInputStream=new FileInputStream(file);
+			inputStreamReader=new InputStreamReader(fileInputStream,"utf-8");
 			char[] buf=new char[1024];
 			int len=0;
 			while ((len=inputStreamReader.read(buf))!=-1){
