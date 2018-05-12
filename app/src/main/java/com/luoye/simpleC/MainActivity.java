@@ -6,6 +6,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.location.LocationManager;
+import android.location.LocationProvider;
 import android.os.*;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
@@ -66,6 +68,7 @@ public class MainActivity extends Activity
 	private  boolean isMultiFileCompile=false;
 	private  String multiFilesName="";
 	private PermissionHelper mPermissionHelper;
+
 	@Override
     public void onCreate(Bundle savedInstanceState)
 	{
@@ -575,7 +578,17 @@ public class MainActivity extends Activity
 					public void onClick(DialogInterface dialogInterface, int i) {
 						if (!TextUtils.isEmpty(editText.getText())) {
 							File f = new File(ConstantPool.FILE_PATH);
+
 							File newFile=new File(f.getAbsolutePath() + File.separator + editText.getText());
+							//没有设置后缀名,自动设置
+							if(!newFile.getAbsolutePath().contains(".")){
+								if(setting.isGccCompile()){
+									newFile=new File(f.getAbsolutePath() + File.separator + editText.getText()+".c");
+								}
+								else{
+									newFile=new File(f.getAbsolutePath() + File.separator + editText.getText()+".cpp");
+								}
+							}
 							editor.save(newFile.getAbsolutePath());
 							editor.setOpenedFile(newFile.getAbsolutePath());
 							setSubtitle(newFile.getName());

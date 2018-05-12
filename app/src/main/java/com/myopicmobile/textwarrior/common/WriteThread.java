@@ -2,9 +2,6 @@ package com.myopicmobile.textwarrior.common;
 
 import android.os.Handler;
 import android.os.Message;
-
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "com.luoye.simpleC"
         minSdkVersion 18
         targetSdkVersion 25
-        versionName "1.2.28"
-        versionCode 29
+        versionName "1.2.29"
+        versionCode 30
         ndk {
             abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a','x86'
         }
@@ -30,8 +30,8 @@ android {
 
 dependencies {
     //:libtermexec
-    compile files('libs/markdownpapers-core-1.4.1.jar')
-    compile project(':terminal-emulator-release')
-    compile project(':terminal-view-release')
-    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    implementation files('libs/markdownpapers-core-1.4.1.jar')
+    implementation project(':terminal-emulator-release')
+    implementation project(':terminal-view-release')
+    implementation 'com.android.support:support-v4:26.0.0-alpha1'
 }

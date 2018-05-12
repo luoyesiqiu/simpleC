@@ -209,6 +209,7 @@ public class Utils {
         for(int i=0;i<src.length;i++) {
             flags.add(src[i].getAbsolutePath());
         }
+        flags.add("-Wfatal-errors");//一遇到错误就停止
         flags.add("-pie");
         flags.add("-std=c99");
         flags.add("-lz");//zlib
@@ -252,6 +253,7 @@ public class Utils {
         for(int i=0;i<src.length;i++) {
             flags.add(src[i].getAbsolutePath());
         }
+        flags.add("-Wfatal-errors");//一遇到错误就停止
         flags.add("-pie");
         flags.add("-std=c++14");
         flags.add("-lz");

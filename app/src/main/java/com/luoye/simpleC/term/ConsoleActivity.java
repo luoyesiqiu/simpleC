@@ -10,6 +10,9 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -25,6 +28,7 @@ import com.luoye.simpleC.R;
 import com.termux.terminal.TerminalSession;
 import com.termux.view.TerminalView;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -37,7 +41,7 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
     public TerminalView mEmulatorView;
     private TerminalSession mSession;
     private final  int MSG_SESSION_FINISH=0x100;
-
+    private  MediaPlayer mediaPlayer=null;
     public TermuxService mTermService;
     private String cmd;
     private int mFontSize;
@@ -75,6 +79,26 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
         mEmulatorView.setTextSize(mFontSize);
         mEmulatorView.requestFocus();
         mEmulatorView.setOnKeyListener(new TermuxViewClient(this));
+
+        AssetManager am = getAssets();
+        AssetFileDescriptor assetFileDescriptor = null;
+
+        try {
+            assetFileDescriptor = am.openFd("bell.mp3");
+
+            mediaPlayer=new MediaPlayer();
+            mediaPlayer.setDataSource(assetFileDescriptor.getFileDescriptor());
+
+            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mp.release();
+                }
+            });
+            mediaPlayer.prepare();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     private void  startService(){
         Intent serviceIntent = new Intent(this, TermuxService.class);
@@ -168,7 +192,6 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
 
     @Override
     protected void onDestroy() {
-
         super.onDestroy();
         unbindService(this);
         mTermService.stopSelf();
@@ -208,10 +231,6 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
                     // The service wants to stop as soon as possible.
                     endTime=System.currentTimeMillis();
                     showToast("程序结束，耗时："+(endTime-startTime)/1000.0+"s");
-               //     finish();
-               //     return;
-              //  }
-
             }
 
             @Override
@@ -222,6 +241,9 @@ public class ConsoleActivity extends Activity implements ServiceConnection{
 
             @Override
             public void onBell(TerminalSession session) {
+                if(mediaPlayer!=null){
+                    mediaPlayer.start();
+                }
 
 
             }
