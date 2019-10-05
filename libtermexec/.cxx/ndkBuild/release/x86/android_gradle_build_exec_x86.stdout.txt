@@ -1,0 +1,3 @@
+[x86] Compile++      : exec <= process.cpp
+[x86] StaticLibrary  : libstdc++.a
+[x86] SharedLibrary  : libexec.so

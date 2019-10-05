@@ -1,0 +1,3 @@
+[arm64-v8a] Compile++      : exec <= process.cpp
+[arm64-v8a] StaticLibrary  : libstdc++.a
+[arm64-v8a] SharedLibrary  : libexec.so

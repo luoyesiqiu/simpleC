@@ -1,0 +1,5 @@
+[x86] Compile++      : term <= common.cpp
+[x86] Compile++      : term <= fileCompat.cpp
+[x86] Compile++      : term <= termExec.cpp
+[x86] StaticLibrary  : libstdc++.a
+[x86] SharedLibrary  : libterm.so
