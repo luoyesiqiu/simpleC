@@ -11,6 +11,9 @@
             backward-compatibility can go here.
         -->
     </style>
+    <style name="AppDarkTheme" parent="@android:style/Theme.DeviceDefault">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">

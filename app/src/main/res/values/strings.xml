@@ -11,4 +11,5 @@
     <string name="api_ref">http://zh.cppreference.com/w/c</string>
     <string name="oj">https://acm.sjtu.edu.cn/OnlineJudge/problems</string>
     <string name="app_desc">让C/C++编程更方便</string>
+    <string name="terminal">终端模拟器</string>
 </resources>

@@ -1,0 +1,5 @@
+[arm64-v8a] Compile++      : exec <= common.cpp
+[arm64-v8a] Compile++      : exec <= fileCompat.cpp
+[arm64-v8a] Compile++      : exec <= termExec.cpp
+[arm64-v8a] StaticLibrary  : libstdc++.a
+[arm64-v8a] SharedLibrary  : libexec.so

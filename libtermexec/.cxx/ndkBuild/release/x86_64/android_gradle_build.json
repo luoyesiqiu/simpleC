@@ -1,0 +1,34 @@
+{
+  "buildFiles": [
+    "J:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Android.mk",
+    "J:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dJ:/Documents/MulCode/libtermexec/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dJ:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "buildTargetsCommand": "D:\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dJ:/Documents/MulCode/libtermexec/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dJ:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\release\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "exec-release-x86_64": {
+      "buildCommand": "D:\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dJ:/Documents/MulCode/libtermexec/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dJ:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\release\\lib J:/Documents/MulCode/libtermexec/build/intermediates/ndkBuild/release/obj/local/x86_64/libexec.so",
+      "toolchain": "toolchain-x86_64",
+      "abi": "x86_64",
+      "artifactName": "exec",
+      "files": [
+        {
+          "src": "J:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\process.cpp",
+          "flags": "-gcc-toolchain D:/android-ndk-r16b/build//../toolchains/x86_64-4.9/prebuilt/windows-x86_64 -target x86_64-none-linux-android -ffunction-sections -funwind-tables -fstack-protector-strong -fPIC -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -g -fno-exceptions -fno-rtti -O2 -DNDEBUG -ID:/android-ndk-r16b/build//../sources/cxx-stl/system/include -IJ:/Documents/MulCode/libtermexec/src/main/jni -DANDROID -D__ANDROID_API__\u003d21 -Wa,--noexecstack -Wformat -Werror\u003dformat-security --sysroot D:/android-ndk-r16b/build//../sysroot -isystem D:/android-ndk-r16b/build//../sysroot/usr/include/x86_64-linux-android"
+        }
+      ],
+      "output": "J:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\release\\obj\\local\\x86_64\\libexec.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86_64": {
+      "cppCompilerExecutable": "D:\\android-ndk-r16b\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

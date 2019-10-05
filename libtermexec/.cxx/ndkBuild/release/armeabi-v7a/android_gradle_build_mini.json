@@ -1,0 +1,18 @@
+{
+  "buildFiles": [
+    "J:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Android.mk",
+    "J:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dJ:/Documents/MulCode/libtermexec/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dJ:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "buildTargetsCommand": "D:\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dJ:/Documents/MulCode/libtermexec/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dJ:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\release\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "exec-release-armeabi-v7a": {
+      "artifactName": "exec",
+      "buildCommand": "D:\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dJ:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dJ:/Documents/MulCode/libtermexec/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dJ:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\release\\lib J:/Documents/MulCode/libtermexec/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libexec.so",
+      "abi": "armeabi-v7a",
+      "output": "J:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libexec.so"
+    }
+  }
+}

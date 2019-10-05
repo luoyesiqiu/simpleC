@@ -1,0 +1,42 @@
+{
+  "buildFiles": [
+    "J:\\Documents\\MulCode\\term\\src\\main\\jni\\Android.mk",
+    "J:\\Documents\\MulCode\\term\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dJ:\\Documents\\MulCode\\term\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dJ:\\Documents\\MulCode\\term\\src\\main\\jni\\Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dJ:/Documents/MulCode/term/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dJ:\\Documents\\MulCode\\term\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "buildTargetsCommand": "D:\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dJ:\\Documents\\MulCode\\term\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dJ:\\Documents\\MulCode\\term\\src\\main\\jni\\Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dJ:/Documents/MulCode/term/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dJ:\\Documents\\MulCode\\term\\build\\intermediates\\ndkBuild\\release\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "term-release-arm64-v8a": {
+      "buildCommand": "D:\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dJ:\\Documents\\MulCode\\term\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dJ:\\Documents\\MulCode\\term\\src\\main\\jni\\Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dJ:/Documents/MulCode/term/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dJ:\\Documents\\MulCode\\term\\build\\intermediates\\ndkBuild\\release\\lib J:/Documents/MulCode/term/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libterm.so",
+      "toolchain": "toolchain-arm64-v8a",
+      "abi": "arm64-v8a",
+      "artifactName": "term",
+      "files": [
+        {
+          "src": "J:\\Documents\\MulCode\\term\\src\\main\\jni\\common.cpp",
+          "flags": "-gcc-toolchain D:/android-ndk-r16b/build//../toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 -target aarch64-none-linux-android -ffunction-sections -funwind-tables -fstack-protector-strong -fpic -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -g -fno-exceptions -fno-rtti -O2 -DNDEBUG -ID:/android-ndk-r16b/build//../sources/cxx-stl/system/include -IJ:/Documents/MulCode/term/src/main/jni -DANDROID -D__ANDROID_API__\u003d21 -Wa,--noexecstack -Wformat -Werror\u003dformat-security --sysroot D:/android-ndk-r16b/build//../sysroot -isystem D:/android-ndk-r16b/build//../sysroot/usr/include/aarch64-linux-android"
+        },
+        {
+          "src": "J:\\Documents\\MulCode\\term\\src\\main\\jni\\fileCompat.cpp",
+          "flags": "-gcc-toolchain D:/android-ndk-r16b/build//../toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 -target aarch64-none-linux-android -ffunction-sections -funwind-tables -fstack-protector-strong -fpic -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -g -fno-exceptions -fno-rtti -O2 -DNDEBUG -ID:/android-ndk-r16b/build//../sources/cxx-stl/system/include -IJ:/Documents/MulCode/term/src/main/jni -DANDROID -D__ANDROID_API__\u003d21 -Wa,--noexecstack -Wformat -Werror\u003dformat-security --sysroot D:/android-ndk-r16b/build//../sysroot -isystem D:/android-ndk-r16b/build//../sysroot/usr/include/aarch64-linux-android"
+        },
+        {
+          "src": "J:\\Documents\\MulCode\\term\\src\\main\\jni\\termExec.cpp",
+          "flags": "-gcc-toolchain D:/android-ndk-r16b/build//../toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 -target aarch64-none-linux-android -ffunction-sections -funwind-tables -fstack-protector-strong -fpic -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -g -fno-exceptions -fno-rtti -O2 -DNDEBUG -ID:/android-ndk-r16b/build//../sources/cxx-stl/system/include -IJ:/Documents/MulCode/term/src/main/jni -DANDROID -D__ANDROID_API__\u003d21 -Wa,--noexecstack -Wformat -Werror\u003dformat-security --sysroot D:/android-ndk-r16b/build//../sysroot -isystem D:/android-ndk-r16b/build//../sysroot/usr/include/aarch64-linux-android"
+        }
+      ],
+      "output": "J:\\Documents\\MulCode\\term\\build\\intermediates\\ndkBuild\\release\\obj\\local\\arm64-v8a\\libterm.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-arm64-v8a": {
+      "cppCompilerExecutable": "D:\\android-ndk-r16b\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

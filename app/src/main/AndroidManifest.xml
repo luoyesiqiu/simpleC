@@ -29,19 +29,58 @@
             </intent-filter >
         </activity>
         <activity android:name=".activity.FileListActivity"></activity>
-        <activity android:name=".activity.SettingActivity" android:label="设置"></activity>
+        <activity android:name=".activity.SettingActivity" android:label="@string/action_settings"></activity>
         <activity android:name=".activity.HelpActivity"
             android:launchMode="singleTask"
             android:taskAffinity="com.luoye.simpleC.activity"
-            android:label="帮助"/>
-        <activity android:name=".term.ConsoleActivity"
-            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
-            android:windowSoftInputMode="adjustResize|stateHidden"
-            android:theme="@android:style/Theme.DeviceDefault"
-            android:label="控制台">
+            android:label="@string/help"/>
+        <!--Term-->
+        <activity android:name="jackpal.androidterm.Term"
+            android:launchMode="singleTask"
+            android:label="@string/terminal"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
-        <service
-            android:name="com.luoye.simpleC.term.TermuxService"
-            android:exported="false" />
+        <activity android:name="jackpal.androidterm.RemoteInterface"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="jackpal.androidterm.OPEN_NEW_WINDOW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="TermInternal"
+            android:targetActivity="jackpal.androidterm.Term"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="jackpal.androidterm.private.OPEN_NEW_WINDOW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="jackpal.androidterm.private.SWITCH_WINDOW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="jackpal.androidterm.RunScript"
+            android:theme="@style/AppDarkTheme"
+            android:excludeFromRecents="true"
+            android:permission="jackpal.androidterm.permission.RUN_SCRIPT">
+            <intent-filter>
+                <action android:name="jackpal.androidterm.RUN_SCRIPT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="jackpal.androidterm.TermPreferences">
+
+        </activity>
+        <service android:name="jackpal.androidterm.TermService" >
+            <intent-filter>
+                <action android:name="jackpal.androidterm.action.START_TERM.v1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
     </application>
 </manifest>

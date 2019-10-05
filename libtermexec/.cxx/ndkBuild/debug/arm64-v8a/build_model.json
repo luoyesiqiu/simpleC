@@ -1,0 +1,62 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "J:\\Documents\\MulCode",
+      "sdkFolder": "d:\\Users\\Administrator\\AppData\\Local\\Android\\sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "J:\\Documents\\MulCode\\libtermexec\\build\\intermediates",
+      "gradleModulePathName": ":libtermexec",
+      "moduleRootFolder": "J:\\Documents\\MulCode\\libtermexec",
+      "makeFile": "J:\\Documents\\MulCode\\libtermexec\\src\\main\\jni\\Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "J:\\Documents\\MulCode\\.cxx",
+      "cxxFolder": "J:\\Documents\\MulCode\\libtermexec\\.cxx",
+      "ndkFolder": "D:\\android-ndk-r16b",
+      "ndkVersion": "16.1.4479499",
+      "ndkSupportedAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "MIPS",
+        "MIPS64",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "J:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\debug\\lib",
+    "objFolder": "J:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\debug\\obj\\local",
+    "jsonFolder": "J:\\Documents\\MulCode\\libtermexec\\.cxx\\ndkBuild\\debug",
+    "gradleBuildOutputFolder": "J:\\Documents\\MulCode\\libtermexec\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARM64_V8A",
+      "ARMEABI_V7A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "J:\\Documents\\MulCode\\libtermexec\\.cxx\\ndkBuild\\debug\\arm64-v8a",
+  "jsonFile": "J:\\Documents\\MulCode\\libtermexec\\.cxx\\ndkBuild\\debug\\arm64-v8a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "J:\\Documents\\MulCode\\libtermexec\\.cxx\\cxx\\debug\\arm64-v8a",
+  "objFolder": "J:\\Documents\\MulCode\\libtermexec\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\arm64-v8a",
+  "buildCommandFile": "J:\\Documents\\MulCode\\libtermexec\\.cxx\\ndkBuild\\debug\\arm64-v8a\\build_command.txt",
+  "buildOutputFile": "J:\\Documents\\MulCode\\libtermexec\\.cxx\\ndkBuild\\debug\\arm64-v8a\\build_output.txt",
+  "modelOutputFile": "J:\\Documents\\MulCode\\libtermexec\\.cxx\\ndkBuild\\debug\\arm64-v8a\\build_model.json",
+  "jsonGenerationLoggingRecordFile": "J:\\Documents\\MulCode\\libtermexec\\.cxx\\ndkBuild\\debug\\arm64-v8a\\json_generation_record.json",
+  "compileCommandsJsonFile": "J:\\Documents\\MulCode\\libtermexec\\.cxx\\ndkBuild\\debug\\arm64-v8a\\compile_commands.json"
+}

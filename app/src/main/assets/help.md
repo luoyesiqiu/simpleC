@@ -1,6 +1,6 @@
 <table>
 <tr><th>软件作者</th><th>落叶似秋</th></tr>
-<tr><th>作者博客 </th><th><a href="http://blog.csdn.net/e_one">blog.csdn.net/e_one</a></th></tr>
+<tr><th>作者博客 </th><th><a href="https://www.cnblogs.com/luoyesiqiu">cnblogs.com/luoyesiqiu</a></th></tr>
 <tr><th>项目地址</th><th><a href="https://github.com/luoyesiqiu/simpleC">github.com/luoyesiqiu/simpleC</a></th></tr>
 </table>
 
@@ -25,30 +25,43 @@
 
 1.编译器如何选择？
 
->gcc用于编译c语言的代码，g++用于编译c++代码。如果你的代码只是C语言，建议使用gcc编译器；如果你的代码有C++的内容,则使用g++编译器。g++可以编译c语言代码，但是这样做可能不能达到我们预期的想法。
+>gcc用于编译C语言的代码，g++用于编译C++代码。如果你的代码只是C语言，建议使用gcc编译器；如果你的代码有C++的内容,则使用g++编译器。g++可以编译C语言代码，但是这样做可能不能达到我们预期的想法。
 
-2.编译后生成的二进制文件存放在哪里？
-
->编译后生成的二进制文件默认存放路径：```/data/data/com.luoye.simpleC/files/temp```
-
-3.为什么编译时提示找不到windows.h?
+2.为什么编译时提示找不到windows.h?
 
 >windows.h这个头文件在Windows平台才能使用，Linux中不支持这个头文件。
 
-4.为什么编译时提示File format not recognized?
+3.为什么编译时提示File format not recognized?
 
 >源码文件格式不正确，将文件名改为xxx.c或者xxx.cpp等形式后再尝试编译。
 
-5.simpleC文本编辑器采用什么编码？
+## 特别感谢
 
->simpleC文本编辑器采用utf-8编码
+### 项目
 
-##特别感谢
+* [AndroLua+](https://github.com/nirenr/AndroLua_pro)
+
+* [JFlex](https://www.jflex.de)
+
+* [GNU-GCC](http://gcc.gnu.org)
+
+* [Android-Terminal-Emulator](https://github.com/jackpal/Android-Terminal-Emulator)
+
+* TextWarrior
+
+### 网友
 
 * 小丑先生
 
 ##更新内容
 
+**1.2.30**
+
+* 更换终端模拟器，解决偶发性不输出的bug
+
+* 支持导出可执行二进制文件
+
+* 优化错误定位
 
 **1.2.29**
 

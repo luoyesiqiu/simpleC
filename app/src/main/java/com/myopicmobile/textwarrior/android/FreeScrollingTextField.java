@@ -125,7 +125,7 @@ import android.view.animation.*;
 public class FreeScrollingTextField extends View
 implements Document.TextFieldMetrics{
 
-	private static final boolean DEBUG = true;
+	private static final boolean DEBUG = false;
 	protected boolean _isEdited = false; // whether the text field is dirtied
 	protected TouchNavigationMethod _navMethod;
 	protected DocumentProvider _hDoc; // the model in MVC
@@ -3465,7 +3465,7 @@ implements Document.TextFieldMetrics{
 	private  void log(String log)
 	{
 		if(DEBUG) {
-			System.out.println("------------------>FreeScrollingTextField:" + log);
+			System.out.println("[FreeScrollingTextField]:" + log);
 		}
 	}
 
