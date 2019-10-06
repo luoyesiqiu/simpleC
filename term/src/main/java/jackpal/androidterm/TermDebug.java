@@ -24,7 +24,7 @@ public class TermDebug {
     /**
      * Set to true to add debugging code and logging.
      */
-    public static final boolean DEBUG = true;
+    public static final boolean DEBUG = false;
 
     /**
      * The tag we use when logging, so that our messages can be distinguished

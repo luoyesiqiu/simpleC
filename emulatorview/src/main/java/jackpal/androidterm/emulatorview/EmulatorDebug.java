@@ -24,7 +24,7 @@ class EmulatorDebug {
     /**
      * Set to true to add debugging code and logging.
      */
-    public static final boolean DEBUG = true;
+    public static final boolean DEBUG = false;
 
     /**
      * Set to true to log IME calls.
