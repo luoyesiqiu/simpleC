@@ -5,7 +5,7 @@
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="editor_dark_mode"
-        android:title="夜间模式" >
+        android:title="暗色主题" >
     </CheckBoxPreference>
     <CheckBoxPreference
         android:defaultValue="true"

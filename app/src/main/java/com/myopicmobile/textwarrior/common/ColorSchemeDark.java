@@ -16,19 +16,16 @@ public class ColorSchemeDark extends ColorScheme {
 		setColor(Colorable.FOREGROUND, OFF_WHITE);
 		setColor(Colorable.BACKGROUND, OFF_BLACK);
 		setColor(Colorable.NON_PRINTING_GLYPH, DARK_GREY);
-		setColor(Colorable.KEYWORD, 0xff6080ff);
+		setColor(Colorable.KEYWORD, 0xff569cd6);
+		setColor(Colorable.STRING, 0xffce9178);
+		setColor(Colorable.NUMBER, 0xffb5cea8);
+		setColor(Colorable.SECONDARY, 0xffce9178);//宏
+		setColor(Colorable.COMMENT, 0xff6a9742);
 	}
 
-	private static final int BEIGE = 0xFFD7BA7D;
 	private static final int DARK_GREY = 0xFF606060;
-	private static final int FLUORESCENT_YELLOW = 0xFFEFF193;
-	private static final int JUNGLE_GREEN = 0xFF608B4E;
-	private static final int LIGHT_GREY = 0xFFD3D3D3;
-	private static final int MARINE = 0xFF569CD6;
-	private static final int OCEAN_BLUE = 0xFF256395;
-	private static final int OFF_BLACK = 0xFF040404;
+	private static final int OFF_BLACK = 0xFF1e1e1e;
 	private static final int OFF_WHITE = 0xFFD0D2D3;
-	private static final int PEACH = 0xFFD69D85;
 
 	@Override
 	public boolean isDark() {
