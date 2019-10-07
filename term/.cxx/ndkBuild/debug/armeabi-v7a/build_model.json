@@ -5,7 +5,6 @@
       "sdkFolder": "d:\\Users\\Administrator\\AppData\\Local\\Android\\sdk",
       "isNativeCompilerSettingsCacheEnabled": false,
       "isBuildOnlyTargetAbiEnabled": true,
-      "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
       "splitsAbiFilterSet": [],
       "intermediatesFolder": "J:\\Documents\\MulCode\\term\\build\\intermediates",
       "gradleModulePathName": ":term",
@@ -43,8 +42,10 @@
     "gradleBuildOutputFolder": "J:\\Documents\\MulCode\\term\\.cxx\\cxx\\debug",
     "isDebuggableEnabled": true,
     "validAbiList": [
+      "ARMEABI_V7A",
       "ARM64_V8A",
-      "ARMEABI_V7A"
+      "X86",
+      "X86_64"
     ],
     "buildTargetSet": []
   },

@@ -1,6 +1,5 @@
 package com.luoye.simpleC.activity;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -9,6 +8,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -39,7 +40,7 @@ import java.util.List;
  * 文件列表
  * Created by zyw on 2017/2/15.
  */
-public class FileListActivity extends Activity {
+public class FileListActivity extends AppCompatActivity {
 
     private Bitmap folderIcon;
     private Bitmap fileIcon;
@@ -53,7 +54,7 @@ public class FileListActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.file_list_layout);
-        ActionBar actionBar=getActionBar();
+        ActionBar actionBar=getSupportActionBar();
         if(actionBar!=null)
             actionBar.setDisplayHomeAsUpEnabled(true);
         if(fileIcon==null)

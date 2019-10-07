@@ -7,5 +7,7 @@
     <style name="AppBaseTheme" parent="@android:style/Theme.DeviceDefault.Light">
         <!-- API 11 theme customizations can go here. -->
     </style>
-
+    <style name="AppBaseDarkTheme" parent="@android:style/Theme.DeviceDefault">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
 </resources>

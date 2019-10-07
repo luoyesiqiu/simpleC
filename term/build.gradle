@@ -5,7 +5,7 @@ android {
     buildToolsVersion '28.0.3'
 
     defaultConfig {
-        minSdkVersion 4
+        minSdkVersion 14
         targetSdkVersion 28
     }
     externalNativeBuild {
@@ -29,4 +29,5 @@ android {
 dependencies {
     api project(':emulatorview')
     api project(':libtermexec')
+    api 'com.android.support:appcompat-v7:28.0.0'
 }

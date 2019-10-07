@@ -16,6 +16,7 @@
 
 package jackpal.androidterm;
 
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 
 import jackpal.androidterm.compat.ActionBarCompat;
@@ -81,7 +82,7 @@ import android.widget.Toast;
  * A terminal emulator activity.
  */
 
-public class Term extends Activity implements UpdateCallback, SharedPreferences.OnSharedPreferenceChangeListener {
+public class Term extends AppCompatActivity implements UpdateCallback, SharedPreferences.OnSharedPreferenceChangeListener {
     /**
      * The ViewFlipper which holds the collection of EmulatorView widgets.
      */
@@ -315,10 +316,10 @@ public class Term extends Activity implements UpdateCallback, SharedPreferences.
             if (AndroidCompat.V11ToV20) {
                 switch (actionBarMode) {
                     case TermSettings.ACTION_BAR_MODE_ALWAYS_VISIBLE:
-                        setTheme(R.style.Theme_Holo);
+                        setTheme(R.style.Theme_AppCompat);
                         break;
                     case TermSettings.ACTION_BAR_MODE_HIDES:
-                        setTheme(R.style.Theme_Holo_ActionBarOverlay);
+                        setTheme(R.style.Theme_AppCompat_NoActionBar);
                         break;
                 }
             }

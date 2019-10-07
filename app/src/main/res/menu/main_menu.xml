@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item
             android:id="@+id/menu_run"
             android:icon="@mipmap/icon_run"
-            android:showAsAction="always"
-            android:title="运行" />
+            android:title="运行"
+            app:showAsAction="always" />
         <item
             android:id="@+id/menu_undo"
             android:icon="@mipmap/undo"
-            android:showAsAction="always"
+            app:showAsAction="always"
             android:title="后退" />
         <item
             android:id="@+id/menu_redo"
             android:icon="@mipmap/redo"
-            android:showAsAction="always"
+            app:showAsAction="always"
             android:title="前进" />
     </group>
     <group>

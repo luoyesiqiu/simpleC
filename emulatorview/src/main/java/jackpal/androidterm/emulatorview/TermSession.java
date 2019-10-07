@@ -593,7 +593,9 @@ public class TermSession {
      * @param count  The length of the data to be written.
      */
     protected final void appendToEmulator(byte[] data, int offset, int count) {
-        Log.d(EmulatorDebug.LOG_TAG, "appendToEmulator:" + "offset:" + offset + ",raw:" + new String(data));
+        if(EmulatorDebug.DEBUG) {
+            Log.d(EmulatorDebug.LOG_TAG, "appendToEmulator:" + "offset:" + offset + ",raw:" + new String(data));
+        }
         mEmulator.append(data, offset, count);
     }
 

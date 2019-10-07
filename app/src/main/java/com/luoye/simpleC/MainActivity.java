@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.*;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.*;
@@ -28,6 +31,7 @@ import com.luoye.simpleC.util.Utils;
 import com.luoye.simpleC.view.SymbolView;
 import com.luoye.simpleC.view.TextEditor;
 import com.myopicmobile.textwarrior.android.RecentFiles;
+import com.myopicmobile.textwarrior.common.ColorSchemeDark;
 import com.myopicmobile.textwarrior.common.ReadThread;
 import com.myopicmobile.textwarrior.common.WriteThread;
 
@@ -42,10 +46,11 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final boolean DEBUG = false;
     private TextEditor editor;
+    private Toolbar toolbar;
     private SharedPreferences sharedPreferences;
     private ProgressDialog progressDialog;
     //SharedPreference
@@ -58,7 +63,7 @@ public class MainActivity extends Activity {
     private static final String KEY_MULTI_COMPILE_FILES_NAME = "multiCompileFilesName";
     private final String GCC_VERSION = "7.2.0";
     private final int MSG_INIT = 0x100;
-    private Setting setting;
+    private Setting settings;
     private SymbolView symbolView;
 
     private RecentFiles recentFiles;
@@ -69,12 +74,17 @@ public class MainActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        log("onCreate");
         super.onCreate(savedInstanceState);
-        editor = new TextEditor(this);
-        setContentView(editor);
+        settings = Setting.getInstance(this);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.main);
+        editor = findViewById(R.id.main_editor);
+        toolbar = findViewById(R.id.main_toolbar);
+        setSupportActionBar(toolbar);
         editor.requestFocus();
-        setting = Setting.getInstance(this);
         sharedPreferences = getSharedPreferences("setting", MODE_PRIVATE);
+
         if (savedInstanceState != null) {
             editor.requestFocus();
 
@@ -90,11 +100,10 @@ public class MainActivity extends Activity {
             isMultiFileCompile = savedInstanceState.getBoolean(KEY_IS_MULTI_COMPILE, false);
         }
         init();
-
     }
 
     private void setSubtitle(String title) {
-        ActionBar actionBar = getActionBar();
+        ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setSubtitle(title);
         }
@@ -102,6 +111,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
         if (editor.getOpenedFile() != null) {
             outState.putString(KEY_FILE_PATH, editor.getOpenedFile().getAbsolutePath());
         }
@@ -115,16 +125,16 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        setting.update();//加载设置
-        editor.setDark(setting.isDarkMode());
+        settings.update();//加载设置
+        editor.setDark(settings.isDarkMode());
         showSymbolView();
-        editor.setAutoCompete(setting.isAutoCompete());
-        editor.setShowLineNumbers(setting.isShowLineNumber());
+        editor.setAutoCompete(settings.isAutoCompete());
+        editor.setShowLineNumbers(settings.isShowLineNumber());
         editor.invalidate();
     }
 
     private void showSymbolView() {
-        if (setting.isShowSymbolView()) {
+        if (settings.isShowSymbolView()) {
             symbolView.setVisible(true);
         } else {
             symbolView.setVisible(false);
@@ -132,7 +142,7 @@ public class MainActivity extends Activity {
     }
 
     private void autoSave() {
-        if (setting.isAutoSave() && editor.getOpenedFile() != null) {
+        if (settings.isAutoSave() && editor.getOpenedFile() != null) {
             editor.save(editor.getOpenedFile().getAbsolutePath());
         }
     }
@@ -575,7 +585,7 @@ public class MainActivity extends Activity {
                             File newFile = new File(f.getAbsolutePath() + File.separator + editText.getText());
                             //没有设置后缀名,自动设置
                             if (!newFile.getAbsolutePath().contains(".")) {
-                                if (setting.isGccCompile()) {
+                                if (settings.isGccCompile()) {
                                     newFile = new File(f.getAbsolutePath() + File.separator + editText.getText() + ".c");
                                 } else {
                                     newFile = new File(f.getAbsolutePath() + File.separator + editText.getText() + ".cpp");
@@ -616,7 +626,7 @@ public class MainActivity extends Activity {
      * @param files
      */
     private void compile(final File[] files) {
-        final boolean gccCompile = setting.isGccCompile();
+        final boolean gccCompile = settings.isGccCompile();
         final ProgressDialog compileDialog = ProgressDialog.show(this, "", "正在编译...", false, false);
         compileDialog.show();
         //thread

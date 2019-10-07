@@ -49,7 +49,9 @@ public class ShellTermSession extends GenericTermSession {
                 return;
             }
             if (msg.what == PROCESS_EXITED) {
-                Log.d(TermDebug.LOG_TAG,"PROCESS_EXITED");
+                if(TermDebug.DEBUG) {
+                    Log.d(TermDebug.LOG_TAG, "PROCESS_EXITED");
+                }
                 onProcessExit((Integer) msg.obj);
             }
         }

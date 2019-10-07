@@ -7,8 +7,8 @@ android {
         applicationId "com.luoye.simpleC"
         minSdkVersion 21
         targetSdkVersion 28
-        versionName "1.2.30"
-        versionCode 31
+        versionName "1.2.31"
+        versionCode 32
     }
 
     buildTypes {
@@ -27,4 +27,5 @@ dependencies {
     implementation project(path: ':libtermexec')
     implementation project(path: ':emulatorview')
     implementation project(path: ':term')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }

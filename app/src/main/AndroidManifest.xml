@@ -65,7 +65,6 @@
             </intent-filter>
         </activity-alias>
         <activity android:name="jackpal.androidterm.RunScript"
-            android:theme="@style/AppDarkTheme"
             android:excludeFromRecents="true"
             android:permission="jackpal.androidterm.permission.RUN_SCRIPT">
             <intent-filter>
