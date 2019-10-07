@@ -1,3 +1,1 @@
-[armeabi-v7a] Compile++ thumb: exec <= process.cpp
-[armeabi-v7a] StaticLibrary  : libstdc++.a
-[armeabi-v7a] SharedLibrary  : libexec.so
+make: Nothing to be done for `exec'.

@@ -1,3 +1,1 @@
-[x86_64] Compile++      : exec <= process.cpp
-[x86_64] StaticLibrary  : libstdc++.a
-[x86_64] SharedLibrary  : libexec.so
+make: Nothing to be done for `exec'.

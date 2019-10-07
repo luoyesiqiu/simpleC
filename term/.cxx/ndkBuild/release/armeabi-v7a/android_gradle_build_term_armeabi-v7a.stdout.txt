@@ -1,5 +1,1 @@
-[armeabi-v7a] Compile++ thumb: term <= common.cpp
-[armeabi-v7a] Compile++ thumb: term <= fileCompat.cpp
-[armeabi-v7a] Compile++ thumb: term <= termExec.cpp
-[armeabi-v7a] StaticLibrary  : libstdc++.a
-[armeabi-v7a] SharedLibrary  : libterm.so
+make: Nothing to be done for `term'.

@@ -8,6 +8,8 @@ simpleC的目的是给那些不方便使用PC的C/C++开发者一个简单的开
 
 <img src="/screenshot/editor.png" alt="编辑器" width="50%" height="50%" />
 
+<img src="/screenshot/editor_dark.png" alt="暗黑主题" width="50%" height="50%" />
+
 <img src="/screenshot/console.png" alt="控制台" width="50%" height="50%" />
 
 <img src="/screenshot/setting.png" alt="设置" width="50%" height="50%" />
