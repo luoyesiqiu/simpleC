@@ -16,10 +16,12 @@
 
 package jackpal.androidterm;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 
-import jackpal.androidterm.compat.ActionBarCompat;
 import jackpal.androidterm.compat.ActivityCompat;
 import jackpal.androidterm.compat.AndroidCompat;
 import jackpal.androidterm.compat.MenuItemCompat;
@@ -38,7 +40,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
@@ -125,6 +126,7 @@ public class Term extends AppCompatActivity implements UpdateCallback, SharedPre
     private static final String PERMISSION_PATH_BROADCAST = "jackpal.androidterm.permission.APPEND_TO_PATH";
     private static final String PERMISSION_PATH_PREPEND_BROADCAST = "jackpal.androidterm.permission.PREPEND_TO_PATH";
     private int mPendingPathBroadcasts = 0;
+
     private BroadcastReceiver mPathReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
             String path = makePathFromBundle(getResultExtras(false));
@@ -163,7 +165,6 @@ public class Term extends AppCompatActivity implements UpdateCallback, SharedPre
         }
     };
 
-    private ActionBarCompat mActionBar;
     private int mActionBarMode = TermSettings.ACTION_BAR_MODE_NONE;
 
     //private WindowListAdapter mWinListAdapter;
@@ -267,7 +268,7 @@ public class Term extends AppCompatActivity implements UpdateCallback, SharedPre
          * Make sure the back button always leaves the application.
          */
         private boolean backkeyInterceptor(int keyCode, KeyEvent event) {
-            if (keyCode == KeyEvent.KEYCODE_BACK && mActionBarMode == TermSettings.ACTION_BAR_MODE_HIDES && mActionBar != null && mActionBar.isShowing()) {
+            if (keyCode == KeyEvent.KEYCODE_BACK && mActionBarMode == TermSettings.ACTION_BAR_MODE_HIDES ) {
                 /* We need to intercept the key event before the view sees it,
                    otherwise the view will handle it before we get it */
                 onKeyUp(keyCode, event);
@@ -328,6 +329,9 @@ public class Term extends AppCompatActivity implements UpdateCallback, SharedPre
         }
 
         setContentView(R.layout.term_activity);
+        Toolbar toolbar = findViewById(R.id.main_toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_back);
+        setSupportActionBar(toolbar);
         mViewFlipper = (TermViewFlipper) findViewById(VIEW_FLIPPER);
 
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
@@ -339,15 +343,9 @@ public class Term extends AppCompatActivity implements UpdateCallback, SharedPre
         }
         mWifiLock = wm.createWifiLock(wifiLockMode, TermDebug.LOG_TAG);
 
-        ActionBarCompat actionBar = ActivityCompat.getActionBar(this);
+        ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
-            mActionBar = actionBar;
-            //actionBar.setNavigationMode(ActionBarCompat.NAVIGATION_MODE_LIST);
             actionBar.setTitle(getResources().getString(R.string.application_terminal));
-            //actionBar.setDisplayOptions(0, ActionBarCompat.DISPLAY_SHOW_TITLE);
-            if (mActionBarMode == TermSettings.ACTION_BAR_MODE_HIDES) {
-                actionBar.hide();
-            }
         }
 
         mHaveFullHwKeyboard = checkHaveFullHwKeyboard(getResources().getConfiguration());
@@ -525,11 +523,6 @@ public class Term extends AppCompatActivity implements UpdateCallback, SharedPre
                     restart();
                 } else {
                     win.setFlags(desiredFlag, FULLSCREEN);
-                    if (mActionBarMode == TermSettings.ACTION_BAR_MODE_HIDES) {
-                        if (mActionBar != null) {
-                            mActionBar.hide();
-                        }
-                    }
                 }
             }
         }
@@ -616,7 +609,10 @@ public class Term extends AppCompatActivity implements UpdateCallback, SharedPre
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.menu_preferences) {
+        if(id == android.R.id.home){
+            doCloseWindow();
+        }
+        else if (id == R.id.menu_preferences) {
             doPreferences();
         }
         else if (id == R.id.menu_reset) {
@@ -817,8 +813,7 @@ public class Term extends AppCompatActivity implements UpdateCallback, SharedPre
                     }
                     mBackKeyPressed = false;
                 }
-                if (mActionBarMode == TermSettings.ACTION_BAR_MODE_HIDES && mActionBar != null && mActionBar.isShowing()) {
-                    mActionBar.hide();
+                if (mActionBarMode == TermSettings.ACTION_BAR_MODE_HIDES ) {
                     return true;
                 }
                 switch (mSettings.getBackKeyAction()) {
@@ -832,13 +827,6 @@ public class Term extends AppCompatActivity implements UpdateCallback, SharedPre
                         return true;
                     default:
                         return false;
-                }
-            case KeyEvent.KEYCODE_MENU:
-                if (mActionBar != null && !mActionBar.isShowing()) {
-                    mActionBar.show();
-                    return true;
-                } else {
-                    return super.onKeyUp(keyCode, event);
                 }
             default:
                 return super.onKeyUp(keyCode, event);
@@ -1007,15 +995,6 @@ public class Term extends AppCompatActivity implements UpdateCallback, SharedPre
     }
 
     private void doToggleActionBar() {
-        ActionBarCompat bar = mActionBar;
-        if (bar == null) {
-            return;
-        }
-        if (bar.isShowing()) {
-            bar.hide();
-        } else {
-            bar.show();
-        }
     }
 
     private void doUIToggle(int x, int y, int width, int height) {

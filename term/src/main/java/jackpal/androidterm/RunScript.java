@@ -28,10 +28,10 @@ import android.util.Log;
  * The old procedure of using Intent.Extra is still available but is discouraged.
  */
 public final class RunScript extends RemoteInterface {
-    public static final String ACTION_RUN_SCRIPT = "jackpal.androidterm.RUN_SCRIPT";
+    public static final String ACTION_RUN_SCRIPT = "jackpal.term.RUN_SCRIPT";
 
-    private static final String EXTRA_WINDOW_HANDLE = "jackpal.androidterm.window_handle";
-    public static final String EXTRA_INITIAL_COMMAND = "jackpal.androidterm.iInitialCommand";
+    private static final String EXTRA_WINDOW_HANDLE = "jackpal.term.window_handle";
+    public static final String EXTRA_INITIAL_COMMAND = "jackpal.term.iInitialCommand";
 
     @Override
     protected void handleIntent() {

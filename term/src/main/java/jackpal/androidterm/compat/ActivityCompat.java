@@ -16,6 +16,7 @@
 
 package jackpal.androidterm.compat;
 
+import android.app.ActionBar;
 import android.app.Activity;
 
 /**
@@ -38,10 +39,10 @@ public class ActivityCompat {
         }
     }
 
-    public static ActionBarCompat getActionBar(Activity activity) {
+    public static ActionBar getActionBar(Activity activity) {
         if (AndroidCompat.SDK < 11) {
             return null;
         }
-        return ActionBarCompat.wrap(Api11OrLater.getActionBar(activity));
+        return activity.getActionBar();
     }
 }

@@ -67,10 +67,8 @@ import android.view.inputmethod.BaseInputConnection;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
-import android.webkit.WebView;
 import android.widget.Scroller;
 
-import com.luoye.simpleC.util.Setting;
 import com.myopicmobile.textwarrior.common.ColorScheme;
 import com.myopicmobile.textwarrior.common.ColorScheme.Colorable;
 import com.myopicmobile.textwarrior.common.ColorSchemeLight;
@@ -82,13 +80,8 @@ import com.myopicmobile.textwarrior.common.Pair;
 import com.myopicmobile.textwarrior.common.RowListener;
 import com.myopicmobile.textwarrior.common.TextWarriorException;
 
-import android.widget.*;
-import android.view.*;
-
 import com.myopicmobile.textwarrior.common.*;
 
-import android.graphics.*;
-import android.os.*;
 import android.view.animation.*;
 
 /**

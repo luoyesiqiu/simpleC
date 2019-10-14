@@ -1,0 +1,13 @@
+<resources>
+    <style name="AppBaseDarkTheme" parent="Theme.AppCompat.DayNight">
+        <item name="colorControlNormal">@color/WHITE</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/BLACK</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

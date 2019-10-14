@@ -1,12 +1,10 @@
 package com.luoye.simpleC.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,7 +24,6 @@ import com.luoye.simpleC.view.MdWebView;
  * Created by zyw on 2017/8/10.
  */
 public class HelpActivity extends AppCompatActivity {
-
     private MdWebView mdWebView;
     private ProgressBar progressBar;
 
@@ -34,7 +31,12 @@ public class HelpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         // TODO: Implement this method
         super.onCreate(savedInstanceState);
+        //supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.preview_compose);
+
+        Toolbar toolbar = findViewById(R.id.main_toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_back);
         mdWebView = (MdWebView) findViewById(R.id.previewmdWebView1);
         progressBar = (ProgressBar) findViewById(R.id.webview_progressBar);
 
@@ -68,10 +70,6 @@ public class HelpActivity extends AppCompatActivity {
         sb.append("</html>");
         mdWebView.loadData(sb.toString());
 
-        ActionBar actionBar = getSupportActionBar();
-
-        if (actionBar != null)
-            actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     private class MyWebViewDownLoadListener implements DownloadListener {

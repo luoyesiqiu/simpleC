@@ -24,10 +24,10 @@ import android.content.Intent;
 import android.util.Log;
 
 public final class RunShortcut extends RemoteInterface {
-    public static final String ACTION_RUN_SHORTCUT = "jackpal.androidterm.RUN_SHORTCUT";
+    public static final String ACTION_RUN_SHORTCUT = "jackpal.term.RUN_SHORTCUT";
 
-    public static final String EXTRA_WINDOW_HANDLE = "jackpal.androidterm.window_handle";
-    public static final String EXTRA_SHORTCUT_COMMAND = "jackpal.androidterm.iShortcutCommand";
+    public static final String EXTRA_WINDOW_HANDLE = "jackpal.term.window_handle";
+    public static final String EXTRA_SHORTCUT_COMMAND = "jackpal.term.iShortcutCommand";
 
     @Override
     protected void handleIntent() {

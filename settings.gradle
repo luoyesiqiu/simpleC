@@ -1,1 +1,1 @@
-include ':app', ':libtermexec', ':emulatorview', ':term'
+include ':app', ':libtermexec', ':emulatorview', ':term', ':resource'

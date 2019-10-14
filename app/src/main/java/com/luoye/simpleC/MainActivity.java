@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.os.*;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
@@ -21,17 +22,16 @@ import com.luoye.simpleC.activity.SettingActivity;
 import com.luoye.simpleC.interfaces.CompileCallback;
 import com.luoye.simpleC.interfaces.ExecCallback;
 import com.luoye.simpleC.interfaces.UnzipCallback;
+import com.luoye.simpleC.resource.util.Setting;
 import com.luoye.simpleC.util.CFileNameFilter;
 import com.luoye.simpleC.util.ConstantPool;
 import com.luoye.simpleC.util.IO;
 import com.luoye.simpleC.util.PermissionHelper;
-import com.luoye.simpleC.util.Setting;
 import com.luoye.simpleC.util.ShellUtils;
 import com.luoye.simpleC.util.Utils;
 import com.luoye.simpleC.view.SymbolView;
 import com.luoye.simpleC.view.TextEditor;
 import com.myopicmobile.textwarrior.android.RecentFiles;
-import com.myopicmobile.textwarrior.common.ColorSchemeDark;
 import com.myopicmobile.textwarrior.common.ReadThread;
 import com.myopicmobile.textwarrior.common.WriteThread;
 
@@ -77,14 +77,18 @@ public class MainActivity extends AppCompatActivity {
         log("onCreate");
         super.onCreate(savedInstanceState);
         settings = Setting.getInstance(this);
-        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
         editor = findViewById(R.id.main_editor);
         toolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
         editor.requestFocus();
         sharedPreferences = getSharedPreferences("setting", MODE_PRIVATE);
-
+        if(settings.isDarkMode()) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        }
+        else{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
         if (savedInstanceState != null) {
             editor.requestFocus();
 
@@ -131,6 +135,14 @@ public class MainActivity extends AppCompatActivity {
         editor.setAutoCompete(settings.isAutoCompete());
         editor.setShowLineNumbers(settings.isShowLineNumber());
         editor.invalidate();
+        if(settings.isDarkMode()) {
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            symbolView.useNightTheme(true);
+        }
+        else{
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            symbolView.useNightTheme(false);
+        }
     }
 
     private void showSymbolView() {
@@ -231,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
         editor.addNames(cppHeader.toArray(arr2));
 
         View rootView = getWindow().getDecorView();
-        symbolView = new SymbolView(MainActivity.this, rootView);
+        symbolView = SymbolView.getInstance(this,rootView);
         symbolView.setOnSymbolViewClick(new SymbolView.OnSymbolViewClick() {
             @Override
             public void onClick(View view, String text) {

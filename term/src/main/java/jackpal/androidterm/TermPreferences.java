@@ -16,13 +16,15 @@
 
 package jackpal.androidterm;
 
-import jackpal.androidterm.compat.ActionBarCompat;
 import jackpal.androidterm.compat.ActivityCompat;
 import jackpal.androidterm.compat.AndroidCompat;
+
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 public class TermPreferences extends PreferenceActivity {
@@ -32,7 +34,6 @@ public class TermPreferences extends PreferenceActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.preferences);
 
@@ -48,9 +49,9 @@ public class TermPreferences extends PreferenceActivity {
 
         // Display up indicator on action bar home button
         if (AndroidCompat.V11ToV20) {
-            ActionBarCompat bar = ActivityCompat.getActionBar(this);
+            ActionBar bar = getActionBar();
             if (bar != null) {
-                bar.setDisplayOptions(ActionBarCompat.DISPLAY_HOME_AS_UP, ActionBarCompat.DISPLAY_HOME_AS_UP);
+
             }
         }
     }
@@ -58,7 +59,7 @@ public class TermPreferences extends PreferenceActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-        case ActionBarCompat.ID_HOME:
+        case android.R.id.home:
             // Action bar home button selected
             finish();
             return true;

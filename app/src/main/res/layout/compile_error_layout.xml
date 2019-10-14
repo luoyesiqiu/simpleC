@@ -5,7 +5,6 @@
 	android:layout_height="fill_parent"
 	android:layout_gravity="center"
 	android:orientation="vertical">
-
 	<TextView
 		android:layout_margin="10dp"
 		android:layout_height="wrap_content"
@@ -13,6 +12,5 @@
 		android:textAppearance="?android:textAppearanceMedium"
 		android:textIsSelectable="true"
 		android:id="@+id/console_msg"/>
-
 </LinearLayout>
 

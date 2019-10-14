@@ -1,8 +1,7 @@
-package com.luoye.simpleC.util;
+package com.luoye.simpleC.resource.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.Preference;
 import android.preference.PreferenceManager;
 
 /**
@@ -67,14 +66,14 @@ public class Setting {
     private boolean showSymbolView;
     private  Setting()
     {
+        update();
     }
-    public static Setting getInstance(Context context)
-    {
+    public static Setting getInstance(Context context) {
+        sharedPreferences= PreferenceManager.getDefaultSharedPreferences(context);
         if(setting==null)
         {
             setting=new Setting();
         }
-       sharedPreferences= PreferenceManager.getDefaultSharedPreferences(context);
         return  setting;
     }
 

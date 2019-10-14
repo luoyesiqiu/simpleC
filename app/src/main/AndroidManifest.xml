@@ -7,6 +7,7 @@
 
     <application
         android:allowBackup="false"
+        android:name=".ThisApplication"
         android:theme="@style/AppTheme"
         android:icon="@mipmap/icon"
         android:label="@string/app_name" >
@@ -29,11 +30,10 @@
             </intent-filter >
         </activity>
         <activity android:name=".activity.FileListActivity"></activity>
-        <activity android:name=".activity.SettingActivity" android:label="@string/action_settings"></activity>
-        <activity android:name=".activity.HelpActivity"
+        <activity android:name=".activity.SettingActivity" android:label="@string/app_setting"></activity>
+        <activity android:name=".activity.HelpActivity" android:label="@string/help"
             android:launchMode="singleTask"
-            android:taskAffinity="com.luoye.simpleC.activity"
-            android:label="@string/help"/>
+            android:taskAffinity="com.luoye.simpleC.activity"/>
         <!--Term-->
         <activity android:name="jackpal.androidterm.Term"
             android:launchMode="singleTask"
@@ -48,7 +48,7 @@
         <activity android:name="jackpal.androidterm.RemoteInterface"
             android:excludeFromRecents="true">
             <intent-filter>
-                <action android:name="jackpal.androidterm.OPEN_NEW_WINDOW" />
+                <action android:name="jackpal.term.OPEN_NEW_WINDOW" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -56,19 +56,19 @@
             android:targetActivity="jackpal.androidterm.Term"
             android:exported="false">
             <intent-filter>
-                <action android:name="jackpal.androidterm.private.OPEN_NEW_WINDOW" />
+                <action android:name="jackpal.term.private.OPEN_NEW_WINDOW" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
-                <action android:name="jackpal.androidterm.private.SWITCH_WINDOW" />
+                <action android:name="jackpal.term.private.SWITCH_WINDOW" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity-alias>
         <activity android:name="jackpal.androidterm.RunScript"
             android:excludeFromRecents="true"
-            android:permission="jackpal.androidterm.permission.RUN_SCRIPT">
+            android:permission="jackpal.term.permission.RUN_SCRIPT">
             <intent-filter>
-                <action android:name="jackpal.androidterm.RUN_SCRIPT" />
+                <action android:name="jackpal.term.RUN_SCRIPT" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -77,7 +77,7 @@
         </activity>
         <service android:name="jackpal.androidterm.TermService" >
             <intent-filter>
-                <action android:name="jackpal.androidterm.action.START_TERM.v1"/>
+                <action android:name="jackpal.term.action.START_TERM.v1"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </service>

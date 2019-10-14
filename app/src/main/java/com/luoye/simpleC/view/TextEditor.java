@@ -8,7 +8,6 @@ import android.util.*;
 import android.view.*;
 import android.widget.*;
 
-import com.luoye.simpleC.util.Setting;
 import com.myopicmobile.textwarrior.android.*;
 import com.myopicmobile.textwarrior.common.*;
 import java.io.*;

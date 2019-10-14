@@ -523,35 +523,20 @@ public class TermSession {
      * @param offset The offset into the buffer where the read data begins.
      * @param count  The number of bytes read.
      */
-
+    private int index = 0;
     protected void processInput(byte[] data, int offset, int count) {
         //luoye modified
         printHexTable(EmulatorDebug.DEBUG, data);
-        clearFirstLine(data);
+        if (index ==0 ) {
+            index++;
+            for(int i = 0;i<data.length;i++){
+                data[i] = 0;
+            }
+        }
         if (EmulatorDebug.DEBUG) {
-            Log.d(EmulatorDebug.LOG_TAG, "offset:" + offset + ",count:" + count);
+            Log.d(EmulatorDebug.LOG_TAG, "processInput offset:" + offset + ",count:" + count);
         }
         mEmulator.append(data, offset, count);
-    }
-
-    /**
-     * Clear first line.
-     * @author luoye
-     * @param data
-     */
-    boolean clear = false;
-    private void clearFirstLine(byte[] data){
-        if(!clear) {
-            for (int i = 2; i < data.length; i++) {
-                if (data[i - 2] == (byte) 0xd && data[i - 1] == (byte) 0xd && data[i] == (byte) 0xa) {
-                    for (int ii = i; ii >= 0; ii--) {
-                        data[ii] = 0;
-                    }
-                    break;
-                }
-            }
-            clear = true;
-        }
     }
 
     private void printHexTable(boolean debug, byte[] data) {
@@ -593,7 +578,7 @@ public class TermSession {
      * @param count  The length of the data to be written.
      */
     protected final void appendToEmulator(byte[] data, int offset, int count) {
-        if(EmulatorDebug.DEBUG) {
+        if (EmulatorDebug.DEBUG) {
             Log.d(EmulatorDebug.LOG_TAG, "appendToEmulator:" + "offset:" + offset + ",raw:" + new String(data));
         }
         mEmulator.append(data, offset, count);

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="jackpal.androidterm">
-    <permission android:name="jackpal.androidterm.permission.RUN_SCRIPT"
+    <permission android:name="jackpal.term.permission.RUN_SCRIPT"
                 android:label="@string/perm_run_script"
                 android:description="@string/permdesc_run_script"
                 android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
                 android:protectionLevel="dangerous" />
-    <permission android:name="jackpal.androidterm.permission.APPEND_TO_PATH"
+    <permission android:name="jackpal.term.permission.APPEND_TO_PATH"
                 android:label="@string/perm_append_to_path"
                 android:description="@string/permdesc_append_to_path"
                 android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
                 android:protectionLevel="dangerous" />
-    <permission android:name="jackpal.androidterm.permission.PREPEND_TO_PATH"
+    <permission android:name="jackpal.term.permission.PREPEND_TO_PATH"
                 android:label="@string/perm_prepend_to_path"
                 android:description="@string/permdesc_prepend_to_path"
                 android:permissionGroup="android.permission-group.SYSTEM_TOOLS"

@@ -37,12 +37,12 @@ import jackpal.androidterm.util.SessionList;
 import jackpal.androidterm.util.TermSettings;
 
 public class RemoteInterface extends Activity {
-    protected static final String PRIVACT_OPEN_NEW_WINDOW = "jackpal.androidterm.private.OPEN_NEW_WINDOW";
-    protected static final String PRIVACT_SWITCH_WINDOW = "jackpal.androidterm.private.SWITCH_WINDOW";
+    protected static final String PRIVACT_OPEN_NEW_WINDOW = "jackpal.term.private.OPEN_NEW_WINDOW";
+    protected static final String PRIVACT_SWITCH_WINDOW = "jackpal.term.private.SWITCH_WINDOW";
 
-    protected static final String PRIVEXTRA_TARGET_WINDOW = "jackpal.androidterm.private.target_window";
+    protected static final String PRIVEXTRA_TARGET_WINDOW = "jackpal.term.private.target_window";
 
-    protected static final String PRIVACT_ACTIVITY_ALIAS = "jackpal.androidterm.TermInternal";
+    protected static final String PRIVACT_ACTIVITY_ALIAS = "jackpal.term.TermInternal";
 
     private TermSettings mSettings;
 
@@ -155,7 +155,7 @@ public class RemoteInterface extends Activity {
             if (initialCommand != null) {
                 //luoye modified
                 //initialCommand += "\r" + iInitialCommand;
-                initialCommand += "" + iInitialCommand;
+                initialCommand += "\r" + iInitialCommand;
 
             } else {
                 initialCommand = iInitialCommand;

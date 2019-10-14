@@ -1,6 +1,5 @@
 package com.luoye.simpleC.activity;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -8,15 +7,14 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -54,9 +52,11 @@ public class FileListActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.file_list_layout);
-        ActionBar actionBar=getSupportActionBar();
-        if(actionBar!=null)
-            actionBar.setDisplayHomeAsUpEnabled(true);
+        Toolbar toolbar = findViewById(R.id.main_toolbar);
+
+        setSupportActionBar(toolbar);
+
+        toolbar.setNavigationIcon(R.drawable.ic_back);
         if(fileIcon==null)
         {
             fileIcon=BitmapFactory.decodeResource(getResources(), R.mipmap.file);

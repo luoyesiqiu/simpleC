@@ -15,6 +15,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.luoye.simpleC.R;
+import com.luoye.simpleC.resource.util.Setting;
 import com.luoye.simpleC.util.Utils;
 
 /**
@@ -23,7 +24,7 @@ import com.luoye.simpleC.util.Utils;
 public class SymbolView {
     private final int TILE_WIDTH = 60;
     private final String symbol = "→{}();,=\"|'&![]<>+-\\/*.%~?#$@:_";
-    public static  final  String TAB_SYMBOL = "-->";
+    public static final String TAB_SYMBOL = "-->";
     private LinearLayout linearLayout;
     private PopupWindow popupWindow;
     private View rootView;
@@ -33,26 +34,37 @@ public class SymbolView {
     private boolean isFirst = true;
     private int maxLayoutHeight = 0;//布局总长
     private int currentLayoutHeight = 0;//当前布局高
+    private static SymbolView thiz;
+    private View symbolView;
+    private TextView[] textViewList;
+
+    public static SymbolView getInstance(Context context, final View rootView) {
+        if (thiz == null) {
+            thiz = new SymbolView(context, rootView);
+        }
+        return thiz;
+    }
 
     public SymbolView(Context context, final View rootView) {
         this.rootView = rootView;
         popupWindow = new PopupWindow(context);
         inputMethodManager = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
-        View view = LayoutInflater.from(context).inflate(R.layout.symbol_view, null);
-        linearLayout = (LinearLayout) view.findViewById(R.id.linear_container);
+        symbolView = LayoutInflater.from(context).inflate(R.layout.symbol_view, null);
+        linearLayout = (LinearLayout) symbolView.findViewById(R.id.linear_container);
         final float[] tempPoint = new float[2];
+        textViewList = new TextView[symbol.length()];
         for (int i = 0; i < symbol.length(); i++) {
-            TextView textView = new TextView(context);
-            textView.setGravity(Gravity.CENTER);
+            textViewList[i] = new TextView(context);
+            textViewList[i].setGravity(Gravity.CENTER);
             if (i == 0) {
-                textView.setText(TAB_SYMBOL);
+                textViewList[i].setText(TAB_SYMBOL);
             } else {
-                textView.setText(String.valueOf(symbol.charAt(i)));
+                textViewList[i].setText(String.valueOf(symbol.charAt(i)));
             }
-            textView.setClickable(true);
-            textView.setTextSize(25);
-            textView.setMinWidth(TILE_WIDTH);
-            textView.setOnTouchListener(new View.OnTouchListener() {
+            textViewList[i].setClickable(true);
+            textViewList[i].setTextSize(25);
+            textViewList[i].setMinWidth(TILE_WIDTH);
+            textViewList[i].setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
                     int color = v.getDrawingCacheBackgroundColor();
@@ -77,15 +89,20 @@ public class SymbolView {
             });
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 
-            linearLayout.addView(textView, layoutParams);
+            linearLayout.addView(textViewList[i], layoutParams);
 
         }
         popupWindow.setWidth(LinearLayout.LayoutParams.MATCH_PARENT);
         popupWindow.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
         popupWindow.getBackground().setAlpha(0);//窗口完全透明
-        view.setBackgroundColor(Color.argb(0xee, 0xff, 0xff, 0xff));//视图不完全透明
+        Setting setting = Setting.getInstance(context);
+        if (setting.isDarkMode()) {
+            symbolView.setBackgroundColor(Color.argb(0xee, 0x0, 0x0, 0x0));//视图不完全透明
+        } else {
+            symbolView.setBackgroundColor(Color.argb(0xee, 0xff, 0xff, 0xff));//视图不完全透明
+        }
 
-        popupWindow.setContentView(view);
+        popupWindow.setContentView(symbolView);
         rootView.getViewTreeObserver().addOnGlobalLayoutListener(
                 new ViewTreeObserver.OnGlobalLayoutListener() {
                     @Override
@@ -107,6 +124,25 @@ public class SymbolView {
                 });
     }
 
+    public void useNightTheme(boolean night) {
+        if (symbolView == null) {
+            return;
+        }
+        if (night) {
+            symbolView.setBackgroundColor(Color.argb(0xee, 0x0, 0x0, 0x0));//视图不完全透明
+            for (TextView textView : textViewList) {
+                if (textView == null) continue;
+                textView.setTextColor(0xffffffff);
+            }
+        } else {
+            symbolView.setBackgroundColor(Color.argb(0xee, 0xff, 0xff, 0xff));//视图不完全透明
+            for (TextView textView : textViewList) {
+                if (textView == null) continue;
+                textView.setTextColor(0xff000000);
+            }
+        }
+    }
+
     public void setVisible(boolean visible) {
         this.visible = visible;
     }
@@ -115,7 +151,7 @@ public class SymbolView {
         popupWindow.showAtLocation(rootView, Gravity.BOTTOM, 0, bottom);
     }
 
-    private void hide() {
+    public void hide() {
         popupWindow.dismiss();
     }
 

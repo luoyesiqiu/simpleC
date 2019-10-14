@@ -46,7 +46,7 @@ public class Utils {
         File f = context.getFilesDir();
         String binPath =  f.getAbsolutePath() + File.separator + ConstantPool.TEMP_BIN_NAME;
         final StringBuilder sh = new StringBuilder();
-        sh.append(""+binPath+";exit\n");
+        sh.append(""+binPath+";exit");
         Intent intent = new Intent(context, RunScript.class);
         intent.putExtra(RunScript.EXTRA_INITIAL_COMMAND,sh.toString());
         //intent.setData(Uri.fromFile(shFile));
