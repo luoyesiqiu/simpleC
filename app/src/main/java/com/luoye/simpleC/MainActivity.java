@@ -49,7 +49,7 @@ import java.util.regex.Pattern;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final boolean DEBUG = false;
-    private TextEditor editor;
+    private TextEditor mEditor;
     private Toolbar toolbar;
     private SharedPreferences sharedPreferences;
     private ProgressDialog progressDialog;
@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
     private static final String KEY_MULTI_COMPILE_FILES_NAME = "multiCompileFilesName";
     private final String GCC_VERSION = "7.2.0";
     private final int MSG_INIT = 0x100;
-    private Setting settings;
-    private SymbolView symbolView;
+    private Setting mSettings;
+    private SymbolView mSymbolView;
 
     private RecentFiles recentFiles;
 
@@ -76,29 +76,29 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         log("onCreate");
         super.onCreate(savedInstanceState);
-        settings = Setting.getInstance(this);
+        mSettings = Setting.getInstance(this);
         setContentView(R.layout.main);
-        editor = findViewById(R.id.main_editor);
+        mEditor = findViewById(R.id.main_editor);
         toolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
-        editor.requestFocus();
+        mEditor.requestFocus();
         sharedPreferences = getSharedPreferences("setting", MODE_PRIVATE);
-        if(settings.isDarkMode()) {
+        if(mSettings.isDarkMode()) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         }
         else{
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         }
         if (savedInstanceState != null) {
-            editor.requestFocus();
+            mEditor.requestFocus();
 
             String openedFilePath = savedInstanceState.getString(KEY_FILE_PATH, "");
             if (!openedFilePath.equals("")) {
-                editor.open(openedFilePath);
+                mEditor.open(openedFilePath);
                 setSubtitle(new File(openedFilePath).getName());
             } else {
                 //没有打开文件时
-                editor.setText(savedInstanceState.getString(KEY_FILE_CONTENT, ""));
+                mEditor.setText(savedInstanceState.getString(KEY_FILE_CONTENT, ""));
             }
             multiFilesName = savedInstanceState.getString(KEY_MULTI_COMPILE_FILES_NAME, "");
             isMultiFileCompile = savedInstanceState.getBoolean(KEY_IS_MULTI_COMPILE, false);
@@ -116,11 +116,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        if (editor.getOpenedFile() != null) {
-            outState.putString(KEY_FILE_PATH, editor.getOpenedFile().getAbsolutePath());
+        if (mEditor.getOpenedFile() != null) {
+            outState.putString(KEY_FILE_PATH, mEditor.getOpenedFile().getAbsolutePath());
         }
-        if (!editor.getText().toString().equals("")) {
-            outState.putString(KEY_FILE_CONTENT, editor.getText().toString());
+        if (!mEditor.getText().toString().equals("")) {
+            outState.putString(KEY_FILE_CONTENT, mEditor.getText().toString());
         }
         outState.putBoolean(KEY_IS_MULTI_COMPILE, isMultiFileCompile);
         outState.putString(KEY_MULTI_COMPILE_FILES_NAME, multiFilesName);
@@ -129,33 +129,33 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        settings.update();//加载设置
-        editor.setDark(settings.isDarkMode());
+        mSettings.update();//加载设置
+        mEditor.setDark(mSettings.isDarkMode());
         showSymbolView();
-        editor.setAutoCompete(settings.isAutoCompete());
-        editor.setShowLineNumbers(settings.isShowLineNumber());
-        editor.invalidate();
-        if(settings.isDarkMode()) {
+        mEditor.setAutoCompete(mSettings.isAutoCompete());
+        mEditor.setShowLineNumbers(mSettings.isShowLineNumber());
+        mEditor.invalidate();
+        if(mSettings.isDarkMode()) {
             getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            symbolView.useNightTheme(true);
+            mSymbolView.useNightTheme(true);
         }
         else{
             getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-            symbolView.useNightTheme(false);
+            mSymbolView.useNightTheme(false);
         }
     }
 
     private void showSymbolView() {
-        if (settings.isShowSymbolView()) {
-            symbolView.setVisible(true);
+        if (mSettings.isShowSymbolView()) {
+            mSymbolView.setVisible(true);
         } else {
-            symbolView.setVisible(false);
+            mSymbolView.setVisible(false);
         }
     }
 
     private void autoSave() {
-        if (settings.isAutoSave() && editor.getOpenedFile() != null) {
-            editor.save(editor.getOpenedFile().getAbsolutePath());
+        if (mSettings.isAutoSave() && mEditor.getOpenedFile() != null) {
+            mEditor.save(mEditor.getOpenedFile().getAbsolutePath());
         }
     }
 
@@ -236,21 +236,21 @@ public class MainActivity extends AppCompatActivity {
         //加载头文件名
         ArrayList<String> cHeader = Utils.getCHeader(MainActivity.this);
         String[] arr1 = new String[cHeader.size()];
-        editor.addNames(cHeader.toArray(arr1));
+        mEditor.addNames(cHeader.toArray(arr1));
 
         ArrayList<String> cppHeader = Utils.getCppHeader(MainActivity.this);
         String[] arr2 = new String[cppHeader.size()];
-        editor.addNames(cppHeader.toArray(arr2));
+        mEditor.addNames(cppHeader.toArray(arr2));
 
         View rootView = getWindow().getDecorView();
-        symbolView = SymbolView.getInstance(this,rootView);
-        symbolView.setOnSymbolViewClick(new SymbolView.OnSymbolViewClick() {
+        mSymbolView = SymbolView.getInstance(this,rootView);
+        mSymbolView.setOnSymbolViewClick(new SymbolView.OnSymbolViewClick() {
             @Override
             public void onClick(View view, String text) {
                 if (text.equals(SymbolView.TAB_SYMBOL)) {
-                    editor.insert(editor.getCaretPosition(), "  ");//两个空格
+                    mEditor.insert(mEditor.getCaretPosition(), "  ");//两个空格
                 } else {
-                    editor.insert(editor.getCaretPosition(), text);
+                    mEditor.insert(mEditor.getCaretPosition(), text);
                 }
             }
         });
@@ -366,11 +366,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             //重做
             case R.id.menu_redo:
-                editor.redo();
+                mEditor.redo();
                 break;
             //撤销
             case R.id.menu_undo:
-                editor.undo();
+                mEditor.undo();
                 break;
             //设置
             case R.id.menu_setting:
@@ -418,7 +418,7 @@ public class MainActivity extends AppCompatActivity {
         View view = getLayoutInflater().inflate(R.layout.compile_option_layout, null);
         CheckBox checkBox = (CheckBox) view.findViewById(R.id.multi_file_check_box);
         final EditText editText = (EditText) view.findViewById(R.id.multi_file_edit);
-        if (editor.getOpenedFile() == null) {
+        if (mEditor.getOpenedFile() == null) {
             isMultiFileCompile = false;
             multiFilesName = "";
             checkBox.setEnabled(false);
@@ -434,9 +434,9 @@ public class MainActivity extends AppCompatActivity {
                 editText.setEnabled(check);
                 if (check) {
                     isMultiFileCompile = check;
-                    if (editor.getOpenedFile() != null) {
+                    if (mEditor.getOpenedFile() != null) {
                         String temp = "";
-                        File[] sameDirFiles = editor.getOpenedFile().getParentFile().listFiles(new CFileNameFilter());
+                        File[] sameDirFiles = mEditor.getOpenedFile().getParentFile().listFiles(new CFileNameFilter());
                         for (File f : sameDirFiles) {
                             temp += (f.getName() + " ");
                         }
@@ -444,7 +444,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 } else {
                     File path = null;
-                    if ((path = editor.getOpenedFile()) != null) {
+                    if ((path = mEditor.getOpenedFile()) != null) {
                         multiFilesName = path.getName();
                         editText.setText(multiFilesName);
                     }
@@ -470,12 +470,12 @@ public class MainActivity extends AppCompatActivity {
      * 缩进代码
      */
     private void indent() {
-        if (editor.getText().toString().equals(""))
+        if (mEditor.getText().toString().equals(""))
             return;
         final File tempIndent = new File(getFilesDir() + File.separator + ConstantPool.INDENT_FILE_NAME);
 
         //写出缓存文件
-        WriteThread writeThread = new WriteThread(editor.getText().toString(), tempIndent.getAbsolutePath(), new Handler() {
+        WriteThread writeThread = new WriteThread(mEditor.getText().toString(), tempIndent.getAbsolutePath(), new Handler() {
             @Override
             public void handleMessage(Message msg) {
                 if (msg.what == WriteThread.MSG_WRITE_OK) {
@@ -487,7 +487,7 @@ public class MainActivity extends AppCompatActivity {
                                 @Override
                                 public void handleMessage(Message msg) {
                                     if (msg.what == ReadThread.MSG_READ_OK) {
-                                        editor.replaceAll(msg.obj.toString());
+                                        mEditor.replaceAll(msg.obj.toString());
                                     }
                                 }
                             });
@@ -508,14 +508,14 @@ public class MainActivity extends AppCompatActivity {
      */
     private void openFile(String path) {
         //这里很重要！文件不要重复打开！！！
-        if (editor.getOpenedFile() != null) {
-            if (!path.equals(editor.getOpenedFile().getAbsolutePath()))
+        if (mEditor.getOpenedFile() != null) {
+            if (!path.equals(mEditor.getOpenedFile().getAbsolutePath()))
                 autoSave();
         }
-        editor.open(path);
+        mEditor.open(path);
         recentFiles.addRecentFile(path);
         recentFiles.save();
-        setSubtitle(editor.getOpenedFile().getName());
+        setSubtitle(mEditor.getOpenedFile().getName());
 
         multiFilesName = new File(path).getName();
         isMultiFileCompile = false;
@@ -566,17 +566,17 @@ public class MainActivity extends AppCompatActivity {
      */
     private void closeFile() {
         autoSave();
-        editor.setOpenedFile(null);
+        mEditor.setOpenedFile(null);
         setSubtitle(null);
-        editor.setText("");
+        mEditor.setText("");
     }
 
     /**
      * 保存
      */
     private void save() {
-        if (editor.getOpenedFile() != null) {
-            editor.save(editor.getOpenedFile().getAbsolutePath());
+        if (mEditor.getOpenedFile() != null) {
+            mEditor.save(mEditor.getOpenedFile().getAbsolutePath());
         } else {
             saveAs();
         }
@@ -597,14 +597,14 @@ public class MainActivity extends AppCompatActivity {
                             File newFile = new File(f.getAbsolutePath() + File.separator + editText.getText());
                             //没有设置后缀名,自动设置
                             if (!newFile.getAbsolutePath().contains(".")) {
-                                if (settings.isGccCompile()) {
+                                if (mSettings.isGccCompile()) {
                                     newFile = new File(f.getAbsolutePath() + File.separator + editText.getText() + ".c");
                                 } else {
                                     newFile = new File(f.getAbsolutePath() + File.separator + editText.getText() + ".cpp");
                                 }
                             }
-                            editor.save(newFile.getAbsolutePath());
-                            editor.setOpenedFile(newFile.getAbsolutePath());
+                            mEditor.save(newFile.getAbsolutePath());
+                            mEditor.setOpenedFile(newFile.getAbsolutePath());
                             setSubtitle(newFile.getName());
                         } else {
                             showToast("请输入文件名");
@@ -638,7 +638,7 @@ public class MainActivity extends AppCompatActivity {
      * @param files
      */
     private void compile(final File[] files) {
-        final boolean gccCompile = settings.isGccCompile();
+        final boolean gccCompile = mSettings.isGccCompile();
         final ProgressDialog compileDialog = ProgressDialog.show(this, "", "正在编译...", false, false);
         compileDialog.show();
         //thread
@@ -678,7 +678,7 @@ public class MainActivity extends AppCompatActivity {
                                                 @Override
                                                 public void onClick(DialogInterface dialogInterface, int i) {
                                                     if (pos[0] != null)
-                                                        editor.gotoLine(Integer.parseInt(pos[0]));
+                                                        mEditor.gotoLine(Integer.parseInt(pos[0]));
 
                                                 }
                                             })
@@ -702,17 +702,17 @@ public class MainActivity extends AppCompatActivity {
     private void run() {
         File openFile = null;
         //判断是否打开了文件,编译前!!一定要!!保存
-        if (editor.getOpenedFile() != null) {
+        if (mEditor.getOpenedFile() != null) {
             //判断是否多文件编译
-            openFile = editor.getOpenedFile();
+            openFile = mEditor.getOpenedFile();
             if (!isMultiFileCompile) {
                 compileFiles = new File[1];
-                compileFiles[0] = editor.getOpenedFile();
+                compileFiles[0] = mEditor.getOpenedFile();
             } else {
                 String[] fileNames = multiFilesName.split(" ");
                 compileFiles = new File[fileNames.length];
                 for (int i = 0; i < fileNames.length; i++) {
-                    compileFiles[i] = new File(editor.getOpenedFile().getParent() + File.separator + fileNames[i]);
+                    compileFiles[i] = new File(mEditor.getOpenedFile().getParent() + File.separator + fileNames[i]);
                 }
             }
         } else {
@@ -721,7 +721,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        WriteThread writeThread = new WriteThread(editor.getText().toString(), openFile.getAbsolutePath(), new Handler() {
+        WriteThread writeThread = new WriteThread(mEditor.getText().toString(), openFile.getAbsolutePath(), new Handler() {
             @Override
             public void handleMessage(Message msg) {
                 if (msg.what == WriteThread.MSG_WRITE_OK) {

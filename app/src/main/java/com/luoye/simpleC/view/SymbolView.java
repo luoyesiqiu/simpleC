@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 import com.luoye.simpleC.R;
 import com.luoye.simpleC.resource.util.Setting;
-import com.luoye.simpleC.util.Utils;
 
 /**
  * Created by zyw on 2017/11/4.
@@ -25,11 +24,10 @@ public class SymbolView {
     private final int TILE_WIDTH = 60;
     private final String symbol = "→{}();,=\"|'&![]<>+-\\/*.%~?#$@:_";
     public static final String TAB_SYMBOL = "-->";
-    private LinearLayout linearLayout;
-    private PopupWindow popupWindow;
-    private View rootView;
+    private PopupWindow mPopupWindow;
+    private View mRootView;
     private OnSymbolViewClick onSymbolViewClick;
-    private boolean visible = false;
+    private boolean mVisible = false;
     private InputMethodManager inputMethodManager;
     private boolean isFirst = true;
     private int maxLayoutHeight = 0;//布局总长
@@ -46,11 +44,11 @@ public class SymbolView {
     }
 
     public SymbolView(Context context, final View rootView) {
-        this.rootView = rootView;
-        popupWindow = new PopupWindow(context);
+        this.mRootView = rootView;
+        mPopupWindow = new PopupWindow(context);
         inputMethodManager = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
         symbolView = LayoutInflater.from(context).inflate(R.layout.symbol_view, null);
-        linearLayout = (LinearLayout) symbolView.findViewById(R.id.linear_container);
+        LinearLayout linearLayout = (LinearLayout) symbolView.findViewById(R.id.linear_container);
         final float[] tempPoint = new float[2];
         textViewList = new TextView[symbol.length()];
         for (int i = 0; i < symbol.length(); i++) {
@@ -92,9 +90,9 @@ public class SymbolView {
             linearLayout.addView(textViewList[i], layoutParams);
 
         }
-        popupWindow.setWidth(LinearLayout.LayoutParams.MATCH_PARENT);
-        popupWindow.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
-        popupWindow.getBackground().setAlpha(0);//窗口完全透明
+        mPopupWindow.setWidth(LinearLayout.LayoutParams.MATCH_PARENT);
+        mPopupWindow.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
+        mPopupWindow.getBackground().setAlpha(0);//窗口完全透明
         Setting setting = Setting.getInstance(context);
         if (setting.isDarkMode()) {
             symbolView.setBackgroundColor(Color.argb(0xee, 0x0, 0x0, 0x0));//视图不完全透明
@@ -102,7 +100,7 @@ public class SymbolView {
             symbolView.setBackgroundColor(Color.argb(0xee, 0xff, 0xff, 0xff));//视图不完全透明
         }
 
-        popupWindow.setContentView(symbolView);
+        mPopupWindow.setContentView(symbolView);
         rootView.getViewTreeObserver().addOnGlobalLayoutListener(
                 new ViewTreeObserver.OnGlobalLayoutListener() {
                     @Override
@@ -115,9 +113,9 @@ public class SymbolView {
                         } else {
                             currentLayoutHeight = r.bottom;//当前弹出的布局高
                         }
-                        if (currentLayoutHeight == maxLayoutHeight || !visible) {
+                        if (currentLayoutHeight == maxLayoutHeight || !isVisible()) {
                             hide();
-                        } else if (currentLayoutHeight < maxLayoutHeight && visible) {
+                        } else if (currentLayoutHeight < maxLayoutHeight && isVisible()) {
                             show(rootView.getHeight() - r.bottom);
                         }
                     }
@@ -144,15 +142,19 @@ public class SymbolView {
     }
 
     public void setVisible(boolean visible) {
-        this.visible = visible;
+        this.mVisible = visible;
+    }
+
+    public boolean isVisible() {
+        return this.mVisible;
     }
 
     private void show(int bottom) {
-        popupWindow.showAtLocation(rootView, Gravity.BOTTOM, 0, bottom);
+        mPopupWindow.showAtLocation(mRootView, Gravity.BOTTOM, 0, bottom);
     }
 
     public void hide() {
-        popupWindow.dismiss();
+        mPopupWindow.dismiss();
     }
 
     public void setOnSymbolViewClick(OnSymbolViewClick onSymbolViewClick) {

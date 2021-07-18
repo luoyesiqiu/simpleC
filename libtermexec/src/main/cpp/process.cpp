@@ -20,14 +20,13 @@
 #include <sys/ioctl.h>
 #include <sys/wait.h>
 #include <dirent.h>
-#include <errno.h>
+#include <cerrno>
 #include <fcntl.h>
-#include <stdlib.h>
+#include <cstdlib>
 #include <unistd.h>
 #include <termios.h>
-#include <signal.h>
-#include <string.h>
-typedef unsigned short char16_t;
+#include <csignal>
+#include <cstring>
 
 class String8 {
 public:
@@ -41,7 +40,7 @@ public:
         }
     }
 
-    void set(const char16_t* o, size_t numChars) {
+    void set(const uint16_t* o, size_t numChars) {
         if (mString) {
             free(mString);
         }

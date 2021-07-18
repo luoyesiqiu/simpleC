@@ -4,11 +4,21 @@ android {
     defaultConfig {
         minSdkVersion 4
         targetSdkVersion 28
+
+        externalNativeBuild {
+            cmake{
+                abiFilters 'arm64-v8a', 'armeabi-v7a'
+                cppFlags '-std=c++11'
+            }
+        }
+
+
     }
 
+
     externalNativeBuild {
-        ndkBuild {
-            path 'src/main/jni/Android.mk'
+        cmake{
+            path "src/main/cpp/CMakeLists.txt"
         }
     }
     buildTypes {
